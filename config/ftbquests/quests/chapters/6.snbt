@@ -1,0 +1,379 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6"
+	group: "6A600E322021CDEA"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_1_rocket"
+		tag: { }
+	}
+	id: "4BC2A73F5BC3A744"
+	images: [
+		{
+			height: 24.0d
+			image: "ad_astra:textures/painting/the_milky_way.png"
+			rotation: 0.0d
+			width: 32.0d
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			height: 3.98d
+			image: "kubejs:textures/picture/ad_astra/nasa.png"
+			rotation: 0.0d
+			width: 4.675d
+			x: 16.0d
+			y: 1.0d
+		}
+		{
+			height: 7.0d
+			image: "kubejs:textures/picture/ad_astra/rocket.png"
+			rotation: 0.0d
+			width: 7.4d
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "ad_astra:item/space_helmet"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "ad_astra:item/space_suit"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "ad_astra:item/space_pants"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			height: 1.0d
+			image: "ad_astra:item/space_boots"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 3.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["是时候尝试探索&d宇宙&r啦"]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "ad_astra:astrodux"
+				}
+			}
+			id: "7F4769E854C091EC"
+			rewards: [{
+				id: "3BB6A6FE5F3ADE5A"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "ad_astra:astrodux"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "683CFBD285E6B3D6"
+				type: "checkmark"
+			}]
+			title: "久违不见的星系"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F4769E854C091EC"]
+			description: ["有mek谁还用这个？"]
+			id: "706A3D5B4DD213E0"
+			rewards: [{
+				id: "648E6EA4F11BCDEE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0D2A510B6D7D93FE"
+				item: "ad_astra:coal_generator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["706A3D5B4DD213E0"]
+			description: [
+				"能够压缩很多的板子。"
+				"tips:注意,不是无法合成，而且进度条非常慢，所以请耐心等待，或者使用加速手段。"
+			]
+			id: "206485E351DDD84C"
+			rewards: [{
+				id: "342C084F87F3ED08"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "767A9A2F8BCF2FF3"
+				item: "ad_astra:compressor"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["206485E351DDD84C"]
+			description: [
+				"可以炼钢了！"
+				"等等，不是早就可以炼钢么"
+				"感应炉:......"
+			]
+			id: "36FD6A7B47011397"
+			rewards: [{
+				count: 16
+				id: "5759302B25D5A178"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F3AFFFEC2CAC115"
+				item: "ad_astra:etrionic_blast_furnace"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36FD6A7B47011397"]
+			description: [
+				"有了钢就有了电缆~"
+				"电缆可以传输能量~"
+				"pipez:......"
+			]
+			id: "0F1C9EFF9348BEAC"
+			rewards: [{
+				count: 16
+				id: "7B7D8CCFD8EFEC10"
+				item: "thermal:steel_plate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "397FD91C2B4E4FED"
+				item: "ad_astra:steel_cable"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0F1C9EFF9348BEAC"]
+			description: ["是时候开始造火箭啦！"]
+			id: "40A3AEEB0EEBC5FA"
+			rewards: [{
+				id: "3587020BAF558283"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "55319382FD4B4CFF"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+				{
+					id: "1DDBE6B11BD279B0"
+					item: "ad_astra:nasa_workbench"
+					type: "item"
+				}
+			]
+			x: 18.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40A3AEEB0EEBC5FA"]
+			description: ["火箭需要燃油才能出发"]
+			id: "019035BC16E40F3C"
+			rewards: [{
+				id: "500CA9F721B386E5"
+				item: "ad_astra:oil_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "28A2A74D432A1870"
+				item: "ad_astra:fuel_refinery"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["019035BC16E40F3C"]
+			description: ["沙漠地表会随机生成石油，是制作燃油的原料。"]
+			id: "345C08A98CD99404"
+			rewards: [{
+				id: "1EE0D77CF797979C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "437F700ECCB6C4D1"
+				item: "thermal:crude_oil_bucket"
+				type: "item"
+			}]
+			title: "石油！"
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["345C08A98CD99404"]
+			description: [
+				"单从往返月球来看需要6桶燃油，一次发射消耗三桶"
+				"&7（最好多备几桶喵）&r"
+			]
+			id: "7F6ED1748B45CBC6"
+			rewards: [{
+				count: 2
+				id: "7EDB8FDE4BE20EBC"
+				item: "ad_astra:fuel_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				amount: 6000L
+				fluid: "ad_astra:fuel"
+				id: "6F8D93574FD40FFB"
+				type: "fluid"
+			}]
+			title: "火箭燃油"
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7F6ED1748B45CBC6"]
+			description: [
+				"注入水后通电即可开始产生氧气"
+				"一桶(1000mb)水只能产生40ml的氧气"
+			]
+			id: "4523DE413018BB46"
+			rewards: [{
+				id: "067689C962F7F51F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "63853178D55DD15B"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4523DE413018BB46"]
+			description: ["在太空正常情况下，大概15分钟消耗1k氧气，所以记得备好充足的氧气。"]
+			id: "3D0B4EEFA75B636F"
+			rewards: [{
+				id: "2F0562B5D24D246F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7334E9D65E1D55C1"
+				item: {
+					Count: 1
+					id: "ad_astra:large_gas_tank"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 3000L
+								Fluid: "ad_astra:oxygen"
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3D0B4EEFA75B636F"]
+			description: ["太空中需要穿宇航服"]
+			id: "59F669F8563590EC"
+			rewards: [{
+				id: "16424EDF7741A0B9"
+				item: {
+					Count: 1
+					id: "ad_astra:large_gas_tank"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 3000L
+								Fluid: "ad_astra:oxygen"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2853AC2E545D0F66"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "ad_astra:freeze_resistant_armor"
+					}
+				}
+				title: "宇航服"
+				type: "item"
+			}]
+			title: "宇航服"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["59F669F8563590EC"]
+			description: [
+				"gogogo出发咯"
+				""
+				"按下Shift键右键火箭可以打开GUI，能看到空的油箱和储物箱，你有&a8个空位&r用来放其他物品"
+				""
+				"如果在火箭起飞前要&c反悔起飞&r，可以用镐子把火箭敲掉，它会保留你已经填充过的燃料。"
+			]
+			id: "224A56A425E03D98"
+			rewards: [{
+				id: "1EE6F1AA8A7E5BD5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "24678E25D1F18C77"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+	]
+	title: "&6星系"
+}

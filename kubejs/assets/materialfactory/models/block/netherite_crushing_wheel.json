@@ -1,0 +1,6 @@
+{
+	"parent": "materialfactory:block/netherite_crushing_wheel/textures",
+	"loader": "forge:obj",
+	"flip_v": true,
+	"model": "materialfactory:models/block/netherite_crushing_wheel/crushing_wheel.obj"
+}

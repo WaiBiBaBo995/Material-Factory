@@ -1,0 +1,174 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1C212D83CCC2CD57"
+	group: "64D78D420DEC7AB2"
+	id: "1C212D83CCC2CD57"
+	images: [{
+		height: 2.0d
+		image: "botania:item/corporea_spark_creative"
+		rotation: 0.0d
+		width: 2.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7805AA23456D3972"
+			rewards: [{
+				id: "3352D0CEDEB3B7B6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "48319619E0199F78"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:basic/blaze"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			id: "19DFC77AE9515F33"
+			rewards: [{
+				id: "4BCD04D151B2A39E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "22813B91BDA92DBE"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:basic/enderman"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "55D7E19256F0937B"
+			rewards: [{
+				id: "0951518564A1AC8F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2C00759B17297D6B"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:basic/slime"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "06D75B5201C328D8"
+			rewards: [{
+				id: "72F6A6E8E8B8E087"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3E200C71106DF182"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:emerald_grove"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			id: "6D00CC07FB7DE5BD"
+			rewards: [{
+				id: "3793A28F33EBDDAB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "298DBAF443D6EB6C"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:endless/blaze"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			id: "585B96D4F8CC829D"
+			rewards: [{
+				id: "67AF6874E4C72D1C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3336919DEAA97104"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:overworldian_nights"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			id: "0774FCFF307580E4"
+			rewards: [{
+				id: "380B54A3ED2CB28D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "58E150CC8316D2BC"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:hellish_fortress"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+	title: "生物传送门"
+}

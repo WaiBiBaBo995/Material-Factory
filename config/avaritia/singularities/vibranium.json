@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.vibranium",
+  "colors": [
+    "43E696",
+    "44B27A"
+  ],
+  "materialCount": 10000,
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "allthemodium:vibranium_ingot"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

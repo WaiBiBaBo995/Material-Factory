@@ -1,0 +1,15 @@
+{
+    "name": "难得素",
+    "type": "mysticalagriculture:resource",
+    "tier": "mysticalcustomization:8",
+    "ingredient": {
+        "item": "allthecompressed:unobtainium_block_1x"
+    },
+    "color": "CE51E0",
+    "textures": {
+        "flower": "mysticalagriculture:block/flower_ingot",
+        "essence": "mysticalagriculture:item/essence_ingot"
+    },
+    "glint": true,
+    "crux": "materialfactory:better_soil"
+}

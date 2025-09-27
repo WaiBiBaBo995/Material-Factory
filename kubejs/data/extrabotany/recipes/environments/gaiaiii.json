@@ -1,0 +1,15 @@
+{
+	"type": "cagedmobs:environment_data",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "extrabotany"
+		}
+	],
+	"input": {
+		"item": "extrabotany:orichalcos_block"
+	},
+	"render": "extrabotany:orichalcos_block",
+	"growModifier": 1.0,
+	"categories": ["gaiaiii"]
+}

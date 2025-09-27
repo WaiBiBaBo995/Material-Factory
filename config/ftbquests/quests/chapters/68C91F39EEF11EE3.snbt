@@ -1,0 +1,171 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "68C91F39EEF11EE3"
+	group: "1ED9E17F6CAC16B1"
+	icon: "ftbquests:book"
+	id: "68C91F39EEF11EE3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"这是一个以&e制作各种&r&b产线&r为核心的沙漠生存！也是作者制作的第一个整合包，希望大家喜欢，如果有bug欢迎反馈给作者。"
+				"{image:kubejs:textures/picture/island.png width:25 height:14 align:center fit:true}"
+			]
+			id: "31A6B3070EA155D1"
+			rewards: [{
+				id: "465F169E19E4E665"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "3E6F8F177C3FE977"
+				title: "欢迎来到沙漠世界"
+				type: "dimension"
+			}]
+			title: "欢迎来到&a材&3料&c工厂"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["根据自己需要开启。（只有作弊模式下可开启）"]
+			icon: "minecraft:totem_of_undying"
+			id: "22820CC691D6C0D6"
+			rewards: [
+				{
+					command: "/gamerule keepInventory true"
+					exclude_from_claim_all: true
+					id: "3841BC7DF63C75AC"
+					title: "死亡不掉落"
+					type: "command"
+				}
+				{
+					command: "/gamerule mobGriefing false"
+					id: "7E2ED259ECBB14F3"
+					title: "关闭怪物破坏"
+					type: "command"
+				}
+				{
+					command: "/gamerule doFireTick false"
+					id: "33108143EE0B7228"
+					title: "关闭火焰蔓延"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "35E7B01509CB94DE"
+				type: "checkmark"
+			}]
+			title: "游戏规则"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "naturescompass:naturescompass"
+				tag: { }
+			}
+			id: "49CBDF101F39C807"
+			rewards: [
+				{
+					id: "50318F1CD5E1FEF5"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1A479FB99863D3AC"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4DA8DC1C56146CCF"
+				title: "指南针"
+				type: "checkmark"
+			}]
+			title: "给予帮助的指南针"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"如果你患有&e光敏性癫痫&r，请务必装上材质包里的&emekE 停止闪烁&r材质包。"
+				"{image:kubejs:textures/picture/tips2.png width:83 height:16 align:center fit:true}"
+			]
+			id: "1BABA443B7EFF0B3"
+			rewards: [{
+				id: "77CF763884193F6F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "304770FD78AC7E7E"
+				title: "特别注意"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"1.按F7可以打开光亮覆盖显示。"
+				"2.由于匠魂的问题会导致jei显示每个生物的掉落物都有头颅。"
+				"3.小麦种子右键泥土可以变成草方块"
+			]
+			id: "711BE171DA9D2AD8"
+			rewards: [{
+				id: "01C86C47A20B8C28"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				id: "6D23A12E1CC44AC9"
+				title: "小贴士"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			description: [
+				"右键打开目标显示器，点击目标"
+				"{image:kubejs:textures/picture/ftbquests/screen1.png width:708 height:521 align:center fit:true}"
+				""
+				"选择你要提交的任务"
+				""
+				"{image:kubejs:textures/picture/ftbquests/screen2.png width:711 height:672 align:center fit:true}"
+				""
+				"然后用特定管道/线缆输入指定的数量"
+				""
+				"{image:kubejs:textures/picture/ftbquests/screen3.png width:665 height:412 align:center fit:true}"
+			]
+			icon: "ftbquests:screen_1"
+			id: "4E65E33F0E54A54C"
+			rewards: [{
+				id: "67DD2A32DC1FD791"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "38C65CF6563B4B13"
+				type: "checkmark"
+			}]
+			title: "关于一些非物品类型的任务提交"
+			x: 2.5d
+			y: 2.0d
+		}
+	]
+	title: "游玩须知"
+}

@@ -1,0 +1,20 @@
+{
+  "kubejs.ponder.crushing_wheel.header": "手搓粉碎轮",
+  "kubejs.ponder.crushing_wheel.text_1": "首先，我们需要搭建一个“粉碎轮”出来",
+  "kubejs.ponder.crushing_wheel.text_2": "此处四个橡木木板可替换为其他种类的木板",
+  "kubejs.ponder.crushing_wheel.text_3": "此处石头仅可为‘石头,安山岩,闪长岩,花岗岩’这四种",
+  "kubejs.ponder.crushing_wheel.text_4": "搭建完毕后，空手右键中间的石头即可变成粉碎轮",
+  "kubejs.ponder.crushing_wheel.text_5": "快去尝试叭喵~",
+  "kubejs.ponder.phantom.header": "幻翼",
+  "kubejs.ponder.phantom.text_1": "首先，我们需要搭建一个“幻翼”出来",
+  "kubejs.ponder.phantom.text_2": "搭建完毕后，用皮革右键恶魔南瓜头",
+  "kubejs.ponder.phantom.text_3": "快去尝试叭喵~",
+  "kubejs.ponder.sapling.header": "第一颗树",
+  "kubejs.ponder.sapling.text_1": "首先，我们需要搭建一个“树”出来",
+  "kubejs.ponder.sapling.text_2": "搭建完毕后，空手右键枯萎的灌木即可变成树苗",
+  "kubejs.ponder.sapling.text_3": "快去尝试叭喵~",
+  "kubejs.ponder.warden.header": "监守者",
+  "kubejs.ponder.warden.text_1": "首先，我们需要搭建一个“监守者”出来",
+  "kubejs.ponder.warden.text_2": "搭建完毕后，用幽匿脉络右键幽匿催发体",
+  "kubejs.ponder.warden.text_3": "快去尝试叭喵~"
+}

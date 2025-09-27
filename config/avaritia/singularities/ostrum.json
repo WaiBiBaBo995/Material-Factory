@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.ostrum",
+  "colors": [
+    "A66B72",
+    "74545C"
+  ],
+  "materialCount": 10000,
+  "timeRequired": 240,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "tag": "forge:ingots/ostrum",
+        "type": "forge:tag_empty"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/ostrum"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

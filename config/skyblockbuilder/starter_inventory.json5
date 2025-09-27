@@ -1,0 +1,30 @@
+// See here for more information:
+// https://melanx.github.io/SkyblockBuilder/1.20.x/config/inventory/#starting-inventory
+{
+  "items": [
+    {
+      "item": "minecraft:wooden_sword",
+      "nbt": "{Damage:0}"
+    },
+    {
+      "item": "minecraft:torch",
+      "count": 8
+    },
+    {
+      "item": "minecraft:cooked_beef",
+      "count": 16
+    },
+    {
+      "item": "mysticaladaptations:insanium_watering_can",
+      "nbt": "{Water:1b}"
+    },
+    {
+      "item": "minecraft:wooden_hoe",
+      "nbt": "{Damage:0,Enchantments:[{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:efficiency\",lvl:3s}]}"
+    },
+    {
+      "item": "alltheores:copper_ore_hammer"
+    }
+  ],
+  "curios_items": []
+}

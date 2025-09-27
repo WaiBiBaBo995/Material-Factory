@@ -1,0 +1,54 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a_2"
+	group: "4BA80D4926F10BEF"
+	icon: {
+		Count: 1
+		id: "naturescompass:naturescompass"
+		tag: { }
+	}
+	id: "6FE60D3FE6A787F7"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["46A63F59C184208F"]
+			description: ["七阶火箭需要&a液态氘氚燃料&r作为燃料"]
+			id: "65F5FF793DF546AA"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "100B26D53980BF2E"
+				item: {
+					Count: 1
+					id: "ad_astra_rocketed:tier_7_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "是时候寻找新家园了"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65F5FF793DF546AA"]
+			description: ["比邻星系➡幻想乡"]
+			id: "71B930E68F48393E"
+			rewards: [{
+				id: "5D170A7907F8CA07"
+				type: "xp_levels"
+				xp_levels: 1000000
+			}]
+			tasks: [{
+				dimension: "materialfactory:gensokyo"
+				id: "5335DA19BD546AD9"
+				title: "抵达幻想乡！"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+	]
+	title: "&a新家园"
+}

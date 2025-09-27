@@ -1,0 +1,579 @@
+{
+	autofocus_id: "2AC7BC448C007BDB"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "xycraft"
+	group: "64D78D420DEC7AB2"
+	icon: "xycraft_world:xychorium_gem_blue"
+	id: "219B7A003658D24F"
+	order_index: 3
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&l欢迎来到XyCraft世界!&r\\n\\n本系列包含XyCraft: World与Machines内容\\nWorld模块可通过镭射钻获取各类宝石"]
+			icon: "xycraft_world:kivi_bricks_cloud_blue"
+			id: "15540271BF17C2E4"
+			rewards: [{
+				id: "5B19E9D10C44869C"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "5DF16DA3B10BE735"
+				type: "checkmark"
+			}]
+			title: "&lXycraft工艺&r"
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15540271BF17C2E4"]
+			id: "08E484DD3E751697"
+			rewards: [{
+				count: 5
+				id: "6FF73A9791FB8E73"
+				item: "xycraft_world:xychorium_storage_blue"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "光谱中的B代表蓝"
+			tasks: [{
+				id: "232722B6825883CE"
+				item: "xycraft_world:xychorium_gem_blue"
+				type: "item"
+			}]
+			title: "&b蓝宝石&r"
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["15540271BF17C2E4"]
+			id: "3F68BA498E877C8C"
+			rewards: [{
+				count: 5
+				id: "187352DA383B7DF6"
+				item: "xycraft_world:xychorium_storage_green"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "彩虹中间的色彩"
+			tasks: [{
+				id: "59E3B2A8BA8579C0"
+				item: "xycraft_world:xychorium_gem_green"
+				type: "item"
+			}]
+			title: "&a绿宝石&r"
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["15540271BF17C2E4"]
+			id: "2B5E14A47062F83C"
+			rewards: [{
+				count: 5
+				id: "54AEEA17E0FA8135"
+				item: "xycraft_world:xychorium_storage_red"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "光谱中的R代表红"
+			tasks: [{
+				id: "383688A71AB979FA"
+				item: "xycraft_world:xychorium_gem_red"
+				type: "item"
+			}]
+			title: "&c红宝石&r"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15540271BF17C2E4"]
+			id: "0D01524F249E25D7"
+			rewards: [{
+				count: 5
+				id: "47406628118C4FAC"
+				item: "xycraft_world:xychorium_storage_dark"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "谁熄灭了光芒？"
+			tasks: [{
+				id: "78DA1FE8F54FDAE8"
+				item: "xycraft_world:xychorium_gem_dark"
+				type: "item"
+			}]
+			title: "&8暗影宝石"
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["15540271BF17C2E4"]
+			id: "69F11A94D44AB5CF"
+			rewards: [{
+				count: 5
+				id: "15F2DA96D08F45EE"
+				item: "xycraft_world:xychorium_storage_light"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "&a终极&f璀璨"
+			tasks: [{
+				id: "08082713F1556E3A"
+				item: "xycraft_world:xychorium_gem_light"
+				type: "item"
+			}]
+			title: "&f光辉宝石&r"
+			x: -9.0d
+			y: 5.5d
+		}
+		{
+			description: ["&a造石机&f是热力机械之一,但也是无需基维即可获取基维的唯一方式.放置造石机,下方放置黑曜石,两侧放置水和熔岩.它将开始在其物品栏中生成物品,且无需能源."]
+			id: "7473F4A706861206"
+			rewards: [{
+				count: 2
+				id: "2A02310AFB4FBD79"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			size: 1.1d
+			tasks: [{
+				id: "564FEBE077BDE313"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			title: "制作基维"
+			x: 0.0d
+			y: 2.2d
+		}
+		{
+			dependencies: ["7473F4A706861206"]
+			description: ["基维主要用于装饰或机械.制作&a机器框架&f及其他XyCraft机械需要基岩.亦可配合Xy宝石和切石机制作装饰品."]
+			id: "7574A782DCFB87CE"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4BF8E17EC585CA54"
+				item: "xycraft_world:kivi"
+				type: "item"
+			}]
+			title: "&l&7基维"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7574A782DCFB87CE"]
+			description: ["用铝材加固基维可获得&a机器框架&f,这是制造所有机械的必备材料."]
+			id: "2AC7BC448C007BDB"
+			rewards: [{
+				count: 16
+				id: "588A664EA3133C1A"
+				item: "xycraft_machines:machine_base"
+				type: "item"
+			}]
+			tasks: [{
+				id: "704B12123DFC3CDA"
+				item: "xycraft_machines:machine_base"
+				type: "item"
+			}]
+			title: "建筑方块"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2B5E14A47062F83C"
+				"2AC7BC448C007BDB"
+			]
+			description: ["收到&a红石信号&f时,&a烈焰&f板会在前方生成火焰.信号停止时火焰自动熄灭."]
+			id: "5E1D4169C083ACEF"
+			rewards: [
+				{
+					id: "36DDC5FBB305E11F"
+					item: "minecraft:stone_button"
+					type: "item"
+				}
+				{
+					id: "1B70CEB6E8EEC2DB"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [{
+				id: "2E515AF3D5E72596"
+				item: "xycraft_machines:ignition_plate"
+				type: "item"
+			}]
+			title: "&c点火板&r"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3F68BA498E877C8C"
+				"2AC7BC448C007BDB"
+			]
+			description: ["&a加速&f耕地与普通耕地类似但有所优化:自动灌溉且耕作速度更快.具体快多少？我也不知道!"]
+			id: "3E970E76372AB094"
+			rewards: [
+				{
+					count: 10
+					id: "319830D4BB6EE618"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "014E60BF849DF756"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [{
+				id: "3C69F169CDF02BC0"
+				item: "xycraft_machines:planter"
+				type: "item"
+			}]
+			title: "&2加速耕地&r"
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"08E484DD3E751697"
+				"2AC7BC448C007BDB"
+			]
+			description: ["&a水生动物&f方块具有水体特性但不会流动.可用其制作&a造石机&f、灌溉耕地,但无法用于信仰之跃(鱼群会试图进入但仍会死亡)."]
+			id: "623E6A855B363C8D"
+			rewards: [
+				{
+					id: "3A2C8A8FA215F8F3"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "3C424FCF6641D5AC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			subtitle: "冰？woc,冰！"
+			tasks: [{
+				id: "308A581A02968EBB"
+				item: "xycraft_machines:water_block"
+				type: "item"
+			}]
+			title: "&9固态水?"
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"69F11A94D44AB5CF"
+				"2AC7BC448C007BDB"
+			]
+			description: ["光域虽不显明亮,但功能类似&a巨型火把&f.能阻止32方块半径内(估算值)的怪物生成."]
+			id: "2C4ECA4F5B1639F4"
+			rewards: [
+				{
+					count: 5
+					id: "7F3C815C55FBFB2C"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "7A00EE58177690C7"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [{
+				id: "302ABCB249064D46"
+				item: "xycraft_machines:light_field"
+				type: "item"
+			}]
+			title: "&f光域&r"
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0D01524F249E25D7"
+				"2AC7BC448C007BDB"
+			]
+			description: ["&a流体虚空&f可消除与其接触的所有水体(包括源头与流动水体),作用范围为一格距离."]
+			id: "64D0D69ADB8820DA"
+			rewards: [
+				{
+					id: "6CF13A5A50E9D760"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "38E16C0CABEA25C1"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [{
+				id: "4A432948E1F77298"
+				item: "xycraft_machines:fluid_void"
+				type: "item"
+			}]
+			title: "&8&a流体虚空&f"
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7574A782DCFB87CE"]
+			description: ["可'培育'其下方的方块/物品,并将产物输送至上方的容器.适用于圆石生成器、各类石材生成器、紫水晶生成器,甚至&a龙蛋&f生成器!"]
+			id: "71D133BA3EC6F4FD"
+			rewards: [
+				{
+					id: "1A3909D004F030AA"
+					item: "xycraft_world:kivi"
+					type: "item"
+				}
+				{
+					id: "12AD5F35D54EE42F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			tasks: [{
+				id: "2457D9787DD41867"
+				item: "xycraft_machines:extractor"
+				type: "item"
+			}]
+			title: "全自动岩石农场"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7574A782DCFB87CE"]
+			description: ["XyCraft提供若干物品存储与处理方案,虽不丰富但颇具特色!"]
+			id: "6D0876A402C22067"
+			rewards: [{
+				count: 4
+				id: "20DDF24F5D642F86"
+				item: "xycraft_machines:port_item"
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.2d
+			tasks: [{
+				id: "1820FB689A9537EF"
+				item: "xycraft_machines:port_item"
+				type: "item"
+			}]
+			title: "&e物品存储与处理"
+			x: 1.7999999999999998d
+			y: 1.2d
+		}
+		{
+			dependencies: ["7574A782DCFB87CE"]
+			description: ["XyCraft带来了强大的&a流体储罐&f多方块结构!"]
+			id: "2C7D62231AD6406A"
+			rewards: [{
+				count: 4
+				id: "1687EC60DA0E9D13"
+				item: "xycraft_machines:port_fluid"
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.2d
+			tasks: [{
+				id: "470DF61394ED606D"
+				item: "xycraft_machines:port_fluid"
+				type: "item"
+			}]
+			title: "&b流体系统&r"
+			x: 2.4d
+			y: -0.6d
+		}
+		{
+			dependencies: ["06B85804163DD18B"]
+			description: ["&a虚空&f容器可将任意容器变为&a垃圾桶&f.将其置于容器顶部即可瞬间销毁物品!"]
+			id: "4A92237E17ED5F1C"
+			rewards: [{
+				count: 5
+				id: "6230EB15ED4862B0"
+				item: "alltheores:aluminum_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B9EAD369BB9F233"
+				item: "xycraft_machines:void_container"
+				type: "item"
+			}]
+			title: "虚空容器"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6D0876A402C22067"]
+			description: ["索林之箱(XyCraft创作者Soaryn命名)是本模组的专属储物箱.破坏方块时物品不会保留!真好奇箱体表面的方块图案有何玄机..."]
+			id: "06B85804163DD18B"
+			rewards: [{
+				count: 10
+				id: "1A9A10902624424D"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "366CCB18B6C9CC7A"
+				item: "xycraft_machines:soaryn_box"
+				type: "item"
+			}]
+			title: "索林之箱"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06B85804163DD18B"]
+			description: ["装配器是自动化合成设备.从下方容器获取材料制作预设配方,Ctrl+点击可锁定配方.需通过管道输出成品."]
+			id: "355244420EA47546"
+			rewards: [{
+				id: "525DB571EA0769AA"
+				item: "xycraft_machines:soaryn_box"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B60741F11E1F1AE"
+				item: "xycraft_machines:fabricator"
+				type: "item"
+			}]
+			title: "自动合成机"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2C7D62231AD6406A"]
+			description: ["物品输入输出口(IO即Input Output的缩写)使我们能够将物品输送至储罐内部或从其中取出.就像用于装水的桶一样.可切换输出与输入模式."]
+			id: "43F08B510FC1C06F"
+			rewards: [{
+				count: 16
+				id: "19CFD9C273503054"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "781F65E2C16C94BB"
+				item: "xycraft_machines:item_io"
+				type: "item"
+			}]
+			title: "物品的输入与输出"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2C7D62231AD6406A"]
+			description: ["&a阀门&f是储罐的核心部件.没有阀门就无法构成储罐.此处也是您灌注或通过管道输送水及其他流体的接口."]
+			id: "643FB1A3ED0EA9EC"
+			rewards: [{
+				id: "4D23B63559CCFB1A"
+				item: "xycraft_machines:hydro_pump"
+				type: "item"
+			}]
+			tasks: [{
+				id: "652F79E0989D33DF"
+				item: "xycraft_machines:valve"
+				type: "item"
+			}]
+			title: "流体的输入与输出"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"643FB1A3ED0EA9EC"
+				"43F08B510FC1C06F"
+				"030AC1AF8F735550"
+			]
+			description: [
+				"现在我们来实际建造储罐!首先需要建筑方块和至少1个阀门.玻璃与物品输入输出口为可选部件.&a储罐&f必须由建筑方块构成框架.建筑方块指非透明、不受重力影响且非天然泥土/草方块的材料.禁用材料:沙砾、草方块、玻璃.必须使用石头/木材/金属等材料构筑框架边缘.玻璃、阀门和物品IO必须嵌入墙面,内部须保持中空.最大尺寸为13x13x13.完成搭建后&a右击&f阀门,系统将提示'已成型'或指出结构问题."
+				""
+				"{image:kubejs:textures/picture/xycraft.png width:180 height:90 align:center}"
+			]
+			id: "2278A98DCDF713D7"
+			rewards: [{
+				id: "6405B672B81D3B73"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 16L
+				id: "460FA61A72720319"
+				item: { Count: 16, id: "minecraft:glass" }
+				type: "item"
+			}]
+			title: "&l储罐多方块结构"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["06B85804163DD18B"]
+			description: ["&a收藏家&f可作为廉价的&a吸收漏斗&f使用.能收集3格半径内的所有物品,并将其输送至下方或自身的物品栏中.可用红石信号关闭功能!"]
+			id: "1E00DBAACDF4404F"
+			rewards: [{
+				id: "36356C42D53FA44A"
+				item: "xycraft_machines:soaryn_box"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F151495F025EEB1"
+				item: "xycraft_machines:collector"
+				type: "item"
+			}]
+			title: "收集装置"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2C7D62231AD6406A"]
+			description: ["要将水或其他流体导入储罐,需要使用管道.幸运的是它们都统称为管道(Pipe/z),这有效避免了混淆问题.\\n\\n水力泵能以缓慢但免费的方式自动向管道注水!"]
+			id: "030AC1AF8F735550"
+			rewards: [{
+				id: "74EB119DD13A2413"
+				item: "xycraft_machines:item_io"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1AA220A442C65FB0"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "pipez:fluid_pipe"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_mechanical_pipe"
+								}
+								{
+									Count: 1b
+									id: "create:fluid_pipe"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4EA1F55E2C1D5795"
+					item: "xycraft_machines:hydro_pump"
+					type: "item"
+				}
+			]
+			title: "管道系统"
+			x: 4.5d
+			y: -0.5d
+		}
+	]
+	title: "赛特工艺"
+}

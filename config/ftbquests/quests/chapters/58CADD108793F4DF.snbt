@@ -1,0 +1,913 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "58CADD108793F4DF"
+	group: "4BA80D4926F10BEF"
+	icon: "avaritia:infinity_catalyst"
+	id: "58CADD108793F4DF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4BC2A73F5BC3A744"]
+			description: ["&a欢迎来到&r&d最终章&r：“&c无&r&d尽&r&e贪&r&b婪&r”。到这里说明你有十足”财力“以及“肝力”去应对它，最后造出无尽套，此次的旅程便是终章。"]
+			icon: "avaritia:infinity_catalyst"
+			id: "27F9439CEC5CB2E3"
+			rewards: [
+				{
+					count: 64
+					id: "66820B6D575E79A8"
+					item: "allthemodium:allthemodium_ingot"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "364B9B8D947CF2D8"
+					item: "allthemodium:vibranium_ingot"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "13ED124492764F2C"
+					item: "allthemodium:unobtainium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 6.0d
+			tasks: [{
+				id: "4D95433635BBD4FF"
+				type: "checkmark"
+			}]
+			title: "&c无&d尽&e贪&b婪"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["27F9439CEC5CB2E3"]
+			id: "008E9282AE30F38E"
+			tasks: [{
+				id: "2B435DF0AFC00CC4"
+				item: "avaritia:double_compressed_crafting_table"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["008E9282AE30F38E"]
+			id: "041920B106A51BF7"
+			size: 1.0d
+			tasks: [{
+				id: "2F962401DC577D4E"
+				item: "avaritia:sculk_crafting_table"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["041920B106A51BF7"]
+			id: "2C06FC0B85964429"
+			size: 2.0d
+			tasks: [{
+				id: "6F1B2A74E9597AC5"
+				item: "avaritia:nether_crafting_table"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C06FC0B85964429"]
+			id: "78FC748712478CBE"
+			size: 3.0d
+			tasks: [{
+				id: "6D82FD3B5C2BBBEE"
+				item: "avaritia:end_crafting_table"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78FC748712478CBE"]
+			description: [""]
+			id: "617A29019CC81039"
+			size: 4.0d
+			tasks: [{
+				id: "63A00A459F02CCED"
+				item: "avaritia:extreme_crafting_table"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["617A29019CC81039"]
+			id: "1D99A8ED5F9B5E44"
+			size: 4.0d
+			tasks: [{
+				id: "7B872F3F517FAADD"
+				item: "avaritia:extreme_smithing_table"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["041920B106A51BF7"]
+			id: "58F7F8F5C1A2746F"
+			tasks: [{
+				id: "1963F157C8A8F196"
+				item: "minecraft:reinforced_deepslate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["041920B106A51BF7"]
+			id: "50BB6EB3612D21BC"
+			tasks: [{
+				id: "42D086479CE32CDB"
+				item: "avaritia:diamond_lattice"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2C06FC0B85964429"]
+			id: "710B88E5756FEB67"
+			tasks: [{
+				id: "2EC72EC939A8A559"
+				item: "avaritia:blaze_cube"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2C06FC0B85964429"]
+			id: "1ED53C806267DD96"
+			tasks: [{
+				id: "6E920C2B4F0923DF"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2C06FC0B85964429"]
+			id: "232FF136CBE93BA5"
+			tasks: [{
+				id: "141C553723B6093D"
+				item: "avaritia:refined_coal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["710B88E5756FEB67"]
+			id: "35A437CDDA2C65AD"
+			tasks: [{
+				id: "3C02458B52332CCF"
+				item: {
+					Count: 1
+					id: "avaritia:blaze_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["710B88E5756FEB67"]
+			id: "60A1530CFE87E0CD"
+			tasks: [{
+				id: "4AE132FBFD285E62"
+				item: {
+					Count: 1
+					id: "avaritia:blaze_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["710B88E5756FEB67"]
+			id: "1356265104D11090"
+			tasks: [{
+				id: "11292AD2C2A9567B"
+				item: {
+					Count: 1
+					id: "avaritia:blaze_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["710B88E5756FEB67"]
+			id: "69D569DD74FC6515"
+			tasks: [{
+				id: "72E723D7F1BDDB3F"
+				item: {
+					Count: 1
+					id: "avaritia:blaze_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["710B88E5756FEB67"]
+			id: "0FA76790DE6C9525"
+			tasks: [{
+				id: "16D5CB38DF6DA5D8"
+				item: {
+					Count: 1
+					id: "avaritia:blaze_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["78FC748712478CBE"]
+			id: "225CE81F23737F31"
+			tasks: [{
+				id: "6297998A66C559C5"
+				item: "avaritia:record_fragment"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["78FC748712478CBE"]
+			id: "101D882FF8ED9EE8"
+			size: 1.0d
+			tasks: [{
+				id: "7BA2E114C8DB188A"
+				item: {
+					Count: 1
+					id: "avaritia:crystal_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78FC748712478CBE"]
+			id: "39E9ACEBF5556C52"
+			size: 1.0d
+			tasks: [{
+				id: "64E741BB8508B5AD"
+				item: {
+					Count: 1
+					id: "avaritia:crystal_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78FC748712478CBE"]
+			id: "066B0FA2B86E0AA5"
+			size: 1.0d
+			tasks: [{
+				id: "356C77986DA3E233"
+				item: {
+					Count: 1
+					id: "avaritia:crystal_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78FC748712478CBE"]
+			id: "37B0D8EF4C71D891"
+			size: 1.0d
+			tasks: [{
+				id: "23EE52FAEFF0FA3F"
+				item: {
+					Count: 1
+					id: "avaritia:crystal_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78FC748712478CBE"]
+			id: "43AC37B6D01A6CCB"
+			size: 1.0d
+			tasks: [{
+				id: "276F9C032BFE9091"
+				item: {
+					Count: 1
+					id: "avaritia:crystal_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78FC748712478CBE"]
+			id: "56ABAAA3A8598223"
+			size: 2.0d
+			tasks: [{
+				id: "53DF630498ABCCE5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 81
+						}
+					}
+					id: "avaritia:neutron_ring"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "38A1B8F683B61C15"
+			size: 2.0d
+			tasks: [{
+				id: "69396F011AF064D5"
+				item: "avaritia:infinity_sword"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "7BA0E8D37D1C3C92"
+			size: 2.0d
+			tasks: [{
+				id: "00E6131762B41F33"
+				item: {
+					Count: 1
+					id: "avaritia:infinity_pickaxe"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "314BC206B776BDF8"
+			size: 2.0d
+			tasks: [{
+				id: "0DBB706175E57A81"
+				item: "avaritia:infinity_axe"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "47065A68A81CC3F9"
+			size: 2.0d
+			tasks: [{
+				id: "259EBD556C3B2F70"
+				item: {
+					Count: 1
+					id: "avaritia:infinity_shovel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "383DC9D49D29B945"
+			size: 2.0d
+			tasks: [{
+				id: "0322BF93C54A3DEE"
+				item: "avaritia:infinity_hoe"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "35E45A75976AF488"
+			size: 2.0d
+			tasks: [{
+				id: "7C29014CA606AAC8"
+				item: "avaritia:infinity_bow"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "3CB606BC46B1C769"
+			size: 2.0d
+			tasks: [{
+				id: "7126EC310B6D32C7"
+				item: "avaritia:infinity_crossbow"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "24ECAACC5B3B83E5"
+			size: 2.0d
+			tasks: [{
+				id: "4E1690240686BF18"
+				item: "avaritia:infinity_helmet"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "455508374D77E33B"
+			size: 2.0d
+			tasks: [{
+				id: "77325671F8630A8C"
+				item: "avaritia:infinity_chestplate"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "12CF088447563BA8"
+			size: 2.0d
+			tasks: [{
+				id: "2E79868A5F48985C"
+				item: "avaritia:infinity_pants"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["526483AD026F12EC"]
+			id: "7F0F9A1686563FB5"
+			size: 2.0d
+			tasks: [{
+				id: "36061FB404E70B10"
+				item: "avaritia:infinity_boots"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"6B594C3A48EE427B"
+				"1A3155AD42AA19C5"
+				"7F5508DBD9458338"
+			]
+			id: "54242F87D2DEFC23"
+			size: 2.0d
+			tasks: [{
+				id: "51361820B17FF8FF"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["617A29019CC81039"]
+			id: "1A3155AD42AA19C5"
+			tasks: [{
+				id: "22BBAAFA9971C4FC"
+				item: "avaritia:endest_pearl"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["617A29019CC81039"]
+			id: "6B594C3A48EE427B"
+			tasks: [{
+				id: "397A8F20E30123A8"
+				item: "avaritia:ultimate_stew"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["617A29019CC81039"]
+			id: "7F5508DBD9458338"
+			tasks: [{
+				id: "44BA5294EBFFE5B6"
+				item: "avaritia:cosmic_meatballs"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["54242F87D2DEFC23"]
+			id: "526483AD026F12EC"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "1F70CEF08F0BFA77"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["617A29019CC81039"]
+			id: "2660195AE3575635"
+			tasks: [{
+				id: "292D31306BBB6B36"
+				item: "avaritia:neutron_collector"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2660195AE3575635"]
+			id: "15B6E144A49734F4"
+			tasks: [{
+				id: "7F86A86213B61487"
+				item: "avaritia:dense_neutron_collector"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["15B6E144A49734F4"]
+			id: "29F78DD6E45D89BB"
+			tasks: [{
+				id: "094C25E90CC2F360"
+				item: "avaritia:denser_neutron_collector"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["29F78DD6E45D89BB"]
+			id: "792A94784F705FFF"
+			tasks: [{
+				id: "6A4054E0DC8D3D47"
+				item: "avaritia:densest_neutron_collector"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["617A29019CC81039"]
+			id: "28B37C1BD95DFF51"
+			tasks: [{
+				id: "2EA77DD330669EC4"
+				item: "avaritia:neutron_compressor"
+				type: "item"
+			}]
+			x: 18.5d
+			y: -2.5d
+		}
+		{
+			id: "3DB595B537B743F4"
+			tasks: [{
+				id: "400D2604448FC587"
+				item: {
+					Count: 1
+					id: "tconstruct:creative_slot"
+					tag: {
+						slot: "souls"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.5d
+		}
+		{
+			id: "7DAFA526CDC560BE"
+			tasks: [{
+				id: "75AD9CB8EC09F380"
+				item: {
+					Count: 1
+					id: "tconstruct:creative_slot"
+					tag: {
+						slot: "upgrades"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.5d
+		}
+		{
+			id: "28B0F77FC8FE8458"
+			tasks: [{
+				id: "5D3A3FC1DB646AAE"
+				item: {
+					Count: 1
+					id: "tconstruct:creative_slot"
+					tag: {
+						slot: "defense"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 14.5d
+		}
+		{
+			id: "565496F4D82E0714"
+			tasks: [{
+				id: "72C42E243B59D4F6"
+				item: {
+					Count: 1
+					id: "tconstruct:creative_slot"
+					tag: {
+						slot: "abilities"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			id: "44290C5F68C71C20"
+			tasks: [{
+				id: "2032FF07CCC42ACB"
+				item: "enderio:creative_power"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 10.0d
+		}
+		{
+			id: "2C523003960DE7D2"
+			tasks: [{
+				id: "232FAE92405E1598"
+				item: "ae2:creative_energy_cell"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 10.0d
+		}
+		{
+			id: "0072A5E322EC590F"
+			tasks: [{
+				id: "6A11FBE440F3672A"
+				item: "botania:creative_pool"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 12.0d
+		}
+		{
+			id: "7810D2AF14D3D438"
+			tasks: [{
+				id: "0A31202474E4C6AE"
+				item: {
+					Count: 1
+					id: "botania:mana_tablet"
+					tag: {
+						creative: 1b
+						mana: 500000
+					}
+				}
+				type: "item"
+			}]
+			x: 27.0d
+			y: 12.0d
+		}
+		{
+			id: "776706B52F03E23A"
+			tasks: [{
+				id: "6DE27EACB7535AAE"
+				item: "mekanism:creative_bin"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 14.0d
+		}
+		{
+			id: "604328FD41521325"
+			tasks: [{
+				id: "0BB464DE7B0C412D"
+				item: {
+					Count: 1
+					id: "mekanism:creative_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 27.0d
+			y: 14.0d
+		}
+		{
+			id: "461FB89B22998459"
+			tasks: [{
+				id: "4AE2ABD947823077"
+				item: "mekanism:creative_fluid_tank"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 16.0d
+		}
+		{
+			id: "3F0D57D0CCFEF238"
+			tasks: [{
+				id: "4584918B158B8F88"
+				item: "mekanism:creative_chemical_tank"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["617A29019CC81039"]
+			id: "49E467189D58D8D2"
+			tasks: [{
+				id: "2FC5DD2BE5F891B1"
+				item: "avaritia:star_fuel"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["617A29019CC81039"]
+			id: "7B25BDCFED3063AD"
+			tasks: [{
+				id: "7F76C78FDB08526D"
+				item: "avaritia:enhancement_core"
+				type: "item"
+			}]
+			x: 20.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1D99A8ED5F9B5E44"]
+			id: "12C9815FA2EB3EB0"
+			size: 2.0d
+			tasks: [{
+				id: "37A01DF72E920C22"
+				item: "avaritia:infinity_chest"
+				type: "item"
+			}]
+			x: 24.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1D99A8ED5F9B5E44"]
+			id: "456320101548045B"
+			size: 2.0d
+			tasks: [{
+				id: "4D1CBF5F3D23F9B4"
+				item: {
+					Count: 1
+					id: "avaritia:infinity_totem"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 28.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1D99A8ED5F9B5E44"]
+			id: "1E2D16DDAA24FFD4"
+			size: 2.0d
+			tasks: [{
+				id: "58865250D7092F55"
+				item: "avaritia:neutron_horse_armor"
+				type: "item"
+			}]
+			x: 31.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1D99A8ED5F9B5E44"]
+			id: "22061FEB80319BBF"
+			size: 2.0d
+			tasks: [{
+				id: "5BA260BAE1667EBA"
+				item: "avaritia:extreme_anvil"
+				type: "item"
+			}]
+			x: 33.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D99A8ED5F9B5E44"]
+			id: "4794C0DB3FB0D985"
+			size: 2.0d
+			tasks: [{
+				id: "3B24D23466931F47"
+				item: "avaritia:endless_cake"
+				type: "item"
+			}]
+			x: 31.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1D99A8ED5F9B5E44"]
+			id: "470812BA05D446B4"
+			size: 2.0d
+			tasks: [{
+				id: "30207B8137997844"
+				item: "avaritia:infinity_elytra"
+				type: "item"
+			}]
+			x: 28.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1D99A8ED5F9B5E44"]
+			id: "14DD77CBFDEA6782"
+			size: 2.0d
+			tasks: [{
+				id: "5C536A129849C49F"
+				item: "avaritia:infinity_bucket"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 8.0d
+		}
+	]
+	title: "&f&kw&r&c无&d尽&e贪&b婪&f&kw"
+}

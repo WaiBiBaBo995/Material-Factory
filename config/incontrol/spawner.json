@@ -1,0 +1,15 @@
+[
+    {
+        "conditions": {
+        "dimension": [
+                "minecraft:overworld"
+            ],
+        "mindist": 10
+        },
+        "mob": ["slimeoverhaul:earth_slime"],
+         "amount": {
+            "groupdistance": 1
+        },
+        "attempts": 5
+    }
+]

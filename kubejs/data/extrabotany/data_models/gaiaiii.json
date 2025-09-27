@@ -1,0 +1,39 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "extrabotany"
+		}
+	],
+    "entity": "extrabotany:gaia_3rd",
+    "name": "entity.extrabotany.gaia_3rd",
+    "name_color": "#0D0D0D",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 5120,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+	"trivia": "custom.materialfactory.gaiaiii",
+    "fabricator_drops": [
+		{
+            "item": "extrabotany:pandoras_box",
+            "count": 1
+        },
+		{
+            "item": "extrabotany:music_disc_gaia3",
+            "count": 1
+        }
+    ],
+    "data_per_kill": [
+        3,
+        12,
+        30,
+        45
+    ]
+}

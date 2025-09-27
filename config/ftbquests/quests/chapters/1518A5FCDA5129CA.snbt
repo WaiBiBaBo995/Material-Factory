@@ -1,0 +1,595 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1518A5FCDA5129CA"
+	group: "7B33D82AC24165C6"
+	icon: "tconstruct:pig_iron_ingot"
+	id: "1518A5FCDA5129CA"
+	images: [
+		{
+			height: 8.13d
+			image: "kubejs:textures/picture/tc/smeltery.png"
+			rotation: 0.0d
+			width: 10.51d
+			x: 23.5d
+			y: -5.0d
+		}
+		{
+			height: 9.65d
+			image: "kubejs:textures/picture/tc/foundry.png"
+			rotation: 0.0d
+			width: 10.65d
+			x: 24.0d
+			y: 9.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["734F2E83A95C7463"]
+			description: [
+				"搭建方法如下"
+				"参考："
+				"{image:kubejs:textures/picture/tc/melter.png width:463 height:361 align:center fit:true}"
+			]
+			id: "6CC312851FAA9DAC"
+			rewards: [
+				{
+					id: "15EF65C6EA4A19D2"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "58D99C94B561E8B0"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "64932FE8A227EF6C"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "5AA612FC8634404D"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					id: "31C1B1991CB4B515"
+					item: {
+						Count: 1
+						id: "tconstruct:encyclopedia"
+						tag: {
+							mantle: {
+								book: {
+									current_page: "intro.foreward"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7821861C6F3A37E7"
+					item: "tconstruct:puny_smelting"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "0E2AF5CFCEDCB792"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "510BA3E97769FCBC"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+			]
+			title: "冶炼入门"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D00B79383A277CF"]
+			description: ["&o我就是渣渣！"]
+			id: "30E00B63A5924445"
+			rewards: [{
+				count: 16
+				id: "3B5F28248396B808"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "水泥"
+			tasks: [{
+				id: "1D8B1A86E3E57BA7"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CC312851FAA9DAC"]
+			description: [
+				"更好的炉子！你甚至能用它制造合金！并且提供&e33.3%&r的增产！"
+				"&a建造时可以省去棱角方块&r"
+				"冶炼炉多方块结构大致如下:"
+				"{image:kubejs:textures/picture/tc/smeltery.png width:105 height:81 align:center fit:true}"
+			]
+			id: "0A1D80BEB9D40B3F"
+			rewards: [
+				{
+					count: 10
+					id: "3467917A68544E49"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					count: 21
+					id: "1834A378F7058571"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					id: "1328FE6271F607F0"
+					item: {
+						Count: 1
+						id: "tconstruct:mighty_smelting"
+						tag: {
+							mantle: {
+								book: {
+									current_page: "smeltery.structure"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "更高的效率！"
+			tasks: [
+				{
+					id: "69896D0FD1086CE8"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "24CB103EB0712E0D"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+			]
+			title: "多方块冶炼炉"
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			description: ["没有黏土，何以成匠魂？"]
+			id: "3D00B79383A277CF"
+			rewards: [{
+				id: "56BB4BE62F8DC063"
+				item: "allthecompressed:clay_2x"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "7DEA5B8CAC161D8A"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30E00B63A5924445"]
+			description: [
+				"是时候步入匠魂的殿堂啦~"
+				"&7(匠魂大多数功能方块都有自己jei哦~别忘了看哦~更重要的是材料的属性以及炉子的使用都在书里面提到)&r"
+				""
+				"另外将匠魂的各种功能方块摆在一起可以方便切换哦~"
+				""
+				"{image:kubejs:textures/picture/tc/gui.png width:709 height:432 align:center fit:true}"
+			]
+			id: "734F2E83A95C7463"
+			rewards: [
+				{
+					id: "4CC707B77BEC2EEF"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "140D32ACF8F775CF"
+					item: "tconstruct:materials_and_you"
+					type: "item"
+				}
+				{
+					id: "2A684E941F8C9B1A"
+					item: {
+						Count: 1
+						id: "tconstruct:tinkers_gadgetry"
+						tag: {
+							mantle: {
+								book: {
+									current_page: "ancient_tools.ancient_tools"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FCF90B62E33A39E"
+					item: {
+						Count: 1
+						id: "tconstruct:encyclopedia"
+						tag: {
+							mantle: {
+								book: {
+									current_page: ""
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "17C1C674C5E04EF6"
+					item: "tconstruct:crafting_station"
+					type: "item"
+				}
+				{
+					id: "61B522C3B81241BF"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "5791BB925D73B17D"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					id: "14DDAC827F280AF3"
+					item: "tconstruct:part_chest"
+					type: "item"
+				}
+			]
+			title: "匠魂四件套"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CC312851FAA9DAC"]
+			description: [
+				"用于制作合金的最初级炉子"
+				"结构参考如下"
+				""
+				"{image:kubejs:textures/picture/tc/alloyer.png width:727 height:399 align:center fit:true}"
+			]
+			id: "18175FD8F86675A0"
+			rewards: [
+				{
+					count: 2
+					id: "2B29243192972E6C"
+					item: {
+						Count: 1
+						id: "tconstruct:scorched_ingot_tank"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6273EA9C57F0BAB2"
+					item: "tconstruct:scorched_faucet"
+					type: "item"
+				}
+				{
+					id: "55D053CF059543E9"
+					item: "tconstruct:scorched_table"
+					type: "item"
+				}
+				{
+					id: "58C7B7A67A2592DA"
+					item: "tconstruct:scorched_basin"
+					type: "item"
+				}
+				{
+					id: "7D4C37CC0723305C"
+					item: {
+						Count: 1
+						id: "tconstruct:fantastic_foundry"
+						tag: {
+							mantle: {
+								book: {
+									current_page: "alloyer.alloyer"
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "2759F13C6E53D275"
+					item: "tconstruct:scorched_alloyer"
+					type: "item"
+				}
+				{
+					id: "609DAED559D064A3"
+					item: "tconstruct:scorched_fuel_tank"
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0A1D80BEB9D40B3F"]
+			description: [
+				"&a强化调配台&r用于给工具装备升级"
+				"&a工具锻造&r用于制作金属材质的工具装备&7(工具锻造做任意一种材质即可)"
+				"&r&a铸模箱&r可用于存储金属铸模"
+			]
+			id: "102360E423A92CDE"
+			rewards: [{
+				id: "4D330AA5C4DDE1E8"
+				item: "tconstruct:cast_chest"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "4AF92A6098AA3D86"
+					item: "tconstruct:modifier_worktable"
+					type: "item"
+				}
+				{
+					id: "2214B3AF6BDD52A9"
+					item: {
+						Count: 1
+						id: "tconstruct:tinkers_anvil"
+						tag: {
+							display: {
+								Name: "{\"translate\":\"block.tconstruct.tool_forge\"}"
+							}
+							texture: "minecraft:netherite_block"
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "部件合体！"
+			x: 31.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A1D80BEB9D40B3F"]
+			description: [
+				"最厉害的炉子！"
+				"熔铸炉必须使用&a液体燃料&r，即不能使用加热器。"
+				"熔铸炉&e不会提供任何增产&r，而会在熔炼时产出一些&a副产物&r，例如："
+				"1个粗铜会熔炼成1锭（90mb）的熔融铜和1粒（10mb）的熔融金。"
+				"1个远古残骸会熔炼成1锭的熔融残骸，1宝石（90mb）的熔融钻石和1锭的熔融金"
+				"&7（说白了副产物一般般哦）"
+				"&r熔铸炉不能用于制造合金&7（可以一股脑的塞矿物了awa）"
+				"&r熔铸炉在搭建时&c不可省去棱角的方块"
+				"&r"
+				"{image:kubejs:textures/picture/tc/foundry.png width:106 height:94 align:center fit:true}"
+			]
+			id: "6507EB4BE50B0858"
+			rewards: [
+				{
+					count: 64
+					id: "0B416319AC7563ED"
+					item: "tconstruct:scorched_bricks"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "249F8C5746B3D772"
+					item: "tconstruct:scorched_basin"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3C1EFCD978C2F780"
+					item: "tconstruct:scorched_faucet"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "66C9CDA76732A119"
+					item: "tconstruct:scorched_table"
+					type: "item"
+				}
+				{
+					id: "22A51D637C9731FB"
+					item: "tconstruct:scorched_duct"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "2730181DBBFFA7BD"
+					item: "tconstruct:foundry_controller"
+					type: "item"
+				}
+				{
+					id: "6F297E589AA30153"
+					item: "tconstruct:scorched_drain"
+					type: "item"
+				}
+				{
+					id: "5DA6DA214ABFAA08"
+					item: "tconstruct:scorched_chute"
+					type: "item"
+				}
+			]
+			x: 24.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["102360E423A92CDE"]
+			description: [
+				"其实匠魂的魅力不只是单单的冶炼那么简单"
+				"更重要的是装备的自由组装以及材料属性强化等等，"
+				"这些就由你来自由发挥啦。"
+				"(要是觉得强化槽不够，可以试试&a可改进&r强化！)"
+				""
+				"{image:kubejs:textures/picture/tc/gaijin.png width:115 height:51 align:center fit:true}"
+				"{image:kubejs:textures/picture/tc/strength.png width:101 height:116 align:center fit:true}"
+			]
+			id: "5F764059C2F162F0"
+			rewards: [{
+				id: "0E80ACDFD9B95965"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "5A26121E4499F217"
+					type: "checkmark"
+				}
+				{
+					id: "251F3DC9EF1E8CDD"
+					item: {
+						Count: 1
+						id: "tconstruct:cleaver"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_display: 1b
+							tic_materials: [
+								"tconstruct:ui_render#head"
+								"tconstruct:ui_render#handle"
+								"tconstruct:ui_render#extra"
+								"tconstruct:ui_render#large"
+								"tconstruct:ui_render#extra_large"
+							]
+							tic_modifiers: [
+								{
+									level: 2
+									name: "tconstruct:severing"
+								}
+								{
+									level: 1
+									name: "tconstruct:silky_aoe_shears"
+								}
+							]
+							tic_multipliers: {
+								"tconstruct:attack_damage": 1.5f
+								"tconstruct:durability": 3.5f
+								"tconstruct:mining_speed": 0.25f
+							}
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 6.0f
+								"tconstruct:durability": 3.5f
+								"tconstruct:mining_speed": 0.25f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+					match_nbt: false
+					optional_task: true
+					title: "劈刀"
+					type: "item"
+				}
+				{
+					id: "5E2A595355C08AFD"
+					item: {
+						Count: 1
+						id: "tconstruct:hand_axe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_display: 1b
+							tic_materials: [
+								"tconstruct:ui_render#head"
+								"tconstruct:ui_render#handle"
+								"tconstruct:ui_render#extra"
+								"tconstruct:ui_render#large"
+								"tconstruct:ui_render#extra_large"
+							]
+							tic_modifiers: [{
+								level: 1
+								name: "tconstruct:stripping"
+							}]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 7.0f
+								"tconstruct:attack_speed": 0.9f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					match_nbt: false
+					optional_task: true
+					title: "斧头"
+					type: "item"
+				}
+				{
+					id: "65C1837B8049CD11"
+					item: {
+						Count: 1
+						id: "tconstruct:pickaxe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_display: 1b
+							tic_materials: [
+								"tconstruct:ui_render#head"
+								"tconstruct:ui_render#handle"
+								"tconstruct:ui_render#extra"
+								"tconstruct:ui_render#large"
+								"tconstruct:ui_render#extra_large"
+							]
+							tic_modifiers: [{
+								level: 1
+								name: "tconstruct:pierce"
+							}]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 2.0f
+								"tconstruct:attack_speed": 1.2f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					match_nbt: false
+					optional_task: true
+					title: "镐子"
+					type: "item"
+				}
+			]
+			title: "是时候成为一名职业工匠了"
+			x: 37.0d
+			y: 0.0d
+		}
+	]
+	title: "匠魂"
+}

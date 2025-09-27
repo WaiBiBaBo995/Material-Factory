@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.cheese",
+  "colors": [
+    "EDAE25",
+    "DF7C26"
+  ],
+  "materialCount": 10000,
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "ad_astra:cheese"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

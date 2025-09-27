@@ -1,0 +1,13 @@
+{
+    "name": "戴斯",
+    "type": "mysticalagriculture:resource",
+    "tier": "mysticalagriculture:5",
+    "ingredient": {
+        "item": "ad_astra:desh_block"
+    },
+    "color": "C57041",
+    "textures": {
+        "flower": "mysticalagriculture:block/flower_ingot",
+        "essence": "mysticalagriculture:item/essence_ingot"
+    }
+}

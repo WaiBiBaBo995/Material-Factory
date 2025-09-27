@@ -1,0 +1,13 @@
+{
+    "name": "奶酪",
+    "type": "mysticalagriculture:resource",
+    "tier": "mysticalagriculture:4",
+    "ingredient": {
+        "item": "ad_astra:cheese_block"
+    },
+    "color": "EDAE25",
+    "textures": {
+        "flower": "mysticalagriculture:block/flower_ingot",
+        "essence": "mysticalagriculture:item/essence_ingot"
+    }
+}

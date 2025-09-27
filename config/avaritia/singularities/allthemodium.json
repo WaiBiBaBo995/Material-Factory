@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.allthemodium",
+  "colors": [
+    "f9fc3d",
+    "fcb63d"
+  ],
+  "materialCount": 10000,
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "allthemodium:allthemodium_ingot"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

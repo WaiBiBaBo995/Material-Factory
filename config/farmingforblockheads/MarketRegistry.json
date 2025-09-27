@@ -1,0 +1,25 @@
+{  
+  "groupOverrides":    
+  {
+    "Animal Eggs":     
+      {
+        "enabled": true
+    },
+    "Vanilla Crops":     
+      {
+        "enabled": true
+    },
+    "Vanilla Flowers":     
+      {
+        "enabled": true
+    },
+    "Vanilla Mushrooms":     
+      {
+        "enabled": true
+    },
+    "Vanilla Soil":     
+      {
+        "enabled": true
+    }
+  }
+}

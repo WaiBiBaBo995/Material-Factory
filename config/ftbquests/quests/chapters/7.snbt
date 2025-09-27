@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7"
+	group: "4BA80D4926F10BEF"
+	icon: "materialfactory:anon_chihaya"
+	id: "46A63F59C184208F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"647A1A33A15418A3"
+				"4499FE888858326B"
+				"34A774C2E339A985"
+				"676351DFBE69B007"
+				"508EF8675B652FD2"
+				"406C0C61C8B32B93"
+			]
+			description: [
+				"恭喜，不过还差一步毕业~嘿嘿"
+				"(右键千早爱音会有音效哦~)"
+			]
+			id: "243770B7A6081049"
+			rewards: [
+				{
+					id: "2F0E09C04E2560EF"
+					type: "xp_levels"
+					xp_levels: 10000
+				}
+				{
+					command: "/playsound darkdoppelganger:boss_laugh player @a"
+					elevate_perms: true
+					id: "4DB30B41740734CF"
+					silent: true
+					title: "让所有人听听千早爱音的声音叭"
+					type: "command"
+				}
+			]
+			shape: "heart"
+			size: 4.0d
+			tasks: [{
+				id: "5ED2195522ADFC50"
+				item: "materialfactory:anon_chihaya"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "647A1A33A15418A3"
+			tasks: [{
+				id: "1BAE68205352E3BC"
+				item: "materialfactory:anon_chihaya_head"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "34A774C2E339A985"
+			tasks: [{
+				id: "2E8C5FEE44568875"
+				item: "materialfactory:anon_chihaya_hand"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			id: "4499FE888858326B"
+			tasks: [{
+				id: "02521C26B4141ABE"
+				item: "materialfactory:anon_chihaya_hand"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			id: "508EF8675B652FD2"
+			tasks: [{
+				id: "75A62D70346E5595"
+				item: "materialfactory:anon_chihaya_leg"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			id: "676351DFBE69B007"
+			tasks: [{
+				id: "4FF4280CA33F8767"
+				item: "materialfactory:anon_chihaya_leg"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "406C0C61C8B32B93"
+			tasks: [{
+				id: "5A57EB3E281A1296"
+				item: "materialfactory:anon_chihaya_body"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["243770B7A6081049"]
+			description: ["用&6无尽催化剂&r右键千早爱音即可召唤"]
+			id: "2FDECA7955A77E6D"
+			shape: "rsquare"
+			tasks: [{
+				entity: "darkdoppelganger:dark_doppelganger"
+				id: "56F48FCC248FBF6A"
+				title: "击杀千早爱音"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2FDECA7955A77E6D"]
+			description: [
+				"恭喜毕业~"
+				"小提示:用千早精华右键千早爱音会有音效awa。"
+				""
+				"千早精华只能由玩家击杀才可获得"
+			]
+			id: "7CCB2F003952EC98"
+			tasks: [{
+				id: "4F9F6FB02E6A348E"
+				item: "materialfactory:anon"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+	title: "&d千早爱音！"
+}

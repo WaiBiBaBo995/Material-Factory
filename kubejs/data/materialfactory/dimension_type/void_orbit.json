@@ -1,0 +1,21 @@
+{
+  "name": "materialfactory:void_orbit",
+  "ultrawarm": false,
+  "natural": true,
+  "piglin_safe": true,
+  "respawn_anchor_works": true,
+  "bed_works": true,
+  "fixed_time": 6000,
+  "has_raids": false,
+  "has_skylight": true,
+  "has_ceiling": false,
+  "coordinate_scale": 1,
+  "ambient_light": 0,
+  "logical_height": 256,
+  "infiniburn": "#minecraft:infiniburn_overworld",
+  "min_y": 0,
+  "height": 256,
+  "effects": "materialfactory:void_orbit",
+  "monster_spawn_block_light_limit": 1,
+  "monster_spawn_light_level": 0
+}

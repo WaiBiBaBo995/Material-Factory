@@ -1,0 +1,22 @@
+{
+    "primaryColor": "#9852B5",
+    "secondaryColor": "#FCB5DF",
+    "beeTexture": "productivebees:textures/entity/antimatter/bee",
+    "flowerTag": "mekanism_extras:enriched/spectrum",
+    
+    "selfbreed": false,
+    "createComb": true,
+    "size:": 0.5,
+    "invulnerability": [
+    "mekanism.radiation"
+  ],
+    "attackResponse": "fire",
+    "fireproof": true,
+    "withered": true,
+    "blinding": true,
+    "munchies": true,
+    "attributes": {
+      "endurance": 0,
+        "temper": 3
+    }
+}

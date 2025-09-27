@@ -1,0 +1,15 @@
+{
+    "name": "ATM",
+    "type": "mysticalagriculture:resource",
+    "tier": "mysticalcustomization:8",
+    "ingredient": {
+        "item": "allthecompressed:allthemodium_block_1x"
+    },
+    "color": "FCFC3D",
+    "textures": {
+        "flower": "mysticalagriculture:block/flower_ingot",
+        "essence": "mysticalagriculture:item/essence_ingot"
+    },
+    "glint": true,
+    "crux": "materialfactory:better_soil"
+}

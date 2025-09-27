@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "infinity_seeds": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mysticalagriculture:infinity_seeds"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/stone.png",
+    "description": {
+      "translate": "advancements.materialfactory.infinity_seeds.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "mysticalagriculture:infinity_seeds"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.materialfactory.infinity_seeds"
+    }
+  },
+  "requirements": [
+    [
+      "infinity_seeds"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

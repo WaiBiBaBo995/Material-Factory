@@ -1,0 +1,92 @@
+[
+    {
+        "when": "position",
+        "dimension": "minecraft:overworld",
+        "mob":["minecraft:cod",
+            "minecraft:salmon",
+            "minecraft:salmon",
+            "minecraft:tropical",
+            "minecraft:elder_guardian",
+            "minecraft:guardian",
+            "minecraft:drowned",
+            "minecraft:phantom",
+            "minecraft:bat",
+            "minecraft:rabbit",
+            "minecraft:cow",
+            "minecraft:sheep",
+            "minecraft:pig",
+            "minecraft:zombie",
+            "minecraft:skeleton",
+            "minecraft:creeper",
+            "minecraft:witch",
+            "minecraft:slime",
+            "minecraft:enderman",
+            "thermal:blitz",
+            "minecraft:pillager",
+            "minecraft:vindicator",
+            "minecraft:zombie_villager"],
+        "result":"deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": ["minecraft:phantom"],
+        "result":"deny"
+    },
+    {
+        "when": "position",
+        "dimension": "minecraft:nether",
+        "mob": ["slimeoverhaul:flame_slime"],
+        "mincount": {
+            "amount": 15,
+            "mob": ["slimeoverhaul:flame_slime"],
+            "perplayer": true
+        },
+        "damageset": 1.0,
+        "result":"deny"
+    },
+    {
+        "when": "position",
+        "mob": ["minecraft:husk"],
+        "mincount": {
+            "amount": 5,
+            "mob": ["minecraft:husk"],
+            "perplayer": true
+        },
+        "result":"deny"
+    },
+    {
+        "when": "position",
+        "mob": ["minecraft:spider"],
+        "mincount": {
+            "amount": 5,
+            "mob": ["minecraft:spider"],
+            "perplayer": true
+        },
+        "result":"deny"
+    },
+    {
+        "when": "position",
+        "mob": ["irons_spellbooks:necromancer"],
+        "mincount": {
+            "amount": 1,
+            "mob": ["irons_spellbooks:necromancer"],
+            "perplayer": true
+        },
+        "result":"deny"
+    },
+    {
+        "mob": ["slimeoverhaul:earth_slime"],
+        "biome": [
+            "minecraft:badlands",
+            "minecraft:desert",
+            "minecraft:eroded_badlands"
+        ],
+        "mincount": {
+            "amount": 15,
+            "mob": "slimeoverhaul:earth_slime",
+            "perplayer": true
+        },
+        "damageset": 1.0,
+        "result":"deny"
+    }
+]

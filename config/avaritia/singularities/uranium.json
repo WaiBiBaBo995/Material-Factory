@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.uranium",
+  "colors": [
+    "d2f9d1",
+    "a6c5a4"
+  ],
+  "materialCount": 10000,
+  "timeRequired": 240,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "tag": "forge:ingots/uranium",
+        "type": "forge:tag_empty"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/uranium"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

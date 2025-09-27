@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.crystal_niotic",
+  "colors": [
+    "00E3FC",
+    "04849C"
+  ],
+  "materialCount": 10000,
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "powah:crystal_niotic"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

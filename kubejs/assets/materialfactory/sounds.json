@@ -1,0 +1,10 @@
+{
+    "gugugaga": {
+        "sounds": [
+            {
+                "name": "materialfactory:gugugaga",
+                "stream": true
+            }
+        ]
+    }
+}

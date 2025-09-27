@@ -1,0 +1,59 @@
+{
+  "defaultOffset": 0,
+  "spawn": {
+    "name": "default",
+    "file": "default.nbt",
+    "spawns": "default"
+  },
+  "spawns": {
+    "island": {
+	  "north": [],
+	  "east": [],
+	  "south": [
+		[
+		  8,
+		  4,
+		  8
+		]
+	  ],
+	  "west": []
+	},
+    "spawns": {
+      "north": [],
+      "east": [],
+      "south": [
+        [
+          3,
+          1,
+          2
+        ]
+      ],
+      "west": []
+    },
+    "default": {
+      "north": [],
+      "east": [],
+      "south": [
+        [
+          11,
+          215,
+          9
+        ]
+      ],
+      "west": []
+    }
+  },
+  "spreads": {
+    "default": []
+  },
+  "surroundingBlocks": {
+    "default": []
+  },
+  "templates": [
+    {
+      "name": "茯角号",
+      "file": "islandhome.nbt",
+      "spawns": "island"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "紫金",
+    "type": "mysticalagriculture:resource",
+    "tier": "mysticalagriculture:5",
+    "ingredient": {
+        "item": "ad_astra:ostrum_block"
+    },
+    "color": "A66B72",
+    "textures": {
+        "flower": "mysticalagriculture:block/flower_ingot",
+        "essence": "mysticalagriculture:item/essence_ingot"
+    }
+}

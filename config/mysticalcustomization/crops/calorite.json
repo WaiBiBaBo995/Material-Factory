@@ -1,0 +1,13 @@
+{
+    "name": "耐热金属",
+    "type": "mysticalagriculture:resource",
+    "tier": "mysticalagriculture:5",
+    "ingredient": {
+        "item": "ad_astra:calorite_block"
+    },
+    "color": "B63044",
+    "textures": {
+        "flower": "mysticalagriculture:block/flower_ingot",
+        "essence": "mysticalagriculture:item/essence_ingot"
+    }
+}

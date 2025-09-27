@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{ id: "1ED9E17F6CAC16B1", title: "序章" }
+		{ id: "7B33D82AC24165C6", title: "&a起点" }
+		{ id: "4757F254CDB207FF", title: "&b第一章" }
+		{ id: "33C6A3929088455B", title: "&e第二章" }
+		{ id: "3FF2BD320FD2AFC7", title: "&6第三章" }
+		{ id: "6A600E322021CDEA", title: "&c第四章" }
+		{ id: "4BA80D4926F10BEF", title: "&o&5终章" }
+		{ id: "64D78D420DEC7AB2", title: "&2额&3外" }
+	]
+}

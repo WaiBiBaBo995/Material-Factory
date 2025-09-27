@@ -1,0 +1,8 @@
+{
+    "name": "§b8",
+    "value": 7,
+    "farmland": "mysticalagradditions:insanium_farmland",
+    "essence": "mysticalagradditions:insanium_block",
+    "fertilizable": false,
+    "secondarySeedDrop": false
+}

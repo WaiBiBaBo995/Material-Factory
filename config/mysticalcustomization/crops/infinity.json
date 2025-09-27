@@ -1,0 +1,16 @@
+{
+    "name": "无尽",
+    "type": "mysticalagriculture:resource",
+    "tier": "mysticalcustomization:8",
+    "ingredient": {
+        "item": "avaritia:infinity_ingot"
+    },
+    "color": "C8B6C6",
+    "textures": {
+        "flower": "mysticalagriculture:block/infinity_crop",
+        "essence": "mysticalagriculture:item/infinity_essence",
+        "seeds": "mysticalagriculture:item/infinity_seeds"
+    },
+    "glint": false,
+    "crux": "materialfactory:better_soil"
+}

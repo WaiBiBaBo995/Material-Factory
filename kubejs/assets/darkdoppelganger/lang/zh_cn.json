@@ -1,0 +1,32 @@
+{
+  "mc百科": "感谢KB2285翻译",
+  "item.darkdoppelganger.summon_scroll": "二重身卷轴",
+
+  "item.darkdoppelganger.shadow_orb": "漆影沌球",
+
+  "item.darkdoppelganger.elder_necklace": "古巫项链",
+
+  "item.darkdoppelganger.summons_necklace": "召唤项链",
+
+  "item.darkdoppelganger.doppelganger_ring": "二重身之戒",
+
+  "itemGroup.darkdoppelganger.example_tab": "黑暗二重身Tab",
+
+  "item.darkdoppelganger.summon_scroll.tooltip": "用此物召唤你的黑暗二重身！",
+
+  "advancement.kill_dark_doppelganger.title": "杀死自己",
+
+  "advancement.kill_dark_doppelganger.description": "击败黑暗二重身，豪夺您的战利品！",
+
+  "advancement.summon_dark_doppelganger.title": "黑暗二重身苏醒",
+
+  "advancement.summon_dark_doppelganger.description": "用卷轴唤醒你的黑暗面。",
+
+  "spell.irons_spellbooks.doppel_portal": "传送门跃迁",
+
+  "spell.darkdoppelganger.doppel_portal": "传送门跃迁",
+
+  "spell.irons_spellbooks.doppel_portal.guide": "进入传送门，跃迁至数个方块远的障碍面前。",
+
+  "itemGroup.darkdoppelganger.doppelganger_tab": "黑暗二重身"
+}

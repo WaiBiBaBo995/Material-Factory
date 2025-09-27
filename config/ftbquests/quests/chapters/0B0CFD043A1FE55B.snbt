@@ -1,0 +1,560 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0B0CFD043A1FE55B"
+	group: "3FF2BD320FD2AFC7"
+	icon: "irons_spellbooks:legendary_ink"
+	id: "0B0CFD043A1FE55B"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["你收到霍格沃茨录取通知书了吗？"]
+			id: "6A1553B2835A5311"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "276E809C5AE30C6B"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:copper_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 5
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				title: "成为法师！"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1553B2835A5311"]
+			description: [
+				"第一栏放入法术书后"
+				"下面一栏放入&a法术卷轴&r后点击“&e墨水与笔&r”的图标即可导入法术"
+				"需要取出法术时，点击法术槽位，然后右下角会出现法术卷轴拿出即可。"
+			]
+			id: "7360DF88396D76E9"
+			tasks: [{
+				id: "4A6FD3C9606D8233"
+				item: "irons_spellbooks:inscription_table"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1553B2835A5311"]
+			description: [
+				"1放置墨水，墨水的品质决定卷轴的品质。"
+				""
+				"2放置纸，书写一张卷轴需要消耗一张纸。"
+				""
+				"3放置法术学派对应材料。"
+				""
+				"4放置材料后，会显示出可撰写的法术。部分法术可能会显示问号图样，尝试使用更高等级的墨水来撰写。"
+				""
+				"&3回响碎片&r &e →&r   &3远古巫术（深渊庇佑、音爆等）&r"
+				"&a毒马铃薯&r &e →&r   &a自然（腐蚀喷吐、地震等）&r"
+				"&9雷电瓶&r     &e→&r   &9雷霆（连锁闪电、电刑等）&r"
+				"&b冰封骨头&r  &e→&r   &b冰霜（刺骨寒风、冰锥等）&r"
+				"&c猩红精华&r  &e→&r   &c猩红（驱役亡灵、止心术等）&r"
+				"&f绿宝石&r     &e→&r   &f唤魔（召唤骏马、护盾术等）&r"
+				"&e神圣珍珠&r  &e→&r   &e神圣（天使之翼、曳光弹等）&r"
+				"&d末影珍珠&r  &e→&r   &d末影（瞬间移动、魔法箭等）&r"
+				"&6烈焰棒&r     &e→&r   &6炽焰（烈焰冲锋、火墙术等）&r"
+			]
+			id: "31FDA0C72203BCC8"
+			rewards: [{
+				count: 16
+				id: "28BEB9DA65B71EB8"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FC5F8DCDAB4D010"
+				item: "irons_spellbooks:scroll_forge"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A1553B2835A5311"]
+			description: [
+				"可以将法术卷轴敲在武器上，在手持该武器时可以释放该法术"
+				"使用&a忏悔石&r将武器上的法术消除（不会返还法术），在铁砧上也可以进行这个消除"
+				"使用&e对应等级&r的墨水可以升级法术卷轴。"
+				"使用&a升级法球&r进行装备强化，装备强化最多可强化3次。"
+			]
+			id: "13169BE0B16A8FF3"
+			rewards: [{
+				count: 4
+				id: "3752AB6053444313"
+				item: "irons_spellbooks:shriving_stone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AE67D5CE1A1C6D9"
+				item: "irons_spellbooks:arcane_anvil"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7360DF88396D76E9"
+				"13169BE0B16A8FF3"
+				"31FDA0C72203BCC8"
+			]
+			id: "7185FD542B1760EB"
+			rewards: [{
+				count: 16
+				id: "07488C86784ACC35"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			tasks: [{
+				id: "143005FAE0353CFC"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F4F36934501DD25"]
+			description: [""]
+			id: "0CFCC2340B23472B"
+			rewards: [{
+				id: "192F7506F6E84608"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4EE89889406C2D52"
+				item: "irons_spellbooks:alchemist_cauldron"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7185FD542B1760EB"]
+			id: "5F4F36934501DD25"
+			rewards: [{
+				id: "5FA11E3472AC03C0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "413864531E3B9ED6"
+				item: "irons_spellbooks:cinder_essence"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7185FD542B1760EB"]
+			description: ["制作法师套的原材料。"]
+			id: "67FC9153C367A000"
+			rewards: [{
+				count: 16
+				id: "4E76EEDCF93A2523"
+				item: "irons_spellbooks:magic_cloth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BE9CA34A3A20F41"
+				item: "irons_spellbooks:magic_cloth"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67FC9153C367A000"]
+			id: "774EA6D1BDDD8F12"
+			rewards: [
+				{
+					count: 10
+					id: "115EF07E20A4420F"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					id: "38DC5DD9D54E4D19"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "09F21DE0F47AC89F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "allthewizardgear:base_wizard_helmet"
+						}
+					}
+					title: "法师帽子"
+					type: "item"
+				}
+				{
+					id: "04D64EBD6EA6E8EB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "allthewizardgear:base_wizard_chestplate"
+						}
+					}
+					title: "法袍"
+					type: "item"
+				}
+				{
+					id: "2DD08034C3B36AB1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "allthewizardgear:base_wizard_leggings"
+						}
+					}
+					title: "法师护腿"
+					type: "item"
+				}
+				{
+					id: "398F86816ABC59E9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "allthewizardgear:base_wizard_boots"
+						}
+					}
+					title: "法师靴子"
+					type: "item"
+				}
+			]
+			title: "第一套法师装"
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["774EA6D1BDDD8F12"]
+			id: "1C8A33DB76468D0F"
+			rewards: [{
+				id: "711A20E5EA686BEC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "0CC366D3034C71E4"
+					item: "allthewizardgear:allthemodium_mage_helmet"
+					type: "item"
+				}
+				{
+					id: "2AA3ED8E1C4EB61B"
+					item: {
+						Count: 1
+						id: "allthewizardgear:allthemodium_mage_chestplate"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 1
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23A08001F800E02B"
+					item: "allthewizardgear:allthemodium_mage_leggings"
+					type: "item"
+				}
+				{
+					id: "717020F2EBB8A30D"
+					item: "allthewizardgear:allthemodium_mage_boots"
+					type: "item"
+				}
+			]
+			title: "atm法师套"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C8A33DB76468D0F"]
+			id: "55E4A0A567814932"
+			rewards: [{
+				id: "600E109A8039D236"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "626C0815CC761CFE"
+					item: "allthewizardgear:vibranium_mage_helmet"
+					type: "item"
+				}
+				{
+					id: "09FE8CC536584A3A"
+					item: {
+						Count: 1
+						id: "allthewizardgear:vibranium_mage_chestplate"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 1
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2FE200CDEA46E3CF"
+					item: "allthewizardgear:vibranium_mage_leggings"
+					type: "item"
+				}
+				{
+					id: "44AEB7CDFC7421FE"
+					item: "allthewizardgear:vibranium_mage_boots"
+					type: "item"
+				}
+			]
+			title: "振金法师套"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55E4A0A567814932"]
+			id: "7AD82A5E8DA228CA"
+			rewards: [{
+				id: "1D7688E8A8103505"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "1FD2FF9054E5B302"
+					item: "allthewizardgear:unobtainium_mage_helmet"
+					type: "item"
+				}
+				{
+					id: "26F0E54D73F1C3E7"
+					item: {
+						Count: 1
+						id: "allthewizardgear:unobtainium_mage_chestplate"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 1
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "104622B585837A36"
+					item: "allthewizardgear:unobtainium_mage_leggings"
+					type: "item"
+				}
+				{
+					id: "63CD4B23C127D3E2"
+					item: "allthewizardgear:unobtainium_mage_boots"
+					type: "item"
+				}
+			]
+			title: "难得素法师套"
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A09CE4E46F3D118"]
+			description: ["高阶法术书的原材料"]
+			id: "60C1C03CCBDA7BD6"
+			rewards: [{
+				count: 10
+				id: "670FC34830F22240"
+				item: "minecraft:sculk"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ED7D11D1862D5CF"
+				item: "irons_spellbooks:ruined_book"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["67FC9153C367A000"]
+			description: ["比较厉害的法术书"]
+			id: "0A09CE4E46F3D118"
+			rewards: [{
+				id: "48AFE66658E5D3C8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "63A7E7F743E58F8D"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:diamond_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 10
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A9ED4960B6DD363"]
+			id: "2F5772988E8BDACC"
+			rewards: [{
+				id: "71E1DA14B102FFD6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5D0EDA895644E133"
+				item: {
+					Count: 1
+					id: "allthewizardgear:allthemodium_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 13
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F5772988E8BDACC"]
+			id: "45E332B9D5ECFF90"
+			rewards: [{
+				id: "243AD0936CE5D81D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "61116ACD286C38F2"
+				item: {
+					Count: 1
+					id: "allthewizardgear:vibranium_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 14
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["45E332B9D5ECFF90"]
+			id: "0996D09EF03CD93B"
+			rewards: [{
+				id: "01C2D2494EEBD0AA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0E4A5596D7DBEE6C"
+				item: {
+					Count: 1
+					id: "allthewizardgear:unobtainium_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 15
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 19.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60C1C03CCBDA7BD6"]
+			id: "6A9ED4960B6DD363"
+			rewards: [{
+				id: "20C5C1644F4680CA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3800E028910A1687"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:netherite_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 12
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			description: ["没什么用，单纯用来展示物品"]
+			id: "08FBFB1F2B689FE8"
+			tasks: [{
+				id: "780691149D6F9D06"
+				item: "irons_spellbooks:pedestal"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+	]
+	title: "铁魔法"
+}

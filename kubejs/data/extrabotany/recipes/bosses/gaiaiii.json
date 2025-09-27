@@ -1,0 +1,31 @@
+{
+	"type": "cagedmobs:entity_data",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "extrabotany"
+		}
+	],
+	"entity": "extrabotany:gaia_3rd",
+	"samplerTier": 3,
+	"environments": ["gaiaiii"],
+	"growTicks": 12000,
+	"results": [
+		{
+			"chance": 0.1,
+			"output": {
+				"item": "extrabotany:pandoras_box"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.5,
+			"output": {
+				"item": "extrabotany:music_disc_gaia3"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		}
+	]
+}

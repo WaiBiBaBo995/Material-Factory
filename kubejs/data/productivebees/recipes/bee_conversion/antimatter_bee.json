@@ -1,0 +1,19 @@
+{
+    "type": "productivebees:bee_conversion",
+    "source": "productivebees:unobtainium",
+    "result": "productivebees:antimatter",
+    "item": {
+        "item": "mekanism:pellet_antimatter"
+    },
+    "chance": 10,
+    "conditions": [
+        {
+            "type": "productivebees:bee_exists",
+            "bee": "productivebees:unobtainium"
+        },
+        {
+            "type": "productivebees:bee_exists",
+            "bee": "productivebees:antimatter"
+        }
+    ]
+}

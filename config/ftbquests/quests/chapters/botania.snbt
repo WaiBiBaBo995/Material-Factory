@@ -1,0 +1,2259 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 200
+	default_quest_shape: ""
+	filename: "botania"
+	group: "4757F254CDB207FF"
+	icon: "botania:lexicon"
+	id: "1883B79BDB2AAE5D"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["79BE48D56622542F"]
+			description: [
+				"&a&a白雏菊&f&r是您最早制作的神奇花卉之一!"
+				""
+				"该花卉能将周围8格内的&2原木&r或&9石头&r分别转化为&2活木&r或&9活石&r,转化范围为以花为中心的1格半径区域."
+			]
+			hide_until_deps_visible: false
+			id: "4E02DC8A474A4A2F"
+			rewards: [
+				{
+					id: "1F36B10E3BEBA932"
+					item: "botania:pure_daisy"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "25024DCB06A60854"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "53794EAD5CE56471"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			title: "我们的第一朵花"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4E02DC8A474A4A2F"]
+			description: ["使用&b&a白雏菊&f&r将石头转化为活石!"]
+			id: "23ADD20D9B1AE0F3"
+			rewards: [
+				{
+					count: 4
+					id: "426D86B36BE8B608"
+					item: "minecraft:stone"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "4D7BE00A8ADC513A"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "66BBC650D92AD2D0"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			title: "&7活石"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E02DC8A474A4A2F"]
+			description: ["使用&b&a白雏菊&f&r将原木转化为活木!"]
+			id: "597E4D997A20736D"
+			rewards: [
+				{
+					count: 4
+					id: "4DADC5BC88012019"
+					item: "minecraft:oak_log"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "7DBF2C3A190ED049"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "3CC2E22FFC03582A"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			title: "&2活木"
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["23ADD20D9B1AE0F3"]
+			description: [
+				"现在我们制作了&b活石&r,可以开始合成&9&a魔力池&f&r了."
+				""
+				"&a魔力池&f是储存魔力的核心设施.当池中存储足够魔力后,即可将特定资源转化为魔能材料,例如魔力钢和&a魔力钻石&f.转换时只需将物品投入注满魔力的池中即可."
+				""
+				"要&b生成魔力&r,您需要制作&2&a产能花&f&r,例如&9水绣球&r或&c末影火焰&r."
+				""
+				"提示:&a魔力池&f拥有超大容量.手持&2&a森林法杖&f&r观察池体可查看当前魔力储量."
+			]
+			hide_until_deps_visible: false
+			id: "7A359C1F5E041C4F"
+			min_width: 300
+			rewards: [
+				{
+					id: "01DBBD8365FD6B97"
+					table_id: 5897485726455770200L
+					type: "random"
+				}
+				{
+					id: "3F5C579642C1615A"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [
+				{
+					id: "57D1954039E03CDB"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "558649C69096D2D7"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "botania:hydroangeas"
+								}
+								{
+									Count: 1b
+									id: "botania:endoflame"
+								}
+							]
+						}
+					}
+					title: "初级 &a产能花&f"
+					type: "item"
+				}
+			]
+			title: "&b魔力&r"
+			x: 9.375d
+			y: 1.875d
+		}
+		{
+			dependencies: [
+				"7A359C1F5E041C4F"
+				"205BBDFBCA582E3B"
+			]
+			description: [
+				"将特定物品投入&b&a魔力池&f&r可灌注&9魔力&r."
+				""
+				"各物品所需魔力量请通过JEI查看合成配方."
+				""
+				"进阶技巧:当魔力充足时,可直接合成魔力钢锭或&a魔力钻石&f块以节省时间!"
+			]
+			hide_until_deps_visible: false
+			id: "70C5A902C0D26628"
+			rewards: [
+				{
+					id: "0AD8DE07B46AF042"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "1F416DEEB92E89D8"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "43C86CA84DC14E8A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:manasteel_ingot"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_pearl"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_diamond"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_string"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_powder"
+							}
+							{
+								Count: 1b
+								id: "botania:quartz_mana"
+							}
+							{
+								Count: 1b
+								id: "botania:manasteel_block"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_glass"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_diamond_block"
+							}
+						]
+					}
+				}
+				title: "魔力灌注材料"
+				type: "item"
+			}]
+			title: "制作魔能材料"
+			x: 12.0d
+			y: 2.25d
+		}
+		{
+			description: [
+				"&a&d植物魔法&f&r是以魔法为表、科技为里的模组,内含大量精妙装置与趣味道具!"
+				""
+				"开启&d植物魔法&f之旅需要大量&9&a神秘花&f&r."
+				""
+				"关于模组物品的详细信息,请查阅&a植物魔法辞典&d植物魔法&f&r."
+			]
+			icon: "botania:lexicon"
+			id: "13D401048A926A74"
+			rewards: [
+				{
+					id: "7A10DF6D1C9627FC"
+					table_id: 1340875193044128734L
+					type: "random"
+				}
+				{
+					id: "19ED2A28735EC524"
+					item: "botania:flower_bag"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "622A59D4E02B6D3C"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			title: "欢迎来到&a&d植物魔法"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13D401048A926A74"]
+			description: [
+				"现在我们已经拥有基础花卉,可以通过&9&a花药台&f&r将普通植物转化为功能性产能花!"
+				""
+				"要激活&a神秘花&f花瓣的能量,需先向花药台注入&b水&r.可通过&a右键&f使用水桶或直接投掷水桶完成注水."
+				""
+				"合成时只需将配方物品投入花药台.&a空手右键&f可取出已放置的物品."
+				""
+				"完成首次合成后,20秒内&a&a空手右键&f&r可快速重复上次配方,方便批量制作!"
+			]
+			id: "79BE48D56622542F"
+			min_width: 250
+			rewards: [
+				{
+					id: "4646649853967E6F"
+					table_id: 5897485726455770200L
+					type: "random"
+				}
+				{
+					id: "3CAE6C7AC360FDC9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "6BBFC01F3C0CC252"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["13D401048A926A74"]
+			description: ["使用&d植物魔法&f的产能花需要&a神秘花&f.获取&a神秘花&f需制作&a花肥&f(骨粉与染料合成),将其施用于草方块即可生长出&a神秘花&f."]
+			hide_until_deps_visible: false
+			id: "371E5E1E435E41AA"
+			rewards: [
+				{
+					id: "0A3F5AADD4540725"
+					table_id: 1340875193044128734L
+					type: "random"
+				}
+				{
+					id: "3070CD8684E71599"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "32655EB912B77D13"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B3FAF5CA4DD217C"]
+			description: ["&c火红莲&r会吸收附近掉落的可燃物品/方块(逐个吸收),通过焚烧这些材料来生成&b魔力&r."]
+			id: "177658CA70DB0C89"
+			rewards: [
+				{
+					id: "6B5C1767E42B69B9"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+				{
+					id: "3E0E8CD62EB71566"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "0F3DB7859AC1FA8A"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			title: "&c焚烧物品&r产生魔力"
+			x: 1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["7B3FAF5CA4DD217C"]
+			description: ["这些魔花通过消耗周围3x3区域内的&b水源方块&r产生魔力.效率较低且会逐渐凋零."]
+			hide_dependency_lines: false
+			hide_until_deps_visible: false
+			id: "5D4F9B54A54EEBD6"
+			rewards: [
+				{
+					id: "7290957F0169C06E"
+					item: "botania:hydroangeas"
+					type: "item"
+				}
+				{
+					id: "50C0DA8F19F519F4"
+					item: "cookingforblockheads:sink"
+					type: "item"
+				}
+				{
+					id: "1FCDEEAB8174E4E1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "361773BACA86686E"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			title: "使用&9水&r生成魔力"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A359C1F5E041C4F"]
+			description: ["&0&a黑莲花&f&r仅存于宝箱中,可投入非空&a魔力池&f为其注入大量浓缩魔力."]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "5E2AA5695D1F21D7"
+			optional: true
+			rewards: [{
+				id: "172AEB481DEA9F1E"
+				table_id: 5354288240016506720L
+				type: "random"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "490EAAA3703A576F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:black_lotus"
+							}
+							{
+								Count: 1b
+								id: "botania:blacker_lotus"
+							}
+						]
+					}
+				}
+				title: "&a黑莲花&f"
+				type: "item"
+			}]
+			title: "神秘的魔力莲花"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["205BBDFBCA582E3B"]
+			description: [
+				"&2&a魔力发射器&f&r通过发射&a魔力脉冲&f引导魔力流向."
+				""
+				"使用&2&a森林法杖&f&r将发射器绑定至方块即可设定脉冲方向.持杖时还能查看魔力缓冲器及&a魔力脉冲&f状态."
+			]
+			id: "1C48F2612F2FA828"
+			rewards: [
+				{
+					id: "1045A682FCD7A70E"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5253A1CE709CFB4F"
+					table_id: 2930089542465018839L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0B0D56F682F2791A"
+				item: "botania:mana_spreader"
+				type: "item"
+			}]
+			title: "魔力传导"
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["597E4D997A20736D"]
+			description: [
+				"&2&a森林法杖&f&r是深入探索&d植物魔法&f的必备工具."
+				""
+				"法杖拥有&a绑定&r与&9功能&r双模式:"
+				""
+				"&a&a绑定模式&f&r用于连接植物魔法装置,潜行-&a右击&f首个方块/花朵,再次潜行-&a右击&f目标即可建立连接."
+				""
+				"&9&a功能模式&f&r可旋转方块,如同扳手."
+			]
+			hide_until_deps_visible: false
+			id: "205BBDFBCA582E3B"
+			rewards: [{
+				id: "2240BDE8F6BEE2D2"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				id: "59FB36F10FBA2E3D"
+				item: {
+					Count: 1
+					id: "botania:twig_wand"
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&d植物魔法&f的万用工具"
+			x: 9.375d
+			y: 3.125d
+		}
+		{
+			dependencies: ["0631F054A9B97A40"]
+			description: [
+				"通过在&2&a魔力发射器&f&r前端加装&9&a魔力透镜&f&r实现升级,基础透镜暂无特殊效果."
+				""
+				"需升级透镜以赋予魔力脉冲特殊效果.可用染料或&a魔力珍珠&f合成彩色/彩虹透镜."
+				""
+				"结合符文与特定物品可制作进阶透镜,用&a&a粘液球&f&r融合两枚透镜可制成&9复合透镜&r,叠加强化效果."
+			]
+			id: "6FBE0BF8A7ADBB26"
+			min_width: 300
+			rewards: [{
+				id: "3B601334FFB56069"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "3E76CBAA617FAA35"
+				item: "botania:lens_normal"
+				type: "item"
+			}]
+			title: "强化&a魔力发射器"
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A359C1F5E041C4F"]
+			description: [
+				"&b&a魔力分配器&f&r可将输入魔力脉冲分流至多个&a魔力池&f."
+				""
+				"&d火花&r用于定向传输魔力,在&d植物魔法&f进阶中至关重要."
+				""
+				"在&a魔力池&f与接收方块上各放置火花,即可\"无线传输\"魔力."
+				""
+				"使用&2&a森林法杖&f&r潜行-&a右击&f可移除火花."
+			]
+			id: "2CBBE8EF07B1D3DA"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6979609EF9040D79"
+					item: "botania:mana_distributor"
+					type: "item"
+				}
+				{
+					id: "4EA054C6C0255900"
+					item: "botania:spark"
+					type: "item"
+				}
+			]
+			title: "魔力存储调控"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["70C5A902C0D26628"]
+			description: ["将&d&a炼金催化器&f&r置于&b&a魔力池&f&r下方可开启&9炼金术&r,实现物品转化(如腐肉变皮革)."]
+			id: "32DF4BC46620F952"
+			rewards: [
+				{
+					id: "7A8D3CAAA3A5CFC1"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "5105A5CC9AE334EF"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "0B5B67B066E672CD"
+				item: "botania:alchemy_catalyst"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3A20210242A1C865"]
+			description: ["与&a炼金催化器&f类似,&9&a炼造催化器&f&r置于&a魔力池&f下方时,可解锁物质拟态配方."]
+			id: "1DCFC67A8E3DCA2C"
+			rewards: [{
+				id: "77862A79FD065930"
+				table_id: 8273749113129900182L
+				type: "random"
+			}]
+			tasks: [{
+				id: "258C1DEBF18D2EBA"
+				item: "botania:conjuration_catalyst"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A359C1F5E041C4F"]
+			description: [
+				"&9&a魔力石板&f&r是便携式&a魔力池&f!"
+				""
+				"投入池中可充/放魔力,使用&2&a森林法杖&f&r潜行-&a右击&f切换模式."
+				""
+				"注:石板不会消失."
+			]
+			id: "2162EA0216E27D68"
+			rewards: [
+				{
+					id: "37DAB54AE1E00EE1"
+					table_id: 2930089542465018839L
+					type: "random"
+				}
+				{
+					id: "45AC19C3D395E86B"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "0ADA4C174CEF2EEE"
+				item: "botania:mana_tablet"
+				type: "item"
+			}]
+			title: "便携式魔力存储"
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2162EA0216E27D68"]
+			description: ["&9&a魔力之戒&f&r是可佩戴的&a魔力石板&f,&a可装备&f如饰品般使用."]
+			id: "379AC75F99212089"
+			rewards: [
+				{
+					id: "425600519223D73F"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "2174A01222882E0A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "088F2F276200B262"
+				item: "botania:mana_ring"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["379AC75F99212089"]
+			description: ["将&a魔力之戒&f与泰拉钢锭合成可升级为&d高阶魔力之戒&f&r,魔力储存容量提升至4倍."]
+			id: "2F01BF021E1BE0A2"
+			shape: "diamond"
+			tasks: [{
+				id: "3678AFFD31942CF3"
+				item: "botania:mana_ring_greater"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A56574BC562B227"]
+			description: ["用泰拉钢锭强化&a光环之戒&f可大幅提升该戒指的魔力生成速率."]
+			id: "70C25BFA6FFA1799"
+			rewards: [
+				{
+					id: "3D5C2F4B20A5829D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "50D6037CA594C823"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "34385B9406728C43"
+				item: "botania:aura_ring_greater"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0631F054A9B97A40"]
+			description: ["装备时,&9&a光环之戒&f&r会持续缓慢生成魔力,并将魔力注入背包内的储魔物品中."]
+			hide_dependency_lines: false
+			id: "6A56574BC562B227"
+			rewards: [
+				{
+					id: "4B467BD98812A91F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "675B5F81B4D13A7F"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "04EDE2305855A16B"
+				item: "botania:aura_ring"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["70C5A902C0D26628"]
+			description: [
+				"&b魔织法袍&r虽防御性能不算顶尖,但套装效果极为强大!"
+				""
+				"穿戴全套四件时,可降低魔力工具与法杖的魔力消耗.&a套装&f还能利用背包中的魔力进行自我修复."
+			]
+			id: "05A845C811A9A4A0"
+			optional: true
+			rewards: [
+				{
+					id: "5129E241C4B02A2D"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "31C822F989CE89D1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "6F1EBC95C7BC93DF"
+					item: "botania:manaweave_cloth"
+					type: "item"
+				}
+				{
+					id: "380292B73C32D32D"
+					item: {
+						Count: 1
+						id: "botania:manaweave_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E65D022473C0996"
+					item: {
+						Count: 1
+						id: "botania:manaweave_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75862C1E5E59C465"
+					item: {
+						Count: 1
+						id: "botania:manaweave_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E6BE4209A3BFC82"
+					item: {
+						Count: 1
+						id: "botania:manaweave_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "魔织法袍"
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["23A2865FBE7831AB"]
+			description: ["如同魔力钢护甲,&a&a泰拉钢护甲&f&r也能利用魔力自我修复.其耐久度与钻石护甲相当."]
+			hide_until_deps_visible: false
+			id: "10F2044D080D6209"
+			rewards: [
+				{
+					id: "4A91D22C8DE9DA54"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "652C453A738FEC70"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "321F81A5090D1093"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "7502EF4CC54F1E6E"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30BFF28FAC3C6862"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1295FFF7C7E5C731"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "69DDDE2C4D586735"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&a泰拉钢护甲&f"
+			x: 16.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["23A2865FBE7831AB"]
+			description: ["&2&a泰拉之刃&f&r拥有与&a钻石剑&f相当的伤害值,且有概率发射与近战攻击等威力的能量光束."]
+			id: "24C0F267B330CD23"
+			rewards: [
+				{
+					id: "570A696F06A33952"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "204F56C4F8ADFF81"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "679F0AA9731DAF88"
+				item: {
+					Count: 1
+					id: "botania:terra_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["23A2865FBE7831AB"]
+			description: [
+				"这不仅是把镐子,&9&a泰拉粉碎者&f&r被投入&a魔力池&f时能像&a魔力石板&f般储存海量魔力,但无法从中释放吸收的魔力."
+				""
+				"工具内储存魔力越多,品级越高,最低为D级,最高可达SS级."
+				""
+				"提升品级不增加挖掘速度,而是增强其&b主动技能&r的范围效果.通过潜行+&a右击&f可开关该技能.激活时,根据品级扩大粉碎者的挖掘范围(D级无此效果)."
+				""
+				"注意:技能激活期间将持续消耗储存魔力."
+			]
+			id: "4143C1CF83DE922E"
+			min_width: 300
+			rewards: [
+				{
+					id: "55F2CC37949D63B0"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "47CD2C394D2DD21C"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "65D28D69164FF766"
+				item: {
+					Count: 1
+					id: "botania:terra_pick"
+					tag: {
+						Damage: 0
+						mana: 9999
+					}
+				}
+				type: "item"
+			}]
+			x: 17.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["70C5A902C0D26628"]
+			description: [
+				"&9符文&r是&d植物魔法&f中众多高阶合成配方的重要组件,需在&a符文祭坛&f上制作."
+				""
+				"使用符文祭坛时,首先将所需符文的材料放置其上.可通过&a右键点击&f或直接投掷物品完成.祭坛还需魔力供应,请确保连接一台接收魔力的&a魔力发射器&f."
+				""
+				"放置完材料后,手持法杖悬停于祭坛上方可查看合成进度.完成后将活石投入祭坛,用法杖收取符文."
+				""
+				"注意:&a符文祭坛&f配方中使用的符文作为催化剂不会被消耗.类似&a花药台&f,配方完成后空手右键点击祭坛可自动填充上次配方所需物品."
+			]
+			id: "0631F054A9B97A40"
+			min_width: 300
+			rewards: [
+				{
+					id: "50F75BE1FA9127B8"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "576C91544B6A673C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "1B91D26F0A805561"
+					item: "botania:runic_altar"
+					type: "item"
+				}
+				{
+					id: "5A06ED36DD9E9681"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "botania:rune_water"
+								}
+								{
+									Count: 1b
+									id: "botania:rune_fire"
+								}
+								{
+									Count: 1b
+									id: "botania:rune_earth"
+								}
+								{
+									Count: 1b
+									id: "botania:rune_air"
+								}
+								{
+									Count: 1b
+									id: "botania:rune_mana"
+								}
+							]
+						}
+					}
+					title: "基础符文"
+					type: "item"
+				}
+			]
+			title: "符文制作"
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0631F054A9B97A40"]
+			description: ["在&a植物酿造&f台中使用药瓶、魔力和试剂,可酿造出与药水功效相似的&9魔法药酿&r."]
+			id: "30F7B68093D76590"
+			optional: true
+			rewards: [
+				{
+					id: "1E29B9EBAF70CA6C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7B105607C3C65B49"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "4E9712523E4B94E8"
+				item: "botania:brewery"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30F7B68093D76590"]
+			description: ["&2熏香&f可在&a植物酿造&f台中灌注药酿.将其置于&9香盘&f上用打火石点燃,能以香盘为中心30格半径范围释放药效,持续时间比液态药酿延长六十倍."]
+			id: "0D9354ABA2AE2A11"
+			optional: true
+			rewards: [
+				{
+					id: "68FFE65FDA2BB958"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "401FF6D8EC4E3C9B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "0B549F7000B06C0D"
+				item: "botania:incense_stick"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0631F054A9B97A40"]
+			description: ["制作&a泰拉钢&r需先搭建多方块结构.第一步是合成&9泰拉钢聚合基板&r."]
+			id: "65238A6DCDDDFA0D"
+			rewards: [
+				{
+					id: "589278A3E65A7788"
+					table_id: 1340875193044128734L
+					type: "random"
+				}
+				{
+					id: "317543457A71EF99"
+					table_id: 5897485726455770200L
+					type: "random"
+				}
+				{
+					id: "369F0385E3D1A45B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "76F8BB9B8C181006"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			title: "锻造泰拉钢"
+			x: 15.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["65238A6DCDDDFA0D"]
+			description: [
+				"现在需要为&9泰拉锻板&r搭建平台,以便制作&a泰拉钢&r!"
+				""
+				"平台需以棋盘格形式摆放5块活石与4块青金石(参照下图).将锻板置于中央活石上即完成构筑."
+				""
+				"泰拉钢合成需海量魔力,须使用&9火花&r系统.在&a魔力池&f上方布置若干火花,再于凝聚板上方安置火花引导魔力."
+				""
+				"平台就绪后,向锻板投入&a魔力钢锭&f、&a魔力钻石&f与&a魔力珍珠&f即可开始合成."
+				""
+				"{image:kubejs:textures/picture/terrestrial_agglomeration_plate.png width:192 height:102 align:center}"
+			]
+			icon: "botania:terrasteel_ingot"
+			id: "23A2865FBE7831AB"
+			min_width: 400
+			rewards: [
+				{
+					id: "08B1BD3A6822FB15"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "5F4FB5C3386BFBE9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					count: 5L
+					id: "70E6334F11A6C4C8"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6DE2A53806A697FF"
+					item: "minecraft:lapis_block"
+					type: "item"
+				}
+				{
+					id: "1DFC017C335D814E"
+					item: "botania:terrasteel_ingot"
+					type: "item"
+				}
+			]
+			title: "&a合成&r &d泰拉钢&r"
+			x: 16.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3A20210242A1C865"]
+			description: [
+				"借助精灵材料,可使用&d增强核心&r升级火花.手持增强核心&a右键点击&f火花即可升级.潜行状态下&a右键点击&f火花可&a清除&f增强效果."
+				""
+				"逸散增强:使火花从其储罐抽取魔力,为附近玩家充能魔力容器."
+				""
+				"支配增强:强制吸收非增强型火花储罐中的魔力."
+				""
+				"隐性增强:将自身储罐魔力分配给附近非增强型或逸散型火花."
+				""
+				"隔绝增强:阻止该火花与支配/隐性增强型火花交互."
+			]
+			id: "5CB5F4CD521F6361"
+			min_width: 300
+			rewards: [{
+				id: "02D21C31266770EA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "28B797392467C851"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:spark_upgrade_dispersive"
+							}
+							{
+								Count: 1b
+								id: "botania:spark_upgrade_dominant"
+							}
+							{
+								Count: 1b
+								id: "botania:spark_upgrade_recessive"
+							}
+							{
+								Count: 1b
+								id: "botania:spark_upgrade_isolated"
+							}
+						]
+					}
+				}
+				title: "火花增幅器"
+				type: "item"
+			}]
+			title: "火花增强"
+			x: 21.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1EF7664F5D8C5FF1"]
+			description: [
+				"虽然无法进入&d精灵界传送门&r,但可通过向门内投掷特定物品进行&2精灵交易&f.每次交易均会消耗魔力!所得材料可用于升级装备,例如制作&2精灵魔力发射器&f."
+				""
+				"将&a&a辞典&f植物魔法辞典&f投入传送门可升级为附有&e精灵学识&f的版本,获取更多&d植物魔法&f进阶知识."
+			]
+			icon: "botania:dragonstone"
+			id: "3A20210242A1C865"
+			min_width: 300
+			rewards: [
+				{
+					id: "2FB7339358015C17"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "54485635405DA167"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "6A9E12C2483D4883"
+					item: {
+						Count: 1
+						id: "botania:lexicon"
+						tag: {
+							"botania:elven_unlock": 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BD644B2A02DF9C0"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "botania:pixie_dust"
+								}
+								{
+									Count: 1b
+									id: "botania:quartz_elven"
+								}
+								{
+									Count: 1b
+									id: "botania:elf_glass"
+								}
+								{
+									Count: 1b
+									id: "botania:elementium_block"
+								}
+								{
+									Count: 1b
+									id: "botania:elementium_ingot"
+								}
+								{
+									Count: 1b
+									id: "botania:dreamwood_log"
+								}
+								{
+									Count: 1b
+									id: "botania:dreamwood"
+								}
+								{
+									Count: 1b
+									id: "botania:dragonstone_block"
+								}
+								{
+									Count: 1b
+									id: "botania:dragonstone"
+								}
+							]
+						}
+					}
+					title: "亚尔夫海姆资源"
+					type: "item"
+				}
+			]
+			title: "精灵交易"
+			x: 20.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["23A2865FBE7831AB"]
+			description: [
+				"构建通往&d精灵国度&r的传送门需先搭建门框:使用8块活木、3块&a微光活木&f与&9&a精灵门核心&f&r构筑框架."
+				""
+				"框架完成后,需以至少&d2个&a魔力池&f&r、巨量魔力及悬浮于池上的&a&a自然水晶&f&r激活传送门.魔力池可布置在核心周围11x11x11区域内."
+				""
+				"万事俱备后,用法杖&a右击&f精灵核心即可激活传送门."
+				""
+				"注意:虽然&a魔力池&f需要大量魔力来激活传送门,但激活传送门本身并不消耗魔力.不过每次转换材料都会消耗少量魔力.若魔力不足,传送门会关闭."
+				""
+				"你也可借助&aLexica &d植物魔法&f&r魔典辅助建造."
+				""
+				"{image:kubejs:textures/picture/the_portal_to_alfheim.png width:64 height:89 align:center}"
+			]
+			id: "1EF7664F5D8C5FF1"
+			min_width: 500
+			rewards: [
+				{
+					id: "36E4AC6637BA21F6"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "2082E1DD4BF81D00"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "octagon"
+			tasks: [
+				{
+					id: "420577A05AAC9A18"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "184D19EC756FBCD8"
+					item: "botania:natura_pylon"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "763D84A4488A3008"
+					item: "botania:glimmering_livingwood_log"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "08AECABD8E75A495"
+					item: "botania:livingwood"
+					type: "item"
+				}
+			]
+			title: "开启传送门"
+			x: 18.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3B2C198F26EC923F"]
+			description: [
+				"要继续旅程,你需要获取&6&a盖亚魂&f&r.为此需进行&9&a盖亚魔法仪式&f&r."
+				""
+				"需在&a激活的信标&r四周放置4枚&a盖亚水晶&f,并准备一块泰拉钢锭.结构建成后,持泰拉钢锭在潜行状态下&a右击&f信标,准备迎接生死之战."
+				""
+				"若需建造指导,可查阅&aLexica &d植物魔法&f&r魔典中的&9&a盖亚魔法仪式&f&r章节."
+				""
+				"{image:kubejs:textures/picture/gaig_pylon.png width:184 height:105 align:center}"
+			]
+			id: "04CE14D92603FC7A"
+			min_width: 300
+			rewards: [
+				{
+					id: "7B29C2347C48D513"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "2E6A747011B11C90"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "21810A64B844C70E"
+					item: "botania:gaia_pylon"
+					type: "item"
+				}
+				{
+					id: "157BF2FA7A40BE0D"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+			]
+			title: "&a召唤&r &5&a盖亚守护者&f&r"
+			x: 26.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3A20210242A1C865"]
+			description: [
+				"与多数&d植物魔法&f护甲相同,&9源质钢&r套装可通过吸收魔力自我修复."
+				""
+				"穿戴者受伤时还有概率召唤&a精灵仙子&r助战."
+			]
+			hide_until_deps_visible: false
+			id: "2F388BE777C43EB6"
+			rewards: [
+				{
+					id: "49B5B0B509F9EDA5"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "2FFD52FE7AC45EFB"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "5820572224CA1F4C"
+					item: {
+						Count: 1
+						id: "botania:elementium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E0174D5D8FB4712"
+					item: {
+						Count: 1
+						id: "botania:elementium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2E1C97AD850434EC"
+					item: {
+						Count: 1
+						id: "botania:elementium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B1C5F307D76F97A"
+					item: {
+						Count: 1
+						id: "botania:elementium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 20.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A20210242A1C865"]
+			description: [
+				"可自动清除圆石、泥土、下界岩等常见方块,仅保留矿石等珍贵资源."
+				""
+				"在工作台中与&a泰拉粉碎者&f组合,可使后者继承此能力.该过程不可逆."
+			]
+			id: "2230244B2CE5851D"
+			rewards: [
+				{
+					id: "77A5CC9DBA8AF0D7"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "1C4EA5C60A107648"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "6348A2F342100CF9"
+				item: {
+					Count: 1
+					id: "botania:elementium_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 21.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A20210242A1C865"]
+			description: ["对特定生物或玩家造成最后一击时有概率掉落其头颅.可通过附魔抢夺提升掉落几率."]
+			id: "76A4FCDF04AD6656"
+			rewards: [
+				{
+					id: "131C3FAC197CAC8A"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "70AD0078EC883225"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "3B60A8D021393754"
+				item: {
+					Count: 1
+					id: "botania:elementium_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A20210242A1C865"]
+			description: ["提升攻击时生成花仙子的概率,并增强已生成花仙子的能力强度."]
+			id: "497C981D49B7FBD6"
+			rewards: [
+				{
+					id: "638FD95544B37B2B"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "302C4454A0407139"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "1BF03F0B36123366"
+				item: {
+					Count: 1
+					id: "botania:elementium_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 19.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0331107259F7B68C"]
+			description: ["将&2&a精灵魔力发射器&f&r与龙晶之力及&e&a盖亚魂&f&r结合,可打造最顶级的&a魔力发射器&f."]
+			hide_until_deps_visible: false
+			id: "4E03AC9D56202353"
+			rewards: [
+				{
+					id: "42CC72F0E805BE6B"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "635C477D56FB88B2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "2D5337F7895CC160"
+				item: "botania:gaia_spreader"
+				type: "item"
+			}]
+			x: 28.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["04CE14D92603FC7A"]
+			description: [
+				"击败&9&a盖亚守护者&f&r后,您将获得&e&a盖亚魂&f&r作为战利品."
+				""
+				"游戏难度与参与仪式的人数将共同影响战利品的数量."
+			]
+			icon: "botania:gaia_head"
+			id: "0331107259F7B68C"
+			rewards: [
+				{
+					id: "44B68600014CC3BD"
+					item: "botania:terrasteel_ingot"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "3914369E0BBE0076"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "3C21A030F242C7A2"
+					item: "botania:life_essence"
+					type: "item"
+				}
+				{
+					entity: "botania:doppleganger"
+					icon: "botania:gaia_head"
+					id: "615316948CD5BB35"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&e&a盖亚魂&f&r"
+			x: 28.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0331107259F7B68C"]
+			description: ["渴望更高挑战或需要更多&e&a盖亚魂&f&r？尝试将4个&a盖亚魂&f与泰拉钢锭结合,用于激活盖亚的&a魔法仪式&f吧 :)"]
+			hide_until_deps_visible: false
+			id: "27CD17C4B3613171"
+			rewards: [
+				{
+					id: "08028478C5B94310"
+					table_id: 402489266001286151L
+					type: "random"
+				}
+				{
+					id: "6F718ABCAB882225"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [{
+				id: "3DE2A054C6F00FBE"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			title: "&5&a盖亚守护者&f 2.0"
+			x: 30.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["27CD17C4B3613171"]
+			description: ["使用盖亚锭召唤强化版&5&a盖亚守护者&f&r可获取更多&e&a盖亚魂&f&r,同时守护者还有概率掉落&e&a命运骰子&f&r."]
+			id: "50A2D68A83A50F47"
+			rewards: [
+				{
+					id: "40F40838ECBF9A36"
+					table_id: 402489266001286151L
+					type: "random"
+				}
+				{
+					id: "73704F1B32D0A15F"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "5348CBD95103744A"
+				item: "botania:dice"
+				type: "item"
+			}]
+			title: "&e&a命运骰子&f&r"
+			x: 32.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["634E71DBAE81D197"]
+			description: [
+				"&9&a多媒体漏斗&f&r是物品索引系统的简化版,可通过红石信号向网络请求物品."
+				""
+				"配置请求物品时,需在方块上的物品展示框内放置对应物品.若存在多个展示框,漏斗将随机选择其一.旋转展示框内物品可调整请求数量."
+				""
+				"更多详细信息请查阅&a&a辞典&f &d植物魔法&f&r."
+			]
+			id: "4ECFB1256BD6A7AA"
+			rewards: [{
+				id: "0924F6AEDAFE95F8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "27FBB10E434FBD29"
+				item: "botania:corporea_funnel"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3A20210242A1C865"]
+			description: [
+				"通过&d植物魔法&f,您可使用&9&a多媒体火花&f&r在容器上方构建&d多媒体网络&r."
+				""
+				"网络需至少一个&b主节点&r &9&a多媒体火花&f&r作为核心,随后可通过任意数量&a多媒体火花&f扩展.同色火花会在8格范围内自动连接形成物品网络."
+				""
+				"火花仅能识别其正下方容器的物品,且仅能通过顶部存取.所有网络内物品均可被漏斗、索引等多媒体组件访问."
+			]
+			id: "634E71DBAE81D197"
+			min_width: 300
+			rewards: [
+				{
+					id: "54DAB6AA41E2D70B"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "24B9FEA1C04B9C8C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "5F0667A0930319F8"
+					item: "botania:corporea_spark"
+					type: "item"
+				}
+				{
+					id: "3844BA7E922E8B45"
+					item: "botania:corporea_spark_master"
+					type: "item"
+				}
+			]
+			title: "&d&a火花网络"
+			x: 20.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["634E71DBAE81D197"]
+			description: [
+				"&5&a多媒体索引&f&r是访问&9多媒体网络&r的交互界面,可调用其上&a多媒体火花&f构建的网络资源."
+				""
+				"使用时靠近索引,它将截获附近玩家的&a聊天栏指令&f.玩家可通过输入指令请求物品,例如输入&b10 &a铁锭&f&r,若网络内存有该物品则会自动发放."
+				""
+				"更多操作指南请查阅&a&a辞典&f &d植物魔法&f&r."
+			]
+			id: "7DF7F9CD9A795E69"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "69C1BD816E1E421A"
+				table_id: 8273749113129900182L
+				type: "loot"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "3611F94A69522BA9"
+				item: "botania:corporea_index"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["634E71DBAE81D197"]
+			description: ["&9&a多媒体水晶魔方&f&r用于显示上方火花所属网络中指定物品的总量,使用方式为手持该物品&a右击&f魔方."]
+			id: "7440E522FC31C341"
+			optional: true
+			rewards: [{
+				id: "400B276E83E4995C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1550070280A21DC5"
+				item: "botania:corporea_crystal_cube"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["50A2D68A83A50F47"]
+			hide_until_deps_visible: false
+			id: "4E7B1FF823C85AD6"
+			optional: true
+			rewards: [{
+				id: "3FBDEEEB45C98853"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "05993154671C0697"
+				item: "botania:thor_ring"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["50A2D68A83A50F47"]
+			hide_until_deps_visible: false
+			id: "0C56CB7815A1355C"
+			optional: true
+			rewards: [{
+				id: "2B5648DCC65FFD87"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "078E142753C8FA7B"
+				item: {
+					Count: 1
+					id: "botania:odin_ring"
+					tag: {
+						baubleUUID: [I;
+							-68256365
+							-428781930
+							-1518441386
+							-645335533
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 34.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["50A2D68A83A50F47"]
+			hide_until_deps_visible: false
+			id: "1EE1EF4695A39876"
+			optional: true
+			rewards: [{
+				id: "5CD71910DADB23AD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "46081AC3349324C9"
+				item: "botania:loki_ring"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50A2D68A83A50F47"]
+			hide_until_deps_visible: false
+			id: "6AFC5FE71A80913E"
+			optional: true
+			rewards: [{
+				id: "0423B21E4757A2E6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "408C9E36F8C27D8C"
+				item: "botania:infinite_fruit"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["50A2D68A83A50F47"]
+			hide_until_deps_visible: false
+			id: "780B0A790C6AF9DB"
+			optional: true
+			rewards: [{
+				id: "01E797D246D95395"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "371A7D51171C67D4"
+				item: "botania:king_key"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["50A2D68A83A50F47"]
+			hide_until_deps_visible: false
+			id: "16DE70DE2463A5DD"
+			optional: true
+			rewards: [{
+				id: "020513DCA252A8B9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "337F2A21222F5FFC"
+				item: "botania:flugel_eye"
+				type: "item"
+			}]
+			x: 34.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["79BE48D56622542F"]
+			description: [
+				"通过使用&a花药台&f,我们可以制造多种在冒险过程中能提供帮助的花朵,这些花朵分为两大类:&9&a功能花&f&r和&a&a产能花&f&r."
+				""
+				"&9&a功能花&f&r是辅助日常事务的花卉.例如&7漏斗花&r会像漏斗一样运作,吸收周围一定范围内的物品.部分&a功能花&f需要消耗&d魔力&r才能运作."
+				""
+				"&a&a产能花&f&r是通过不同方式产生&d魔力&r的花卉.最常用的产能花是&c火红莲&r,通过消耗附近煤炭等可燃物来生成魔力."
+				""
+				"您可以通过&a植物魔典 &d植物魔法篇&f&r查阅各花朵的具体功能."
+			]
+			hide_until_deps_visible: false
+			id: "7B3FAF5CA4DD217C"
+			min_width: 400
+			tasks: [{
+				id: "7F362CF1D18C7FB1"
+				title: "&a功能类植物&f"
+				type: "checkmark"
+			}]
+			title: "功能性花与产能类植物"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1C48F2612F2FA828"]
+			description: [
+				"将&4红石&r与&2&a魔力发射器&f&r结合可制作&9&a红石魔力发射器&f&r."
+				""
+				"该装置可通过红石信号控制,仅在接收到红石脉冲时才会发射魔力脉冲."
+			]
+			id: "4C22BA5824662C7E"
+			optional: true
+			rewards: [{
+				id: "51FB8A5FF90A645C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "06C2FA45E55D9369"
+				item: "botania:redstone_spreader"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6FBE0BF8A7ADBB26"]
+			description: ["以降低初始容量和加速魔力损耗为代价,大幅提升&a魔力脉冲&f的移动速度."]
+			id: "2D1533268C835672"
+			rewards: [
+				{
+					id: "5C17A2BAAE05CDD2"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "27C4C4ECBDD8CFB2"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "4447633E574741FD"
+				item: "botania:lens_speed"
+				type: "item"
+			}]
+			x: 10.625d
+			y: 6.25d
+		}
+		{
+			dependencies: ["6FBE0BF8A7ADBB26"]
+			description: ["使&a魔力脉冲&f的魔力承载量翻倍,但会降低传输速度并增加长距离传输时的魔力损耗."]
+			id: "7A82D66B1B138F0F"
+			rewards: [
+				{
+					id: "29C1754402E13135"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "57CA8F5150562EDE"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "1F0DDF8D08AA2D09"
+				item: "botania:lens_power"
+				type: "item"
+			}]
+			x: 14.375d
+			y: 6.25d
+		}
+		{
+			dependencies: ["6FBE0BF8A7ADBB26"]
+			description: ["显著延长&a魔力脉冲&f开始损耗前的持续时间,但同时会降低脉冲移动速度."]
+			id: "4CED346215DDBAC0"
+			rewards: [
+				{
+					id: "48EA8678DF91AC9F"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "7362FD9B9AB62AB8"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "58A4565F18420732"
+				item: "botania:lens_time"
+				type: "item"
+			}]
+			x: 15.625d
+			y: 6.25d
+		}
+		{
+			dependencies: ["6FBE0BF8A7ADBB26"]
+			description: ["缩短&a魔力脉冲&f开始损耗魔力的启动时间,但同时会减缓损耗速率."]
+			id: "5A7FF6D0AED656DC"
+			rewards: [
+				{
+					id: "273BCA13B1064BEA"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "136B2862652086D9"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "5FBA2E1E91367CB5"
+				item: "botania:lens_efficiency"
+				type: "item"
+			}]
+			x: 11.875d
+			y: 6.25d
+		}
+		{
+			dependencies: ["6FBE0BF8A7ADBB26"]
+			description: ["允许&a魔力脉冲&f在接触方块表面时产生反弹效果."]
+			id: "504ADBD7E2476827"
+			rewards: [
+				{
+					id: "2CFF85B91874AFC6"
+					table_id: 5354288240016506720L
+					type: "random"
+				}
+				{
+					id: "477A3BF01D3F9CAF"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "46729DA26469F064"
+				item: "botania:lens_bounce"
+				type: "item"
+			}]
+			x: 13.125d
+			y: 6.25d
+		}
+		{
+			dependencies: ["0331107259F7B68C"]
+			description: [
+				"诸多蕴含&e&a盖亚魂&f&r之力的饰品等待探索!记得查看详情!"
+				""
+				"所有描述均可于&a&a辞典&f &d植物魔法&f&r中找到."
+			]
+			id: "66F1609053B5407C"
+			optional: true
+			rewards: [
+				{
+					id: "7A3224CA289B7404"
+					table_id: 8273749113129900182L
+					type: "random"
+				}
+				{
+					id: "67DD0610BB6C4893"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "44A3CDE54F2A5149"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:black_hole_talisman"
+							}
+							{
+								Count: 1b
+								id: "botania:spawner_mover"
+							}
+							{
+								Count: 1b
+								id: "botania:astrolabe"
+							}
+							{
+								Count: 1b
+								id: "botania:holy_cloak"
+							}
+							{
+								Count: 1b
+								id: "botania:diva_charm"
+							}
+							{
+								Count: 1b
+								id: "botania:super_lava_pendant"
+							}
+							{
+								Count: 1b
+								id: "botania:unholy_cloak"
+							}
+							{
+								Count: 1b
+								id: "botania:laputa_shard"
+							}
+							{
+								Count: 1b
+								id: "botania:super_cloud_pendant"
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_bomb"
+							}
+							{
+								Count: 1b
+								id: "botania:missile_rod"
+							}
+							{
+								Count: 1b
+								id: "botania:balance_cloak"
+							}
+							{
+								Count: 1b
+								id: "botania:super_travel_belt"
+							}
+						]
+					}
+				}
+				title: "盖亚饰品"
+				type: "item"
+			}]
+			title: "&a盖亚装备与饰品&r"
+			x: 28.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A20210242A1C865"]
+			description: ["神话植物学是对&d植物魔法&f的扩展,为&a末地&f玩法增添新内容.\\n\\n开启神话植物学的关键物品是&a阿斯加德符文&f."]
+			id: "26B836339560E939"
+			rewards: [
+				{
+					count: 16
+					id: "46848D42121019A4"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					id: "785EBC463F229F3E"
+					item: "botania:rainbow_rod"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "032E4D0AB1C0DB57"
+				item: "mythicbotany:asgard_rune"
+				type: "item"
+			}]
+			title: "神话植物学"
+			x: 22.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["26B836339560E939"]
+			description: ["&a泰拉钢&f聚合虽好,但我们追求更优方案!\\n\\n先以5块闪光岩构成棋盘格基底,其余4格放置金块,最后在中央闪光岩上安置魔力灌注器.\\n\\n类似泰拉钢聚合,需用&a火花&f传输魔力.火花需装备支配增强方可运作灌注器.\\n\\n现在能以半价生产精灵钢和泰拉钢!"]
+			id: "6A0ED6CCE3C4BDFE"
+			rewards: [
+				{
+					id: "5F247F0CF40DAAB0"
+					item: "botania:elementium_ingot"
+					type: "item"
+				}
+				{
+					id: "6DAD7BD5FBB37E40"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					id: "4350666A5D34A653"
+					item: "botania:pixie_dust"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "17D6D091E1471D51"
+					item: "mythicbotany:mana_infuser"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0AA574DCF3E6E20B"
+					item: { Count: 5, id: "botania:shimmerrock" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "585F40388A8290CC"
+					item: { Count: 4, id: "minecraft:gold_block" }
+					type: "item"
+				}
+			]
+			title: "魔力灌注多方块结构"
+			x: 23.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6A0ED6CCE3C4BDFE"]
+			description: ["将龙晶、&a精灵尘&f与&a源质钢锭&f结合,并消耗1.5池魔力,即可获得精灵钢!\\n\\n若仅需星辰,可将锭分解为粒制作方尖碑.\\n\\n精灵钢实为&d植物魔法&f版下界合金.使用精灵&a钢锭&f与&a锻造模板&f可升级泰拉钢装备.\\n\\n获取&a锻造模板&f需用&a源质钢剑&f等植魔武器击杀女巫或唤魔者."]
+			id: "3B2C198F26EC923F"
+			rewards: [
+				{
+					id: "5C168248E42E113D"
+					item: "mythicbotany:alfsteel_ingot"
+					type: "item"
+				}
+				{
+					id: "2C2B1E73D4C6AA61"
+					item: "mythicbotany:alfsteel_template"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1751DDCDC353CF69"
+				item: "mythicbotany:alfsteel_ingot"
+				type: "item"
+			}]
+			title: "精灵钢"
+			x: 25.0d
+			y: 2.5d
+		}
+	]
+	title: "&a植物魔法"
+}

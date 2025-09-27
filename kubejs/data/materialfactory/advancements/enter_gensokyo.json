@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "entered_gensokyo": {
+      "conditions": {
+        "to": "materialfactory:gensokyo"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.materialfactory.gensokyo.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "ad_astra_rocketed:tier_7_rocket"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.materialfactory.gensokyo"
+    }
+  },
+  "requirements": [
+    [
+      "entered_gensokyo"
+    ]
+  ],
+  "sends_telemetry_event": true,
+  "parent": "fumo:fumo_advancement"
+}

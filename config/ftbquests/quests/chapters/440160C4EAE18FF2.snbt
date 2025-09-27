@@ -1,0 +1,353 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "440160C4EAE18FF2"
+	group: "64D78D420DEC7AB2"
+	icon: "mm:blueprint"
+	id: "440160C4EAE18FF2"
+	images: [{
+		height: 2.0d
+		image: "supplementaries:block/cannon_arrow"
+		rotation: 135.0d
+		width: 1.0d
+		x: -1.0d
+		y: -4.0d
+	}]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["34E5FE686B920FAF"]
+			description: [
+				"向自动建筑机内放入建筑机样板后，并设置好建筑方位后，&c向其提供红石信号后&r，自动建筑机即可从ae网络中自动提取建造所需方块。"
+				""
+				"支持&e合成卡&r和&a加速卡&r"
+				""
+				"自动建筑机建造完毕后会输出红石信号。"
+				""
+				"注：本章提供的现成建筑机样板&e显示方位&r都是建筑&e左下角&r"
+			]
+			id: "6A61B3761AD40BFB"
+			rewards: [{
+				id: "543C6D1F779290C3"
+				item: "crazyae2addons:builder_pattern"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "6FAD05239ED3414C"
+				item: "crazyae2addons:auto_builder"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4DE46A62B2BA6937"]
+			icon: "mm:umfe_controller"
+			id: "3F097C15A8E42E8C"
+			rewards: [{
+				id: "0F8032D4B2000497"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "MC仙明"
+						canRotate: 0b
+						color: 16777215
+						display: {
+							color: 11228698
+						}
+						isReward: 1b
+						label: "通用生物流体提取机"
+						oneUse: 1b
+						size: 7
+						state: 5
+						structureName: "config/capsule/rewards/umfe"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "2B26B57561B9962B"
+					item: "mm:umfe_controller"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3B49A609960647FA"
+					item: "mm:umfe_energyports_input"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "7127199A3FA9E043"
+					item: "mm:umfe_itemports_input"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "655B39CB47FC11BE"
+					item: "mm:umfe_fluidports_output"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0EC03D494600CF40"
+					item: "industrialforegoing:fluid_laser_base"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "6BA8AD479EC53D00"
+					item: { Count: 3, id: "xycraft_world:aluminum_pillar_blue" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "7E04D1A5FCE289F2"
+					item: { Count: 3, id: "xycraft_world:aluminum_pillar_dark" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "3BD437EB6C392E10"
+					item: { Count: 3, id: "xycraft_world:aluminum_pillar_green" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "3F715F607E55E076"
+					item: "xycraft_world:aluminum_pillar_red"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "2A63DDE116A82377"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 25L
+					id: "7681BE5F6B889E9A"
+					item: "mysticalagriculture:soulstone"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "407A80E5B7A7E33F"
+					item: { Count: 8, id: "mysticalagriculture:soulstone_slab" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 37L
+					id: "496F325AFA0A2CD4"
+					item: { Count: 37, id: "mysticalagriculture:soulstone_stairs" }
+					type: "item"
+				}
+			]
+			title: "通用生物流体提取机"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: ["彭罗斯框架需要在熵演摇篮里合成"]
+			icon: "crazyae2addons:penrose_frame"
+			id: "19D1360B07FB7FC5"
+			rewards: [{
+				id: "2457639EA7523F8E"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "MC仙明"
+						canRotate: 0b
+						color: 9819623
+						display: {
+							Name: "{\"text\":\"一次性 «彭罗斯框架» 胶囊\"}"
+							color: 8072841
+						}
+						isReward: 1b
+						label: "Penrose Frame.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/penrose_frame.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 44L
+					id: "2D8214448D9A0229"
+					item: { Count: 44, id: "ae2:fluix_block" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 26L
+					id: "39314D1F9A7C847F"
+					item: { Count: 26, id: "minecraft:iron_block" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 54L
+					id: "2F306480F2739942"
+					item: { Count: 54, id: "minecraft:obsidian" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "524833BB6F485230"
+					item: "crazyae2addons:super_singularity_block"
+					type: "item"
+				}
+			]
+			title: "彭罗斯框架"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4DE46A62B2BA6937"]
+			description: [
+				"熵演摇篮是合成crazy ae2 addons里许多多方块结构材料的装置"
+				""
+				"&e注&r：熵演摇篮四个角的熵演摇篮电容器与主体是分开的，需要用ae线缆连接主体"
+				""
+				"当内部存在可合成多方块结构时，向熵演摇篮控制器&c提供红石信号&r开始合成"
+				""
+				"熵演摇篮电容器需要充能，当亮起时说明此电容器已充能,&e合成需要所有电容器已经充能&r！"
+				""
+				"&a充能最大能量&r：600MFE"
+			]
+			icon: "crazyae2addons:entropy_cradle_controller"
+			id: "691B6581550138A8"
+			rewards: [{
+				id: "4F52391798142338"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "MC仙明"
+						canRotate: 0b
+						color: 4869306
+						display: {
+							color: 7105644
+						}
+						isReward: 1b
+						label: "熵演摇篮"
+						oneUse: 1b
+						size: 11
+						state: 5
+						structureName: "config/capsule/rewards/entropy_cradle"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "10B4F0BE9D832D81"
+					item: "crazyae2addons:entropy_cradle_controller"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 24L
+					id: "4F56280CCD1C607A"
+					item: { Count: 24, id: "crazyae2addons:entropy_cradle_capacitor" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 236L
+					id: "71ED66E6B87FF926"
+					item: { Count: 236, id: "crazyae2addons:entropy_cradle" }
+					type: "item"
+				}
+			]
+			title: "熵演摇篮"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"右击：激活。"
+				""
+				"激活情况下右击/Q键丢出：丢出胶囊。"
+				""
+				"激活后一段时间不进行操作会自动取消激活"
+			]
+			icon: {
+				Count: 1
+				id: "capsule:capsule"
+				tag: {
+					isReward: 1b
+					oneUse: 1b
+					size: 3
+					state: 5
+					structureName: "config/capsule/rewards/example"
+				}
+			}
+			id: "4DE46A62B2BA6937"
+			rewards: [{
+				id: "571C23B7D0B906D9"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0F8BF1DDFD6B9D5D"
+				type: "checkmark"
+			}]
+			title: "胶囊"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&l&a创建模式&r"
+				"     使用&6建筑机样板&r选择世界中的两个角（右键点击选择第一个角，Shift 右键点击选择另一个）。"
+				"     右键点击空气来复制结构并保存到物品中。"
+				"     内部的所有方块将被扫描并转换为建造模式。"
+				""
+				"&l&e编辑模式（可选）&r"
+				"     按住 Shift 键右键点击&6建筑机样板&r以打开文本编辑器 GUI。"
+				"     你可以调整延迟，添加重置、移除、循环或宏等命令。"
+				"     右侧的数字是在所有命令之间添加的延迟，单位为刻（默认 20 刻或 1 秒），设置为 0 时，它将运行得最快。"
+				""
+				"&l&a插入模式&r"
+				"     将模式物品放置到自动建筑机样板槽位中"
+				"     一次只能插入一个样板"
+				"     您可以使用自动化来从机器中插入/提取样板。"
+			]
+			id: "34E5FE686B920FAF"
+			tasks: [{
+				id: "3AD2762821DA45B7"
+				item: "crazyae2addons:builder_pattern"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+	]
+	title: "多方块结构"
+}

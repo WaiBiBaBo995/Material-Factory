@@ -1,0 +1,12 @@
+{
+    "translation": "gui.ad_astra.text.gensokyo",
+    "galaxy": "ad_astra:milky_way",
+    "solar_system": "ad_astra:proxima_centauri",
+    "dimension": "materialfactory:gensokyo",
+    "gravity": 9.807,
+    "orbit": "materialfactory:void_orbit",
+    "oxygen": true,
+    "solar_power": 16,
+    "temperature": 15,
+    "tier": 7
+}

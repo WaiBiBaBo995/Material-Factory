@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.iceshard",
+  "colors": [
+    "94BCD4",
+    "7C8CBC"
+  ],
+  "materialCount": 10000,
+  "timeRequired": 240,
+  "ingredient": {
+    "item": "ad_astra:ice_shard"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}
