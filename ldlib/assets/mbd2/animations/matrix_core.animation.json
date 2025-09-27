@@ -1,0 +1,68 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"unformed": {
+			"loop": true,
+			"bones": {
+				"frame1": {
+					"scale": 0
+				}
+			}
+		},
+		"formed": {
+			"animation_length": 2,
+			"bones": {
+				"frame1": {
+					"scale": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"2.0": {
+							"post": [1.2, 1.2, 1.2],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"idle": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"frame1": {
+					"scale": {
+						"0.0": {
+							"post": [1.2, 1.2, 1.2],
+							"lerp_mode": "catmullrom"
+						},
+						"2.0": {
+							"post": [1.5, 1.5, 1.5],
+							"lerp_mode": "catmullrom"
+						},
+						"3.0": {
+							"post": [1.2, 1.2, 1.2],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"working": {
+			"loop": true,
+			"animation_length": 11,
+			"bones": {
+				"frame1": {
+					"rotation": ["query.anim_time * 90", "query.anim_time * 90", "query.anim_time * 90"],
+					"scale": {
+						"0.0": [1, 1, 1],
+						"1.0": [1.5, 1.5, 1.5],
+						"10.0": [1.5, 1.5, 1.5],
+						"11.0": [1.2, 1.2, 1.2]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
