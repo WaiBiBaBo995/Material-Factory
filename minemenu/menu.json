@@ -1,0 +1,64 @@
+{
+  "main": {
+    "3": {
+      "title": "open wireless terminal/\u6253\u5f00\u65e0\u7ebf\u7ec8\u7aef",
+      "icon": {
+        "stack": "{Count:1b,id:\"expatternprovider:wireless_ex_pat\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.ae2.wireless_terminal",
+          "toggle": false
+        }
+      }
+    },
+    "4": {
+      "title": "open ftbquest/\u6253\u5f00\u4efb\u52a1\u4e66",
+      "icon": {
+        "stack": "{Count:1b,id:\"ftbquests:book\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.ftbquests.quests",
+          "toggle": false
+        }
+      }
+    },
+    "5": {
+      "title": "back to death point/\u8fd4\u56de\u6b7b\u4ea1\u70b9",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:totem_of_undying\"}"
+      },
+      "action": {
+        "command": {
+          "command": "/back",
+          "clipboard": false
+        }
+      }
+    },
+    "6": {
+      "title": "open toolbelt/\u6253\u5f00\u5de5\u5177\u8170\u5e26",
+      "icon": {
+        "stack": "{Count:1b,id:\"toolbelt:belt\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.toolbelt.open",
+          "toggle": false
+        }
+      }
+    },
+    "7": {
+      "title": "Open DimensionsNet/\u6253\u5f00\u7ef4\u5ea6\u7f51\u7edc",
+      "icon": {
+        "stack": "{Count:1b,id:\"beyonddimensions:net_creater\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.beyonddimensions.open_gui",
+          "toggle": false
+        }
+      }
+    }
+  }
+}
