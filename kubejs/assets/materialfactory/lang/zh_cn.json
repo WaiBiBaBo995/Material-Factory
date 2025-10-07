@@ -110,6 +110,15 @@
     "block.materialfactory.ash_furnace": "灰烬炉",
     "block.materialfactory.anon_chihaya": "千早爱音",
     "block.cpapireforged.custom_portal_block": "传送门",
+    "block.materialfactory.entropy_matrix_glass": "熵变框架玻璃",
+    "block.materialfactory.entropy_matrix_energy_port": "熵变框架能量接口",
+    "block.materialfactory.entropy_matrix_item_input": "熵变框架物品输入口",
+    "block.materialfactory.entropy_matrix_item_output": "熵变框架物品输出口",
+    "block.materialfactory.entropy_matrix_core": "熵变框架核心",
+    "block.materialfactory.entropy_matrix_casing": "熵变框架外壳",
+    "block.materialfactory.future_entropy_globular_matrix": "未来熵变球形矩阵",
+    "block.materialfactory.unbonded_machine_frame_pity": "未粘合的缺陷机器框架",
+    "block.materialfactory.simple_machine_chassis": "简易机器框架",
 
     "block.thermal.crude_oil_fluid": "石油",
 
@@ -240,6 +249,8 @@
     "item.materialfactory.brass_parallel_card": "黄铜并行卡",
     "item.materialfactory.cactus_sandwich": "仙人掌三明治",
     "item.materialfactory.wooden_shears": "木制剪刀",
+    "item.materialfactory.industrial_dye_blend": "工业涂料",
+    "item.materialfactory.soul_attuned_dye_blend": "灵魂协调涂料",
 
     "itemGroup.ad_astra_rocketed.main": "Ad Astra Rocketed",
     "item_group.materialfactory.items": "Material Factory",
@@ -251,13 +262,14 @@
 
     "materialfactory.starter": "起动机",
     "materialfactory.brass_multifunction": "黄铜多功能制作",
+    "materialfactory.bond_machine_frame_pity": "粘合机器框架",
 
     "message.advancement.enter.gensokyo": "§d欢迎 §e %s §d进入幻想乡!",
     "message.avaritia.fake_bedrock.break": "§c由于受到不可抗因素,你无法破坏基岩！",
     "message.advancement.enter.nether": "§b天堂?§c不,这里是地狱!",
 
     "mbd2.ash_furnace": "融化",
-    "mbd2.melting": "蒸发",
+    "mbd2.melting": "制水",
 
     "options.horizontalstretch": "水平渲染距离缩放",
     "options.verticalstretch": "垂直渲染距离缩放",
@@ -295,5 +307,11 @@
     "tooltip.materialfactory.brass_encased_shaft_1": "用于给黄铜多功能装置传递动力,也可以当传动杆用",
     "tooltip.materialfactory.brass_multifunctional_device_1": "可以代理大部分机械动力的配方,详细在JEI查看",
     "tooltip.materialfactory.brass_multifunctional_device_2": "可以放入黄铜加速卡提升工作速度(加速按叠加计算)",
-    "tooltip.materialfactory.brass_multifunctional_device_3": "可以放入黄铜并行卡提升工作数量"
+    "tooltip.materialfactory.brass_multifunctional_device_3": "可以放入黄铜并行卡提升工作数量",
+    "tooltip.materialfactory.unbonded_machine_frame_pity_1": "用于合成缺陷框架",
+    "tooltip.materialfactory.unbonded_machine_frame_pity_2": "可用胶乳桶或胶乳木桶右键填充,不可用储罐",
+    "tooltip.materialfactory.unbonded_machine_frame_pity_3": "也可以用管道进行填充胶乳",
+    "tooltip.materialfactory.oak_crucible_1": "前期用于合成水的坩埚",
+    "tooltip.materialfactory.oak_crucible_2": "拿着原料右键或丢入坩埚填充,空手蹲下右键取出原料",
+    "tooltip.materialfactory.oak_crucible_3": "仅可用铁桶或木桶右键满水坩埚装水"
 }

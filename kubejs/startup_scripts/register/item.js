@@ -71,6 +71,8 @@ StartupEvents.registry("item", event =>{
             .burnTime(40)
             .tag('forge:shears')
             .tag('minecraft:shears');
+    event.create('materialfactory:industrial_dye_blend', 'basic')
+    event.create('materialfactory:soul_attuned_dye_blend', 'basic')
 })
 
 ItemEvents.modification(event =>{

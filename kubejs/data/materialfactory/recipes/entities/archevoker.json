@@ -1,0 +1,39 @@
+{
+	"type": "cagedmobs:entity_data",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "irons_spellbooks"
+		}
+	],
+	"entity": "irons_spellbooks:archevoker",
+	"samplerTier": 2,
+	"environments": ["cave"],
+	"growTicks": 1200,
+	"results": [
+		{
+			"chance": 0.7,
+			"output": {
+				"item": "irons_spellbooks:arcane_essence"
+			},
+			"minAmount": 1,
+			"maxAmount": 8
+		},
+		{
+			"chance": 0.7,
+			"output": {
+				"item": "irons_spellbooks:scroll"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.7,
+			"output": {
+				"item": "irons_spellbooks:evocation_rune"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"type": "cagedmobs:entity_data",
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "irons_spellbooks"
+		}
+	],
+	"entity": "irons_spellbooks:priest",
+	"samplerTier": 2,
+	"environments": ["farm"],
+	"growTicks": 1200,
+	"results": [
+		{
+			"chance": 0.7,
+			"output": {
+				"item": "irons_spellbooks:holy_rune"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.7,
+			"output": {
+				"item": "irons_spellbooks:arcane_essence"
+			},
+			"minAmount": 1,
+			"maxAmount": 4
+		},
+		{
+			"chance": 0.7,
+			"output": {
+				"item": "irons_spellbooks:scroll"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		}
+	]
+}

@@ -18,24 +18,6 @@ ServerEvents.entityLootTables(event => {
     })
 })
 
-ServerEvents.chestLootTables(event=>{
-    event.addChest("materialfactory:twinsaw",loot=>{
-        loot.addPool(pool=>{
-            pool.addItem('minecraft:cod')
-            pool.addItem('minecraft:salmon')
-            pool.addItem('minecraft:tropical_fish')
-            pool.addItem('minecraft:pufferfish')
-            pool.rolls = 8
-            console.log(pool.conditions);
-        }), 
-        loot.addPool(pool => {
-            pool.addItem('minecraft:string')
-            pool.addItem('minecraft:bone_meal')
-            pool.rolls = 8
-    })
-    })
-})
-
 ServerEvents.genericLootTables(e=>{
     e.addGeneric("tumbleweed:entities/tumbleweed",loot=>{
         loot.addPool(pool=>{

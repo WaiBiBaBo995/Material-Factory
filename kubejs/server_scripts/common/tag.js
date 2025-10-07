@@ -27,6 +27,9 @@ ServerEvents.tags('block', event => {
     event.add('create:passive_boiler_heaters',
         ['mekanism:superheating_element']
     )
+
+    event.add("materialfactory:entropy_matrix_block",
+        ['materialfactory:entropy_matrix_glass','materialfactory:entropy_matrix_energy_port','materialfactory:entropy_matrix_item_input','materialfactory:entropy_matrix_item_output'])
     //空手破坏
     event.add('notreepunching:always_drops',
         ['createsifter:dust','createsifter:crushed_end_stone','createsifter:crushed_netherrack','createsifter:crushed_deepslate','createsifter:crushed_blackstone','minecraft:farmland'])
@@ -106,6 +109,9 @@ ServerEvents.tags('item', event => {
     event.add('forge:ingots/yellorium', [
     'alltheores:uranium_ingot'
   ])
+    event.add("materialfactory:melting_item",['slimeoverhaul:water_slime_ball','minecraft:cactus','#minecraft:leaves','#forge:seeds','#minecraft:saplings'])
+
+    event.add("materialfactory:entropy_matrix_block",['materialfactory:entropy_matrix_glass','materialfactory:entropy_matrix_energy_port','materialfactory:entropy_matrix_item_input','materialfactory:entropy_matrix_item_output'])
 
     event.remove('tombstone:seeds', '#mysticalagriculture:seeds')
 });

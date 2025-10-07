@@ -810,6 +810,88 @@ ServerEvents.recipes(event => {
             B:'mysticalagriculture:nether_essence'
     });
 
+    //木剪刀
+    event.shaped(Item.of('materialfactory:wooden_shears', 1),
+            [
+            ' A',
+            'A '
+            ],
+            {
+            A:'#minecraft:planks'
+    }).id('materialfactory:wooden_shears')
+
+    //未粘合的缺陷机器框架
+    event.shaped(Item.of('materialfactory:unbonded_machine_frame_pity', 1),
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A:'#minecraft:logs',
+            B:'minecraft:iron_ingot',
+            C:'minecraft:redstone_block'
+    }).id('industrialforegoing:machine_frame_pity')
+
+    //灵魂协调涂料
+    event.shaped(Item.of('materialfactory:soul_attuned_dye_blend', 1),
+            [
+            'ABD',
+            'BCB',
+            'DBA'
+            ],
+            {
+            A:'enderio:soul_powder',
+            B:'#forge:dusts/quartz',
+            C:'enderio:organic_black_dye',
+            D:'enderio:organic_brown_dye'
+    }).id('materialfactory:soul_attuned_dye_blend')
+
+    //工业机器涂料
+    event.shaped(Item.of('materialfactory:industrial_dye_blend', 1),
+            [
+            'ABD',
+            'BCB',
+            'DBA'
+            ],
+            {
+            A:'#forge:dusts/lapis',
+            B:'#forge:dusts/quartz',
+            C:'enderio:organic_black_dye',
+            D:'enderio:organic_green_dye'
+    }).id('materialfactory:industrial_dye_blend')
+
+    //简易机器框架
+    event.shaped(Item.of('materialfactory:simple_machine_chassis', 1),
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A:'minecraft:iron_bars',
+            B:'minecraft:iron_ingot',
+            C:'enderio:grains_of_infinity'
+    }).id('materialfactory:simple_machine_chassis')
+
+    //原始合金炉
+    event.shaped(Item.of('enderio:primitive_alloy_smelter', 1),
+            [
+            'AAA',
+            'BCB',
+            'DED'
+            ],
+            {
+            A:'minecraft:iron_ingot',
+            B:'minecraft:furnace',
+            C:'materialfactory:simple_machine_chassis',
+            D:'#forge:gears/stone',
+            E:'minecraft:bucket'
+    }).id('enderio:primitive_alloy_smelter')
+
+    //黄铜传动杆箱
+    event.shapeless(Item.of('materialfactory:brass_encased_shaft', 1),['create:brass_casing','create:shaft']);
+
     event.remove({mod:'capsule'});
     event.remove({id:'allthemodium:teleport_pad'});
     event.remove({id:'tiab:time_in_a_bottle'});
@@ -865,4 +947,6 @@ ServerEvents.recipes(event => {
     event.remove({id:'allthemodium:allthemodium_axe'});
     event.remove({id:'allthemodium:allthemodium_shovel'});
     event.remove({id:'allthemodium:allthemodium_hoe'});
+    event.remove({id:'actuallyadditions:decompress/empowered_restonia_crystal'})
+    event.remove({id:'avaritia:eio_creative_power'})
 })

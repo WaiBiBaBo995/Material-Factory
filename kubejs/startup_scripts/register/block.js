@@ -104,4 +104,9 @@ StartupEvents.registry("block", (event) => {
 		.tag(`materialfactory:megablock/${blockName}`)
 		.lightLevel(4)
 	}
+
+	event.create('materialfactory:simple_machine_chassis', "basic")
+		.soundType('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.defaultCutout()	
 })

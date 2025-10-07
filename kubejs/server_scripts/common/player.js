@@ -1,3 +1,9 @@
+PlayerEvents.loggedIn(event => {
+    let { player, level } = event
+    event.server.scheduleInTicks(20, () => {
+        
+    })
+})
 PlayerEvents.tick(event => {
     let { player, level } = event
     if (player.isInFluidType(Fluid.of('materialfactory:electric_fluid').fluid.fluidType)) {

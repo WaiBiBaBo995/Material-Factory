@@ -1,0 +1,7 @@
+{
+  "parent": "mekanism:block/template/cube_all_led",
+  "textures": {
+    "all": "resources:block/matrix_item_output",
+    "led": "resources:block/matrix_item_output_led"
+  }
+}

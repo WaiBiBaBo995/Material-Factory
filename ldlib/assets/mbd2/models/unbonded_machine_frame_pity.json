@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "resources:block/pity/top",
+    "front": "resources:block/pity/side",
+    "side": "resources:block/pity/side",
+    "bottom": "resources:block/pity/bottom"
+  }
+}

@@ -30,13 +30,13 @@ ItemEvents.rightClicked('materialfactory:charge_spool', event =>{
             Minecraft.getInstance().gameRenderer.displayItemActivation(itemStack)
             event.level.playSound(null,event.player.x,event.player.y,event.player.z,"minecraft:item.totem.use","players",1.0,1.0)
         if (!player.isCreative()) {
-            setTimeout(() => {
+            event.server.scheduleInTicks(40, () => {
                 itemStack.shrink(1)
                 player.potionEffects.add('createaddition:shocking', 60, 0)
                 player.potionEffects.add('minecraft:instant_damage', 1, 0)
                 player.potionEffects.add('cofh_core:shocked', 60, 2)
                 event.level.playSound(null,player.x,player.y,player.z,"entity.generic.explode","players",1,2)
-            }, 2000);
+            })
         }
     }
 })

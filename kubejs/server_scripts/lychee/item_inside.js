@@ -273,6 +273,7 @@ ServerEvents.recipes(event => {
     dyes.forEach(dye => {
     event.custom({
         "type": "lychee:item_inside",
+        "time": 5,
         "item_in": {
             "item": `minecraft:${dye}_dye`,
         },

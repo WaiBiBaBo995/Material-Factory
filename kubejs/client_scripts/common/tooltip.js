@@ -19,6 +19,8 @@ ItemEvents.tooltip(event =>{
         { item: 'ae2:matter_ball', lines: 1 },
         { item: 'materialfactory:brass_encased_shaft', lines: 1 },
         { item: 'materialfactory:brass_multifunctional_device', lines: 3 },
+        { item: 'materialfactory:unbonded_machine_frame_pity', lines: 3},
+        { item: 'materialfactory:oak_crucible', lines: 3},
     ]
     shiftTooltipItems.forEach((shiftTooltipItem) => {
         const { item, lines } = shiftTooltipItem;

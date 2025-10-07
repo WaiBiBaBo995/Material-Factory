@@ -94,6 +94,91 @@ ServerEvents.recipes((event) => {
     ]).transitionalItem(incomplete).loops(1)
 
     //动力合成器
+    create.mechanical_crafting('materialfactory:brass_item_input', [
+        "AABAA",
+        "ACDCA",
+        "AEFGA",
+        "ACHCA",
+        "AAIAA"
+    ], {
+        A: "alltheores:brass_plate",
+        B: "create:smart_chute",
+        C: "create:precision_mechanism",
+        D: "tconstruct:scorched_chute",
+        E: "createaddition:capacitor",
+        F: "create:item_vault",
+        G: "create:electron_tube",
+        H: "actuallyadditions:phantom_itemface",
+        I: "actuallyadditions:hopping_item_interface"
+    })
+    create.mechanical_crafting('materialfactory:brass_item_output', [
+        "AAIAA",
+        "ACDCA",
+        "AEFGA",
+        "ACHCA",
+        "AABAA"
+    ], {
+        A: "alltheores:brass_plate",
+        B: "create:smart_chute",
+        C: "create:precision_mechanism",
+        D: "tconstruct:scorched_chute",
+        E: "createaddition:capacitor",
+        F: "create:item_vault",
+        G: "create:electron_tube",
+        H: "actuallyadditions:phantom_itemface",
+        I: "actuallyadditions:hopping_item_interface"
+    })
+    create.mechanical_crafting('materialfactory:brass_fluid_input', [
+        "AABAA",
+        "ACDCA",
+        "AEFGA",
+        "ACHCA",
+        "AAIAA"
+    ], {
+        A: "alltheores:brass_plate",
+        B: "create:fluid_valve",
+        C: "create:precision_mechanism",
+        D: "tconstruct:scorched_drain",
+        E: "createaddition:capacitor",
+        F: "create:fluid_tank",
+        G: "create:electron_tube",
+        H: "actuallyadditions:phantom_liquiface",
+        I: "xycraft_machines:port_fluid"
+    })
+    create.mechanical_crafting('materialfactory:brass_fluid_output', [
+        "AAIAA",
+        "ACDCA",
+        "AEFGA",
+        "ACHCA",
+        "AABAA"
+    ], {
+        A: "alltheores:brass_plate",
+        B: "create:fluid_valve",
+        C: "create:precision_mechanism",
+        D: "tconstruct:scorched_drain",
+        E: "createaddition:capacitor",
+        F: "create:fluid_tank",
+        G: "create:electron_tube",
+        H: "actuallyadditions:phantom_liquiface",
+        I: "xycraft_machines:port_fluid"
+    })
+    create.mechanical_crafting('materialfactory:brass_energy_input', [
+        "AABAA",
+        "ACDCA",
+        "AEFGA",
+        "ACHCA",
+        "AAIAA"
+    ], {
+        A: "alltheores:brass_plate",
+        B: "powah:energy_discharger_nitro",
+        C: "create:precision_mechanism",
+        D: "powah:capacitor_nitro",
+        E: "createaddition:capacitor",
+        F: "powah:energy_cell_nitro",
+        G: "create:electron_tube",
+        H: "createaddition:portable_energy_interface",
+        I: "powah:energy_hopper_nitro"
+    })
     create.mechanical_crafting('materialfactory:anon_chihaya_hand', [
         "     ABBB",
         "    ABCCB",
