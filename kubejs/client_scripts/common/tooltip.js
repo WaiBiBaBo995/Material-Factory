@@ -10,6 +10,12 @@ ItemEvents.tooltip(event =>{
     event.addAdvanced('extendedae_plus:wireless_transceiver',(item,advanced,text) =>{
         text.add(1,Text.translate("tooltip.materialfactory.wireless_transceiver").lightPurple())
     })
+    event.addAdvanced('ars_nouveau:mage_block',(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.materialfactory.mage_block"))
+    })
+    event.addAdvanced('materialfactory:source_fluid_tank',(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.materialfactory.source_fluid_tank"))
+    })
 
     let shiftTooltipItems = [
         { item: 'materialfactory:charge_spool', lines: 2 },
@@ -19,8 +25,9 @@ ItemEvents.tooltip(event =>{
         { item: 'ae2:matter_ball', lines: 1 },
         { item: 'materialfactory:brass_encased_shaft', lines: 1 },
         { item: 'materialfactory:brass_multifunctional_device', lines: 3 },
-        { item: 'materialfactory:unbonded_machine_frame_pity', lines: 3},
+        { item: 'materialfactory:unbonded_machine_frame_pity', lines: 3 },
         { item: 'materialfactory:oak_crucible', lines: 3},
+        { item: 'materialfactory:source_fluid_extractor', lines: 4 }
     ]
     shiftTooltipItems.forEach((shiftTooltipItem) => {
         const { item, lines } = shiftTooltipItem;

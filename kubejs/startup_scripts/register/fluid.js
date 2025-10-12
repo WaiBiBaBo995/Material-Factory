@@ -16,4 +16,6 @@ StartupEvents.registry("fluid", event =>{
     event.create('materialfactory:green_paint_fluid').thinTexture(0x5E7C16)
     event.create('materialfactory:red_paint_fluid').thinTexture(0xB02E26)
     event.create('materialfactory:black_paint_fluid').thinTexture(0x1d1d21)
+    event.create('materialfactory:liquid_source').thickTexture(0xEE82EE)
+    event.create('materialfactory:liquid_mana').thickTexture(0x87ceeb)
 })

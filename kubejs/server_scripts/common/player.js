@@ -1,5 +1,4 @@
 PlayerEvents.loggedIn(event => {
-    let { player, level } = event
     event.server.scheduleInTicks(20, () => {
         
     })

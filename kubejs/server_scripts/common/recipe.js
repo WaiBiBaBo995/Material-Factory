@@ -947,6 +947,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'allthemodium:allthemodium_axe'});
     event.remove({id:'allthemodium:allthemodium_shovel'});
     event.remove({id:'allthemodium:allthemodium_hoe'});
-    event.remove({id:'actuallyadditions:decompress/empowered_restonia_crystal'})
-    event.remove({id:'avaritia:eio_creative_power'})
+    event.remove({id:'actuallyadditions:decompress/empowered_restonia_crystal'});
+    event.remove({id:'avaritia:eio_creative_power'});
+    event.remove({id:'xycraft_machines:extractor/resin'})
+    event.remove({id:'compactcrafting:test'})
 })

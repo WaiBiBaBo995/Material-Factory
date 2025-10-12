@@ -1,0 +1,33 @@
+{
+  "itemGroup.compactcrafting": "压缩合成",
+
+  "block.compactcrafting.field_projector": "微缩力场投影仪",
+  "block.compactcrafting.rescan_proxy": "微缩力场代理 (重扫描)",
+  "block.compactcrafting.match_proxy": "微缩力场代理 (匹配)",
+
+  "item.compactcrafting.projector_dish": "微缩力场投影仪盘",
+  "item.compactcrafting.base": "基座",
+
+  "compactcrafting.jei.miniaturization.title": "微缩合成",
+  "compactcrafting.jei.miniaturization.component": "材料组成：放置于世界中。",
+  "compactcrafting.jei.miniaturization.catalyst": "将该物品投入微缩力场中以激活合成。",
+
+  "compactcrafting.top.current_recipe": "配方: ",
+  "compactcrafting.top.awaiting_catalyst": "正在等待催化剂...",
+  "compactcrafting.top.progress": "%s / %s",
+
+  "tooltip.compactcrafting.proxy_bound": "绑定于: %s",
+  "tooltip.compactcrafting.proxy_hint": "使用红石信号线来实现自动化。",
+  "tooltip.compactcrafting.proxy_bind_hint": "在投影仪上按住 Shift 键来绑定到力场。",
+  "tooltip.compactcrafting.proxy_unbind_hint": "空中按住 Shift 键来解除绑定。",
+
+  "messages.compactcrafting.no_field_cap": "方块 %s 没有可用的力场。",
+  "messages.compactcrafting.no_field_found": "微缩力场信息未找到。",
+
+  "compactcrafting.jei.toggle_exploded_view": "展开视图",
+  "compactcrafting.jei.toggle_condensed_view": "压缩视图",
+  "compactcrafting.jei.all_layers_mode": "查看所有层",
+  "compactcrafting.jei.single_layer_mode": "单层模式",
+  "compactcrafting.jei.layer_up": "层向上",
+  "compactcrafting.jei.layer_down": "层向下"
+}

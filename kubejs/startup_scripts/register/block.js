@@ -108,5 +108,5 @@ StartupEvents.registry("block", (event) => {
 	event.create('materialfactory:simple_machine_chassis', "basic")
 		.soundType('stone')
 		.tagBlock('minecraft:mineable/pickaxe')
-		.defaultCutout()	
+		.defaultCutout()
 })

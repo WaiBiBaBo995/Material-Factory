@@ -119,8 +119,12 @@
     "block.materialfactory.future_entropy_globular_matrix": "未来熵变球形矩阵",
     "block.materialfactory.unbonded_machine_frame_pity": "未粘合的缺陷机器框架",
     "block.materialfactory.simple_machine_chassis": "简易机器框架",
+    "block.materialfactory.source_fluid_tank": "液态魔源储罐",
+    "block.materialfactory.source_fluid_extractor": "液态魔源提取器",
 
     "block.thermal.crude_oil_fluid": "石油",
+    "block.materialfactory.liquid_source": "液态魔源",
+    "block.materialfactory.liquid_mana": "液态魔力",
 
     "comment.lychee.canseeskymidnight": "§7- 需暴露在天空下\n- 需午夜时间",
     "comment.lychee.canseeskynoon": "§7- 需暴露在天空下\n- 需正午时间",
@@ -179,6 +183,8 @@
     "fluid.materialfactory.red_paint_fluid": "红色涂料",
     "fluid.materialfactory.black_paint_fluid": "黑色涂料",
     "fluid.allthemodium:molten_allthemodium": "熔融ATM",
+    "fluid.materialfactory.liquid_source": "液态魔源",
+    "fluid.materialfactory.liquid_mana": "液态魔力",
 
     "gui.ad_astra.text.gensokyo": "幻想乡",
     "gui.brass_multifunctional_device.speed_cardx2": "§e此处放入黄铜加速卡 x2",
@@ -251,6 +257,8 @@
     "item.materialfactory.wooden_shears": "木制剪刀",
     "item.materialfactory.industrial_dye_blend": "工业涂料",
     "item.materialfactory.soul_attuned_dye_blend": "灵魂协调涂料",
+    "item.materialfactory.liquid_source_bucket": "液态魔源桶",
+    "item.materialfactory.liquid_mana_bucket": "液态魔力桶",
 
     "itemGroup.ad_astra_rocketed.main": "Ad Astra Rocketed",
     "item_group.materialfactory.items": "Material Factory",
@@ -270,6 +278,10 @@
 
     "mbd2.ash_furnace": "融化",
     "mbd2.melting": "制水",
+    "mbd2.source_fluid_extractor.status": "§e开始检测...",
+    "mbd2.source_fluid_extractor.status.idle": "§d——————————————————\n              §a机器可以正常工作！\n§d——————————————————",
+    "mbd2.source_fluid_extractor.status.working": "§d——————————————————\n                 §a机器重新工作！\n§d——————————————————",
+    "mbd2.source_fluid_extractor.status.suspend": "§d——————————————————\n §c机器无法工作，请检测条件是否满足！\n §61.§b提取器§6半径三格内是否有至少§b10§6的§5魔源\n §62.§b提取器§60上方是否有§b1000mb§6的§a空余容量\n§d——————————————————",
 
     "options.horizontalstretch": "水平渲染距离缩放",
     "options.verticalstretch": "垂直渲染距离缩放",
@@ -313,5 +325,11 @@
     "tooltip.materialfactory.unbonded_machine_frame_pity_3": "也可以用管道进行填充胶乳",
     "tooltip.materialfactory.oak_crucible_1": "前期用于合成水的坩埚",
     "tooltip.materialfactory.oak_crucible_2": "拿着原料右键或丢入坩埚填充,空手蹲下右键取出原料",
-    "tooltip.materialfactory.oak_crucible_3": "仅可用铁桶或木桶右键满水坩埚装水"
+    "tooltip.materialfactory.oak_crucible_3": "仅可用铁桶或木桶右键满水坩埚装水",
+    "tooltip.materialfactory.mage_block": "§6使用§b魔符：召唤魔方块§6生成的方块，在 15 秒后自动被破坏，当法术使用§b魔符：强化§6进行强化后将不会自动消失",
+    "tooltip.materialfactory.source_fluid_tank": "§6用于存储§5魔源§6的储罐,也是构成§a多方块结构§6的方块之一",
+    "tooltip.materialfactory.source_fluid_extractor_1": "§61.用于制取§5液态魔源§6,每生产1000mb的§5液态魔源§6需要有§b2000§6的§5魔源§6,注:§b魔源罐§6容量:§b10000§5魔源",
+    "tooltip.materialfactory.source_fluid_extractor_2": "§62.§b提取器§6会从半径3格内的魔源罐中汲取魔源,合成需要§c消耗§b3x3x3空间§6内的§e德格米§6和§e星宝石兽",
+    "tooltip.materialfactory.source_fluid_extractor_3": "§63.当§5魔源§6不够时§b提取器§6会§c暂停工作§6,此时需要§b玩家§6右键激活检测",
+    "tooltip.materialfactory.source_fluid_extractor_4": "§64.当机器§c暂停工作§6时,会输出§c1格红石信号§6;当机器§a完成配方§6时,会输出§c15格红石信号§6"
 }
