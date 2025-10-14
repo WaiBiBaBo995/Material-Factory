@@ -99,222 +99,143 @@ const BlockStateProperties = Java.loadClass('net.minecraft.world.level.block.sta
 
 // 创建全局变量来跟踪上次提取的源位置和粒子生成时间
 let lastExtractionIndex = {};
-let lastSourceParticleTime = {}; // 魔源粒子时间跟踪
-let lastColorParticleTime = {};  // 彩色粒子时间跟踪
+let lastSourceParticleTime = {};
+let lastColorParticleTime = {};
 
 MBDMachineEvents.onRecipeWorking('materialfactory:source_fluid_extractor', e => {
     let { machine } = e.getEvent();
     let { recipeLogic, level } = machine;
-    
-    // 获取机器上方的流体罐
     let tankPos = machine.pos.above();
-    let tankBlockEntity = level.getBlockEntity(tankPos);
+    let tankBlockEntity = level.getBlock(tankPos).entity;
     
-    if (!tankBlockEntity) {
-        recipeLogic.setWorkingEnabled(false);
-        for (let dir of Direction.values()) {
-            machine.setOutputSignal(1, dir);
-        }
+    // 检查流体罐条件
+    if (!tankBlockEntity || tankBlockEntity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get().getFluidInTank(0).amount >= 10000) {
+        stopWorking(machine, recipeLogic);
         return;
     }
     
-    let tankCap = tankBlockEntity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
-    let amount = tankCap.getFluidInTank(0).amount;
-    
-    // 如果流体已满，停止工作
-    if (amount >= 10000) {
-        recipeLogic.setWorkingEnabled(false);
-        for (let dir of Direction.values()) {
-            machine.setOutputSignal(1, dir);
-        }
-        return;
-    }
-    
-    // 定义需要的魔源量和搜索范围
-    const requiredSource = 10;
-    const searchRange = 3;
-    
-    // 获取所有可用的魔源提供者
-    const providers = $SourceUtil.canTakeSource(machine.pos, level, searchRange);
-    
-    // 如果没有提供者，停止工作
+    // 获取魔源提供者
+    const providers = $SourceUtil.canTakeSource(machine.pos, level, 3);
     if (providers.isEmpty()) {
-        recipeLogic.setWorkingEnabled(false);
-        for (let dir of Direction.values()) {
-            machine.setOutputSignal(1, dir);
-        }
+        stopWorking(machine, recipeLogic);
         return;
     }
     
-    // 为每个机器创建一个唯一的标识符
     const machineId = machine.pos.toString();
+    initMachineData(machineId);
     
-    // 初始化或获取上次提取的索引
-    if (!lastExtractionIndex[machineId]) {
-        lastExtractionIndex[machineId] = 0;
+    // 尝试提取魔源
+    if (!tryExtractSource(machine, recipeLogic, level, providers, machineId, tankPos)) {
+        stopWorking(machine, recipeLogic);
     }
-    
-    // 初始化或获取上次粒子生成时间
-    if (!lastSourceParticleTime[machineId]) {
-        lastSourceParticleTime[machineId] = 0;
-    }
-    if (!lastColorParticleTime[machineId]) {
-        lastColorParticleTime[machineId] = 0;
-    }
-    
-    // 尝试从不同的提供者提取魔源
+});
+
+// 初始化机器数据
+function initMachineData(machineId) {
+    if (!lastExtractionIndex[machineId]) lastExtractionIndex[machineId] = 0;
+    if (!lastSourceParticleTime[machineId]) lastSourceParticleTime[machineId] = 0;
+    if (!lastColorParticleTime[machineId]) lastColorParticleTime[machineId] = 0;
+}
+
+// 停止工作函数
+function stopWorking(machine, recipeLogic) {
+    recipeLogic.setWorkingEnabled(false);
+    machine.triggerGeckolibAnim('suspend', 1);
+    Direction.values().forEach(dir => machine.setOutputSignal(1, dir));
+}
+
+// 尝试提取魔源
+function tryExtractSource(machine, recipeLogic, level, providers, machineId, tankPos) {
+    const requiredSource = 10;
     let extracted = false;
     let attempts = 0;
     
-    // 将所有循环内使用的变量全部移到循环外部声明
-    let providerIndex;
-    let provider;
-    let sourceAmount;
-    let projectile;
-    let machineState;
-    let facing;
-    let targetPos;
-    let particleStarts;
-    let colors;
-    let i;
-    let colorParticle;
-    
     while (attempts < providers.size() && !extracted) {
-        // 选择下一个提供者（循环选择）- 只赋值，不声明
-        providerIndex = lastExtractionIndex[machineId] % providers.size();
-        provider = providers.get(providerIndex);
+        let providerIndex = lastExtractionIndex[machineId] % providers.size();
+        let provider = providers.get(providerIndex);
         
-        // 检查这个提供者是否有足够的魔源
-        sourceAmount = provider.getSource().getSource();
-        if (sourceAmount >= requiredSource) {
-            // 尝试提取魔源
+        if (provider.getSource().getSource() >= requiredSource) {
             provider.getSource().removeSource(requiredSource);
             
-            // 生成粒子效果 - 从魔源提供者飞向流体罐（添加时间间隔）
-                // 获取当前时间（毫秒）
-                const currentTime = Date.now();
-                
-                // 检查是否已经过了足够的时间（例如500毫秒 = 0.2秒）
-                if (currentTime - lastSourceParticleTime[machineId] >= 200) {
-                    projectile = new $EntityFollowProjectile(
-                        level, 
-                        provider.getCurrentPos(),
-                        tankPos,
-                        175, 127, 255
-                    );
-                    level.addFreshEntity(projectile);
-                    
-                    // 更新上次魔源粒子生成时间
-                    lastSourceParticleTime[machineId] = currentTime;
-                }
+            createParticles(machine, level, machineId, provider.getCurrentPos(), tankPos);
             
             extracted = true;
             recipeLogic.setWorkingEnabled(true);
-            
-            // 更新索引以便下次从不同的提供者提取
             lastExtractionIndex[machineId] = (providerIndex + 1) % providers.size();
             
-            // 重置输出信号
-            for (let dir of Direction.values()) {
-                machine.setOutputSignal(0, dir);
-            }
-            
-            // 生成四种颜色的粒子代码 - 添加时间间隔
-                
-                // 检查是否已经过了足够的时间（例如1000毫秒 = 1秒）
-                if (currentTime - lastColorParticleTime[machineId] >= 1000) {
-                    // 更新上次彩色粒子生成时间
-                    lastColorParticleTime[machineId] = currentTime;
-                    
-                    machineState = level.getBlockState(machine.pos);
-                    facing = machineState.getValue(BlockStateProperties.HORIZONTAL_FACING);
-                    
-                    targetPos = machine.pos.above(3);
-                    
-                    particleStarts = [];
-                    
-                    switch (facing.toString()) {
-                        case "north":
-                            particleStarts = [
-                                machine.pos.offset(-3, 3, -3),
-                                machine.pos.offset(3, 3, -3),
-                                machine.pos.offset(-3, 3, 3),
-                                machine.pos.offset(3, 3, 3)
-                            ];
-                            break;
-                        case "south":
-                            particleStarts = [
-                                machine.pos.offset(3, 3, 3),
-                                machine.pos.offset(-3, 3, 3),
-                                machine.pos.offset(3, 3, -3),
-                                machine.pos.offset(-3, 3, -3)
-                            ];
-                            break;
-                        case "east":
-                            particleStarts = [
-                                machine.pos.offset(3, 3, -3),
-                                machine.pos.offset(3, 3, 3),
-                                machine.pos.offset(-3, 3, -3),
-                                machine.pos.offset(-3, 3, 3)
-                            ];
-                            break;
-                        case "west":
-                            particleStarts = [
-                                machine.pos.offset(-3, 3, 3),
-                                machine.pos.offset(-3, 3, -3),
-                                machine.pos.offset(3, 3, 3),
-                                machine.pos.offset(3, 3, -3)
-                            ];
-                            break;
-                        default:
-                            particleStarts = [
-                                machine.pos.offset(-3, 3, -3),
-                                machine.pos.offset(3, 3, -3),
-                                machine.pos.offset(-3, 3, 3),
-                                machine.pos.offset(3, 3, 3)
-                            ];
-                    }
-                    
-                    colors = [
-                        {name: "紫色", rgb: [175, 127, 255]},
-                        {name: "绿色", rgb: [0, 255, 0]},
-                        {name: "红色", rgb: [255, 0, 0]},
-                        {name: "蓝色", rgb: [0, 0, 255]}
-                    ];
-                    
-                    for (i = 0; i < 4; i++) {
-                            colorParticle = new $EntityFollowProjectile(
-                                level,
-                                particleStarts[i],
-                                targetPos,
-                                colors[i].rgb[0], colors[i].rgb[1], colors[i].rgb[2]
-                            );
-                            level.addFreshEntity(colorParticle);
-                        }
-                }
-            
+            Direction.values().forEach(dir => machine.setOutputSignal(0, dir));
         } else {
-            // 这个提供者不够，尝试下一个
             attempts++;
             lastExtractionIndex[machineId] = (providerIndex + 1) % providers.size();
         }
     }
     
-    // 如果没有成功提取魔源，停止工作
-    if (!extracted) {
-        recipeLogic.setWorkingEnabled(false);
-        for (let dir of Direction.values()) {
-            machine.setOutputSignal(1, dir);
-        }
+    return extracted;
+}
+
+// 创建粒子效果
+function createParticles(machine, level, machineId, sourcePos, tankPos) {
+    const currentTime = Date.now();
+    
+    // 魔源粒子
+    if (currentTime - lastSourceParticleTime[machineId] >= 200) {
+        let projectile = new $EntityFollowProjectile(level, sourcePos, tankPos, 175, 127, 255);
+        level.addFreshEntity(projectile);
+        lastSourceParticleTime[machineId] = currentTime;
     }
-});
+    
+    // 彩色粒子
+    if (currentTime - lastColorParticleTime[machineId] >= 1000) {
+        lastColorParticleTime[machineId] = currentTime;
+        createColorParticles(machine, level);
+    }
+}
+
+// 创建彩色粒子
+function createColorParticles(machine, level) {
+    let machineState = level.getBlockState(machine.pos);
+    let facing = machineState.getValue(BlockStateProperties.HORIZONTAL_FACING);
+    let targetPos = machine.pos.above(3);
+    
+    let particleStarts = getParticleStartPositions(machine.pos, facing);
+    let colors = [
+        {rgb: [175, 127, 255]},
+        {rgb: [0, 255, 0]},
+        {rgb: [255, 0, 0]},
+        {rgb: [0, 0, 255]}
+    ];
+    
+    for (let i = 0; i < 4; i++) {
+        let colorParticle = new $EntityFollowProjectile(
+            level,
+            particleStarts[i],
+            targetPos,
+            colors[i].rgb[0], colors[i].rgb[1], colors[i].rgb[2]
+        );
+        level.addFreshEntity(colorParticle);
+    }
+}
+// 获取粒子起始位置
+function getParticleStartPositions(pos, facing) {
+    const offsets = {
+        "north": [[-3, 3, -3], [3, 3, -3], [-3, 3, 3], [3, 3, 3]],
+        "south": [[3, 3, 3], [-3, 3, 3], [3, 3, -3], [-3, 3, -3]],
+        "east": [[3, 3, -3], [3, 3, 3], [-3, 3, -3], [-3, 3, 3]],
+        "west": [[-3, 3, 3], [-3, 3, -3], [3, 3, 3], [3, 3, -3]]
+    };
+    
+    let offsetList = offsets[facing.toString()] || offsets["north"];
+    return offsetList.map(offset => pos.offset(offset[0], offset[1], offset[2]));
+}
 MBDMachineEvents.onRightClick('materialfactory:source_fluid_extractor', e => {
-    let { machine, player } = e.getEvent();
+    let { machine, player, heldItem, hand } = e.getEvent();
     let { recipeLogic, level } = machine
     let tank = level.getBlock(machine.pos.above())
     let tankCap = tank.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
     let amount = tankCap.getFluidInTank(0).amount;
     let now = Date.now()
+    if (hand != 'MAIN_HAND') return;
+    if (!heldItem.isEmpty()) return;
     if (level.isClientSide()) return;
     let lastClickTime = player.persistentData.contains('machineLastClickTime')
        ? player.persistentData.getLong('machineLastClickTime')
@@ -332,6 +253,7 @@ MBDMachineEvents.onRightClick('materialfactory:source_fluid_extractor', e => {
             } else if (recipeLogic.isSuspend()) {
                 player.tell(Text.translate("mbd2.source_fluid_extractor.status.working"))
                 recipeLogic.setWorkingEnabled(true)
+                machine.triggerGeckolibAnim('working', 1)
                 for (let dir of Direction.values()) {
                 machine.setOutputSignal(0, dir);
                 }
