@@ -27,7 +27,7 @@ ItemEvents.tooltip(event =>{
         { item: 'materialfactory:brass_multifunctional_device', lines: 3 },
         { item: 'materialfactory:unbonded_machine_frame_pity', lines: 3 },
         { item: 'materialfactory:oak_crucible', lines: 3},
-        { item: 'materialfactory:source_fluid_extractor', lines: 4 }
+        { item: 'materialfactory:source_fluid_extractor', lines: 5 }
     ]
     shiftTooltipItems.forEach((shiftTooltipItem) => {
         const { item, lines } = shiftTooltipItem;

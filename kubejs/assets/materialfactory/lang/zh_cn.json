@@ -328,8 +328,9 @@
     "tooltip.materialfactory.oak_crucible_3": "仅可用铁桶或木桶右键满水坩埚装水",
     "tooltip.materialfactory.mage_block": "§6使用§b魔符：召唤魔方块§6生成的方块，在 15 秒后自动被破坏，当法术使用§b魔符：强化§6进行强化后将不会自动消失",
     "tooltip.materialfactory.source_fluid_tank": "§6用于存储§5魔源§6的储罐,也是构成§a多方块结构§6的方块之一",
-    "tooltip.materialfactory.source_fluid_extractor_1": "§61.用于制取§5液态魔源§6,每生产1000mb的§5液态魔源§6需要有§b2000§6的§5魔源§6,注:§b魔源罐§6容量:§b10000§5魔源",
-    "tooltip.materialfactory.source_fluid_extractor_2": "§62.§b提取器§6会从半径3格内的魔源罐中汲取魔源,合成需要§c消耗§b3x3x3空间§6内的§e德格米§6和§e星宝石兽",
-    "tooltip.materialfactory.source_fluid_extractor_3": "§63.当§5魔源§6不够时§b提取器§6会§c暂停工作§6,此时需要§b玩家§6右键激活检测",
-    "tooltip.materialfactory.source_fluid_extractor_4": "§64.当机器§c暂停工作§6时,会输出§c1格红石信号§6;当机器§a完成配方§6时,会输出§c15格红石信号§6"
+    "tooltip.materialfactory.source_fluid_extractor_1": "§61.§c注意§b液态魔源提取器§6有§c朝向性§6,如果不清楚可以§a空手shift+右键§6查看§b多方块结构",
+    "tooltip.materialfactory.source_fluid_extractor_2": "§62.用于制取§5液态魔源§6,每生产1000mb的§5液态魔源§6需要有§b2000§6的§5魔源§6,注:§b魔源罐§6容量:§b10000§5魔源",
+    "tooltip.materialfactory.source_fluid_extractor_3": "§63.§b提取器§6会从半径3格内的魔源罐中汲取魔源,合成需要§c消耗§b3x3x3空间§6内的§e德格米§6和§e星宝石兽",
+    "tooltip.materialfactory.source_fluid_extractor_4": "§64.当§5魔源§6不够时§b提取器§6会§c暂停工作§6,此时需要§b玩家§a空手§6右键激活检测",
+    "tooltip.materialfactory.source_fluid_extractor_5": "§65.当机器§c暂停工作§6时,会输出§c1格红石信号§6;当机器§a完成配方§6时,会输出§c15格红石信号§6"
 }
