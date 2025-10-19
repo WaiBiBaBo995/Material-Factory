@@ -1,0 +1,76 @@
+[
+  {
+    "id": "key_199f1adef4b",
+    "title": {
+      "bold": true,
+      "color": "#A63CCA",
+      "translate": "key.ae2.wireless_terminal"
+    },
+    "icon": "expatternprovider:wireless_ex_pat",
+    "action": {
+      "type": "KEY",
+      "name": "key.ae2.wireless_terminal",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "key_199f1aef0a1",
+    "title": {
+      "bold": true,
+      "color": "green",
+      "translate": "key.ftbquests.quests"
+    },
+    "icon": "ftbquests:book",
+    "action": {
+      "type": "KEY",
+      "name": "key.ftbquests.quests",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "cmd_199f1afd21b",
+    "title": {
+      "bold": true,
+      "color": "red",
+      "translate": "key.back"
+    },
+    "icon": "artifacts:chorus_totem",
+    "action": {
+      "type": "COMMAND",
+      "command": "/back",
+      "delayTicks": 0
+    }
+  },
+  {
+    "id": "key_199f1b04a52",
+    "title": {
+      "bold": true,
+      "color": "#F2B53D",
+      "translate": "key.skyguis"
+    },
+    "icon": "tconstruct:sky_vanilla_slime_grass",
+    "action": {
+      "type": "KEY",
+      "name": "skyguis.key.all_teams_screen",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "key_199f1ba037f",
+    "title": {
+      "bold": true,
+      "color": "#5AC6FC",
+      "translate": "key.beyonddimensions.open_gui"
+    },
+    "icon": "beyonddimensions:net_creater",
+    "action": {
+      "type": "KEY",
+      "name": "key.beyonddimensions.open_gui",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  }
+]

@@ -16,7 +16,8 @@ EntityEvents.hurt('slimeoverhaul:earth_slime', event => {
     if(currentTime - lastHit >= cooldownTime) {
         if (Math.random() < 0.2) {
       event.entity.potionEffects.add('jump_boost', 80, 5);
-      player.tell('§c有只土史莱姆生气了！');
+      event.entity.potionEffects.add('strength', 80, 2);
+      player.tell(Text.translate('message.materialfactory.earth_slime_buff'));
     }
       if (Math.random() < 0.5){
       player.potionEffects.add('regeneration', 100, 0);

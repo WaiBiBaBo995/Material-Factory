@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
             "hide": true
         },{
             "type": "execute",
-            "command": 'playsound minecraft:block.lava.extinguish blocks @a ~ ~ ~ 1 1',
+            "command": 'playsound minecraft:block.lava.extinguish blocks @a[distance=..2] ~ ~ ~ 1 1',
             "hide": true
         }]
     })
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
             "hide": true
         },{
             "type": "execute",
-            "command": 'playsound createaddition:loud_zap block @p ~ ~ ~ 1 2',
+            "command": 'playsound createaddition:loud_zap block @a[distance=..4] ~ ~ ~ 1 2',
             "hide": true
         }
     ]
@@ -271,44 +271,181 @@ ServerEvents.recipes(event => {
 
     let dyes = ["white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black"];
     dyes.forEach(dye => {
+        event.custom({
+            "type": "lychee:item_inside",
+            "time": 5,
+            "item_in": {
+                "item": `minecraft:${dye}_dye`,
+            },
+            "block_in": { "blocks": ["water"] },
+            "post": [{
+                "type": "place",
+                "block": `materialfactory:${dye}_paint_fluid`
+            },{
+                "type": 'execute',
+                "command": 'particle minecraft:end_rod ~ ~ ~ 0.5 1 0.5 0.05 10',
+                "hide": true
+            },{
+                "type": "execute",
+                "command": 'playsound block.pointed_dripstone.drip_water_into_cauldron block @a[distance=..2] ~ ~ ~ 10',
+                "hide": true
+            }
+        ]
+        })
+/*        event.custom({
+            "type": "lychee:item_inside",
+            "item_in": {
+                "item": 'ae2:matter_ball',
+            },
+            "block_in": { "blocks": [`materialfactory:${dye}_paint_fluid`] },
+            "post": [{
+                "type": "drop_item",
+                "item": `ae2:${dye}_paint_ball`
+            },{
+                "type": 'execute',
+                "command": 'particle minecraft:enchant ~ ~ ~ 0.5 0.8 0.5 0.1 10',
+                "hide": true
+            },{
+                "type": "execute",
+                "command": 'playsound block.brewing_stand.brew block @p ~ ~ ~ 0.3 2',
+                "hide": true
+            }]
+        })
+*/    })
+    //晶簇
+    let dye_crystal = ["orange", "magenta", "yellow", "pink", "gray", "light_gray", "cyan", "purple", "brown", "green"];
+	for (const dyes of dye_crystal) {
     event.custom({
         "type": "lychee:item_inside",
-        "time": 5,
         "item_in": {
-            "item": `minecraft:${dye}_dye`,
+            "item": 'materialfactory:base_crystal_cluster',
         },
-        "block_in": { "blocks": ["water"] },
+        "block_in": { "blocks": [`materialfactory:${dyes}_paint_fluid`] },
         "post": [{
             "type": "place",
-            "block": `materialfactory:${dye}_paint_fluid`
-        },{
-            "type": 'execute',
-            "command": 'particle minecraft:end_rod ~ ~ ~ 0.5 1 0.5 0.05 10',
-            "hide": true
-        },{
-            "type": "execute",
-            "command": 'playsound block.pointed_dripstone.drip_water_into_cauldron block @p ~ ~ ~ 10',
-            "hide": true
-        }
-    ]
-    })
-    event.custom({
-        "type": "lychee:item_inside",
-        "item_in": {
-            "item": 'ae2:matter_ball',
-        },
-        "block_in": { "blocks": [`materialfactory:${dye}_paint_fluid`] },
-        "post": [{
-            "type": "drop_item",
-            "item": `ae2:${dye}_paint_ball`
+            "block": `materialfactory:${dyes}_crystal_cluster`
         },{
             "type": 'execute',
             "command": 'particle minecraft:enchant ~ ~ ~ 0.5 0.8 0.5 0.1 10',
             "hide": true
         },{
-            "type": "execute",
-            "command": 'playsound block.brewing_stand.brew block @p ~ ~ ~ 0.3 2',
+           "type": "execute",
+            "command": 'playsound block.brewing_stand.brew block @a[distance=..3] ~ ~ ~ 0.3 1',
             "hide": true
         }]
-    })})
+    })}
+    event.custom({
+        "type": "lychee:item_inside",
+        "item_in": {
+            "item": 'materialfactory:base_crystal_cluster',
+        },
+        "block_in": { "blocks": ['materialfactory:white_paint_fluid'] },
+        "post": [{
+            "type": "place",
+            "block": 'actuallyadditions:enori_crystal_cluster'
+        },{
+            "type": 'execute',
+            "command": 'particle minecraft:enchant ~ ~ ~ 0.5 0.8 0.5 0.1 10',
+            "hide": true
+        },{
+           "type": "execute",
+            "command": 'playsound block.brewing_stand.brew block @a[distance=..3] ~ ~ ~ 0.3 1',
+            "hide": true
+        }]
+    })
+    event.custom({
+        "type": "lychee:item_inside",
+        "item_in": {
+            "item": 'materialfactory:base_crystal_cluster',
+        },
+        "block_in": { "blocks": ['materialfactory:red_paint_fluid'] },
+        "post": [{
+            "type": "place",
+            "block": 'actuallyadditions:restonia_crystal_cluster'
+        },{
+            "type": 'execute',
+            "command": 'particle minecraft:enchant ~ ~ ~ 0.5 0.8 0.5 0.1 10',
+            "hide": true
+        },{
+           "type": "execute",
+            "command": 'playsound block.brewing_stand.brew block @a[distance=..3] ~ ~ ~ 0.3 1',
+            "hide": true
+        }]
+    })
+    event.custom({
+        "type": "lychee:item_inside",
+        "item_in": {
+            "item": 'materialfactory:base_crystal_cluster',
+        },
+        "block_in": { "blocks": ['materialfactory:blue_paint_fluid'] },
+        "post": [{
+            "type": "place",
+            "block": 'actuallyadditions:palis_crystal_cluster'
+        },{
+            "type": 'execute',
+            "command": 'particle minecraft:enchant ~ ~ ~ 0.5 0.8 0.5 0.1 10',
+            "hide": true
+        },{
+           "type": "execute",
+            "command": 'playsound block.brewing_stand.brew block @a[distance=..3] ~ ~ ~ 0.3 1',
+            "hide": true
+        }]
+    })
+    event.custom({
+        "type": "lychee:item_inside",
+        "item_in": {
+            "item": 'materialfactory:base_crystal_cluster',
+        },
+        "block_in": { "blocks": ['materialfactory:light_blue_paint_fluid'] },
+        "post": [{
+            "type": "place",
+            "block": 'actuallyadditions:diamatine_crystal_cluster'
+        },{
+            "type": 'execute',
+            "command": 'particle minecraft:enchant ~ ~ ~ 0.5 0.8 0.5 0.1 10',
+            "hide": true
+        },{
+           "type": "execute",
+            "command": 'playsound block.brewing_stand.brew block @a[distance=..3] ~ ~ ~ 0.3 1',
+            "hide": true
+        }]
+    })
+    event.custom({
+        "type": "lychee:item_inside",
+        "item_in": {
+            "item": 'materialfactory:base_crystal_cluster',
+        },
+        "block_in": { "blocks": ['materialfactory:black_paint_fluid'] },
+        "post": [{
+            "type": "place",
+            "block": 'actuallyadditions:void_crystal_cluster'
+        },{
+            "type": 'execute',
+            "command": 'particle minecraft:enchant ~ ~ ~ 0.5 0.8 0.5 0.1 10',
+            "hide": true
+        },{
+           "type": "execute",
+            "command": 'playsound block.brewing_stand.brew block @a[distance=..3] ~ ~ ~ 0.3 1',
+            "hide": true
+        }]
+    })
+    event.custom({
+        "type": "lychee:item_inside",
+        "item_in": {
+            "item": 'materialfactory:base_crystal_cluster',
+        },
+        "block_in": { "blocks": ['materialfactory:lime_paint_fluid'] },
+        "post": [{
+            "type": "place",
+            "block": 'actuallyadditions:emeradic_crystal_cluster'
+        },{
+            "type": 'execute',
+            "command": 'particle minecraft:enchant ~ ~ ~ 0.5 0.8 0.5 0.1 10',
+            "hide": true
+        },{
+           "type": "execute",
+            "command": 'playsound block.brewing_stand.brew block @a[distance=..3] ~ ~ ~ 0.3 1',
+            "hide": true
+        }]
+    })
 })

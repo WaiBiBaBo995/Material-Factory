@@ -1,6 +1,6 @@
 JEIEvents.information(event =>{
     event.addFluid('materialfactory:electric_fluid',Text.translate('jei.electric_fluid.information'))
-    event.addItem('#ae2:paint_balls',Text.translate('jei.paint_balls.information'))
+    event.addItem('#materialfactory:crystal_cluster',Text.translate('jei.crystal_cluster.information'))
     event.addFluid('materialfactory:white_paint_fluid',Text.translate('jei.paint_fluid.information'))
     event.addFluid('materialfactory:orange_paint_fluid',Text.translate('jei.paint_fluid.information'))
     event.addFluid('materialfactory:magenta_paint_fluid',Text.translate('jei.paint_fluid.information'))
@@ -17,4 +17,5 @@ JEIEvents.information(event =>{
     event.addFluid('materialfactory:green_paint_fluid',Text.translate('jei.paint_fluid.information'))
     event.addFluid('materialfactory:red_paint_fluid',Text.translate('jei.paint_fluid.information'))
     event.addFluid('materialfactory:black_paint_fluid',Text.translate('jei.paint_fluid.information'))
+    event.addFluid('materialfactory:liquid_mana',Text.translate('jei.liquid_mana.information'))
 })

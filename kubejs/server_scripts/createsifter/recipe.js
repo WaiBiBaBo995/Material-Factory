@@ -1215,553 +1215,553 @@ advancedNetheriteMesh([
 			Item.of('ars_nouveau:sourceberry_bush',8).withChance(0.08),
 			Item.of('create:experience_nugget',8).withChance(0.05),
 		], 'allthecompressed:moss_block_1x',1)
-//白色染色球
+//白色晶簇
 stringMesh([
 			Item.of('minecraft:quartz').withChance(0.25),
 			Item.of('xycraft_world:xychorium_gem_light').withChance(0.2),
 			Item.of('alltheores:raw_iridium').withChance(0.1),
-		], 'ae2:white_paint_ball', 10, true)
+		], 'actuallyadditions:enori_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('minecraft:quartz',2).withChance(0.4),
 			Item.of('xycraft_world:xychorium_gem_light',2).withChance(0.25),
 			Item.of('alltheores:raw_iridium',2).withChance(0.15),
-		], 'ae2:white_paint_ball', 9, true)
+		], 'actuallyadditions:enori_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('minecraft:quartz',3).withChance(0.5),
 			Item.of('xycraft_world:xychorium_gem_light',3).withChance(0.3),
 			Item.of('alltheores:raw_iridium',3).withChance(0.2),
-		], 'ae2:white_paint_ball', 8, true)
+		], 'actuallyadditions:enori_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('minecraft:quartz',4).withChance(0.6),
 			Item.of('xycraft_world:xychorium_gem_light',4).withChance(0.25),
 			Item.of('alltheores:raw_iridium',4).withChance(0.22),
-		], 'ae2:white_paint_ball', 6, true)
+		], 'actuallyadditions:enori_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('minecraft:quartz',5).withChance(0.7),
 			Item.of('xycraft_world:xychorium_gem_light',5).withChance(0.2),
 			Item.of('alltheores:raw_iridium',5).withChance(0.25),
-		], 'ae2:white_paint_ball', 4, true)
+		], 'actuallyadditions:enori_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('minecraft:quartz',6).withChance(0.75),
 			Item.of('xycraft_world:xychorium_gem_light',6).withChance(0.15),
 			Item.of('alltheores:raw_iridium',6).withChance(0.3),
-		], 'ae2:white_paint_ball', 2, true)
+		], 'actuallyadditions:enori_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('minecraft:nether_quartz_ore',4).withChance(0.6),
 			Item.of('xycraft_world:xychorium_ore_stone_light',4).withChance(0.25),
 			Item.of('alltheores:iridium_ore',4).withChance(0.22),
-		], 'ae2:white_paint_ball', 6, true)
+		], 'actuallyadditions:enori_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('minecraft:nether_quartz_ore',5).withChance(0.7),
 			Item.of('xycraft_world:xychorium_ore_stone_light',5).withChance(0.2),
 			Item.of('alltheores:iridium_ore',5).withChance(0.25),
-		], 'ae2:white_paint_ball', 4, true)
+		], 'actuallyadditions:enori_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('minecraft:nether_quartz_ore',6).withChance(0.75),
 			Item.of('xycraft_world:xychorium_ore_stone_light',6).withChance(0.15),
 			Item.of('alltheores:iridium_ore',6).withChance(0.3),
-		], 'ae2:white_paint_ball', 2, true)
-//橙色染色球
+		], 'actuallyadditions:enori_crystal_cluster', 2, true)
+//橙色晶簇
 stringMesh([
 			Item.of('minecraft:raw_copper').withChance(0.25),
 			Item.of('#forge:raw_materials/thorium').withChance(0.2),
-		], 'ae2:orange_paint_ball', 10, true)
+		], 'materialfactory:orange_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('minecraft:raw_copper',2).withChance(0.3),
 			Item.of('#forge:raw_materials/thorium',2).withChance(0.22),
-		], 'ae2:orange_paint_ball', 9, true)
+		], 'materialfactory:orange_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('minecraft:raw_copper',3).withChance(0.35),
 			Item.of('#forge:raw_materials/thorium',3).withChance(0.25),
-		], 'ae2:orange_paint_ball', 8, true)
+		], 'materialfactory:orange_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('minecraft:raw_copper',4).withChance(0.4),
 			Item.of('#forge:raw_materials/thorium',4).withChance(0.28),
-		], 'ae2:orange_paint_ball', 6, true)
+		], 'materialfactory:orange_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('minecraft:raw_copper',5).withChance(0.45),
 			Item.of('#forge:raw_materials/thorium',5).withChance(0.3),
-		], 'ae2:orange_paint_ball', 4, true)
+		], 'materialfactory:orange_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('minecraft:raw_copper',6).withChance(0.5),
 			Item.of('#forge:raw_materials/thorium',6).withChance(0.32),
-		], 'ae2:orange_paint_ball', 2, true)
+		], 'materialfactory:orange_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('minecraft:copper_ore',4).withChance(0.4),
 			Item.of('#forge:storage_blocks/thorium',4).withChance(0.28),
 			Item.of('thoriumreactors:titanic_iron_ore',4).withChance(0.22),
-		], 'ae2:orange_paint_ball', 6, true)
+		], 'materialfactory:orange_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('minecraft:copper_ore',5).withChance(0.45),
 			Item.of('#forge:storage_blocks/thorium',5).withChance(0.3),
 			Item.of('thoriumreactors:titanic_iron_ore',5).withChance(0.25),
-		], 'ae2:orange_paint_ball', 4, true)
+		], 'materialfactory:orange_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('minecraft:copper_ore',6).withChance(0.5),
 			Item.of('#forge:storage_blocks/thorium',6).withChance(0.32),
 			Item.of('thoriumreactors:titanic_iron_ore',6).withChance(0.3),
-		], 'ae2:orange_paint_ball', 2, true)
-//浅蓝色染色球
+		], 'materialfactory:orange_crystal_cluster', 2, true)
+//浅蓝色晶簇
 stringMesh([
 			Item.of('xycraft_world:xychorium_gem_blue').withChance(0.25),
 			Item.of('mekanism:dust_fluorite').withChance(0.2),
 			Item.of('alltheores:raw_zinc').withChance(0.17),
 			Item.of('alltheores:diamond_dust').withChance(0.15),
 			Item.of('alltheores:raw_platinum').withChance(0.1),
-		], 'ae2:light_blue_paint_ball', 10, true)
+		], 'actuallyadditions:diamatine_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('xycraft_world:xychorium_gem_blue',2).withChance(0.3),
 			Item.of('mekanism:dust_fluorite',2).withChance(0.22),
 			Item.of('alltheores:raw_zinc',2).withChance(0.18),
 			Item.of('alltheores:diamond_dust',2).withChance(0.18),
 			Item.of('alltheores:raw_platinum',2).withChance(0.12),
-		], 'ae2:light_blue_paint_ball', 9, true)
+		], 'actuallyadditions:diamatine_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('xycraft_world:xychorium_gem_blue',3).withChance(0.35),
 			Item.of('mekanism:dust_fluorite',3).withChance(0.25),
 			Item.of('alltheores:raw_zinc',3).withChance(0.2),
 			Item.of('alltheores:diamond_dust',3).withChance(0.2),
 			Item.of('alltheores:raw_platinum',3).withChance(0.14),
-		], 'ae2:light_blue_paint_ball', 8, true)
+		], 'actuallyadditions:diamatine_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('xycraft_world:xychorium_gem_blue',4).withChance(0.4),
 			Item.of('mekanism:dust_fluorite',4).withChance(0.28),
 			Item.of('alltheores:raw_zinc',4).withChance(0.24),
 			Item.of('alltheores:diamond_dust',4).withChance(0.22),
 			Item.of('alltheores:raw_platinum',4).withChance(0.16),
-		], 'ae2:light_blue_paint_ball', 6, true)
+		], 'actuallyadditions:diamatine_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('xycraft_world:xychorium_gem_blue',5).withChance(0.45),
 			Item.of('mekanism:dust_fluorite',5).withChance(0.3),
 			Item.of('alltheores:raw_zinc',5).withChance(0.26),
 			Item.of('alltheores:diamond_dust',5).withChance(0.25),
 			Item.of('alltheores:raw_platinum',5).withChance(0.18),
-		], 'ae2:light_blue_paint_ball', 4, true)
+		], 'actuallyadditions:diamatine_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('xycraft_world:xychorium_gem_blue',6).withChance(0.5),
 			Item.of('mekanism:fluorite_gem',6).withChance(0.32),
 			Item.of('alltheores:raw_zinc',6).withChance(0.31),
 			Item.of('minecraft:diamond',6).withChance(0.3),
 			Item.of('alltheores:raw_platinum',6).withChance(0.2),
-		], 'ae2:light_blue_paint_ball', 2, true)
+		], 'actuallyadditions:diamatine_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_blue',4).withChance(0.4),
 			Item.of('mekanism:fluorite_ore',4).withChance(0.28),
 			Item.of('alltheores:zinc_ore',4).withChance(0.24),
 			Item.of('minecraft:diamond_ore',4).withChance(0.22),
 			Item.of('alltheores:platinum_ore',4).withChance(0.16),
-		], 'ae2:light_blue_paint_ball', 6, true)
+		], 'actuallyadditions:diamatine_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_blue',5).withChance(0.45),
 			Item.of('mekanism:fluorite_ore',5).withChance(0.3),
 			Item.of('alltheores:zinc_ore',5).withChance(0.26),
 			Item.of('minecraft:diamond_ore',5).withChance(0.25),
 			Item.of('alltheores:platinum_ore',5).withChance(0.18),
-		], 'ae2:light_blue_paint_ball', 4, true)
+		], 'actuallyadditions:diamatine_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_blue',6).withChance(0.5),
 			Item.of('mekanism:fluorite_ore',6).withChance(0.32),
 			Item.of('alltheores:zinc_ore',6).withChance(0.31),
 			Item.of('minecraft:diamond_ore',6).withChance(0.3),
 			Item.of('alltheores:platinum_ore',6).withChance(0.2),
-		], 'ae2:light_blue_paint_ball', 2, true)
-//黄色染色球
+		], 'actuallyadditions:diamatine_crystal_cluster', 2, true)
+//黄色晶簇
 stringMesh([
 			Item.of('minecraft:glowstone_dust').withChance(0.25),
 			Item.of('thermal:sulfur').withChance(0.2),
 			Item.of('bigreactors:raw_yellorium').withChance(0.15),
 			Item.of('minecraft:raw_gold').withChance(0.1),
-		], 'ae2:yellow_paint_ball', 10, true)
+		], 'materialfactory:yellow_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('minecraft:glowstone_dust',2).withChance(0.3),
 			Item.of('thermal:sulfur',2).withChance(0.22),
 			Item.of('bigreactors:raw_yellorium',2).withChance(0.18),
 			Item.of('minecraft:raw_gold',2).withChance(0.12),
-		], 'ae2:yellow_paint_ball', 9, true)
+		], 'materialfactory:yellow_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('minecraft:glowstone_dust',3).withChance(0.35),
 			Item.of('thermal:sulfur',3).withChance(0.25),
 			Item.of('bigreactors:raw_yellorium',3).withChance(0.2),
 			Item.of('minecraft:raw_gold',3).withChance(0.14),
-		], 'ae2:yellow_paint_ball', 8, true)
+		], 'materialfactory:yellow_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('minecraft:glowstone_dust',4).withChance(0.4),
 			Item.of('thermal:sulfur',4).withChance(0.28),
 			Item.of('bigreactors:raw_yellorium',4).withChance(0.24),
 			Item.of('minecraft:raw_gold',4).withChance(0.16),
-		], 'ae2:yellow_paint_ball', 6, true)
+		], 'materialfactory:yellow_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('minecraft:glowstone_dust',5).withChance(0.45),
 			Item.of('thermal:sulfur',5).withChance(0.3),
 			Item.of('bigreactors:raw_yellorium',5).withChance(0.26),
 			Item.of('minecraft:raw_gold',5).withChance(0.18),
-		], 'ae2:yellow_paint_ball', 4, true)
+		], 'materialfactory:yellow_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('minecraft:glowstone_dust',6).withChance(0.5),
 			Item.of('thermal:sulfur',6).withChance(0.32),
 			Item.of('bigreactors:raw_yellorium',6).withChance(0.31),
 			Item.of('minecraft:raw_gold',6).withChance(0.2),
-		], 'ae2:yellow_paint_ball', 2, true)
+		], 'materialfactory:yellow_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('minecraft:glowstone',4).withChance(0.4),
 			Item.of('thermal:sulfur_ore',4).withChance(0.28),
 			Item.of('bigreactors:yellorite_ore',4).withChance(0.24),
 			Item.of('minecraft:gold_ore',4).withChance(0.16),
-		], 'ae2:yellow_paint_ball', 6, true)
+		], 'materialfactory:yellow_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('minecraft:glowstone',5).withChance(0.45),
 			Item.of('thermal:sulfur_ore',5).withChance(0.3),
 			Item.of('bigreactors:yellorite_ore',5).withChance(0.26),
 			Item.of('minecraft:gold_ore',5).withChance(0.18),
-		], 'ae2:yellow_paint_ball', 4, true)
+		], 'materialfactory:yellow_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('minecraft:glowstone',6).withChance(0.5),
 			Item.of('thermal:sulfur_ore',6).withChance(0.32),
 			Item.of('bigreactors:yellorite_ore',6).withChance(0.31),
 			Item.of('minecraft:gold_ore',6).withChance(0.2),
-		], 'ae2:yellow_paint_ball', 2, true)
-//黄绿色染色球
+		], 'materialfactory:yellow_crystal_cluster', 2, true)
+//黄绿色晶簇
 stringMesh([
 			Item.of('alltheores:raw_uranium').withChance(0.25),
 			Item.of('thermal:emerald_dust').withChance(0.1),
-		], 'ae2:lime_paint_ball', 10, true)
+		], 'actuallyadditions:emeradic_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('alltheores:raw_uranium',2).withChance(0.3),
 			Item.of('thermal:emerald_dust',2).withChance(0.12),
-		], 'ae2:lime_paint_ball', 9, true)
+		], 'actuallyadditions:emeradic_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('alltheores:raw_uranium',3).withChance(0.35),
 			Item.of('thermal:emerald_dust',3).withChance(0.14),
-		], 'ae2:lime_paint_ball', 8, true)
+		], 'actuallyadditions:emeradic_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('alltheores:raw_uranium',4).withChance(0.4),
 			Item.of('thermal:emerald_dust',4).withChance(0.16),
-		], 'ae2:lime_paint_ball', 6, true)
+		], 'actuallyadditions:emeradic_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('alltheores:raw_uranium',5).withChance(0.45),
 			Item.of('thermal:emerald_dust',5).withChance(0.18),
-		], 'ae2:lime_paint_ball', 4, true)
+		], 'actuallyadditions:emeradic_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('alltheores:raw_uranium',6).withChance(0.5),
 			Item.of('minecraft:emerald',6).withChance(0.2),
-		], 'ae2:lime_paint_ball', 2, true)
+		], 'actuallyadditions:emeradic_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('alltheores:uranium_ore',4).withChance(0.4),
 			Item.of('minecraft:emerald_ore',4).withChance(0.16),
-		], 'ae2:lime_paint_ball', 6, true)
+		], 'actuallyadditions:emeradic_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('alltheores:uranium_ore',5).withChance(0.45),
 			Item.of('minecraft:emerald_ore',5).withChance(0.18),
-		], 'ae2:lime_paint_ball', 4, true)
+		], 'actuallyadditions:emeradic_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('alltheores:uranium_ore',6).withChance(0.5),
 			Item.of('minecraft:emerald_ore',6).withChance(0.2),
-		], 'ae2:lime_paint_ball', 2, true)
-//粉红色染色球
+		], 'actuallyadditions:emeradic_crystal_cluster', 2, true)
+//粉红色晶簇
 stringMesh([
 			Item.of('thoriumreactors:pyrochlor_ore').withChance(0.25),
-		], 'ae2:pink_paint_ball', 10, true)
+		], 'materialfactory:pink_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('thoriumreactors:pyrochlor_ore',2).withChance(0.3),
-		], 'ae2:pink_paint_ball', 9, true)
+		], 'materialfactory:pink_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('thoriumreactors:pyrochlor_ore',3).withChance(0.35),
-		], 'ae2:pink_paint_ball', 8, true)
+		], 'materialfactory:pink_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('thoriumreactors:pyrochlor_ore',4).withChance(0.4),
-		], 'ae2:pink_paint_ball', 6, true)
+		], 'materialfactory:pink_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('thoriumreactors:pyrochlor_ore',5).withChance(0.45),
-		], 'ae2:pink_paint_ball', 4, true)
+		], 'materialfactory:pink_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('thoriumreactors:pyrochlor_ore',6).withChance(0.5),
-		], 'ae2:pink_paint_ball', 2, true)
+		], 'materialfactory:pink_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('thoriumreactors:niob_ingot',4).withChance(0.4),
-		], 'ae2:pink_paint_ball', 6, true)
+		], 'materialfactory:pink_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('thoriumreactors:niob_ingot',5).withChance(0.45),
-		], 'ae2:pink_paint_ball', 4, true)
+		], 'materialfactory:pink_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('thoriumreactors:niob_ingot',6).withChance(0.5),
-		], 'ae2:pink_paint_ball', 2, true)
-//灰色染色球
+		], 'materialfactory:pink_crystal_cluster', 2, true)
+//灰色晶簇
 stringMesh([
 			Item.of('alltheores:raw_nickel').withChance(0.25),
 			Item.of('alltheores:raw_silver').withChance(0.2),
-		], 'ae2:gray_paint_ball', 10, true)
+		], 'materialfactory:gray_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('alltheores:raw_nickel',2).withChance(0.3),
 			Item.of('alltheores:raw_silver',2).withChance(0.22),
-		], 'ae2:gray_paint_ball', 9, true)
+		], 'materialfactory:gray_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('alltheores:raw_nickel',3).withChance(0.35),
 			Item.of('alltheores:raw_silver',3).withChance(0.25),
-		], 'ae2:gray_paint_ball', 8, true)
+		], 'materialfactory:gray_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('alltheores:raw_nickel',4).withChance(0.4),
 			Item.of('alltheores:raw_silver',4).withChance(0.28),
-		], 'ae2:gray_paint_ball', 6, true)
+		], 'materialfactory:gray_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('alltheores:raw_nickel',5).withChance(0.45),
 			Item.of('alltheores:raw_silver',5).withChance(0.3),
-		], 'ae2:gray_paint_ball', 4, true)
+		], 'materialfactory:gray_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('alltheores:raw_nickel',6).withChance(0.5),
 			Item.of('alltheores:raw_silver',6).withChance(0.32),
-		], 'ae2:gray_paint_ball', 2, true)
+		], 'materialfactory:gray_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('alltheores:nickel_ore',4).withChance(0.4),
 			Item.of('alltheores:silver_ore',4).withChance(0.28),
-		], 'ae2:gray_paint_ball', 6, true)
+		], 'materialfactory:gray_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('alltheores:nickel_ore',5).withChance(0.45),
 			Item.of('alltheores:silver_ore',5).withChance(0.3),
-		], 'ae2:gray_paint_ball', 4, true)
+		], 'materialfactory:gray_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('alltheores:nickel_ore',6).withChance(0.5),
 			Item.of('alltheores:silver_ore',6).withChance(0.32),
-		], 'ae2:gray_paint_ball', 2, true)
-//淡灰色染色球
+		], 'materialfactory:gray_crystal_cluster', 2, true)
+//淡灰色晶簇
 stringMesh([
 			Item.of('alltheores:raw_osmium').withChance(0.25),
 			Item.of('alltheores:raw_tin').withChance(0.2),
 			Item.of('alltheores:raw_aluminum').withChance(0.15),
 			Item.of('mekanism:dust_fluorite').withChance(0.1),
-		], 'ae2:light_gray_paint_ball', 10, true)
+		], 'materialfactory:light_gray_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('alltheores:raw_osmium',2).withChance(0.3),
 			Item.of('alltheores:raw_tin',2).withChance(0.22),
 			Item.of('alltheores:raw_aluminum',2).withChance(0.18),
 			Item.of('mekanism:dust_fluorite',2).withChance(0.12),
-		], 'ae2:light_gray_paint_ball', 9, true)
+		], 'materialfactory:light_gray_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('alltheores:raw_osmium',3).withChance(0.35),
 			Item.of('alltheores:raw_tin',3).withChance(0.25),
 			Item.of('alltheores:raw_aluminum',3).withChance(0.2),
 			Item.of('mekanism:dust_fluorite',3).withChance(0.14),
-		], 'ae2:light_gray_paint_ball', 8, true)
+		], 'materialfactory:light_gray_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('alltheores:raw_osmium',4).withChance(0.4),
 			Item.of('alltheores:raw_tin',4).withChance(0.28),
 			Item.of('alltheores:raw_aluminum',4).withChance(0.24),
 			Item.of('mekanism:dust_fluorite',4).withChance(0.16),
-		], 'ae2:light_gray_paint_ball', 6, true)
+		], 'materialfactory:light_gray_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('alltheores:raw_osmium',5).withChance(0.45),
 			Item.of('alltheores:raw_tin',5).withChance(0.3),
 			Item.of('alltheores:raw_aluminum',5).withChance(0.26),
 			Item.of('mekanism:dust_fluorite',5).withChance(0.18),
-		], 'ae2:light_gray_paint_ball', 4, true)
+		], 'materialfactory:light_gray_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('alltheores:raw_osmium',6).withChance(0.5),
 			Item.of('alltheores:raw_tin',6).withChance(0.32),
 			Item.of('alltheores:raw_aluminum',6).withChance(0.31),
 			Item.of('mekanism:fluorite_gem',6).withChance(0.2),
-		], 'ae2:light_gray_paint_ball', 2, true)
+		], 'materialfactory:light_gray_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('alltheores:osmium_ore',4).withChance(0.4),
 			Item.of('alltheores:tin_ore',4).withChance(0.28),
 			Item.of('alltheores:aluminum_ore').withChance(0.24),
 			Item.of('mekanism:fluorite_ore').withChance(0.16),
-		], 'ae2:light_gray_paint_ball', 6, true)
+		], 'materialfactory:light_gray_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('alltheores:osmium_ore',5).withChance(0.45),
 			Item.of('alltheores:tin_ore',5).withChance(0.3),
 			Item.of('alltheores:aluminum_ore',5).withChance(0.26),
 			Item.of('mekanism:fluorite_ore',5).withChance(0.18),
-		], 'ae2:light_gray_paint_ball', 4, true)
+		], 'materialfactory:light_gray_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('alltheores:osmium_ore',6).withChance(0.5),
 			Item.of('alltheores:tin_ore',6).withChance(0.32),
 			Item.of('alltheores:aluminum_ore',6).withChance(0.31),
 			Item.of('mekanism:fluorite_ore',6).withChance(0.2),
-		], 'ae2:light_gray_paint_ball', 2, true)
-//紫色染色球
+		], 'materialfactory:light_gray_crystal_cluster', 2, true)
+//紫色晶簇
 stringMesh([
 			Item.of('nuclearcraft:boron_chunk').withChance(0.25),
 			Item.of('thoriumreactors:chromite_ore').withChance(0.2),
-		], 'ae2:purple_paint_ball', 10, true)
+		], 'materialfactory:purple_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('nuclearcraft:boron_chunk',2).withChance(0.3),
 			Item.of('thoriumreactors:chromite_ore',2).withChance(0.22),
-		], 'ae2:purple_paint_ball', 9, true)
+		], 'materialfactory:purple_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('nuclearcraft:boron_chunk',3).withChance(0.35),
 			Item.of('thoriumreactors:chromite_ore',3).withChance(0.25),
-		], 'ae2:purple_paint_ball', 8, true)
+		], 'materialfactory:purple_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('nuclearcraft:boron_chunk',4).withChance(0.4),
 			Item.of('thoriumreactors:chromite_ore',4).withChance(0.28),
-		], 'ae2:purple_paint_ball', 6, true)
+		], 'materialfactory:purple_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('nuclearcraft:boron_chunk',5).withChance(0.45),
 			Item.of('thoriumreactors:chromite_ore',5).withChance(0.3),
-		], 'ae2:purple_paint_ball', 4, true)
+		], 'materialfactory:purple_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('nuclearcraft:boron_chunk',6).withChance(0.5),
 			Item.of('thoriumreactors:chromite_ore',6).withChance(0.32),
-		], 'ae2:purple_paint_ball', 2, true)
+		], 'materialfactory:purple_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('nuclearcraft:boron_ore',4).withChance(0.4),
 			Item.of('thoriumreactors:chromium_ingot',4).withChance(0.28),
-		], 'ae2:purple_paint_ball', 6, true)
+		], 'materialfactory:purple_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('nuclearcraft:boron_ore',5).withChance(0.45),
 			Item.of('thoriumreactors:chromium_ingot',5).withChance(0.3),
-		], 'ae2:purple_paint_ball', 4, true)
+		], 'materialfactory:purple_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('nuclearcraft:boron_ore',6).withChance(0.5),
 			Item.of('thoriumreactors:chromium_ingot',6).withChance(0.32),
-		], 'ae2:purple_paint_ball', 2, true)
-//蓝色染色球
+		], 'materialfactory:purple_crystal_cluster', 2, true)
+//蓝色晶簇
 stringMesh([
 			Item.of('minecraft:lapis_lazuli').withChance(0.25),
 			Item.of('alltheores:raw_lead').withChance(0.2),
 			Item.of('alltheores:sapphire').withChance(0.15),
 			Item.of('tconstruct:raw_cobalt').withChance(0.1),
 			Item.of('thoriumreactors:manganese_ore').withChance(0.05),
-		], 'ae2:blue_paint_ball', 10, true)
+		], 'actuallyadditions:palis_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('minecraft:lapis_lazuli',2).withChance(0.3),
 			Item.of('alltheores:raw_lead',2).withChance(0.22),
 			Item.of('alltheores:sapphire',2).withChance(0.18),
 			Item.of('tconstruct:raw_cobalt',2).withChance(0.12),
 			Item.of('thoriumreactors:manganese_ore',2).withChance(0.07),
-		], 'ae2:blue_paint_ball', 9, true)
+		], 'actuallyadditions:palis_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('minecraft:lapis_lazuli',3).withChance(0.35),
 			Item.of('alltheores:raw_lead',3).withChance(0.25),
 			Item.of('alltheores:sapphire',3).withChance(0.2),
 			Item.of('tconstruct:raw_cobalt',3).withChance(0.14),
 			Item.of('thoriumreactors:manganese_ore',3).withChance(0.1),
-		], 'ae2:blue_paint_ball', 8, true)
+		], 'actuallyadditions:palis_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('minecraft:lapis_lazuli',4).withChance(0.4),
 			Item.of('alltheores:raw_lead',4).withChance(0.28),
 			Item.of('alltheores:sapphire',4).withChance(0.24),
 			Item.of('tconstruct:raw_cobalt',4).withChance(0.16),
 			Item.of('thoriumreactors:manganese_ore',4).withChance(0.12),
-		], 'ae2:blue_paint_ball', 6, true)
+		], 'actuallyadditions:palis_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('minecraft:lapis_lazuli',5).withChance(0.45),
 			Item.of('alltheores:raw_lead',5).withChance(0.3),
 			Item.of('alltheores:sapphire',5).withChance(0.26),
 			Item.of('tconstruct:raw_cobalt',5).withChance(0.18),
 			Item.of('thoriumreactors:manganese_ore',5).withChance(0.14),
-		], 'ae2:blue_paint_ball', 4, true)
+		], 'actuallyadditions:palis_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('minecraft:lapis_lazuli',6).withChance(0.5),
 			Item.of('alltheores:raw_lead',6).withChance(0.32),
 			Item.of('alltheores:sapphire',6).withChance(0.31),
 			Item.of('tconstruct:raw_cobalt',6).withChance(0.2),
 			Item.of('thoriumreactors:manganese_ore',6).withChance(0.16),
-		], 'ae2:blue_paint_ball', 2, true)
+		], 'actuallyadditions:palis_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('minecraft:lapis_ore',4).withChance(0.4),
 			Item.of('alltheores:lead_ore',4).withChance(0.28),
 			Item.of('alltheores:sapphire_ore',4).withChance(0.24),
 			Item.of('tconstruct:cobalt_ore',4).withChance(0.16),
 			Item.of('thoriumreactors:manganese_ingot',4).withChance(0.12),
-		], 'ae2:blue_paint_ball', 6, true)
+		], 'actuallyadditions:palis_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('minecraft:lapis_ore',5).withChance(0.45),
 			Item.of('alltheores:lead_ore',5).withChance(0.3),
 			Item.of('alltheores:sapphire_ore',5).withChance(0.26),
 			Item.of('tconstruct:cobalt_ore',5).withChance(0.18),
 			Item.of('thoriumreactors:manganese_ingot',5).withChance(0.14),
-		], 'ae2:blue_paint_ball', 4, true)
+		], 'actuallyadditions:palis_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('minecraft:lapis_ore',6).withChance(0.5),
 			Item.of('alltheores:lead_ore',6).withChance(0.32),
 			Item.of('alltheores:sapphire_ore',6).withChance(0.31),
 			Item.of('tconstruct:cobalt_ore',6).withChance(0.2),
 			Item.of('thoriumreactors:manganese_ingot',6).withChance(0.16),
-		], 'ae2:blue_paint_ball', 2, true)
-//棕色染色球
+		], 'actuallyadditions:palis_crystal_cluster', 2, true)
+//棕色晶簇
 stringMesh([
 			Item.of('minecraft:raw_iron').withChance(0.25),
 			Item.of('thermal:niter').withChance(0.2),
 			Item.of('minecraft:netherite_scrap').withChance(0.1),
-		], 'ae2:brown_paint_ball', 10, true)
+		], 'materialfactory:brown_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('minecraft:raw_iron',2).withChance(0.3),
 			Item.of('thermal:niter',2).withChance(0.22),
 			Item.of('minecraft:netherite_scrap',2).withChance(0.12),
-		], 'ae2:brown_paint_ball', 9, true)
+		], 'materialfactory:brown_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('minecraft:raw_iron',3).withChance(0.35),
 			Item.of('thermal:niter',3).withChance(0.25),
 			Item.of('minecraft:netherite_scrap',3).withChance(0.14),
-		], 'ae2:brown_paint_ball', 8, true)
+		], 'materialfactory:brown_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('minecraft:raw_iron',4).withChance(0.4),
 			Item.of('thermal:niter',4).withChance(0.28),
 			Item.of('minecraft:netherite_scrap',4).withChance(0.16),
-		], 'ae2:brown_paint_ball', 6, true)
+		], 'materialfactory:brown_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('minecraft:raw_iron',5).withChance(0.45),
 			Item.of('thermal:niter',5).withChance(0.3),
 			Item.of('minecraft:netherite_scrap',5).withChance(0.18),
-		], 'ae2:brown_paint_ball', 4, true)
+		], 'materialfactory:brown_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('minecraft:raw_iron',6).withChance(0.5),
 			Item.of('thermal:niter',6).withChance(0.32),
 			Item.of('minecraft:netherite_scrap',6).withChance(0.2),
-		], 'ae2:brown_paint_ball', 2, true)
+		], 'materialfactory:brown_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('minecraft:iron_ore',4).withChance(0.4),
 			Item.of('thermal:niter_ore',4).withChance(0.28),
 			Item.of('minecraft:ancient_debris',4).withChance(0.16),
-		], 'ae2:brown_paint_ball', 6, true)
+		], 'materialfactory:brown_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('minecraft:iron_ore',5).withChance(0.45),
 			Item.of('thermal:niter_ore',5).withChance(0.3),
 			Item.of('minecraft:ancient_debris',5).withChance(0.18),
-		], 'ae2:brown_paint_ball', 4, true)
+		], 'materialfactory:brown_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('minecraft:iron_ore',6).withChance(0.5),
 			Item.of('thermal:niter_ore',6).withChance(0.32),
 			Item.of('minecraft:ancient_debris',6).withChance(0.2),
-		], 'ae2:brown_paint_ball', 2, true)
-//绿色染色球
+		], 'materialfactory:brown_crystal_cluster', 2, true)
+//绿色晶簇
 stringMesh([
 			Item.of('xycraft_world:xychorium_gem_green').withChance(0.25),
 			Item.of('alltheores:peridot').withChance(0.2),
-		], 'ae2:green_paint_ball', 10, true)
+		], 'materialfactory:green_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('xycraft_world:xychorium_gem_green',2).withChance(0.3),
 			Item.of('alltheores:peridot',2).withChance(0.22),
-		], 'ae2:green_paint_ball', 9, true)
+		], 'materialfactory:green_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('xycraft_world:xychorium_gem_green',3).withChance(0.35),
 			Item.of('alltheores:peridot',3).withChance(0.25),
-		], 'ae2:green_paint_ball', 8, true)
+		], 'materialfactory:green_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('xycraft_world:xychorium_gem_green',4).withChance(0.4),
 			Item.of('alltheores:peridot',4).withChance(0.28),
-		], 'ae2:green_paint_ball', 6, true)
+		], 'materialfactory:green_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('xycraft_world:xychorium_gem_green',5).withChance(0.45),
 			Item.of('alltheores:peridot',5).withChance(0.3),
-		], 'ae2:green_paint_ball', 4, true)
+		], 'materialfactory:green_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('xycraft_world:xychorium_gem_green',6).withChance(0.5),
 			Item.of('alltheores:peridot',6).withChance(0.32),
-		], 'ae2:green_paint_ball', 2, true)
+		], 'materialfactory:green_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_green',4).withChance(0.4),
 			Item.of('alltheores:peridot_ore',4).withChance(0.28),
-		], 'ae2:green_paint_ball', 6, true)
+		], 'materialfactory:green_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_green',5).withChance(0.45),
 			Item.of('alltheores:peridot_ore',5).withChance(0.3),
-		], 'ae2:green_paint_ball', 4, true)
+		], 'materialfactory:green_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_green',6).withChance(0.5),
 			Item.of('alltheores:peridot_ore',6).withChance(0.32),
-		], 'ae2:green_paint_ball', 2, true)
-//红色染色球
+		], 'materialfactory:green_crystal_cluster', 2, true)
+//红色晶簇
 stringMesh([
 			Item.of('xycraft_world:xychorium_gem_red').withChance(0.25),
 			Item.of('minecraft:redstone').withChance(0.2),
@@ -1769,7 +1769,7 @@ stringMesh([
 			Item.of('thermal:cinnabar').withChance(0.1),
 			Item.of('nuclearcraft:magnesium_chunk').withChance(0.1),
 			Item.of('thoriumreactors:molybdenum_ore').withChance(0.1),
-		], 'ae2:red_paint_ball', 10, true)
+		], 'actuallyadditions:restonia_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('xycraft_world:xychorium_gem_red',2).withChance(0.3),
 			Item.of('minecraft:redstone',2).withChance(0.22),
@@ -1777,7 +1777,7 @@ andesiteMesh([
 			Item.of('thermal:cinnabar',2).withChance(0.12),
 			Item.of('nuclearcraft:magnesium_chunk',2).withChance(0.12),
 			Item.of('thoriumreactors:molybdenum_ore',2).withChance(0.12),
-		], 'ae2:red_paint_ball', 9, true)
+		], 'actuallyadditions:restonia_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('xycraft_world:xychorium_gem_red',3).withChance(0.35),
 			Item.of('minecraft:redstone',3).withChance(0.25),
@@ -1785,7 +1785,7 @@ zincMesh([
 			Item.of('thermal:cinnabar',3).withChance(0.14),
 			Item.of('nuclearcraft:magnesium_chunk',3).withChance(0.14),
 			Item.of('thoriumreactors:molybdenum_ore',3).withChance(0.14),
-		], 'ae2:red_paint_ball', 8, true)
+		], 'actuallyadditions:restonia_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('xycraft_world:xychorium_gem_red',4).withChance(0.4),
 			Item.of('minecraft:redstone',4).withChance(0.28),
@@ -1793,7 +1793,7 @@ brassMesh([
 			Item.of('thermal:cinnabar',4).withChance(0.16),
 			Item.of('nuclearcraft:magnesium_chunk',4).withChance(0.16),
 			Item.of('thoriumreactors:molybdenum_ore',4).withChance(0.16),
-		], 'ae2:red_paint_ball', 6, true)
+		], 'actuallyadditions:restonia_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('xycraft_world:xychorium_gem_red',5).withChance(0.45),
 			Item.of('minecraft:redstone',5).withChance(0.3),
@@ -1801,7 +1801,7 @@ diamondMesh([
 			Item.of('thermal:cinnabar',5).withChance(0.18),
 			Item.of('nuclearcraft:magnesium_chunk',5).withChance(0.18),
 			Item.of('thoriumreactors:molybdenum_ore',5).withChance(0.18),
-		], 'ae2:red_paint_ball', 4, true)
+		], 'actuallyadditions:restonia_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('xycraft_world:xychorium_gem_red',6).withChance(0.5),
 			Item.of('minecraft:redstone',6).withChance(0.32),
@@ -1809,7 +1809,7 @@ netheriteMesh([
 			Item.of('thermal:cinnabar',6).withChance(0.2),
 			Item.of('nuclearcraft:magnesium_chunk',6).withChance(0.2),
 			Item.of('thoriumreactors:molybdenum_ore',6).withChance(0.2),
-		], 'ae2:red_paint_ball', 2, true)
+		], 'actuallyadditions:restonia_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_red',4).withChance(0.4),
 			Item.of('minecraft:redstone_ore',4).withChance(0.28),
@@ -1817,7 +1817,7 @@ advancedBrassMesh([
 			Item.of('thermal:cinnabar_ore',4).withChance(0.16),
 			Item.of('nuclearcraft:magnesium_ore',4).withChance(0.16),
 			Item.of('thoriumreactors:molybdenum_ingot',4).withChance(0.16),
-		], 'ae2:red_paint_ball', 6, true)
+		], 'actuallyadditions:restonia_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_red',5).withChance(0.45),
 			Item.of('minecraft:redstone_ore',5).withChance(0.3),
@@ -1825,7 +1825,7 @@ advancedDiamondMesh([
 			Item.of('thermal:cinnabar_ore',5).withChance(0.18),
 			Item.of('nuclearcraft:magnesium_ore',5).withChance(0.18),
 			Item.of('thoriumreactors:molybdenum_ingot',5).withChance(0.18),
-		], 'ae2:red_paint_ball', 4, true)
+		], 'actuallyadditions:restonia_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('xycraft_world:xychorium_ore_stone_red',6).withChance(0.5),
 			Item.of('minecraft:redstone_ore',6).withChance(0.32),
@@ -1833,59 +1833,59 @@ advancedNetheriteMesh([
 			Item.of('thermal:cinnabar_ore',6).withChance(0.2),
 			Item.of('nuclearcraft:magnesium_ore',6).withChance(0.2),
 			Item.of('thoriumreactors:molybdenum_ingot',6).withChance(0.2),
-		], 'ae2:red_paint_ball', 2, true)
-//黑色染色球
+		], 'actuallyadditions:restonia_crystal_cluster', 2, true)
+//黑色晶簇
 stringMesh([
 			Item.of('minecraft:coal').withChance(0.25),
 			Item.of('xycraft_world:xychorium_gem_dark').withChance(0.2),
 			Item.of('thoriumreactors:graphite_crystal').withChance(0.15),
 			Item.of('nuclearcraft:thorium_chunk').withChance(0.1),
-		], 'ae2:black_paint_ball', 10, true)
+		], 'actuallyadditions:void_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('minecraft:coal',2).withChance(0.3),
 			Item.of('xycraft_world:xychorium_gem_dark',2).withChance(0.22),
 			Item.of('thoriumreactors:graphite_crystal',2).withChance(0.18),
 			Item.of('nuclearcraft:thorium_chunk',2).withChance(0.12),
-		], 'ae2:black_paint_ball', 9, true)
+		], 'actuallyadditions:void_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('minecraft:coal',3).withChance(0.35),
 			Item.of('xycraft_world:xychorium_gem_dark',3).withChance(0.25),
 			Item.of('thoriumreactors:graphite_crystal',3).withChance(0.2),
 			Item.of('nuclearcraft:thorium_chunk',3).withChance(0.14),
-		], 'ae2:black_paint_ball', 8, true)
+		], 'actuallyadditions:void_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('minecraft:coal',4).withChance(0.4),
 			Item.of('xycraft_world:xychorium_gem_dark',4).withChance(0.28),
 			Item.of('thoriumreactors:graphite_crystal',4).withChance(0.24),
 			Item.of('nuclearcraft:thorium_chunk',4).withChance(0.16),
-		], 'ae2:black_paint_ball', 6, true)
+		], 'actuallyadditions:void_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('minecraft:coal',5).withChance(0.45),
 			Item.of('xycraft_world:xychorium_gem_dark',5).withChance(0.3),
 			Item.of('thoriumreactors:graphite_crystal',5).withChance(0.26),
 			Item.of('nuclearcraft:thorium_chunk',5).withChance(0.18),
-		], 'ae2:black_paint_ball', 4, true)
+		], 'actuallyadditions:void_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('minecraft:coal',6).withChance(0.5),
 			Item.of('xycraft_world:xychorium_gem_dark',6).withChance(0.32),
 			Item.of('thoriumreactors:graphite_crystal',6).withChance(0.31),
 			Item.of('nuclearcraft:thorium_chunk',6).withChance(0.2),
-		], 'ae2:black_paint_ball', 2, true)
+		], 'actuallyadditions:void_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('minecraft:coal_ore',4).withChance(0.4),
 			Item.of('xycraft_world:xychorium_ore_stone_dark',4).withChance(0.28),
 			Item.of('thoriumreactors:graphite_ore',4).withChance(0.24),
 			Item.of('nuclearcraft:thorium_ore',4).withChance(0.16),
-		], 'ae2:black_paint_ball', 6, true)
+		], 'actuallyadditions:void_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('minecraft:coal_ore',5).withChance(0.45),
 			Item.of('xycraft_world:xychorium_ore_stone_dark',5).withChance(0.3),
 			Item.of('thoriumreactors:graphite_ore',5).withChance(0.26),
 			Item.of('nuclearcraft:thorium_ore',5).withChance(0.18),
-		], 'ae2:black_paint_ball', 4, true)
+		], 'actuallyadditions:void_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('minecraft:coal_ore',6).withChance(0.5),
 			Item.of('xycraft_world:xychorium_ore_stone_dark',6).withChance(0.32),
 			Item.of('thoriumreactors:graphite_ore',6).withChance(0.31),
 			Item.of('nuclearcraft:thorium_ore',6).withChance(0.2),
-		], 'ae2:black_paint_ball', 2, true)
+		], 'actuallyadditions:void_crystal_cluster', 2, true)

@@ -1,0 +1,15 @@
+
+[animations]
+	#Master switch for all animations.
+	animationsEnabled = true
+	#Animate the menu opening/closing with a radial wipe.
+	animOpenClose = true
+	#Animate hover (slice grow + fill).
+	animHover = true
+	#How much the hovered slice grows at full hover (0.00..0.50).
+	#Range: 0.0 ~ 0.5
+	hoverGrowPct = 0.05
+	#Menu open/close animation duration in milliseconds (0..2000).
+	#Range: 0 ~ 2000
+	openCloseMs = 125
+

@@ -73,6 +73,13 @@ StartupEvents.registry("item", event =>{
             .tag('minecraft:shears');
     event.create('materialfactory:industrial_dye_blend', 'basic')
     event.create('materialfactory:soul_attuned_dye_blend', 'basic')
+    event.create('materialfactory:incomplete_source_catalyst', 'basic')
+            .fireResistant(true)
+    event.create('materialfactory:source_catalyst', 'basic')
+            .glow(true)
+            .fireResistant(true)
+            .tooltip(Text.translate('tooltip.materialfactory.source_catalyst'))
+            .rarity("epic")
 })
 
 ItemEvents.modification(event =>{

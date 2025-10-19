@@ -276,12 +276,11 @@ MBDMachineEvents.onRecipeFinish('materialfactory:source_fluid_extractor', e => {
 });
 
 //未来熵变球形矩阵
+// 创建全局变量来跟踪上次粒子生成时间
+    let lastEntropyParticleTime = {};
 MBDMachineEvents.onRecipeWorking('materialfactory:entropy_matrix_core', e => {
     let { machine } = e.getEvent();
     let { level } = machine;
-    // 创建全局变量来跟踪上次粒子生成时间
-    let lastEntropyParticleTime = {};
-
     // 手动定义六个方向的偏移量
     const offsets = [
         {x: 0, y: 2, z: 0},   // 上
@@ -301,12 +300,12 @@ MBDMachineEvents.onRecipeWorking('materialfactory:entropy_matrix_core', e => {
     }
     
     // 获取当前时间（毫秒）
-    const currentTime = Date.now();
+    const EMCcurrentTime = Date.now();
     
     // 检查是否已经过了足够的时间（100毫秒 = 0.1秒）
-    if (currentTime - lastEntropyParticleTime[machineId] >= 100) {
+    if (EMCcurrentTime - lastEntropyParticleTime[machineId] >= 100) {
         // 更新上次粒子生成时间
-        lastEntropyParticleTime[machineId] = currentTime;
+        lastEntropyParticleTime[machineId] = EMCcurrentTime;
         
         // 为每个方向生成粒子
         // 将所有循环内使用的变量移到循环外部声明
@@ -327,6 +326,95 @@ MBDMachineEvents.onRecipeWorking('materialfactory:entropy_matrix_core', e => {
                     machine.pos,
                     173, 216, 230
                 );
+                level.addFreshEntity(particle);
+        }
+    }
+});
+
+//巨型附魔装置
+let lastRandomParticleTime = {};
+MBDMachineEvents.onRecipeWorking('materialfactory:huge_enchanting_apparatus', e => {
+    let event = e.getEvent();
+    let machine = event.machine;
+    let level = machine.level;
+    
+    // 预先计算所有方向（包括斜方向）
+    // 3x3x3 的立方体，排除中心点 (0,0,0)
+    const allDirections = (function() {
+        let dirs = [];
+        for (let x = -1; x <= 1; x++) {
+            for (let y = -1; y <= 1; y++) {
+                for (let z = -1; z <= 1; z++) {
+                    // 排除中心点 (0,0,0)
+                    if (x !== 0 || y !== 0 || z !== 0) {
+                        dirs.push({x: x, y: y, z: z});
+                    }
+                }
+            }
+        }
+        return dirs;
+    })();
+    // 为每个机器创建一个唯一的标识符
+    let machineId = machine.pos.toString();
+    
+    // 初始化或获取上次粒子生成时间
+    if (!lastRandomParticleTime[machineId]) {
+        lastRandomParticleTime[machineId] = 0;
+    }
+    
+    // 获取当前时间（毫秒）
+    let currentTime = Date.now();
+    
+    // 检查是否已经过了足够的时间（100毫秒 = 0.1秒）
+    if (currentTime - lastRandomParticleTime[machineId] >= 100) {
+        // 更新上次粒子生成时间
+        lastRandomParticleTime[machineId] = currentTime;
+        
+        // 随机选择1到3个方向
+        var numDirections = Math.floor(Math.random() * 3) + 1; // 1-3
+        var selectedDirections = [];
+        
+        // 使用循环手动复制数组
+        var availableDirections = [];
+        for (var j = 0; j < allDirections.length; j++) {
+            availableDirections.push(allDirections[j]);
+        }
+        
+        // 随机选择指定数量的方向
+        for (var i = 0; i < numDirections; i++) {
+            if (availableDirections.length === 0) break;
+            
+            var randomIndex = Math.floor(Math.random() * availableDirections.length);
+            selectedDirections.push(availableDirections[randomIndex]);
+            
+            // 从可用方向中移除已选择的方向
+            availableDirections.splice(randomIndex, 1);
+        }
+        
+        // 为每个选中的方向生成粒子
+        var k, targetPos, particle, r, g, b;
+        for (k = 0; k < selectedDirections.length; k++) {
+                // 计算粒子目标位置（机器位置 + 方向偏移1格）
+                targetPos = machine.pos.offset(
+                    selectedDirections[k].x, 
+                    selectedDirections[k].y, 
+                    selectedDirections[k].z
+                );
+                
+                // 生成随机颜色
+                r = Math.floor(Math.random() * 256);
+                g = Math.floor(Math.random() * 256);
+                b = Math.floor(Math.random() * 256);
+                
+                // 生成粒子，从机器位置飞向目标位置
+                particle = new $EntityFollowProjectile(
+                    level,
+                    machine.pos,  // 从机器位置开始
+                    targetPos,    // 飞向周围一格的位置
+                    r, g, b       // 随机颜色
+                );
+                
+                // 添加粒子到世界
                 level.addFreshEntity(particle);
         }
     }

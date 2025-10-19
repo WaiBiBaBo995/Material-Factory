@@ -109,4 +109,28 @@ StartupEvents.registry("block", (event) => {
 		.soundType('stone')
 		.tagBlock('minecraft:mineable/pickaxe')
 		.defaultCutout()
+
+	event.create(`materialfactory:base_crystal_cluster`, "basic")
+		.soundType('glass')
+		.resistance(4)
+		.box(4, 6, 4, 8, 10, 8)
+        .box(6, 2, 6, 10, 14, 10)
+        .box(4, 0, 4, 14, 2, 14)
+        .box(2, 0, 2, 8, 6, 8)
+        .box(8, 2, 8, 12, 8, 12)
+        .box(8, 0, 2, 12, 4, 6)
+		.lightLevel(9)
+	let dye_crystal = ["orange", "magenta", "yellow", "pink", "gray", "light_gray", "cyan", "purple", "brown", "green"];
+	for (const dyes of dye_crystal) {
+	event.create(`materialfactory:${dyes}_crystal_cluster`, "basic")
+		.soundType('glass')
+		.resistance(4)
+		.box(4, 6, 4, 8, 10, 8)
+        .box(6, 2, 6, 10, 14, 10)
+        .box(4, 0, 4, 14, 2, 14)
+        .box(2, 0, 2, 8, 6, 8)
+        .box(8, 2, 8, 12, 8, 12)
+        .box(8, 0, 2, 12, 4, 6)
+		.lightLevel(9)
+	}
 })

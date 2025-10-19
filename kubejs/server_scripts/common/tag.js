@@ -113,6 +113,17 @@ ServerEvents.tags('item', event => {
 
     event.add("materialfactory:entropy_matrix_block",['materialfactory:entropy_matrix_glass','materialfactory:entropy_matrix_energy_port','materialfactory:entropy_matrix_item_input','materialfactory:entropy_matrix_item_output'])
 
+    event.add("materialfactory:crystal_cluster",['actuallyadditions:enori_crystal_cluster', 'actuallyadditions:restonia_crystal_cluster', 'actuallyadditions:restonia_crystal_cluster', 'actuallyadditions:restonia_crystal_cluster', 'actuallyadditions:void_crystal_cluster', 'actuallyadditions:emeradic_crystal_cluster'])
+    let dye_crystal = ["orange", "magenta", "yellow", "pink", "gray", "light_gray", "cyan", "purple", "brown", "green"];
+	for (const dyes of dye_crystal) {
+        event.add("materialfactory:crystal_cluster",`materialfactory:${dyes}_crystal_cluster`)
+    }
+
+    //fix tag
+    event.add("forge:leathers",'minecraft:leather')
+    //发射器放置
+    event.add("lychee:dispenser_placement", ["materialfactory:unbonded_machine_frame_pity"])
+
     event.remove('tombstone:seeds', '#mysticalagriculture:seeds')
 });
 

@@ -889,6 +889,15 @@ ServerEvents.recipes(event => {
             E:'minecraft:bucket'
     }).id('enderio:primitive_alloy_smelter')
 
+    //魔源石半砖
+    event.shaped(Item.of('ars_nouveau:sourcestone_slab', 6),
+            [
+            'AAA'
+            ],
+            {
+            A:'ars_nouveau:sourcestone'
+    })
+
     //黄铜传动杆箱
     event.shapeless(Item.of('materialfactory:brass_encased_shaft', 1),['create:brass_casing','create:shaft']);
 

@@ -22,12 +22,13 @@ ItemEvents.tooltip(event =>{
         { item: 'materialfactory:starter', lines: 3 },
         { item: 'materialfactory:starter_core', lines: 1},
         { item: 'extendedae_plus:entity_speed_ticker', lines: 1 },
-        { item: 'ae2:matter_ball', lines: 1 },
+        { item: 'materialfactory:base_crystal_cluster', lines: 1 },
         { item: 'materialfactory:brass_encased_shaft', lines: 1 },
         { item: 'materialfactory:brass_multifunctional_device', lines: 3 },
         { item: 'materialfactory:unbonded_machine_frame_pity', lines: 3 },
         { item: 'materialfactory:oak_crucible', lines: 3},
-        { item: 'materialfactory:source_fluid_extractor', lines: 5 }
+        { item: 'materialfactory:source_fluid_extractor', lines: 5 },
+        { item: 'compactcrafting:field_projector', lines: 3 }
     ]
     shiftTooltipItems.forEach((shiftTooltipItem) => {
         const { item, lines } = shiftTooltipItem;

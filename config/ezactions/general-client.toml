@@ -1,0 +1,8 @@
+
+[general]
+	#If true, allow basic movement inputs while the EZActions radial is open.
+	moveWhileRadialOpen = true
+	#How many lines are shown in the command editor text box (visual only).
+	#Range: 1 ~ 32
+	commandEditorVisibleLines = 6
+

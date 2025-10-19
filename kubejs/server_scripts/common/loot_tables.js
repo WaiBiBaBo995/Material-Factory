@@ -5,17 +5,6 @@ ServerEvents.entityLootTables(event => {
             pool.addEmpty(2)
         })
     })
-
-    event.modifyEntity('slimeoverhaul:earth_slime', Loot =>{
-        Loot.addPool(pool => {
-            pool.addItem('mysticalagriculture:dirt_essence').weight(1).count([1,2]).lootingEnchant(2,8)
-        })
-    })
-    event.modifyEntity('slimeoverhaul:flame_slime', Loot =>{
-        Loot.addPool(pool => {
-            pool.addItem('mysticalagriculture:fire_essence').weight(1).count([1,2]).lootingEnchant(2,8)
-        })
-    })
 })
 
 ServerEvents.genericLootTables(e=>{

@@ -24,6 +24,8 @@ ServerEvents.recipes((event) => {
     create.sandpaper_polishing('minecraft:emerald', ['thermal:emerald_dust'])
     create.sandpaper_polishing('minecraft:diamond', ['alltheores:diamond_dust'])
     create.sandpaper_polishing('mekanism:fluorite_gem', ['mekanism:dust_fluorite'])
+    create.sandpaper_polishing('mysticalagriculture:dirt_essence','slimeoverhaul:earth_slime_ball')
+    create.sandpaper_polishing('mysticalagriculture:fire_essence','slimeoverhaul:flame_slime_ball')
 
     //机械手
     create.item_application('minecraft:snow_block',['minecraft:moss_block','thermal:frost_melon_slice'])
@@ -38,9 +40,9 @@ ServerEvents.recipes((event) => {
     create.pressing('#forge:gems/emerald', '#forge:dusts/emerald')
 
     //混合搅拌
-    create.mixing(Item.of('ae2:matter_ball', 16), [Fluid.of("industrialforegoing:latex", 400),'16x allthecompressed:cobblestone_1x'])
-    create.mixing(Item.of('ae2:matter_ball', 32), [Fluid.of("industrialforegoing:latex", 600),'32x allthecompressed:cobblestone_1x']).heated()
-    create.mixing(Item.of('ae2:matter_ball', 64), [Fluid.of("industrialforegoing:latex", 1000),'64x allthecompressed:cobblestone_1x']).superheated()
+    create.mixing(Item.of('materialfactory:base_crystal_cluster', 4), [Fluid.of("industrialforegoing:latex", 1000),'16x allthecompressed:cobblestone_1x'])
+    create.mixing(Item.of('materialfactory:base_crystal_cluster', 8), [Fluid.of("industrialforegoing:latex", 1500),'32x allthecompressed:cobblestone_1x']).heated()
+    create.mixing(Item.of('materialfactory:base_crystal_cluster', 16), [Fluid.of("industrialforegoing:latex", 2000),'64x allthecompressed:cobblestone_1x']).superheated()
     create.mixing(['enderio:powdered_cobalt'], [Fluid.of("minecraft:water", 250),'minecraft:flint','minecraft:moss_block'])
     create.mixing(['enderio:powdered_cobalt',Item.of('enderio:powdered_cobalt').withChance(0.2)], [Fluid.of("minecraft:water", 250),'#mekanism:dirty_dusts/cobalt'])
     create.mixing(['alltheores:silver_dust',Item.of('alltheores:silver_dust').withChance(0.2)], [Fluid.of("minecraft:water", 250),'#mekanism:dirty_dusts/silver'])
@@ -64,7 +66,6 @@ ServerEvents.recipes((event) => {
     create.mixing(['alltheores:uranium_dust',Item.of('alltheores:uranium_dust').withChance(0.2)], [Fluid.of("minecraft:water", 250),'#mekanism:dirty_dusts/uranium'])
 
     //批量洗涤
-    create.splashing('minecraft:string', 'opolisutilities:leafy_string')
     create.splashing('enderio:powdered_cobalt', '#mekanism:dirty_dusts/cobalt');
     create.splashing('alltheores:silver_dust', '#mekanism:dirty_dusts/silver');
     create.splashing('alltheores:nickel_dust', '#mekanism:dirty_dusts/nickel');
