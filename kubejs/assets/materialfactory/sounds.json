@@ -6,5 +6,21 @@
                 "stream": true
             }
         ]
+    },
+    "laser_shoot": {
+        "sounds": [
+            {
+                "name": "materialfactory:laser_shoot",
+                "stream": true
+            }
+        ]
+    },
+    "star_spawn": {
+        "sounds": [
+            {
+                "name": "materialfactory:star_spawn",
+                "stream": true
+            }
+        ]
     }
 }

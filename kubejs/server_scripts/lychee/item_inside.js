@@ -1,22 +1,4 @@
 ServerEvents.recipes(event => {
-    
-    //焦黑砖
-        event.custom({
-        "type": "lychee:item_inside",
-        "item_in": {
-            "item": 'supplementaries:ash_brick',
-        },
-        "block_in": { "blocks": ["minecraft:lava"] },
-        "post": [{
-            "type": "drop_item",
-            "item": 'tconstruct:seared_brick'
-        },
-        {
-            "type": "place",
-            "block": "air"
-        }]
-    })
-
     //粘液球
         event.custom({
         "type": "lychee:item_inside",

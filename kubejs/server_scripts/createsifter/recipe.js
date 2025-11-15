@@ -1264,41 +1264,41 @@ advancedNetheriteMesh([
 //橙色晶簇
 stringMesh([
 			Item.of('minecraft:raw_copper').withChance(0.25),
-			Item.of('#forge:raw_materials/thorium').withChance(0.2),
+			Item.of('thoriumreactors:thorium').withChance(0.2),
 		], 'materialfactory:orange_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('minecraft:raw_copper',2).withChance(0.3),
-			Item.of('#forge:raw_materials/thorium',2).withChance(0.22),
+			Item.of('thoriumreactors:thorium',2).withChance(0.22),
 		], 'materialfactory:orange_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('minecraft:raw_copper',3).withChance(0.35),
-			Item.of('#forge:raw_materials/thorium',3).withChance(0.25),
+			Item.of('thoriumreactors:thorium',3).withChance(0.25),
 		], 'materialfactory:orange_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('minecraft:raw_copper',4).withChance(0.4),
-			Item.of('#forge:raw_materials/thorium',4).withChance(0.28),
+			Item.of('thoriumreactors:thorium',4).withChance(0.28),
 		], 'materialfactory:orange_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('minecraft:raw_copper',5).withChance(0.45),
-			Item.of('#forge:raw_materials/thorium',5).withChance(0.3),
+			Item.of('thoriumreactors:thorium',5).withChance(0.3),
 		], 'materialfactory:orange_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('minecraft:raw_copper',6).withChance(0.5),
-			Item.of('#forge:raw_materials/thorium',6).withChance(0.32),
+			Item.of('thoriumreactors:thorium',6).withChance(0.32),
 		], 'materialfactory:orange_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('minecraft:copper_ore',4).withChance(0.4),
-			Item.of('#forge:storage_blocks/thorium',4).withChance(0.28),
+			Item.of('thoriumreactors:thorium_block',4).withChance(0.28),
 			Item.of('thoriumreactors:titanic_iron_ore',4).withChance(0.22),
 		], 'materialfactory:orange_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('minecraft:copper_ore',5).withChance(0.45),
-			Item.of('#forge:storage_blocks/thorium',5).withChance(0.3),
+			Item.of('thoriumreactors:thorium_block',5).withChance(0.3),
 			Item.of('thoriumreactors:titanic_iron_ore',5).withChance(0.25),
 		], 'materialfactory:orange_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('minecraft:copper_ore',6).withChance(0.5),
-			Item.of('#forge:storage_blocks/thorium',6).withChance(0.32),
+			Item.of('thoriumreactors:thorium_block',6).withChance(0.32),
 			Item.of('thoriumreactors:titanic_iron_ore',6).withChance(0.3),
 		], 'materialfactory:orange_crystal_cluster', 2, true)
 //浅蓝色晶簇

@@ -303,7 +303,7 @@ MBDMachineEvents.onRecipeWorking('materialfactory:entropy_matrix_core', e => {
     const EMCcurrentTime = Date.now();
     
     // 检查是否已经过了足够的时间（100毫秒 = 0.1秒）
-    if (EMCcurrentTime - lastEntropyParticleTime[machineId] >= 100) {
+    if (EMCcurrentTime - lastEntropyParticleTime[machineId] >= 200) {
         // 更新上次粒子生成时间
         lastEntropyParticleTime[machineId] = EMCcurrentTime;
         
@@ -419,3 +419,432 @@ MBDMachineEvents.onRecipeWorking('materialfactory:huge_enchanting_apparatus', e 
         }
     }
 });
+
+//人造恒星
+MBDMachineEvents.onUseCatalyst('materialfactory:artifical_star', e => {
+    let { machine } = e.getEvent();
+    let { level } = machine;
+    let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().above(11))
+        .orElse(null);
+    let trait = aboveMachine.getTraitByName("forge_energy_storage") 
+    let storage = trait.storage;
+    let stored = storage.getEnergyStored();
+    let maxStored = storage.getMaxEnergyStored();
+    if (stored < maxStored) {
+        level.getNearestPlayer(machine.pos.getX(), machine.pos.getY(), machine.pos.getZ(), 10, false).tell(Text.translate("message.artifical_star.not_enough_energy", stored, maxStored));
+        e.event.setCanceled(true)
+        e.cancel();
+    }
+});
+MBDMachineEvents.onStructureFormed('materialfactory:artifical_star', e => {
+    let { machine } = e.getEvent();
+    let { level } = machine;
+    let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().above(11))
+        .orElse(null);
+    let belowMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().below(14))
+        .orElse(null);
+    if (machine.customData.getBoolean('hasCollapsed')) {
+        e.cancel();
+    }
+    let trait = machine.getTraitByName("catalyst_slot")
+    let storage = trait.storage;
+    aboveMachine.triggerGeckolibAnim('formed', 1);
+    storage.insertItem(0, 'mekanismgenerators:hohlraum', false)
+    Utils.server.scheduleInTicks(110, () => {
+        let FEtrait = aboveMachine.getTraitByName("forge_energy_storage")
+        let FEstorage = FEtrait.storage;
+        let FEstored = FEstorage.getEnergyStored();
+        let totalEnergy = FEstorage.getMaxEnergyStored();
+        let HEATtrait = belowMachine.getTraitByName("mek_heat_container")
+        let HEATcontainer = HEATtrait.container;
+        let ticks = 70;
+        let energyPerTick = Math.floor(totalEnergy / ticks);
+        let totalHeatStored = HEATcontainer.getHeatCapacity(0);
+        let totalHeat = 15000000 * totalHeatStored;
+        let heatPerTick = Math.floor(totalHeat / ticks);
+        level.playSound(null, machine.getPos().getX(), machine.getPos().getY(), machine.getPos().getZ(), "materialfactory:laser_shoot", "blocks", 10, 1);
+        for (let i = 0; i < 30; i++) {
+            Utils.server.scheduleInTicks(i * 4, () => {
+                let particle1 = new $EntityFollowProjectile(
+                    level,
+                    machine.getPos().above(9),
+                    machine.pos,
+                    255, 255, 255
+                );
+                let particle2 = new $EntityFollowProjectile(
+                    level,
+                    machine.getPos().below(11),
+                    machine.pos,
+                    255, 255, 255
+                );
+                level.addFreshEntity(particle1);
+                level.addFreshEntity(particle2);
+            });
+        }
+        Utils.server.scheduleInTicks(50, () => {
+            level.playSound(null, machine.getPos().getX(), machine.getPos().getY(), machine.getPos().getZ(), "materialfactory:star_spawn", "blocks", 10, 0.1);
+            machine.triggerGeckolibAnim('formed', 1);
+            if (machine.customData.getBoolean('hasFormedOnce')) return;
+            Utils.server.scheduleInTicks(100, () => {
+                level.runCommandSilent(`summon block_display ${machine.pos.getX()} ${machine.pos.getY() - 13.5} ${machine.pos.getZ()} {Tags:["eternal_singularity_display"],Passengers:[{id:"minecraft:item_display",item:{id:"avaritia:eternal_singularity",Count:1},Tags:["eternal_singularity_display"],item_display:"none",transformation:[17.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,-16.0000f,0.0000f,0.0000f,17.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}`);
+            });
+            for (let i = 0; i < ticks; i++) {
+                Utils.server.scheduleInTicks(i, () => {
+                    let energyToExtract = (i === ticks - 1) ?
+                        (totalEnergy - energyPerTick * (ticks - 1)) :
+                        energyPerTick;
+                    let heatToAdd = (i === ticks - 1) ?
+                        (totalHeat - heatPerTick * (ticks - 1)) :
+                        heatPerTick;
+
+                    FEstorage.extractEnergy(energyToExtract, false);
+                    HEATcontainer.handleHeat(0, heatToAdd);
+                });
+            }
+            Utils.server.scheduleInTicks(ticks, () => {
+                FEstorage.extractEnergy(FEstored, false)
+            })
+            if (!machine.customData.getBoolean('hasFormedOnce')) {
+                machine.customData.putBoolean('hasFormedOnce', true);
+            }
+        });
+    });
+});
+const $IMultiController = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMultiController');
+MBDMachineEvents.onStructureInvalid('materialfactory:artifical_star', e => {
+    let { machine } = e.getEvent();
+    let { level } = machine;
+    let lightningBoltEntity = level.getBlock(machine.pos).createEntity('lightning_bolt');
+    let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().above(11))
+        .orElse(null);
+    let belowMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().below(14))
+        .orElse(null);
+    const controller = $IMultiController.ofController(level, machine.pos).orElse(null);
+    level.runCommandSilent(`kill @e[tag=eternal_singularity_display,x=${machine.pos.getX()},y=${machine.pos.getY()-13.5},z=${machine.pos.getZ()},distance=..1]`);
+    let HEATtrait = belowMachine.getTraitByName("mek_heat_container") 
+    let HEATcontainer = HEATtrait.container;
+    let totalHeatStored = HEATcontainer.getHeatCapacity(0);
+    let HeatTemperature = HEATcontainer.getTemperature(0);
+    let deleteHeat = (300-HeatTemperature) * totalHeatStored
+    HEATcontainer.handleHeat(0, deleteHeat);
+    if (machine.customData.getBoolean('hasCollapsed')) {
+        e.event.setCanceled(true)
+        e.cancel();
+    }
+    if (aboveMachine) {
+        aboveMachine.triggerGeckolibAnim('unformed', 1);
+    }   
+    if (controller == null) return;
+    machine.customData.putBoolean('hasCollapsed', true);
+    machine.triggerGeckolibAnim('collapse', 1);
+    Utils.server.scheduleInTicks(90, () => {
+        lightningBoltEntity.setVisualOnly(true);
+        lightningBoltEntity.moveTo(Vec3d.atCenterOf(machine.pos));
+        lightningBoltEntity.spawn();
+        level.getBlock(machine.pos).createEntity('lightning_bolt');
+        
+        // 创建RBH黑洞
+        let blackHole = level.createEntity("rbh:test_black_hole");
+        if (blackHole) {
+            blackHole.setPos(machine.pos);
+            blackHole.setSize(1.0);
+            blackHole.setEffectSize(2.0);
+            blackHole.setEffectExponent(3.6);
+            blackHole.setColor(0x000000);
+            blackHole.setRainbow(true);
+            level.addFreshEntity(blackHole);
+            level.playSound(null, machine.getPos().getX(), machine.getPos().getY(), machine.getPos().getZ(), "irons_spellbooks:entity.black_hole.loop", "blocks", 20, 0.7);
+            
+            // 启动成长和缩小过程
+            startBlackHoleGrowthAndShrink(blackHole, machine.pos, level);
+            // 启动吸引效果 - 在整个黑洞生命周期内持续运行
+            startAttractionEffect(blackHole, machine.pos, level);
+        }
+
+        Utils.server.scheduleInTicks(5, () => {
+            level.setBlock(machine.pos, Block.getBlock('air').defaultBlockState(), 2);
+        });
+    });
+});
+
+// 黑洞成长和缩小函数
+function startBlackHoleGrowthAndShrink(blackHole, position, worldLevel) {
+    let totalSteps = 10;
+    
+    // 强制加载区块
+    let chunkPos = worldLevel.getChunk(position).getPos();
+    worldLevel.chunkSource.updateChunkForced(chunkPos, true);
+
+    // 成长阶段
+    for (let i = 1; i <= totalSteps; i++) {
+        createGrowthStep(i, totalSteps, blackHole, position, worldLevel);
+    }
+    
+    // 缩小阶段 - 倒序执行
+    for (let i = totalSteps; i >= 1; i--) {
+        createShrinkStep(i, totalSteps, blackHole, position, worldLevel);
+    }
+    
+    // 在缩小完成后执行爆炸和清理
+    Utils.server.scheduleInTicks((totalSteps * 2 + 5) * 20, () => {
+        // 执行爆炸
+        worldLevel.getBlock(position).createExplosion().strength(100).explosionMode("block").explode();
+        worldLevel.runCommandSilent(`kill @e[tag=eternal_singularity_display,x=${position.getX()},y=${position.getY()-13.5},z=${position.getZ()},distance=..1]`);
+        
+        // 丢弃黑洞实体
+        if (blackHole && !blackHole.isRemoved()) {
+            blackHole.discard();
+        }
+        
+        // 取消强制加载
+        worldLevel.chunkSource.updateChunkForced(chunkPos, false);
+    });
+}
+
+// 创建成长步骤
+function createGrowthStep(step, totalSteps, blackHole, position, worldLevel) {
+    Utils.server.scheduleInTicks(step * 20, () => {
+        if (!blackHole || blackHole.isRemoved()) {
+            return;
+        }
+        
+        let progress = Math.min(step / totalSteps, 1.0);
+        let newSize = 1.0 + (8.0 - 1.0) * easeInOutCubic(progress);
+        let newEffectSize = 2.0 + (16.0 - 2.0) * easeInOutCubic(progress);
+
+        blackHole.setSize(newSize);
+        blackHole.setEffectSize(newEffectSize);
+    });
+}
+
+// 创建缩小步骤
+function createShrinkStep(step, totalSteps, blackHole, position, worldLevel) {
+    // 在成长阶段结束后开始缩小阶段
+    Utils.server.scheduleInTicks((totalSteps + step) * 20, () => {
+        if (!blackHole || blackHole.isRemoved()) {
+            return;
+        }
+        
+        // 倒序计算进度：从1到0
+        let progress = Math.min(step / totalSteps, 1.0);
+        let newSize = 8.0 - (8.0 - 1.0) * easeInOutCubic(progress);
+        let newEffectSize = 16.0 - (16.0 - 2.0) * easeInOutCubic(progress);
+
+        blackHole.setSize(newSize);
+        blackHole.setEffectSize(newEffectSize);
+    });
+}
+
+/**启动吸引效果
+ * 
+ * @param {Internal.Entity_} blackHole 
+ * @param {BlockPos_} position 
+ * @param {Internal.Level_} worldLevel 
+ */
+function startAttractionEffect(blackHole, position, worldLevel) {
+    // 在整个黑洞生命周期内持续运行吸引力效果
+    // 黑洞生命周期为405 ticks，我们每2 ticks执行一次，总共约203次
+    for (let i = 1; i <= 203; i++) {
+        Utils.server.scheduleInTicks(i * 2, () => {
+            // 检查黑洞是否还存在
+            if (!blackHole || blackHole.isRemoved()) {
+                return;
+            }
+
+            let attractionRange = blackHole.nbt.size() + 15; // 稍微增加吸引范围
+            let aabb = AABB.of(
+                position.x - attractionRange,
+                position.y - attractionRange,
+                position.z - attractionRange,
+                position.x + attractionRange,
+                position.y + attractionRange,
+                position.z + attractionRange
+            )
+            let entities = worldLevel.getEntitiesWithin(aabb);
+            for (let entity of entities) {
+                if (!entity || entity.isRemoved()) continue;
+                let machineCenter = Vec3d.atCenterOf(position);
+                let diff = machineCenter.subtract(entity.position());
+                let distance = diff.length();
+                if (distance <= attractionRange) {
+                    if (distance < blackHole.nbt.size() / 2) {
+                        // 对实体造成伤害
+                        let damageAmount = 16; // 基础伤害值
+                        // 根据黑洞尺寸增加伤害
+                        let blackHolesizeDamage = blackHole.nbt.size() * 0.5;
+                        let totalDamage = damageAmount + blackHolesizeDamage - distance;
+                        entity.attack(entity.damageSources().generic(), totalDamage);
+                        entity.resetFallDistance;
+                    }
+
+                    // 万有引力公式 GMm/r^2
+                    let blackholeDensity = 100; // 大幅增加黑洞密度
+                    let blackholeVolume = blackHole.nbt.size() ** 3;
+                    let blackholeMass = blackholeDensity * blackholeVolume;
+
+                    let GravitationalConstant = 25; // 大幅增加引力常数
+
+                    let entityDensty = 10; // 增加实体密度
+                    let entityVolume = Math.max(
+                        entity.boundingBox.getYsize() * entity.boundingBox.getXsize() * entity.boundingBox.getZsize(),
+                        0.1 // 最小体积，避免除零
+                    );
+                    let entityMass = entityDensty * entityVolume;
+
+                    // 计算引力，确保分母不为零
+                    let minDistance = 0.5; // 最小距离限制
+                    let effectiveDistance = Math.max(distance, minDistance);
+
+                    let totalScale = GravitationalConstant * blackholeMass * entityMass / (effectiveDistance ** 2);
+
+                    // 添加基础吸引力确保近距离有足够效果
+                    let baseAttraction = 0.5;
+                    totalScale += baseAttraction;
+
+                    // 限制最大和最小吸引力
+                    totalScale = Math.max(totalScale, 0.1); // 最小吸引力
+                    totalScale = Math.min(totalScale, 5.0); // 最大吸引力
+
+                    let attractionForce = diff.normalize().scale(totalScale);
+                    entity.setDeltaMovement(attractionForce);
+                    entity.hurtMarked = true;
+                    entity.resetFallDistance();
+                }
+            }
+        });
+    }
+}
+
+// 缓动函数
+function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+MBDMachineEvents.onTick('materialfactory:artifical_star', e => {
+    let { machine } = e.getEvent();
+    let { level } = machine;
+    let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().above(11))
+        .orElse(null);
+    let belowMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().below(14))
+        .orElse(null);
+    let controller = $IMultiController.ofController(level, machine.pos).orElse(null);
+    if (controller.isFormed() == false) return;
+    let currentTime = level.getDayTime().valueOf();
+    if (!machine.customData.contains('lastValidTime')) {
+        machine.customData.putInt('lastValidTime', currentTime);
+    }
+    let lastValidTime = machine.customData.getInt('lastValidTime')
+    if (level.getDayTime().valueOf() - lastValidTime < 400) {
+        return;
+    }
+    if (machine.customData.getBoolean('hasCollapsed')) return;
+    let HEATtrait = belowMachine.getTraitByName("mek_heat_container")
+    let HEATcontainer = HEATtrait.container;
+    let HeatTemperature = HEATcontainer.getTemperature(0);
+    if (HeatTemperature >= 10000000 && HeatTemperature < 100000000) return;
+    let player = level.getNearestPlayer(machine.pos.getX(), machine.pos.getY(), machine.pos.getZ(), 40, false)
+    if (HeatTemperature < 10000000) {
+        machine.customData.putBoolean('hasCollapsed', true);
+        if (player !== null) {
+            player.tell(Text.translate("message.artifical_star.not_enough_heat", HeatTemperature));
+        }
+        aboveMachine.triggerGeckolibAnim('unformed', 1);
+        machine.triggerGeckolibAnim('collapse', 1);
+        Utils.server.scheduleInTicks(60, () => {
+            level.getBlock(machine.pos).set("materialfactory:extinguished_star")
+            level.getBlock(machine.pos).createExplosion().strength(5).explosionMode("block").explode();
+        })
+    } else if (HeatTemperature >= 100000000) {
+        if (player !== null) {
+            player.tell(Text.translate("message.artifical_star.too_much_heat", HeatTemperature));
+        }
+        level.getBlock(machine.pos.below(11)).set('air')
+    }
+})
+MBDMachineEvents.onTick('materialfactory:artifical_star', e => {
+    let { machine } = e.getEvent();
+    let { level } = machine;
+    let controller = $IMultiController.ofController(level, machine.pos).orElse(null);
+    if (controller.isFormed() == false) return;
+    let belowMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().below(14))
+        .orElse(null);
+    let HEATtrait = belowMachine.getTraitByName("mek_heat_container")
+    let HEATcontainer = HEATtrait.container;
+    let HeatTemperature = HEATcontainer.getTemperature(0);
+    
+    // 边界温度处理：温度 ≤ 10,000,000 或 ≥ 100,000,000 时输出最大红石信号15
+    if (HeatTemperature <= 10000000 || HeatTemperature >= 100000000) {
+        Direction.values().forEach(dir => machine.setOutputSignal(15, dir));
+    } else {
+        // 温度在10,000,001到99,999,999之间的处理
+        // 只根据千万位数变化，中间温度最低红石信号为5
+        let tenMillions = Math.floor(HeatTemperature / 10000000); // 获取千万位数
+        let signalStrength;
+        
+        // 根据千万位数设置红石信号
+        switch(tenMillions) {
+            case 1: // 10,000,001 - 19,999,999
+                signalStrength = 14;
+                break;
+            case 2: // 20,000,000 - 29,999,999
+                signalStrength = 12;
+                break;
+            case 3: // 30,000,000 - 39,999,999
+                signalStrength = 10;
+                break;
+            case 4: // 40,000,000 - 49,999,999
+                signalStrength = 8;
+                break;
+            case 5: // 50,000,000 - 59,999,999 (中间温度，最低信号)
+                signalStrength = 5;
+                break;
+            case 6: // 60,000,000 - 69,999,999
+                signalStrength = 8;
+                break;
+            case 7: // 70,000,000 - 79,999,999
+                signalStrength = 10;
+                break;
+            case 8: // 80,000,000 - 89,999,999
+                signalStrength = 12;
+                break;
+            case 9: // 90,000,000 - 99,999,999
+                signalStrength = 14;
+                break;
+            default:
+                signalStrength = 5; // 默认值
+        }
+        
+        Direction.values().forEach(dir => machine.setOutputSignal(signalStrength, dir));
+    }
+});
+
+//熄灭的太阳
+MBDMachineEvents.onRightClick('materialfactory:extinguished_star', e => {
+    let { machine, player, heldItem, hand } = e.getEvent();
+    let { level } = machine;
+    let FEtrait = machine.getTraitByName("forge_energy_storage") 
+    let FEstorage = FEtrait.storage;
+    let FEstored = FEstorage.getEnergyStored();
+    let totalEnergy = FEstorage.getMaxEnergyStored();
+    let Gastrait = machine.getTraitByName("mek_gas_container") 
+    let Gasstorages = Gastrait.storages;
+    let Gassstored = Gasstorages[0].getStack().getAmount()
+    let totalGas = Gasstorages[0].getCapacity()
+    if (hand != 'MAIN_HAND') return;
+    if (!heldItem.isEmpty()) return;
+    if (level.isClientSide()) return;
+    player.tell(Text.translate("message.materialfactory.extinguished_star", FEstored, totalEnergy, Gassstored, totalGas));
+    player.swing()
+});
+MBDMachineEvents.onRecipeFinish('materialfactory:extinguished_star', e=>{
+    let { machine } = e.getEvent();
+    let { level } = machine;
+    level.playSound(null, machine.getPos().getX(), machine.getPos().getY(), machine.getPos().getZ(), "minecraft:entity.experience_orb.pickup", "blocks", 20, 0.1);
+})

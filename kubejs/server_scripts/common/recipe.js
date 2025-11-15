@@ -889,6 +889,18 @@ ServerEvents.recipes(event => {
             E:'minecraft:bucket'
     }).id('enderio:primitive_alloy_smelter')
 
+    //魔源石楼梯
+    event.shaped(Item.of('ars_nouveau:sourcestone_stairs', 4),
+            [
+            'A  ',
+            'AA ',
+            'AAA'
+            ],
+            {
+            A:'ars_nouveau:sourcestone'
+    })
+    event.stonecutting('ars_nouveau:sourcestone_stairs', 'ars_nouveau:sourcestone');
+
     //魔源石半砖
     event.shaped(Item.of('ars_nouveau:sourcestone_slab', 6),
             [
@@ -897,7 +909,20 @@ ServerEvents.recipes(event => {
             {
             A:'ars_nouveau:sourcestone'
     })
+    event.stonecutting(Item.of('ars_nouveau:sourcestone_slab', 2), 'ars_nouveau:sourcestone');
 
+    //M魔力存储元件
+    event.shapeless(Item.of('megacells:mana_storage_cell_1m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_1m']).id("megacells:cells/standard/mana_storage_cell_1m_with_housing");
+    event.shapeless(Item.of('megacells:mana_storage_cell_4m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_4m']).id("megacells:cells/standard/mana_storage_cell_4m_with_housing");
+    event.shapeless(Item.of('megacells:mana_storage_cell_16m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_16m']).id("megacells:cells/standard/mana_storage_cell_16m_with_housing");
+    event.shapeless(Item.of('megacells:mana_storage_cell_64m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_64m']).id("megacells:cells/standard/mana_storage_cell_64m_with_housing");
+    event.shapeless(Item.of('megacells:mana_storage_cell_256m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_256m']).id("megacells:cells/standard/mana_storage_cell_256m_with_housing");
+    //便携式魔力存储元件
+    event.shapeless(Item.of('megacells:portable_mana_cell_1m', 1), ['ae2:chest', 'botanicalextramachinery:cell_component_1m', 'ae2:dense_energy_cell', 'megacells:mega_mana_cell_housing']).id("megacells:cells/portable/portable_mana_cell_1m");
+    event.shapeless(Item.of('megacells:portable_mana_cell_4m', 1), ['ae2:chest', 'botanicalextramachinery:cell_component_4m', 'ae2:dense_energy_cell', 'megacells:mega_mana_cell_housing']).id("megacells:cells/portable/portable_mana_cell_4m");
+    event.shapeless(Item.of('megacells:portable_mana_cell_16m', 1), ['ae2:chest', 'botanicalextramachinery:cell_component_16m', 'ae2:dense_energy_cell', 'megacells:mega_mana_cell_housing']).id("megacells:cells/portable/portable_mana_cell_16m");
+    event.shapeless(Item.of('megacells:portable_mana_cell_64m', 1), ['ae2:chest', 'botanicalextramachinery:cell_component_64m', 'ae2:dense_energy_cell', 'megacells:mega_mana_cell_housing']).id("megacells:cells/portable/portable_mana_cell_64m");
+    event.shapeless(Item.of('megacells:portable_mana_cell_256m', 1), ['ae2:chest', 'botanicalextramachinery:cell_component_256m', 'ae2:dense_energy_cell', 'megacells:mega_mana_cell_housing']).id("megacells:cells/portable/portable_mana_cell_256m");
     //黄铜传动杆箱
     event.shapeless(Item.of('materialfactory:brass_encased_shaft', 1),['create:brass_casing','create:shaft']);
 
@@ -958,6 +983,11 @@ ServerEvents.recipes(event => {
     event.remove({id:'allthemodium:allthemodium_hoe'});
     event.remove({id:'actuallyadditions:decompress/empowered_restonia_crystal'});
     event.remove({id:'avaritia:eio_creative_power'});
-    event.remove({id:'xycraft_machines:extractor/resin'})
-    event.remove({id:'compactcrafting:test'})
+    event.remove({id:'xycraft_machines:extractor/resin'});
+    event.remove({id:'compactcrafting:test'});
+    event.remove({id:'botanicalextramachinery:cells/mana_storage_cell_1m_storage'});
+    event.remove({id:'botanicalextramachinery:cells/mana_storage_cell_4m_storage'});
+    event.remove({id:'botanicalextramachinery:cells/mana_storage_cell_16m_storage'});
+    event.remove({id:'botanicalextramachinery:cells/mana_storage_cell_64m_storage'});
+    event.remove({id:'botanicalextramachinery:cells/mana_storage_cell_256m_storage'});
 })

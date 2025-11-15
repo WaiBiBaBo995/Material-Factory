@@ -1,0 +1,7 @@
+{
+  "parent": "mekanism:block/template/cube_all_led",
+  "textures": {
+    "all": "resources:block/infinity_gas_output",
+    "led": "resources:block/gas_output_led"
+  }
+}

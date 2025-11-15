@@ -28,6 +28,10 @@ ServerEvents.tags('block', event => {
         ['mekanism:superheating_element']
     )
 
+    event.add("materialfactory:infinity_port",[
+        'materialfactory:infinity_item_input','materialfactory:infinity_item_output',
+        'materialfactory:infinity_fluid_input','materialfactory:infinity_gas_output'  
+    ])
     event.add("materialfactory:entropy_matrix_block",
         ['materialfactory:entropy_matrix_glass','materialfactory:entropy_matrix_energy_port','materialfactory:entropy_matrix_item_input','materialfactory:entropy_matrix_item_output'])
     //空手破坏
@@ -69,6 +73,8 @@ ServerEvents.tags('item', event => {
     event.add('forge:dusts/ender', 'ae2:ender_dust')
 
     event.add('forge:cobblestone', 'minecraft:blackstone')
+
+    event.add('botania:mana_spreaders', ['botania:mana_spreader','botania:redstone_spreader','botania:elven_spreader','botania:gaia_spreader'])
 
 //    event.add('notreepunching:string', 'opolisutilities:leafy_string')
 //    event.add('forge:string', 'opolisutilities:leafy_string')

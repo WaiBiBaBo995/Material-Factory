@@ -1,7 +1,13 @@
 {
+    "soulkey.name": "监守者灵魂",
+    "soulkey.description": "灵魂涌动",
+    "soulkey.tooltip": "每次使用产量：",
+    "industrialforegoingsouls.can_be_used_filter": "可通过ME接口发送灵魂请求",
+    "industrialforegoingsouls.storage_bus": "可通过顶部ME存储总线访问灵魂",
     "block.industrialforegoingsouls.soul_network_pipe": "灵魂管道",
     "block.industrialforegoingsouls.soul_laser_base": "灵魂镭射钻基座",
     "block.industrialforegoingsouls.soul_surge": "灵魂促速器",
     "industrialforegoingsouls.soul_storage": "灵魂存储量:",
-    "itemGroup.industrialforegoingsouls": "工业先锋:灵魂"
+    "itemGroup.industrialforegoingsouls": "工业先锋:灵魂",
+    "jei.industrialforegoingsouls.soul_laser": "灵魂镭射钻基座"
 }

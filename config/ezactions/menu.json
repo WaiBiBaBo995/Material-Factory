@@ -72,5 +72,135 @@
       "toggle": false,
       "mode": "AUTO"
     }
+  },
+  {
+    "id": "key_19a0175ae18",
+    "title": {
+      "bold": true,
+      "color": "#5AFCE1",
+      "translate": "key.minemath.opencalculator"
+    },
+    "icon": "crazyae2addons:crazy_calculator",
+    "action": {
+      "type": "KEY",
+      "name": "Open Calculator",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "cat_19a0178c90e",
+    "title": {
+      "bold": true,
+      "color": "#94D6FF",
+      "translate": "key.bundle.map"
+    },
+    "icon": "irons_spellbooks:furled_map",
+    "children": [
+      {
+        "id": "key_19a017b2408",
+        "title": {
+          "bold": true,
+          "color": "#AF94FF",
+          "translate": "key.xaero_open_map"
+        },
+        "icon": "minecraft:filled_map",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_open_map",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_19a017c466e",
+        "title": {
+          "bold": true,
+          "color": "#FFA094",
+          "translate": "gui.xaero_instant_waypoint"
+        },
+        "icon": "beyonddimensions:net_manager_inviter",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_instant_waypoint",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_19a017ca1b2",
+        "title": {
+          "bold": true,
+          "color": "#A2FF94",
+          "translate": "gui.xaero_waypoints_key"
+        },
+        "icon": "beyonddimensions:net_member_inviter",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_waypoints_key",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_19a0194a931",
+        "title": {
+          "bold": true,
+          "color": "#4F5CF4",
+          "translate": "key.ftbchunks.claim_manager"
+        },
+        "icon": "beyonddimensions:space_time_stable_frame",
+        "action": {
+          "type": "KEY",
+          "name": "key.ftbchunks.claim_manager",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_19a04ff46f6",
+        "title": {
+          "bold": true,
+          "color": "#FFEF94",
+          "translate": "gui.xaero_new_waypoint"
+        },
+        "icon": "beyonddimensions:net_gifter",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_new_waypoint",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      }
+    ]
+  },
+  {
+    "id": "key_19a050072ef",
+    "title": {
+      "bold": true,
+      "color": "#FF8D3C",
+      "translate": "keybind.sophisticatedbackpacks.open_backpack"
+    },
+    "icon": "sophisticatedbackpacks:backpack",
+    "action": {
+      "type": "KEY",
+      "name": "keybind.sophisticatedbackpacks.o",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "cmd_19a632db6b7",
+    "title": {
+      "bold": true,
+      "color": "#9A9999",
+      "translate": "key.ftbessentials.trashcan"
+    },
+    "icon": "trashcans:item_trash_can",
+    "action": {
+      "type": "COMMAND",
+      "command": "/trashcan",
+      "delayTicks": 0
+    }
   }
 ]

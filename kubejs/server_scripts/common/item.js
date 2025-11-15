@@ -21,12 +21,9 @@ let Minecraft = Java.loadClass('net.minecraft.client.Minecraft')
 ItemEvents.rightClicked('materialfactory:charge_spool', event =>{
     let itemStack = event.getItem()
     let player = event.player
-    let currentTime = event.level.time
-    let lastUsed = player.persistentData.lastUsedChargeSpool || 0
     if (!player) return;
-    if (currentTime - lastUsed < 60) return;
     if (itemStack.damageValue >= 128) {
-        player.persistentData.lastUsedChargeSpool = currentTime
+            player.cooldowns.addCooldown(itemStack.item, 40)
             Minecraft.getInstance().gameRenderer.displayItemActivation(itemStack)
             event.level.playSound(null,event.player.x,event.player.y,event.player.z,"minecraft:item.totem.use","players",1.0,1.0)
         if (!player.isCreative()) {

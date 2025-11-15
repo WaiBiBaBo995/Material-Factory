@@ -1,0 +1,9 @@
+{
+  "item.ifsoulsdisks.souls_cell_housing": "ME 灵魂元件外壳",
+  "item.ifsoulsdisks.souls_storage_cell_16k": "16k ME 灵魂存储元件",
+  "item.ifsoulsdisks.souls_storage_cell_1k": "1k ME 灵魂存储元件",
+  "item.ifsoulsdisks.souls_storage_cell_256k": "256k ME 灵魂存储元件",
+  "item.ifsoulsdisks.souls_storage_cell_4k": "4k ME 灵魂存储元件",
+  "item.ifsoulsdisks.souls_storage_cell_64k": "64k ME 灵魂存储元件",
+  "itemGroup.ifsoulsdisks": "Industrial Foregoing: Souls Disks"
+}
