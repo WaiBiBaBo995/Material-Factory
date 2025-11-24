@@ -22,11 +22,12 @@ StartupEvents.registry("block", (event) => {
 
 	let blockRegisters = [
 		["better_soil", "grass", 3, "shovel", "wooden"],
-		["metal_crate", "copper", 1, "pickaxe", "wooden"],
-		["blue_crate", "copper", 1, "pickaxe", "wooden"],
-		["black_crate", "copper", 1, "pickaxe", "wooden"],
-		["brown_crate", "copper", 1, "pickaxe", "wooden"],
-		["copper_crate", "copper", 1, "pickaxe", "wooden"]
+		["metal_crate", "copper", 1, "pickaxe", "stone"],
+		["blue_crate", "copper", 1, "pickaxe", "stone"],
+		["black_crate", "copper", 1, "pickaxe", "stone"],
+		["brown_crate", "copper", 1, "pickaxe", "stone"],
+		["copper_crate", "copper", 1, "pickaxe", "stone"],
+		["airdrop_chest", "stone", 6, "pickaxe", "iron"],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level]) => {
 		event.create(MODID + name) // 声明方块id
@@ -109,6 +110,11 @@ StartupEvents.registry("block", (event) => {
 		.soundType('stone')
 		.tagBlock('minecraft:mineable/pickaxe')
 		.defaultCutout()
+
+	event.create('materialfactory:airdrop', "basic")
+		.soundType('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.defaultTranslucent()
 
 	event.create(`materialfactory:base_crystal_cluster`, "basic")
 		.soundType('glass')

@@ -911,6 +911,21 @@ ServerEvents.recipes(event => {
     })
     event.stonecutting(Item.of('ars_nouveau:sourcestone_slab', 2), 'ars_nouveau:sourcestone');
 
+    //积熔器
+    event.shaped(Item.of("thermal_extra:device_lava_gen", 1),
+            [
+            'ABA',
+            'CDC',
+            'AEA'
+            ],
+            {
+            A: '#forge:rods/electrum',
+            B: '#forge:ingots/iron',
+            C: "minecraft:warped_wart_block",
+            D: "minecraft:bucket",
+            E: "thermal:redstone_servo"
+    }).id('thermal_extra:crafting/device_lava_gen')
+
     //M魔力存储元件
     event.shapeless(Item.of('megacells:mana_storage_cell_1m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_1m']).id("megacells:cells/standard/mana_storage_cell_1m_with_housing");
     event.shapeless(Item.of('megacells:mana_storage_cell_4m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_4m']).id("megacells:cells/standard/mana_storage_cell_4m_with_housing");
@@ -926,7 +941,10 @@ ServerEvents.recipes(event => {
     //黄铜传动杆箱
     event.shapeless(Item.of('materialfactory:brass_encased_shaft', 1),['create:brass_casing','create:shaft']);
 
-    event.remove({mod:'capsule'});
+    //掘地之爪
+    event.shapeless('artifacts:digging_claws',["minecraft:diamond_pickaxe", "create:deployer", "create:super_glue"]);
+
+    event.remove({mod:'fumo'});
     event.remove({id:'allthemodium:teleport_pad'});
     event.remove({id:'tiab:time_in_a_bottle'});
     event.remove({id:'ars_nouveau:imbuement_lapis'});
@@ -941,8 +959,6 @@ ServerEvents.recipes(event => {
     event.remove({id:'industrialforegoingsouls:soul_laser_base'});
     event.remove({id:'industrialforegoingsouls:soul_network_pipe'});
     event.remove({id:'industrialforegoingsouls:soul_surge'});
-    event.remove({id:'mekanism:steel_casing'});
-    event.remove({id:'thermal:machine_frame'});
     event.remove({id:'thermal:rf_coil'});
     event.remove({id:'darkdoppelganger:shadow_orb'});
     event.remove({id:'ad_astra:compressor'});
@@ -990,4 +1006,13 @@ ServerEvents.recipes(event => {
     event.remove({id:'botanicalextramachinery:cells/mana_storage_cell_16m_storage'});
     event.remove({id:'botanicalextramachinery:cells/mana_storage_cell_64m_storage'});
     event.remove({id:'botanicalextramachinery:cells/mana_storage_cell_256m_storage'});
+    event.remove({id:'extendedae_plus:infinity_biginteger_cell'});
+    event.remove({id:/mekanism:factory\/.*/});
+    event.remove({id:/mekanism_extras:factory\/.*/});
+    event.remove({id:/mekmm:factory\/(?!.*basic).*$/});
+    event.remove({id:'tconstruct:smeltery/casts/gold/coins'});
+    event.remove({id:'tconstruct:smeltery/casts/sand/molding/coins'});
+    event.remove({id:'tconstruct:smeltery/casts/red_sand/molding/coins'});
+    event.remove({id:/thermal_extra:crafting\/.*_rod/});
+    event.remove({id:'alltheores:steel_dust_from_alloy_blending'});
 })

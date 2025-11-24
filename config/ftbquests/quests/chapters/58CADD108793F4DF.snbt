@@ -592,6 +592,7 @@
 		}
 		{
 			dependencies: ["2660195AE3575635"]
+			description: ["致密等级的中子态素收集器，每次完成收集产出1个中子素颗粒。"]
 			id: "15B6E144A49734F4"
 			tasks: [{
 				id: "7F86A86213B61487"
@@ -603,6 +604,7 @@
 		}
 		{
 			dependencies: ["15B6E144A49734F4"]
+			description: ["精英等级的中子态素收集器，每次收集完成产出1个中子锭。"]
 			id: "29F78DD6E45D89BB"
 			tasks: [{
 				id: "094C25E90CC2F360"
@@ -614,6 +616,7 @@
 		}
 		{
 			dependencies: ["29F78DD6E45D89BB"]
+			description: ["极限等级的中子态素收集器，相较于精英中子态素收集器收集速度更快，每次收集完成产出1个中子素锭。"]
 			id: "792A94784F705FFF"
 			tasks: [{
 				id: "6A4054E0DC8D3D47"
@@ -631,7 +634,7 @@
 				item: "avaritia:neutron_compressor"
 				type: "item"
 			}]
-			x: 18.5d
+			x: 17.0d
 			y: -2.5d
 		}
 		{
@@ -907,6 +910,42 @@
 			}]
 			x: 24.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["28B37C1BD95DFF51"]
+			description: ["致密等级的中子态素压缩机，工作时间为原来的二分之一。"]
+			id: "05730D629CC29F87"
+			tasks: [{
+				id: "58BDC392AA83B0D4"
+				item: "avaritia:dense_neutron_compressor"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["05730D629CC29F87"]
+			description: ["精英等级的中子态素压缩机，工作时间为原来的四分之一，且材料消耗为原来的四分之三。"]
+			id: "6F2475F10F199FC6"
+			tasks: [{
+				id: "5649B103F0208326"
+				item: "avaritia:denser_neutron_compressor"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6F2475F10F199FC6"]
+			description: ["极限等级的中子态素压缩机，工作时间为原来的八分之一，原材料消耗为原来的二分之一，产出为原来的二倍"]
+			id: "5B17623169F27581"
+			tasks: [{
+				id: "5F3FE9798AE6B22F"
+				item: "avaritia:densest_neutron_compressor"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -4.5d
 		}
 	]
 	title: "&f&kw&r&c无&d尽&e贪&b婪&f&kw"

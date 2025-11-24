@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:story/upgrade_tools",
+  "criteria": {
+    "barrel_break": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.materialfactory.barrel_break.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "materialfactory:metal_crate"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.materialfactory.barrel_break"
+    }
+  },
+  "sends_telemetry_event": true
+}

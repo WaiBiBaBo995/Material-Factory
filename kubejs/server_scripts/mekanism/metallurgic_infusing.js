@@ -1,18 +1,18 @@
 ServerEvents.recipes(event => {
-    //机器框架
+    //钢制外壳
     event.custom({
         "type": "mekanism:metallurgic_infusing",
         "chemicalInput": {
-            "amount": 10,
-            "infuse_type": "mekanism_extras:radiance"
+            "amount": 250,
+            "infuse_type": "mekanism:carbon"
         },
         "itemInput": {
             "ingredient": {
-            "item": 'mekanism:steel_casing'
+            "item": 'thermal:machine_frame'
             }
         },
         "output": {
-            "item": 'thermal:machine_frame'
+            "item": 'mekanism:steel_casing'
         }
     })
 
@@ -75,6 +75,48 @@ ServerEvents.recipes(event => {
         },
         "output": {
             "item": 'allthemodium:unobtainium_allthemodium_alloy_dust'
+        }
+    })
+
+    //灌注胶乳
+    event.custom({
+        "type": "mekanism:infusion_conversion",
+        "input": {
+            "ingredient": {
+            "item": 'industrialforegoing:dryrubber'
+            }
+        },
+        "output": {
+            "amount": 450,
+            "infuse_type": "mekanism:latex"
+        }
+    })
+    event.custom({
+        "type": "mekanism:infusion_conversion",
+        "input": {
+            "ingredient": {
+            "item": 'industrialforegoing:tinydryrubber'
+            }
+        },
+        "output": {
+            "amount": 50,
+            "infuse_type": "mekanism:latex"
+        }
+    })
+    //缺陷机器框架
+    event.custom({
+        "type": "mekanism:metallurgic_infusing",
+        "chemicalInput": {
+            "amount": 1000,
+            "infuse_type": "mekanism:latex"
+        },
+        "itemInput": {
+            "ingredient": {
+            "item": 'materialfactory:unbonded_machine_frame_pity'
+            }
+        },
+        "output": {
+            "item": 'industrialforegoing:machine_frame_pity'
         }
     })
 })

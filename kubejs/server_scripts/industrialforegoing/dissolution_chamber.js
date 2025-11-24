@@ -110,43 +110,6 @@ ServerEvents.recipes(event => {
         "processingTime": 100
     })
 
-    //钢制外壳
-    event.custom({
-        "type": "industrialforegoing:dissolution_chamber",
-        "input": [
-            {
-            "tag": 'forge:ingots/steel'
-            },
-            {
-            "tag": 'forge:ingots/osmium'
-            },
-            {
-            "tag": 'forge:ingots/steel'
-            },
-            {
-            "tag": 'forge:ingots/osmium'
-            },
-            {
-            "tag": 'forge:ingots/osmium'
-            },
-            {
-            "tag": 'forge:ingots/steel'
-            },
-            {
-            "tag": 'forge:ingots/osmium'
-            },
-            {
-            "tag": 'forge:ingots/steel'
-            }
-        ],
-        "inputFluid": "{Amount:200,FluidName:\"industrialforegoing:latex\"}",
-        "output": {
-            "count": 1,
-            "item": 'mekanism:steel_casing'
-        },
-        "processingTime": 200
-    })
-
     //彩虹粘液球
     event.custom({
         "type": "industrialforegoing:dissolution_chamber",

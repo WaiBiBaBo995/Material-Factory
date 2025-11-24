@@ -371,20 +371,20 @@ MBDMachineEvents.onRecipeWorking('materialfactory:huge_enchanting_apparatus', e 
         lastRandomParticleTime[machineId] = currentTime;
         
         // 随机选择1到3个方向
-        var numDirections = Math.floor(Math.random() * 3) + 1; // 1-3
-        var selectedDirections = [];
+        let numDirections = Math.floor(Math.random() * 3) + 1; // 1-3
+        let selectedDirections = [];
         
         // 使用循环手动复制数组
-        var availableDirections = [];
-        for (var j = 0; j < allDirections.length; j++) {
+        let availableDirections = [];
+        for (let j = 0; j < allDirections.length; j++) {
             availableDirections.push(allDirections[j]);
         }
         
         // 随机选择指定数量的方向
-        for (var i = 0; i < numDirections; i++) {
+        for (let i = 0; i < numDirections; i++) {
             if (availableDirections.length === 0) break;
             
-            var randomIndex = Math.floor(Math.random() * availableDirections.length);
+            let randomIndex = Math.floor(Math.random() * availableDirections.length);
             selectedDirections.push(availableDirections[randomIndex]);
             
             // 从可用方向中移除已选择的方向
@@ -392,7 +392,7 @@ MBDMachineEvents.onRecipeWorking('materialfactory:huge_enchanting_apparatus', e 
         }
         
         // 为每个选中的方向生成粒子
-        var k, targetPos, particle, r, g, b;
+        let k, targetPos, particle, r, g, b;
         for (k = 0; k < selectedDirections.length; k++) {
                 // 计算粒子目标位置（机器位置 + 方向偏移1格）
                 targetPos = machine.pos.offset(
@@ -421,7 +421,7 @@ MBDMachineEvents.onRecipeWorking('materialfactory:huge_enchanting_apparatus', e 
 });
 
 //人造恒星
-MBDMachineEvents.onUseCatalyst('materialfactory:artifical_star', e => {
+MBDMachineEvents.onUseCatalyst('materialfactory:artificial_star', e => {
     let { machine } = e.getEvent();
     let { level } = machine;
     let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
@@ -432,12 +432,12 @@ MBDMachineEvents.onUseCatalyst('materialfactory:artifical_star', e => {
     let stored = storage.getEnergyStored();
     let maxStored = storage.getMaxEnergyStored();
     if (stored < maxStored) {
-        level.getNearestPlayer(machine.pos.getX(), machine.pos.getY(), machine.pos.getZ(), 10, false).tell(Text.translate("message.artifical_star.not_enough_energy", stored, maxStored));
+        level.getNearestPlayer(machine.pos.getX(), machine.pos.getY(), machine.pos.getZ(), 10, false).tell(Text.translate("message.artificial_star.not_enough_energy", stored, maxStored));
         e.event.setCanceled(true)
         e.cancel();
     }
 });
-MBDMachineEvents.onStructureFormed('materialfactory:artifical_star', e => {
+MBDMachineEvents.onStructureFormed('materialfactory:artificial_star', e => {
     let { machine } = e.getEvent();
     let { level } = machine;
     let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
@@ -488,9 +488,10 @@ MBDMachineEvents.onStructureFormed('materialfactory:artifical_star', e => {
             level.playSound(null, machine.getPos().getX(), machine.getPos().getY(), machine.getPos().getZ(), "materialfactory:star_spawn", "blocks", 10, 0.1);
             machine.triggerGeckolibAnim('formed', 1);
             if (machine.customData.getBoolean('hasFormedOnce')) return;
-            Utils.server.scheduleInTicks(100, () => {
-                level.runCommandSilent(`summon block_display ${machine.pos.getX()} ${machine.pos.getY() - 13.5} ${machine.pos.getZ()} {Tags:["eternal_singularity_display"],Passengers:[{id:"minecraft:item_display",item:{id:"avaritia:eternal_singularity",Count:1},Tags:["eternal_singularity_display"],item_display:"none",transformation:[17.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,-16.0000f,0.0000f,0.0000f,17.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}`);
-            });
+            level.runCommandSilent(`summon block_display ${machine.pos.getX()} ${machine.pos.getY() - 13.5} ${machine.pos.getZ()} {Tags:["eternal_singularity_display"],Passengers:[{id:"minecraft:item_display",item:{id:"avaritia:eternal_singularity",Count:1},item_display:"none",Tags:["eternal_singularity_display"],transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,-1.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}`)
+            level.runCommandSilent(`data modify entity @e[limit=1,tag=eternal_singularity_display,type=minecraft:item_display,x=${machine.pos.getX()},y=${machine.pos.getY()-13.5},z=${machine.pos.getZ()},distance=..1] interpolation_duration set value 100`)
+            level.runCommandSilent(`data modify entity @e[limit=1,tag=eternal_singularity_display,type=minecraft:item_display,x=${machine.pos.getX()},y=${machine.pos.getY()-13.5},z=${machine.pos.getZ()},distance=..1] start_interpolation set value 0`)
+            level.runCommandSilent(`data modify entity @e[limit=1,tag=eternal_singularity_display,type=minecraft:item_display,x=${machine.pos.getX()},y=${machine.pos.getY()-13.5},z=${machine.pos.getZ()},distance=..1] transformation set value [17.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,-16.0000f,0.0000f,0.0000f,17.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]`)
             for (let i = 0; i < ticks; i++) {
                 Utils.server.scheduleInTicks(i, () => {
                     let energyToExtract = (i === ticks - 1) ?
@@ -514,7 +515,7 @@ MBDMachineEvents.onStructureFormed('materialfactory:artifical_star', e => {
     });
 });
 const $IMultiController = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMultiController');
-MBDMachineEvents.onStructureInvalid('materialfactory:artifical_star', e => {
+MBDMachineEvents.onStructureInvalid('materialfactory:artificial_star', e => {
     let { machine } = e.getEvent();
     let { level } = machine;
     let lightningBoltEntity = level.getBlock(machine.pos).createEntity('lightning_bolt');
@@ -724,7 +725,7 @@ function startAttractionEffect(blackHole, position, worldLevel) {
 function easeInOutCubic(t) {
     return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 }
-MBDMachineEvents.onTick('materialfactory:artifical_star', e => {
+MBDMachineEvents.onTick('materialfactory:artificial_star', e => {
     let { machine } = e.getEvent();
     let { level } = machine;
     let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
@@ -752,7 +753,7 @@ MBDMachineEvents.onTick('materialfactory:artifical_star', e => {
     if (HeatTemperature < 10000000) {
         machine.customData.putBoolean('hasCollapsed', true);
         if (player !== null) {
-            player.tell(Text.translate("message.artifical_star.not_enough_heat", HeatTemperature));
+            player.tell(Text.translate("message.artificial_star.not_enough_heat", HeatTemperature));
         }
         aboveMachine.triggerGeckolibAnim('unformed', 1);
         machine.triggerGeckolibAnim('collapse', 1);
@@ -762,12 +763,13 @@ MBDMachineEvents.onTick('materialfactory:artifical_star', e => {
         })
     } else if (HeatTemperature >= 100000000) {
         if (player !== null) {
-            player.tell(Text.translate("message.artifical_star.too_much_heat", HeatTemperature));
+            player.tell(Text.translate("message.artificial_star.too_much_heat", HeatTemperature));
         }
         level.getBlock(machine.pos.below(11)).set('air')
     }
 })
-MBDMachineEvents.onTick('materialfactory:artifical_star', e => {
+//红石信号输出
+MBDMachineEvents.onTick('materialfactory:artificial_star', e => {
     let { machine } = e.getEvent();
     let { level } = machine;
     let controller = $IMultiController.ofController(level, machine.pos).orElse(null);
@@ -779,51 +781,174 @@ MBDMachineEvents.onTick('materialfactory:artifical_star', e => {
     let HEATcontainer = HEATtrait.container;
     let HeatTemperature = HEATcontainer.getTemperature(0);
     
-    // 边界温度处理：温度 ≤ 10,000,000 或 ≥ 100,000,000 时输出最大红石信号15
-    if (HeatTemperature <= 10000000 || HeatTemperature >= 100000000) {
-        Direction.values().forEach(dir => machine.setOutputSignal(15, dir));
+    // 计算当前应该输出的信号强度
+    let currentSignal;
+    
+    // 边界温度处理
+    if (HeatTemperature <= 10000000) {
+        // 温度 ≤ 10,000,000 时输出红石信号3
+        currentSignal = 3;
+    } else if (HeatTemperature >= 100000000) {
+        // 温度 ≥ 100,000,000 时输出最大红石信号15
+        currentSignal = 15;
     } else {
         // 温度在10,000,001到99,999,999之间的处理
-        // 只根据千万位数变化，中间温度最低红石信号为5
         let tenMillions = Math.floor(HeatTemperature / 10000000); // 获取千万位数
-        let signalStrength;
         
-        // 根据千万位数设置红石信号
+        // 根据千万位数设置红石信号，温度越高信号越强
         switch(tenMillions) {
             case 1: // 10,000,001 - 19,999,999
-                signalStrength = 14;
+                currentSignal = 5;
                 break;
             case 2: // 20,000,000 - 29,999,999
-                signalStrength = 12;
+                currentSignal = 6;
                 break;
             case 3: // 30,000,000 - 39,999,999
-                signalStrength = 10;
+                currentSignal = 7;
                 break;
             case 4: // 40,000,000 - 49,999,999
-                signalStrength = 8;
+                currentSignal = 8;
                 break;
-            case 5: // 50,000,000 - 59,999,999 (中间温度，最低信号)
-                signalStrength = 5;
+            case 5: // 50,000,000 - 59,999,999
+                currentSignal = 9;
                 break;
             case 6: // 60,000,000 - 69,999,999
-                signalStrength = 8;
+                currentSignal = 10;
                 break;
             case 7: // 70,000,000 - 79,999,999
-                signalStrength = 10;
+                currentSignal = 11;
                 break;
             case 8: // 80,000,000 - 89,999,999
-                signalStrength = 12;
+                currentSignal = 12;
                 break;
             case 9: // 90,000,000 - 99,999,999
-                signalStrength = 14;
+                currentSignal = 13;
                 break;
             default:
-                signalStrength = 5; // 默认值
+                currentSignal = 5; // 默认值
         }
-        
-        Direction.values().forEach(dir => machine.setOutputSignal(signalStrength, dir));
+    }
+    
+    // 检查信号是否发生变化，避免重复输出
+    let lastSignal = machine.customData.getInt('lastRedstoneSignal');
+    if (lastSignal === undefined || lastSignal !== currentSignal) {
+        // 信号发生变化，更新所有方向的输出
+        Direction.values().forEach(dir => machine.setOutputSignal(currentSignal, dir));
+        // 存储当前信号值供下次比较
+        machine.customData.putInt('lastRedstoneSignal', currentSignal);
     }
 });
+//GUI冷却加热开关
+MBDMachineEvents.onUI('materialfactory:artificial_star', e => {
+    let { machine, root } = e.getEvent();
+    let { level } = machine
+    let controller = $IMultiController.ofController(level, machine.pos).orElse(null);
+    let ControllerParts = controller.getParts()
+    let fluidDumpButton = root.getFirstWidgetById('fluid_dump')
+    let gasDumpButton = root.getFirstWidgetById('gas_dump')
+    let tank = root.getFirstWidgetById('ui:fluid_tank_0')
+    let heatButton = root.getFirstWidgetById('energy_heat')
+    let coolingButton = root.getFirstWidgetById('fluid_cooling')
+    if (machine.customData.getBoolean('heatModeButton')) {
+        heatButton.setPressed(true)
+        coolingButton.setPressed(false)
+    } else if (machine.customData.getBoolean('coolingModeButton')) {
+        coolingButton.setPressed(true)
+        heatButton.setPressed(false)
+    }
+    heatButton.setOnPressCallback((clickData, state) => {
+        if (state == true) {
+            machine.customData.putBoolean('heatMode', true);
+            machine.customData.putBoolean('heatModeButton', true);
+            machine.customData.putBoolean('coolingMode', false);
+            machine.customData.putBoolean('coolingModeButton', false);
+            coolingButton.setPressed(false)
+        } else {
+            machine.customData.putBoolean('heatMode', false);
+            machine.customData.putBoolean('heatModeButton', false);
+        }
+    });
+    coolingButton.setOnPressCallback((clickData, state) => {
+        if (state == true) {
+            machine.customData.putBoolean('coolingMode', true);
+            machine.customData.putBoolean('coolingModeButton', true);
+            machine.customData.putBoolean('heatMode', false);
+            machine.customData.putBoolean('heatModeButton', false);
+            heatButton.setPressed(false)
+        } else {
+            machine.customData.putBoolean('coolingMode', false);
+            machine.customData.putBoolean('coolingModeButton', false);
+        }
+    });
+    fluidDumpButton.setOnPressCallback(clickData => {
+        if (!clickData.isRemote) {
+            tank.fluid.amount = 0
+        }
+    })
+    gasDumpButton.setOnPressCallback(clickData => {
+        if (!clickData.isRemote) {
+            for (let gasmachine of ControllerParts) {
+                let Gastrait = gasmachine.getTraitByName("mek_gas_container");
+                // 添加空值检查
+                if (!Gastrait) {
+                    continue; // 跳过这个机器，继续下一个
+                }
+                let Gasstorages = Gastrait.storages;
+                Gasstorages[0].getStack().setAmount(0);
+            }
+        }
+    });
+})
+//物品槽加热冷却开关
+MBDMachineEvents.onTick('materialfactory:artificial_star', e => {
+    let { machine } = e.getEvent()
+    let itemTrait = machine.getTraitByName("temperaturemode_slot")
+    let itemStorage = itemTrait.storage
+    let itemStored = itemStorage.getStackInSlot(0).getId()
+    let heatButtonOn = machine.customData.getBoolean('heatModeButton')
+    let coolingButtonOn = machine.customData.getBoolean('coolingModeButton')
+    if (heatButtonOn || coolingButtonOn) return;
+    if (itemStored == 'cookingforblockheads:heating_unit') {
+        machine.customData.putBoolean('heatMode', true);
+        machine.customData.putBoolean('coolingMode', false);
+    } else if (itemStored == 'cookingforblockheads:ice_unit') {
+        machine.customData.putBoolean('coolingMode', true);
+        machine.customData.putBoolean('heatMode', false);
+    } else if (itemStorage.getStackInSlot(0).isEmpty()) {
+        if (machine.customData.getBoolean('heatMode') || machine.customData.getBoolean('coolingMode')) {
+            machine.customData.putBoolean('coolingMode', false);
+            machine.customData.putBoolean('heatMode', false);
+        }
+    }
+})
+//终极激光动画
+MBDMachineEvents.onBeforeRecipeWorking('materialfactory:artificial_star', e=>{
+    let { machine, recipe } = e.getEvent()
+    let { level } = machine
+    let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().above(11))
+        .orElse(null);
+    let recipeId = recipe.getId().toString()
+    if (recipeId == 'materialfactory:star/cooling_of_sodium' || recipeId == 'materialfactory:star/cooling_of_water' || recipeId == 'materialfactory:star/heat_of_power') return;
+    aboveMachine.triggerGeckolibAnim("working", 1)
+})
+MBDMachineEvents.onAfterRecipeWorking('materialfactory:artificial_star', e=>{
+    let { machine } = e.getEvent()
+    let { level } = machine
+    let aboveMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
+        .ofMachine(level, machine.getPos().above(11))
+        .orElse(null);
+    aboveMachine.triggerGeckolibAnim("idle", 1)
+})
+//开关加热冷却bug修复
+MBDMachineEvents.onRecipeWaiting('materialfactory:artificial_star', e=>{
+    let { machine, recipe } = e.getEvent()
+    let { recipeLogic } = machine
+    if (recipe.checkConditions(recipeLogic).isSuccess() == false) {
+        recipeLogic.setStatus("idle")
+        recipeLogic.setProgress(0)
+    }
+})
 
 //熄灭的太阳
 MBDMachineEvents.onRightClick('materialfactory:extinguished_star', e => {

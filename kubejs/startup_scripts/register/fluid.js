@@ -18,4 +18,5 @@ StartupEvents.registry("fluid", event =>{
     event.create('materialfactory:black_paint_fluid').thinTexture(0x1d1d21)
     event.create('materialfactory:liquid_source').thickTexture(0xEE82EE)
     event.create('materialfactory:liquid_mana').thickTexture(0x87ceeb)
+    event.create('materialfactory:molten_steel_osmium_alloy').thickTexture(0x3D5355)
 })

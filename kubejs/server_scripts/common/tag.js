@@ -12,9 +12,17 @@ ServerEvents.tags('block', event => {
         'materialfactory:netherite_crushing_wheel'
     ])
 
-    event.add('minecraft:needs_wooden_tool',[
+    event.add('minecraft:needs_stone_tool',[
         'materialfactory:metal_barrel'
     ])
+
+    event.add('materialfactory:barrelandcrate', 
+        ['materialfactory:metal_barrel', 
+         'materialfactory:metal_crate', 
+         'materialfactory:blue_crate', 
+         'materialfactory:black_crate', 
+         'materialfactory:brown_crate', 
+         'materialfactory:copper_crate'])
     
     event.add('forge:storage_blocks/yellorium', 'alltheores:uranium_block')
 
@@ -79,7 +87,7 @@ ServerEvents.tags('item', event => {
 //    event.add('notreepunching:string', 'opolisutilities:leafy_string')
 //    event.add('forge:string', 'opolisutilities:leafy_string')
     
-    event.add('curios:charm',['tiab:time_in_a_bottle','cold_sweat:soulspring_lamp'])
+    event.add('curios:charm',['tiab:time_in_a_bottle', 'cold_sweat:soulspring_lamp', 'artifacts:digging_claws'])
 
     event.add('forge:raw_materials/elementium', 'mythicbotany:raw_elementium')
     event.add('forge:storage_blocks/raw_elementium', 'mythicbotany:raw_elementium_block')

@@ -112,8 +112,8 @@
 				type: "observation"
 			}]
 			title: "发现沙砾堆"
-			x: 2.5d
-			y: -4.0d
+			x: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["65978452C77A37F4"]
@@ -131,7 +131,7 @@
 			}]
 			title: "手搓燧石仙人"
 			x: 1.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["30F85A5DCC83B41D"]
@@ -153,7 +153,7 @@
 				type: "item"
 			}]
 			title: "敲击燧石"
-			x: 1.0d
+			x: -0.5d
 			y: -1.0d
 		}
 		{
@@ -181,7 +181,7 @@
 				type: "item"
 			}]
 			title: "战斗时间到？"
-			x: 1.0d
+			x: -2.5d
 			y: 0.5d
 		}
 		{
@@ -203,8 +203,8 @@
 				item: "notreepunching:plant_fiber"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1319FE1CD0DA29ED"]
@@ -216,7 +216,7 @@
 				item: "notreepunching:plant_string"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: 2.0d
 		}
 		{
@@ -283,7 +283,7 @@
 				type: "item"
 			}]
 			title: "手搓木板"
-			x: -0.5d
+			x: 1.5d
 			y: -2.5d
 		}
 		{
@@ -328,7 +328,7 @@
 				}
 			]
 			title: "燧石工具"
-			x: -2.0d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -351,7 +351,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 2.5d
 			y: -1.0d
 		}
 		{
@@ -372,7 +372,7 @@
 				type: "item"
 			}]
 			title: "第一个工作台！"
-			x: -0.5d
+			x: 1.0d
 			y: 0.5d
 		}
 		{
@@ -416,8 +416,8 @@
 				}
 			]
 			title: "工具升级！"
-			x: -2.5d
-			y: 0.5d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3A9CC4A168E6362E"]
@@ -475,7 +475,7 @@
 				type: "item"
 			}]
 			title: "第一棵树！"
-			x: 1.5d
+			x: 0.0d
 			y: 4.0d
 		}
 		{
@@ -505,79 +505,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["337B23EEE5E11783"]
-			description: [
-				"钩类工具可提升树叶掉落树苗与苹果的几率,并有概率获得蚕茧.后续发展所需的丝线正源于此"
-				""
-				""
-				"&7[钩子会让你从树叶中得到树苗和苹果的几率增加,并且有几率得到蚕. 你将需要一些蚕来获取线以进行进一步的发展.]&f"
-				""
-			]
-			id: "744E757CA323FF46"
-			tasks: [{
-				id: "22FBCA5AA2D1B8B1"
-				item: {
-					Count: 1
-					id: "exdeorum:crook"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "视觉偏差？&7[是不是歪了, 还是我的眼花了？]&f"
-			x: 7.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"将圆石转化为可筛选物需借助锤具\\n\\n放置待加工方块后,持锤进行粉碎操作"
-				""
-				""
-				"&7[为了获得资源,我们需要把圆石锤成可以筛的物品.\\n\\n这就是锤子的作用. 放下你想要锤的方块,然后......锤它.]&f"
-			]
-			id: "35EF391AB5344094"
-			rewards: [{
-				id: "413B6EC90CF35070"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "经典梗的极致运用&7[一个完全被过度使用的笑话]&f"
-			tasks: [{
-				id: "596CB9CDB4192339"
-				item: {
-					Count: 1
-					id: "exdeorum:stone_hammer"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "重锤出击!&7[锤子时间! ]&f"
-			x: 7.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["744E757CA323FF46"]
-			description: ["生存中获取丝线更为便捷——栽种树木后,在叶片放置蚕茧,待其感染整棵树木后使用钩具收割感染叶片即可"]
-			id: "4A536710A11856F2"
-			rewards: [{
-				id: "13BA5B0FB5A2ABA3"
-				type: "xp"
-				xp: 3
-			}]
-			tasks: [{
-				id: "41B28C0567C513BC"
-				item: "minecraft:string"
-				type: "item"
-			}]
-			title: "丝线获取之道&7[线]&f"
-			x: 8.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4A536710A11856F2"]
 			description: [
 				"筛分是本整合包核心资源获取方式,多数材料皆可由此获得\\n\\n25个橡木筛网可摆成5x5阵列,右键中心筛网可批量处理25方块,注意每个筛网需预先放置滤网"
 				""
@@ -620,40 +547,6 @@
 			title: "筛分时刻&7[筛子时间!]&f"
 			x: 10.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["35EF391AB5344094"]
-			description: [
-				"初期发展始于砂砾筛分,后续任务将详细说明\\n\\n大量制造砂砾进行筛分是推进进程的关键"
-				""
-				""
-				"&7[大部分开始旅程都是通过筛子获取材料. 我们将在下一个任务中了解更多信息.\\n\\n不要害怕制造成吨的沙砾.筛沙砾是你进步的方式!]&f"
-			]
-			id: "11CE392E7A41785F"
-			rewards: [
-				{
-					count: 3
-					id: "29178773D4542884"
-					item: "minecraft:gravel"
-					random_bonus: 3
-					type: "item"
-				}
-				{
-					id: "0D467E78B5BF0F3E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			subtitle: "首筛目标物&7[第一个要筛的物品]&f"
-			tasks: [{
-				count: 3L
-				id: "7CF148153F47112C"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
-			title: "砂砾筛分入门&7[沙砾]&f"
-			x: 7.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["5FF2B8BCB3CE6AB0"]
@@ -765,85 +658,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["11CE392E7A41785F"]
-			id: "36D0417745C747B1"
-			rewards: [
-				{
-					count: 3
-					id: "08B2809A5CE520DF"
-					item: "minecraft:sand"
-					random_bonus: 3
-					type: "item"
-				}
-				{
-					id: "7688E791AF524742"
-					type: "xp"
-					xp: 10
-				}
-			]
-			subtitle: "双重粉碎&7[锤两次]&f"
-			tasks: [{
-				id: "68E91C614AAF5C66"
-				item: "minecraft:sand"
-				type: "item"
-			}]
-			title: "砂质处理&7[沙子]&f"
-			x: 7.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["36D0417745C747B1"]
-			id: "70063949E831D49E"
-			rewards: [
-				{
-					id: "69AF9CD584A8CB13"
-					type: "xp"
-					xp: 10
-				}
-				{
-					count: 3
-					id: "7F4CFC542D0EF29F"
-					item: "exdeorum:dust"
-					random_bonus: 3
-					type: "item"
-				}
-			]
-			subtitle: "三重粉碎&7[锤三次]&f"
-			tasks: [{
-				id: "30578E2D8046B257"
-				item: "exdeorum:dust"
-				type: "item"
-			}]
-			title: "粉尘处理&7[尘土]&f"
-			x: 7.0d
-			y: 4.5d
-		}
-		{
-			description: ["生存中基础材料堆积如山,可通过工作台九宫格合成进行压缩\\n\\n批量粉碎需建立自动化产线..."]
-			id: "0C9B97D2048A1073"
-			rewards: [
-				{
-					id: "5E7B4414825E2D01"
-					item: "allthecompressed:sand_1x"
-					type: "item"
-				}
-				{
-					id: "07F9D00A06EC29C2"
-					item: "allthecompressed:gravel_1x"
-					type: "item"
-				}
-			]
-			subtitle: "空间与时间的双重优化&7[它只是节省了空间和时间!]&f"
-			tasks: [{
-				id: "0E71F927D6AEFC25"
-				item: "allthecompressed:cobblestone_1x"
-				type: "item"
-			}]
-			title: "物资压缩术&7[压缩物品]&f"
-			x: 6.0d
-			y: 3.5d
-		}
-		{
 			dependencies: ["2CF0EE5C0651F531"]
 			description: [
 				"获得燧石滤网后即可筛取铁矿等基础原料\\n\\n将矿石碎块合成原矿后投入熔炉冶炼"
@@ -874,32 +688,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["337B23EEE5E11783"]
-			description: [
-				"木桶系统是本包重要生产设施,仅次于筛分体系\\n\\n可用其生产黏土(水)、灵魂沙(巫水)、泥土(树苗)"
-				""
-				"&7[桶是在这个包中获取材料的最重要方式之一, 仅次于筛子.\\n\\n桶可以用水制作黏土,用巫水制作灵魂沙,甚至可以用树苗制作泥土.]"
-			]
-			id: "42240BED17BA0948"
-			rewards: [{
-				count: 2
-				id: "0C7267A4262E0530"
-				item: "minecraft:oak_slab"
-				random_bonus: 2
-				type: "item"
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "255694580F7FD8B1"
-				item: "exdeorum:oak_barrel"
-				type: "item"
-			}]
-			title: "橡木桶妙用&7[橡木桶]&f"
-			x: 7.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["42240BED17BA0948"]
 			description: ["对装满水的木桶使用粉尘右键即可获得黏土"]
 			id: "53F7B1EE005A696C"
 			rewards: [
@@ -925,10 +713,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"25E267AAAD4B992B"
-				"53F7B1EE005A696C"
-			]
+			dependencies: ["53F7B1EE005A696C"]
 			description: ["生存需多源发电,坩埚下方放置热源可生成熔岩\\n\\n初期可用火把(效率较低),建议使用圆石填充"]
 			id: "40A495FCD317A38D"
 			rewards: [
@@ -1054,7 +839,6 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["42240BED17BA0948"]
 			description: ["将土史莱姆球丢入水中获得原版史莱姆球！"]
 			icon: "minecraft:slime_ball"
 			id: "40A3726417C13F83"
@@ -1114,75 +898,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["1EFE097BA29A5C0D"]
-			id: "3755C36AE60FF795"
-			subtitle: "落叶化神奇&7[只需添加树叶...]&f"
-			tasks: [{
-				id: "5E69FA217FFA4955"
-				item: "exdeorum:oak_crucible"
-				type: "item"
-			}]
-			title: "橡木坩埚应用&7[橡木坩埚]&f"
-			x: 8.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["3755C36AE60FF795"]
-			icon: "minecraft:water_bucket"
-			id: "078B62FF2DA20ED9"
-			size: 1.5d
-			subtitle: "现在你有无限的水&7[现在你有无限的水]&f"
-			tasks: [{
-				id: "78161B7F3B8BEC52"
-				title: "水源"
-				type: "checkmark"
-			}]
-			title: "制造水？&7[制造水？]&f"
-			x: 8.5d
-			y: 6.0d
-		}
-		{
-			description: ["将尘土扔进筛子里,得到一些骨粉."]
-			hide_dependency_lines: true
-			id: "25E267AAAD4B992B"
-			rewards: [{
-				id: "3A791192AB97B4D2"
-				item: "minecraft:bone"
-				type: "item"
-			}]
-			subtitle: "为了制作瓷土&7[为了制作瓷土]&f"
-			tasks: [{
-				id: "5D41217820D4BA15"
-				item: "minecraft:bone_meal"
-				type: "item"
-			}]
-			title: "骨粉&7[骨粉]&f"
-			x: 10.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["11CE392E7A41785F"]
-			description: ["准备好用这些树叶制造水吧!"]
-			id: "1EFE097BA29A5C0D"
-			rewards: [{
-				id: "6601937F40C4AA51"
-				item: "minecraft:oak_sapling"
-				type: "item"
-			}]
-			tasks: [{
-				id: "79D7BD24876E7514"
-				item: "minecraft:oak_leaves"
-				type: "item"
-			}]
-			title: "树叶&7[树叶]&f"
-			x: 8.5d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"768F0E715B05D9E4"
-				"11CE392E7A41785F"
-			]
+			dependencies: ["768F0E715B05D9E4"]
 			description: [
 				"你将要筛很多方块.使用FTB Ultimine模组用锤子快速收集,也许可以准备好自动点击器!\\n\\n你可以放置多个筛子,一次最多筛25个方块."
 				""
@@ -1221,40 +937,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["0C9B97D2048A1073"]
-			description: ["锤沙砾或沙子的更快方法是锤它们的压缩块.不过,普通的锤子是行不通的,所以你需要一把压缩锤!"]
-			id: "784B0D83F0229A08"
-			rewards: [{
-				id: "3E3FC3C325D91ACB"
-				item: {
-					Count: 1
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:efficiency"
-							lvl: 3s
-						}]
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "压缩锤击还是一回事!"
-			tasks: [{
-				id: "58B859E088563425"
-				item: {
-					Count: 1
-					id: "exdeorum:compressed_stone_hammer"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "锤压缩物品"
-			x: 6.0d
-			y: 4.5d
-		}
-		{
 			dependencies: ["5FF2B8BCB3CE6AB0"]
 			description: ["Dank 就像一个迷你潜影盒,它可以自动在其中存储某些类型的物品.\\n\\n筛物品时掉落了很多烦人的石子,不过你可以在Dank中存放一千多颗石子!右键单击以打开Dank的GUI,将石子放入其中,然后单击顶部的\"P\"将其设置为过滤拾取.!"]
 			id: "15D87B54A60525F0"
@@ -1273,37 +955,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["42240BED17BA0948"]
-			description: [
-				"石桶与熔岩一起使用.可以制作黑石等其他物品."
-				""
-				""
-				"&7[石桶与熔岩一起使用.可以制作黑石等其他物品.]&f"
-			]
-			id: "0DE706CEFF3D04DC"
-			tasks: [{
-				id: "269B12BF6CEBC55B"
-				item: "exdeorum:stone_barrel"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["42240BED17BA0948"]
-			description: ["把一个桶放在菌丝体上方并装满水时,它会产生巫水.巫水可以用来制作灵魂沙、下界岩和黑石.\\n\\n&l查看巫水桶的JEI&r"]
-			id: "3B2C5513A8781DD3"
-			shape: "pentagon"
-			tasks: [{
-				id: "2A5A47ACE1821C05"
-				item: "exdeorum:witch_water_bucket"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["3B2C5513A8781DD3"]
 			description: [
 				"再次查看巫水桶的JEI."
 				""
@@ -1337,7 +988,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["768F0E715B05D9E4"]
@@ -1362,31 +1013,6 @@
 			]
 			x: 11.5d
 			y: -1.0d
-		}
-		{
-			dependencies: ["11CE392E7A41785F"]
-			description: [
-				"你可以用沙砾和泥土来制造砂土,然后用&b锄头耕作它来制造耕地,破坏后得到双倍泥土.(牺牲沙砾)"
-				""
-				""
-				"&7[你可以用沙砾和泥土来制造砂土,然后用锄头耕作它来制造耕地,破坏后得到双倍泥土.(牺牲沙砾)]&f"
-			]
-			id: "61C14AED15DE8C3C"
-			rewards: [{
-				count: 10
-				id: "20068A538BFDFDFA"
-				item: "minecraft:dirt"
-				type: "item"
-			}]
-			subtitle: "无限泥土!&7[无限泥土!]&f"
-			tasks: [{
-				count: 12L
-				id: "574AD49FECCCEBA9"
-				item: { Count: 12, id: "minecraft:coarse_dirt" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["231765C07B4A12B7"]
@@ -1513,8 +1139,8 @@
 				type: "item"
 			}]
 			title: "无中生有，启动！"
-			x: 3.0d
-			y: -1.5d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["50D5B4333E1D0D1F"]
@@ -1636,7 +1262,7 @@
 		}
 		{
 			dependencies: ["7C17FC317BB3A9CB"]
-			description: ["只需一个右键，树苗瞬间长大！"]
+			description: ["拿着矿锤或者工具就可以放屁进行催熟啦！"]
 			id: "772024BDF735E3CA"
 			rewards: [{
 				id: "72FE10F994FBBCAD"
@@ -1644,17 +1270,23 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "6DDCA5197883E185"
-				item: "opolisutilities:sapling_grower"
+				id: "52A3E51E0A93DC13"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools"
+					}
+				}
 				type: "item"
 			}]
 			title: "小树快快长大"
-			x: 3.0d
-			y: 4.0d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			description: [
-				"变色龙每过一段时间会自己蜕皮"
+				"变色龙每过一段时间会自动蜕皮,右键蜕皮阶段的变色龙会掉变色龙皮"
 				""
 				"变色龙皮可以用来制作变色龙鳞套装用来适应更恶劣的环境"
 				""
@@ -1819,7 +1451,7 @@
 			y: 2.0d
 		}
 		{
-			description: ["小市场有很多可以买的东西,比如树苗和生物刷怪蛋"]
+			description: ["贸易站有很多可以买的东西,比如树苗和生物刷怪蛋"]
 			id: "2A10FCA9CF4759B7"
 			rewards: [{
 				id: "3E0E525D5629E46D"
@@ -1834,7 +1466,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 0.75d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6C8BB486796EE82A"]
@@ -2022,6 +1654,23 @@
 			title: "生存小帮手"
 			x: -2.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["4CE4D268D6EF7421"]
+			description: [
+				"现在你可以用石制工具挖掘板条箱或金属桶了！"
+				"这些桶能掉好多好多的东西呐，"
+				"具体掉落物可以在jei查看"
+			]
+			id: "430A2B65D68F6C10"
+			tasks: [{
+				advancement: "materialfactory:barrel"
+				criterion: ""
+				id: "61923BEF2CCCA105"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: 2.0d
 		}
 	]
 	title: "&a无中生有"

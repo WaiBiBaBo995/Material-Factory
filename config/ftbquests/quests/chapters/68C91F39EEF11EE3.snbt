@@ -104,6 +104,7 @@
 				"如果你患有&e光敏性癫痫&r，请务必装上材质包里的&emekE 停止闪烁&r材质包。"
 				"{image:kubejs:textures/picture/tips2.png width:83 height:16 align:center fit:true}"
 			]
+			icon: "mekanism:industrial_alarm"
 			id: "1BABA443B7EFF0B3"
 			rewards: [{
 				id: "77CF763884193F6F"
@@ -122,7 +123,7 @@
 			description: [
 				"1.按F7可以打开光亮覆盖显示。"
 				"2.由于匠魂的问题会导致jei显示每个生物的掉落物都有头颅。"
-				"3.小麦种子右键泥土可以变成草方块"
+				"3.工业先锋的某些1级和2级插件无法通过其他合成表直接查看，需要单独查看合成表"
 			]
 			id: "711BE171DA9D2AD8"
 			rewards: [{
@@ -165,6 +166,40 @@
 			title: "关于一些非物品类型的任务提交"
 			x: 2.5d
 			y: 2.0d
+		}
+		{
+			description: ["一些多方块结构可以用工具辅助搭建"]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "thermal:guidebook"
+				}
+			}
+			id: "3EC5E17A6D70F137"
+			rewards: [
+				{
+					id: "01E3EBDE975B1AF9"
+					item: {
+						Count: 1
+						id: "mbtool:mbtool"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "62DD1532FAEBF89D"
+					item: "mbd2:mbd_gadgets"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "407DAAC5BF95E5FA"
+				type: "checkmark"
+			}]
+			title: "关于多方块结构搭建"
+			x: 0.0d
+			y: 3.5d
 		}
 	]
 	title: "游玩须知"

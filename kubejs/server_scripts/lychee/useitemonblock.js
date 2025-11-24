@@ -121,4 +121,20 @@ ServerEvents.recipes(event => {
             "hide": true
         }]
     })
+
+    //灵魂耕地提示
+    event.custom({
+        "type": "lychee:block_interacting",
+        "ghost": true,
+        "comment": "comment.lychee.soul_farmland",
+        "item_in": {
+            "item": 'avaritia:blaze_hoe'
+        },
+        "block_in": "minecraft:soul_soil",
+        "post": [
+        {
+            "type": "place",
+            "block": "avaritia:soul_farmland"
+        }]
+    })
 })

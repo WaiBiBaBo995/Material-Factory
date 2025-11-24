@@ -1,0 +1,14 @@
+{
+  "colors": [
+    "fa977c",
+    "bc5430"
+  ],
+  "enabled": true,
+  "ingredient": {
+    "item": "minecraft:copper_ingot"
+  },
+  "name": "singularity.avaritia.copper",
+  "recipeDisabled": false,
+  "materialCount": 10000,
+  "timeRequired": 240
+}

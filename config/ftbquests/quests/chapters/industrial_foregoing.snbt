@@ -294,24 +294,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6E616DB197387C86"]
-			id: "33532408B21A5378"
-			optional: true
-			rewards: [{
-				count: 5
-				id: "3F63CCEB0E0789AF"
-				item: "minecraft:coal"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3DD12A969161A5B6"
-				item: "industrialforegoing:pitiful_generator"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["321FA7348E532F4E"]
 			id: "6FF04DD735346BED"
 			rewards: [{

@@ -16,6 +16,12 @@ ItemEvents.tooltip(event =>{
     event.addAdvanced('materialfactory:source_fluid_tank',(item,advanced,text) =>{
         text.add(1,Text.translate("tooltip.materialfactory.source_fluid_tank"))
     })
+    event.addAdvanced('materialfactory:ultimate_laser',(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.materialfactory.ultimate_laser"))
+    })
+    event.addAdvanced("thermal:device_fisher",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.thermal.device_fisher").blue())
+    })
 
     let shiftTooltipItems = [
         { item: 'materialfactory:charge_spool', lines: 2 },
@@ -29,7 +35,8 @@ ItemEvents.tooltip(event =>{
         { item: 'materialfactory:oak_crucible', lines: 3},
         { item: 'materialfactory:source_fluid_extractor', lines: 5 },
         { item: 'compactcrafting:field_projector', lines: 3 },
-        { item: 'materialfactory:artifical_star', lines: 7 }
+        { item: 'materialfactory:artificial_star', lines: 10 },
+        { item: 'materialfactory:extinguished_star', lines: 3 }
     ]
     shiftTooltipItems.forEach((shiftTooltipItem) => {
         const { item, lines } = shiftTooltipItem;
