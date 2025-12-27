@@ -3,13 +3,15 @@ PlayerEvents.loggedIn(event => {
         
     })
 })
-PlayerEvents.tick(event => {
-    let { player, level } = event
-    if (player.isInFluidType(Fluid.of('materialfactory:electric_fluid').fluid.fluidType)) {
+MEJSEvents.standOnFluid(event=>{
+    /** @type {Internal.Player_} */
+    let player = event.entity
+    let { level } = player
+    if ( player.isPlayer() && player.isInFluidType(Fluid.of('materialfactory:electric_fluid').fluid.fluidType)) {
         let SOUND_COOLDOWN = 40
         let persistantData = player.persistentData
         let lastPlayed = persistantData.lastZapSound || 0
-        let currentTime = event.level.time
+        let currentTime = level.time
         if (currentTime - lastPlayed >= SOUND_COOLDOWN) {
             persistantData.lastZapSound = currentTime
             player.potionEffects.add('createaddition:shocking', 60, 0)

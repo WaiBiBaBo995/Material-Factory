@@ -1,8 +1,4 @@
 {
-  "colors": [
-    "a9a1b8",
-    "8d78b7"
-  ],
   "conditions": [
     {
       "type": "forge:not",
@@ -12,12 +8,15 @@
       }
     }
   ],
+  "count": 10000,
+  "displayName": "singularity.avaritia.refined_obsidian",
   "enabled": true,
   "ingredient": {
     "tag": "forge:ingots/refined_obsidian"
   },
-  "name": "singularity.avaritia.refined_obsidian",
+  "name": "avaritia:refined_obsidian",
+  "overlayColor": "a9a1b8",
   "recipeDisabled": false,
-  "materialCount": 10000,
-  "timeRequired": 240
+  "timeCost": 240,
+  "underlayColor": "8d78b7"
 }

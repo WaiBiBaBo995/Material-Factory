@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
             "type": "thermal_extra:component_assembly",
             "energy": 100000,
             "ingredients": [
-                { "amount": 4, "tag": 'forge:ingots/steel' },
+                { "item": "mekanism:steel_casing" },
                 { "item": 'industrialforegoing:machine_frame_advanced' },
                 { "amount": 2, "item": 'thermal:rf_coil' },
                 { "item": 'ironfurnaces:iron_furnace' },
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
             "energy": 6000000,
             "ingredients": [
                 { "amount": 4, "item": "mekanism_extras:alloy_shining" },
-                { "type": "forge:nbt", "item": 'productivebees:configurable_honeycomb', "nbt": "{EntityTag:{type:\"productivebees:refined_obsidian\"}}" },
+                { "amount": 1, "item": "mekmm:empty_crystal" },
                 { "amount": 2, "item": "mekanism_extras:cosmic_control_circuit" },
                 { "amount": 1, "item": "mekanism_extras:supreme_tier_installer" },
                 { "amount": 100, "fluid": 'thermal_extra:twinite' }
@@ -180,16 +180,35 @@ ServerEvents.recipes(event => {
             "energy": 50000,
             "ingredients": [
                 { "amount": 2, "item": "minecraft:redstone" },
-                { "amount": 2, "item": "mekanism:basic_control_circuit" },
-                { "amount": 2, "tag": 'forge:glass/silica' },
-                { "amount": 1, "item": "mekanism:steel_casing" },
+                { "amount": 2, "item": "mekanism:alloy_infused" },
+                { "amount": 2, "tag": 'forge:ingots/iron' },
+                { "amount": 1, "item": "mekanism:electrolytic_core" },
                 { "amount": 250, "fluid": "thermal_extra:polyolefin" }
             ],
             "result": [{
                 "chance": 1.0,
-                "item": "mekanism:energized_smelter"
+                "item": "mekanism:electrolytic_separator"
             }]
-        }).id('mekanism:energized_smelter')
+        }).id('mekanism:electrolytic_separator')
+
+    event.custom(
+        {
+            "type": "thermal_extra:component_assembly",
+            "energy": 200000,
+            "ingredients": [
+                { "amount": 2, "item": "mekanism:alloy_atomic"},
+                { "amount": 1, "item": "mekanism:ultimate_control_circuit" },
+                { "amount": 1, "item": "mekanism:logistical_sorter" },
+                { "amount": 1, "item": "mekanism:robit" },
+                { "amount": 2, "item": "mekanism:teleportation_core" },
+                { "amount": 1, "item": "mekanism:steel_casing" },
+                { "amount": 2000, "fluid": "thermal_extra:polyolefin" }
+            ],
+            "result": [{
+                "chance": 1.0,
+                "item": "mekanism:digital_miner"
+            }]
+        }).id("mekanism:digital_miner")
 })
 
 function MekanismAssemble(energy, input, fluid, result) {
@@ -222,8 +241,10 @@ function advancedMekanism(input, result) {
 }
 
 function eliteMekanism(input, result) {
-    MekanismAssemble(150000, [{ "amount": 2, "item": "mekanism:alloy_reinforced" },
-        { "amount": 2, "item": "mekanism:elite_control_circuit" }, input], 1000, result)
+    let inputArray = Array.isArray(input) ? input.slice() : [input];
+        inputArray.unshift({ "amount": 2, "item": "mekanism:elite_control_circuit" });
+        inputArray.unshift({ "amount": 2, "item": "mekanism:alloy_reinforced" });
+    MekanismAssemble(150000, inputArray, 1000, result)
 }
 
 function ultimateMekanism(input, result) {
@@ -234,11 +255,18 @@ function ultimateMekanism(input, result) {
 }
 //其他机器
 MekanismAssemble(4000, [{ "item": "minecraft:bucket"}, { "amount": 2, "item": "mekanism:alloy_infused" }, { "amount": 3, "tag": 'forge:ingots/osmium' }], 250, "mekanism:electric_pump")
+MekanismAssemble(200000, [{ "amount": 4, "item": "mekanism:alloy_atomic" }, { "amount": 2, "item": "mekanism:ultimate_control_circuit" }, { "amount": 2, "item": "mekanism:pellet_antimatter" }], 4000, "mekanism:antiprotonic_nucleosynthesizer")
+MekanismAssemble(50000, [{ "amount": 4, "tag": 'forge:glass/silica' }, { "amount": 2, "item": "mekanism:basic_control_circuit" }, { "amount": 1, "item": "mekanism:basic_chemical_tank" }, { "amount": 1, "item": "mekanism:basic_fluid_tank" }, { "amount": 1, "item": "mekanism:energy_tablet" }], 250, "mekanism:rotary_condensentrator")
+MekanismAssemble(50000, [{ "amount": 4, "item": "mekanism:alloy_infused" }, { "amount": 2, "item": "mekanism:basic_control_circuit" }, { "amount": 1, "tag": 'mekanism:personal_storage' }, { "amount": 1, "item": "mekanism:dynamic_tank" }, { "amount": 1, "item": "mekanism:basic_chemical_tank" }], 250, "mekanism:chemical_oxidizer")
+MekanismAssemble(50000, [{ "amount": 4, "item": "mekanism:alloy_infused" }, { "amount": 2, "item": "mekanism:basic_control_circuit" }, { "amount": 1, "item": "mekanism:basic_chemical_tank" }, { "amount": 1, "item": "mekanism:advanced_chemical_tank" }], 250, "mekanism:chemical_infuser")
+MekanismAssemble(50000, [{ "amount": 2, "item": "mekanism:alloy_infused" }, { "amount": 2, "item": "mekanism:basic_control_circuit" }, { "amount": 4, "item": "minecraft:iron_ingot" }], 250, "mekanism:precision_sawmill")
+MekanismAssemble(50000, [{ "amount": 2, "item": "mekanism:ultimate_control_circuit" }, { "amount": 6, "tag": "forge:ingots/lead" }, { "amount": 1, "item": "mekanism:basic_chemical_tank" }], 1000, "mekanism:isotopic_centrifuge")
 
 //基础机器
 basicMekanism({ "amount": 2, "item": "minecraft:iron_ingot" }, "mekanism:enrichment_chamber")
 basicMekanism({ "amount": 2, "item": "minecraft:lava_bucket" }, "mekanism:crusher")
 basicMekanism({ "amount": 2, "item": "minecraft:bowl" }, "mekanism:nutritional_liquifier")
+basicMekanism({ "amount": 4, "tag": 'forge:glass/silica' }, "mekanism:energized_smelter")
 
 //高级机器
 advancedMekanism({ "amount": 2, "item": "minecraft:bucket" }, "mekanism:osmium_compressor")
@@ -246,8 +274,10 @@ advancedMekanism({ "amount": 2, "tag": 'forge:ingots/osmium' }, "mekanism:purifi
 
 //精英机器
 eliteMekanism({ "amount": 2, "item": "minecraft:cobblestone" }, "mekanism:combiner")
+eliteMekanism([{ "amount": 3, "tag": "forge:ingots/bronze" }, { "amount": 2, "item": "mekanism:hdpe_sheet" }, { "amount": 1, "item": "mekanismgenerators:solar_panel" }], "mekanism:solar_neutron_activator")
 
 //终极机器
 ultimateMekanism({ "amount": 2, "tag": 'forge:gems/fluorite' }, "mekanism:chemical_crystallizer")
 ultimateMekanism([{ "amount": 1, "item": "mekanism:basic_chemical_tank" }, { "amount": 1, "item": "mekanism:advanced_chemical_tank" }], "mekanism:chemical_dissolution_chamber")
 ultimateMekanism([{ "amount": 1, "item": "mekanism:basic_chemical_tank" }, { "amount": 1, "item": "mekanism:basic_fluid_tank" }], "mekanism:chemical_washer")
+ultimateMekanism([{ "amount": 4, "item": "mekanism:alloy_atomic" }, { "amount": 2, "item": "bhc:soul_heart_crystal" }, { "item": "minecraft:beacon"}], "mekanism:dimensional_stabilizer")

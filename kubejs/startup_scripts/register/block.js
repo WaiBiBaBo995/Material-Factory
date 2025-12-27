@@ -111,6 +111,16 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.defaultCutout()
 
+	event.create('materialfactory:antimatter_block')
+		.hardness(2)
+        .requiresTool(true)
+		.soundType('stone')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.defaultCutout()
+		.blockEntity(info =>{
+			info.initialData({})
+		})
+
 	event.create('materialfactory:airdrop', "basic")
 		.soundType('stone')
 		.tagBlock('minecraft:mineable/pickaxe')

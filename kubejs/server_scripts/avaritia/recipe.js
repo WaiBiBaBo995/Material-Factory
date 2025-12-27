@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
             "category": "equipment",
             "key": {
             "A": {
-                "item": "ae2:vibration_chamber"
+                "item": "ae2omnicells:quantum_crafting_storage_256m_block"
             },
             "B": {
                 "item": 'advanced_ae:quantum_alloy_plate'
@@ -357,21 +357,24 @@ ServerEvents.recipes(event => {
             "D": {
                 "item": 'advanced_ae:quantum_core'
             },
+            "E": {
+                "item": "crazyae2addons:super_singularity"
+            },
             "X": {
                 "item": "ae2:singularity"
             },
             "Y": {
-                "item": 'megacells:mega_energy_cell'
+                "item": "crazyae2addons:dense_energy_storage_256k"
             }
             },
             "pattern": [
             "YYYYXYYYY",
             "YCACXCACY",
-            "YACBXBCAY",
-            "YCBBXBBCY",
-            "XXXXDXXXX",
-            "YCBBXBBCY",
-            "YACBXBCAY",
+            "YACBEBCAY",
+            "YCBBEBBCY",
+            "XXEEDEEXX",
+            "YCBBEBBCY",
+            "YACBEBCAY",
             "YCACXCACY",
             "YYYYXYYYY"
             ],

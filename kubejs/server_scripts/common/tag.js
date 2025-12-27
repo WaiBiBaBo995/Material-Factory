@@ -50,9 +50,15 @@ ServerEvents.tags('block', event => {
 });
 
 ServerEvents.tags('item', event => {
+    event.add('minecraft:arrows', ["materialfactory:full_matter_cluster_arrow"])
     event.add('avaritia:endless',[
         'mysticalagriculture:infinity_seeds'
     ]);
+
+    //nmd无尽重生咋这么坏，给物质团这个标签，凡是有检测itemEntity掉落事件的必崩
+    event.remove('avaritia:endless',
+        'avaritia:matter_cluster');
+
     event.add('minecraft:shovels',[
         'allthemodium:allthemodium_shovel',
         'allthemodium:vibranium_shovel',
@@ -74,7 +80,7 @@ ServerEvents.tags('item', event => {
         'minecraft:stone_shovel',
         'minecraft:stone_hoe',
     ]);
-    event.add('lychee:fire_immune',['supplementaries:ash_brick'])
+    event.add('lychee:fire_immune',['supplementaries:ash_brick',"materialfactory:antimatter_block","materialfactory:full_matter_cluster_shard"])
 
     event.add('forge:slimeballs',['materialfactory:rainbow_slimeball'])
     event.add('bookshelf:slime_balls',['materialfactory:rainbow_slimeball'])
@@ -154,4 +160,7 @@ ServerEvents.tags('entity_type', event => {
     event.add('industrialforegoing:mob_duplicator_blacklist', '#kubejs:mob_blacklist')
     event.add('ars_nouveau:drygmy_blacklist', [/productivebees:.+/, 'artifacts:mimic'])
     event.add('spirit:soul_cage_blacklisted', '#kubejs:mob_blacklist')
+
+    event.add("lychee:lightning_immune", ["minecraft:item"])
+    event.add("lychee:lightning_fire_immune", ["minecraft:item"])
 })

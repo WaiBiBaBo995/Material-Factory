@@ -1,14 +1,14 @@
 {
-  "colors": [
-    "a6fce9",
-    "1aaca8"
-  ],
+  "conditions": [],
+  "count": 10000,
+  "displayName": "singularity.avaritia.diamond",
   "enabled": true,
   "ingredient": {
     "item": "minecraft:diamond"
   },
-  "name": "singularity.avaritia.diamond",
+  "name": "avaritia:diamond",
+  "overlayColor": "a6fce9",
   "recipeDisabled": false,
-  "materialCount": 10000,
-  "timeRequired": 240
+  "timeCost": 240,
+  "underlayColor": "1aaca8"
 }

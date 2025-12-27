@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
     create.milling(Item.of("createsifter:crushed_netherrack_1x", 1), ['allthecompressed:netherrack_1x'])
     create.milling(Item.of('createsifter:crushed_blackstone', 1), ['#forge:blackstone'])
     create.milling(Item.of('createsifter:crushed_blackstone_1x', 1), ['allthecompressed:blackstone_1x'])
-    create.milling(Item.of('mysticalagriculture:stone_essence').withChance(0.1), ['#notreepunching:loose_rocks'])
+    create.milling(Item.of('mysticalagriculture:stone_essence', 1), ['#notreepunching:loose_rocks'])
     create.milling(Item.of('allthecompressed:gravel_1x', 1), ['allthecompressed:cobblestone_1x'])
     create.milling(Item.of('allthecompressed:sand_1x', 1), ['allthecompressed:gravel_1x'])
     create.milling(Item.of('materialfactory:crushed_capacitor'), ['createaddition:capacitor'])

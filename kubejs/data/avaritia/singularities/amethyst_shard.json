@@ -1,14 +1,14 @@
 {
-  "colors": [
-    "cfa0f3",
-    "8d6acc"
-  ],
+  "conditions": [],
+  "count": 10000,
+  "displayName": "singularity.avaritia.amethyst_shard",
   "enabled": true,
   "ingredient": {
     "item": "minecraft:amethyst_shard"
   },
-  "name": "singularity.avaritia.amethyst_shard",
+  "name": "avaritia:amethyst_shard",
+  "overlayColor": "cfa0f3",
   "recipeDisabled": false,
-  "materialCount": 10000,
-  "timeRequired": 240
+  "timeCost": 240,
+  "underlayColor": "8d6acc"
 }

@@ -1,14 +1,14 @@
 {
-  "colors": [
-    "ff0000",
-    "8a0901"
-  ],
+  "conditions": [],
+  "count": 10000,
+  "displayName": "singularity.avaritia.redstone",
   "enabled": true,
   "ingredient": {
     "item": "minecraft:redstone"
   },
-  "name": "singularity.avaritia.redstone",
+  "name": "avaritia:redstone",
+  "overlayColor": "ff0000",
   "recipeDisabled": false,
-  "materialCount": 10000,
-  "timeRequired": 240
+  "timeCost": 240,
+  "underlayColor": "8a0901"
 }

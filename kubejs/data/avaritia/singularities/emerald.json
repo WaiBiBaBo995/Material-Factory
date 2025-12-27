@@ -1,14 +1,14 @@
 {
-  "colors": [
-    "7df8ac",
-    "8e1a"
-  ],
+  "conditions": [],
+  "count": 10000,
+  "displayName": "singularity.avaritia.emerald",
   "enabled": true,
   "ingredient": {
     "item": "minecraft:emerald"
   },
-  "name": "singularity.avaritia.emerald",
+  "name": "avaritia:emerald",
+  "overlayColor": "7df8ac",
   "recipeDisabled": false,
-  "materialCount": 10000,
-  "timeRequired": 240
+  "timeCost": 240,
+  "underlayColor": "8e1a"
 }
