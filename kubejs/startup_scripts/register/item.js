@@ -55,6 +55,8 @@ StartupEvents.registry("item", event =>{
                     return actualDurabilityToRestore * energyPerDurability;
                 })
         )
+        .createItemProperties().setNoRepair()
+    
     event.create('materialfactory:crushed_capacitor','basic')
     event.create('allthemodium:incomplete_vibranium_allthemodium_alloy_dust', "create:sequenced_assembly")
     event.create('allthemodium:dirty_vibranium_allthemodium_alloy_dust', "basic")
@@ -80,8 +82,24 @@ StartupEvents.registry("item", event =>{
             .fireResistant(true)
             .tooltip(Text.translate('tooltip.materialfactory.source_catalyst'))
             .rarity("epic")
+    
+    event.create('materialfactory:filled_antimatter_ball').unstackable().glow(true).rarity('rosarium').fireResistant(true);
+    
+    event
+        .create('materialfactory:unfilled_antimatter_ball')
+        .rarity('amethystine')
+        .unstackable()
+        .fireResistant(true)
+        .barWidth((i) => {
+            if (i.nbt && i.nbt.contains('Antimatter') && i.nbt.getInt('Antimatter') != 0) {
+                return ((i.nbt.getInt('Antimatter') + 8) / 100) * 13;
+            }
+            return 0;
+        })
+        .barColor((i) => Color.LIGHT_PURPLE);
 })
-
+const $BasicItemJS$Builder=Java.loadClass("dev.latvian.mods.kubejs.item.custom.BasicItemJS$Builder")
+let builder = new $BasicItemJS$Builder('')
 ItemEvents.modification(event =>{
     event.modify('mysticalagriculture:infinity_seeds', item=>{
         item.rarity = "cosmic"
@@ -91,7 +109,22 @@ ItemEvents.modification(event =>{
         item.rarity = "epic"
     })
 
+    event.modify("materialfactory:antimatter_block", item=>{
+        item.rarity = "rosarium"
+    })
+
     event.modify('notreepunching:clay_tool',item=>{
         item.craftingRemainder = Item.of('notreepunching:clay_tool').item;
     });
+
+    event.modify('materialfactory:full_matter_cluster_shard',item=>{
+        item.rarity = "rosarium"
+    })
+    let megablocks = ["megablock","white_megablock","orange_megablock","magenta_megablock","light_blue_megablock","yellow_megablock","lime_megablock","pink_megablock","gray_megablock","light_gray_megablock","cyan_megablock","purple_megablock","blue_megablock","brown_megablock","green_megablock","red_megablock","black_megablock"]
+	for (const blockName of megablocks) {
+        event.modify(`materialfactory:${blockName}`, item=>{
+            builder.glow(true)
+            item.setItemBuilder(builder)
+        })
+    }
 })

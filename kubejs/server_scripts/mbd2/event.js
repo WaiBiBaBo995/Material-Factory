@@ -231,6 +231,7 @@ MBDMachineEvents.onRightClick('materialfactory:source_fluid_extractor', e => {
     let { machine, player, heldItem, hand } = e.getEvent();
     let { recipeLogic, level } = machine
     let tank = level.getBlock(machine.pos.above())
+    if (tank.id != "materialfactory:source_fluid_tank") return;
     let tankCap = tank.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
     let amount = tankCap.getFluidInTank(0).amount;
     let now = Date.now()
@@ -447,6 +448,7 @@ MBDMachineEvents.onStructureFormed('materialfactory:artificial_star', e => {
         .ofMachine(level, machine.getPos().below(14))
         .orElse(null);
     if (machine.customData.getBoolean('hasCollapsed')) {
+        e.event.setCanceled(true)
         e.cancel();
     }
     let trait = machine.getTraitByName("catalyst_slot")
@@ -657,7 +659,7 @@ function startAttractionEffect(blackHole, position, worldLevel) {
                 return;
             }
 
-            let attractionRange = blackHole.nbt.size() + 15; // 稍微增加吸引范围
+            let attractionRange = blackHole.nbt.size() + 15; // 增加吸引范围
             let aabb = AABB.of(
                 position.x - attractionRange,
                 position.y - attractionRange,
@@ -725,6 +727,7 @@ function startAttractionEffect(blackHole, position, worldLevel) {
 function easeInOutCubic(t) {
     return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 }
+//人造恒星
 MBDMachineEvents.onTick('materialfactory:artificial_star', e => {
     let { machine } = e.getEvent();
     let { level } = machine;
@@ -745,6 +748,7 @@ MBDMachineEvents.onTick('materialfactory:artificial_star', e => {
         return;
     }
     if (machine.customData.getBoolean('hasCollapsed')) return;
+    if (level.time % 20 != 0) return;
     let HEATtrait = belowMachine.getTraitByName("mek_heat_container")
     let HEATcontainer = HEATtrait.container;
     let HeatTemperature = HEATcontainer.getTemperature(0);
@@ -780,7 +784,7 @@ MBDMachineEvents.onTick('materialfactory:artificial_star', e => {
     let HEATtrait = belowMachine.getTraitByName("mek_heat_container")
     let HEATcontainer = HEATtrait.container;
     let HeatTemperature = HEATcontainer.getTemperature(0);
-    
+    if (level.time % 7 != 0) return;
     // 计算当前应该输出的信号强度
     let currentSignal;
     
@@ -902,12 +906,14 @@ MBDMachineEvents.onUI('materialfactory:artificial_star', e => {
 //物品槽加热冷却开关
 MBDMachineEvents.onTick('materialfactory:artificial_star', e => {
     let { machine } = e.getEvent()
+    let { level } = machine
     let itemTrait = machine.getTraitByName("temperaturemode_slot")
     let itemStorage = itemTrait.storage
     let itemStored = itemStorage.getStackInSlot(0).getId()
     let heatButtonOn = machine.customData.getBoolean('heatModeButton')
     let coolingButtonOn = machine.customData.getBoolean('coolingModeButton')
     if (heatButtonOn || coolingButtonOn) return;
+    if( level.time % 5 != 0 ) return;
     if (itemStored == 'cookingforblockheads:heating_unit') {
         machine.customData.putBoolean('heatMode', true);
         machine.customData.putBoolean('coolingMode', false);
@@ -950,7 +956,7 @@ MBDMachineEvents.onRecipeWaiting('materialfactory:artificial_star', e=>{
     }
 })
 
-//熄灭的太阳
+//熄灭的恒星
 MBDMachineEvents.onRightClick('materialfactory:extinguished_star', e => {
     let { machine, player, heldItem, hand } = e.getEvent();
     let { level } = machine;
@@ -965,7 +971,7 @@ MBDMachineEvents.onRightClick('materialfactory:extinguished_star', e => {
     if (hand != 'MAIN_HAND') return;
     if (!heldItem.isEmpty()) return;
     if (level.isClientSide()) return;
-    player.tell(Text.translate("message.materialfactory.extinguished_star", FEstored, totalEnergy, Gassstored, totalGas));
+    player.setStatusMessage(Text.translate("message.materialfactory.extinguished_star", FEstored, totalEnergy, Gassstored, totalGas));
     player.swing()
 });
 MBDMachineEvents.onRecipeFinish('materialfactory:extinguished_star', e=>{

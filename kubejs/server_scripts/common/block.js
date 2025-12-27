@@ -19,6 +19,13 @@ BlockEvents.rightClicked('minecraft:netherrack', event => {
     event.level.playSound( null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(),"minecraft:block.grass.place","blocks", 1, 1);
   }
 })
+
+BlockEvents.rightClicked("materialfactory:antimatter_block", event=>{
+  if (event.hand != 'MAIN_HAND') return;
+  if (!event.item.isEmpty()) return;
+  event.player.setStatusMessage(Text.translatable("message.antimatter_block.arrow", event.block.entity.persistentData.getInt("arrow").toFixed()))
+  event.player.swing()
+})
 /*
 BlockEvents.placed(event => {
     let body = "minecraft:cobblestone";
@@ -40,3 +47,38 @@ BlockEvents.placed(event => {
     }
 });
 */
+let megablocks = ["megablock", "white_megablock", "orange_megablock", "magenta_megablock", "light_blue_megablock", "yellow_megablock", "lime_megablock", "pink_megablock", "gray_megablock", "light_gray_megablock", "cyan_megablock", "purple_megablock", "blue_megablock", "brown_megablock", "green_megablock", "red_megablock", "black_megablock"]
+megablocks.forEach(blockName=>{
+  BlockEvents.placed(`materialfactory:${blockName}`, (event) => {
+    const { block } = event
+    let itemDisplay = block.createEntity("item_display")
+    let nbt = {
+      Tags: [`${blockName}_${block.pos.x}_${block.pos.y}_${block.pos.z}`],
+      brightness: {
+        sky: 15,
+        block: 15
+      },
+      item: { id: `materialfactory:${blockName}`, Count: 1 },
+      transformation: [
+        1.0025, 0.0000, 0.0000, 0.0000,
+        0.0000, 1.0025, 0.0000, 0.0000,
+        0.0000, 0.0000, 1.0025, 0.0000,
+        0.0000, 0.0000, 0.0000, 1.0000
+      ],
+    };
+    itemDisplay.moveTo(block.pos)
+    itemDisplay.mergeNbt(nbt);
+    itemDisplay.spawn()
+  })
+
+  BlockEvents.broken(`materialfactory:${blockName}`, (event) => {
+    const { block, level } = event
+    const targetTag = `${blockName}_${block.pos.x}_${block.pos.y}_${block.pos.z}`
+    const entities = level.getEntitiesWithin(AABB.ofBlock(block.pos))
+    entities.forEach(entity => {
+      if (entity.getTags().contains(targetTag)) {
+        entity.kill()
+      }
+    })
+  })
+})

@@ -925,6 +925,15 @@ ServerEvents.recipes(event => {
             D: "minecraft:bucket",
             E: "thermal:redstone_servo"
     }).id('thermal_extra:crafting/device_lava_gen')
+    event.shaped("minecraft:nether_star",
+            [
+            'A A',
+            ' A ',
+            'A A'
+            ],
+            {
+            A: Item.of('minecraft:player_head', '{SkullOwner:"MC_IS"}').weakNBT()
+    })
 
     //M魔力存储元件
     event.shapeless(Item.of('megacells:mana_storage_cell_1m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_1m']).id("megacells:cells/standard/mana_storage_cell_1m_with_housing");
@@ -943,6 +952,10 @@ ServerEvents.recipes(event => {
 
     //掘地之爪
     event.shapeless('artifacts:digging_claws',["minecraft:diamond_pickaxe", "create:deployer", "create:super_glue"]);
+
+    //反物质块
+    event.shapeless("materialfactory:antimatter_block",["9x materialfactory:filled_antimatter_ball"]);
+    event.shapeless("9x materialfactory:full_matter_cluster_shard", ["avaritia:full_matter_cluster"])
 
     event.remove({mod:'fumo'});
     event.remove({id:'allthemodium:teleport_pad'});
@@ -1015,4 +1028,5 @@ ServerEvents.recipes(event => {
     event.remove({id:'tconstruct:smeltery/casts/red_sand/molding/coins'});
     event.remove({id:/thermal_extra:crafting\/.*_rod/});
     event.remove({id:'alltheores:steel_dust_from_alloy_blending'});
+    event.remove({id:"allthecompatibility:create/pressing/netherite"});
 })

@@ -1,12 +1,12 @@
 ServerEvents.recipes(event => {
     //atm锭
-        event.custom({
+    event.custom({
         "type": "lychee:block_crushing",
         "item_in": [{
             "item": 'minecraft:netherite_ingot',
-        },{
+        }, {
             "item": 'tconstruct:manyullyn_ingot',
-        },{
+        }, {
             "tag": 'forge:ingots/signalum',
         }],
         "post": [{
@@ -16,13 +16,13 @@ ServerEvents.recipes(event => {
     })
 
     //振金锭
-        event.custom({
+    event.custom({
         "type": "lychee:block_crushing",
         "item_in": [{
             "item": 'allthemodium:allthemodium_ingot',
-        },{
+        }, {
             "item": 'mekanism:ingot_refined_obsidian',
-        },{
+        }, {
             "tag": 'forge:ingots/enderium',
         }],
         "post": [{
@@ -32,13 +32,13 @@ ServerEvents.recipes(event => {
     })
 
     //难得素锭
-        event.custom({
+    event.custom({
         "type": "lychee:block_crushing",
         "item_in": [{
             "item": 'allthemodium:vibranium_ingot',
-        },{
+        }, {
             "item": 'enderio:end_steel_ingot',
-        },{
+        }, {
             "item": 'thermal_extra:dragonsteel_ingot',
         }],
         "post": [{
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     })
 
     //通量粉尘
-        event.custom({
+    event.custom({
         "type": "lychee:block_crushing",
         "item_in": [{
             "item": 'minecraft:netherite_ingot',
@@ -58,4 +58,16 @@ ServerEvents.recipes(event => {
             "item": 'fluxnetworks:flux_dust'
         }]
     })
+
+    //奥术平台
+    event.custom({
+        "type": "lychee:block_crushing",
+        "item_in": [{
+            "item": "ars_nouveau:arcane_pedestal",
+        }],
+        "post": [{
+            "type": "drop_item",
+            "item": "ars_nouveau:arcane_platform"
+        }]
+    }).id("ars_nouveau:arcane_platform")
 })

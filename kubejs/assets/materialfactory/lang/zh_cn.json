@@ -109,6 +109,7 @@
     "block.materialfactory.extinguished_star": "熄灭的恒星",
     "block.materialfactory.airdrop_chest": "空投箱",
     "block.materialfactory.molten_steel_osmium_alloy": "熔融钢锇合金",
+    "block.materialfactory.antimatter_block": "反物质块",
 
     "block.thermal.crude_oil_fluid": "石油",
     "block.materialfactory.liquid_source": "液态魔源",
@@ -117,6 +118,7 @@
     "comment.lychee.canseeskymidnight": "§7- 需暴露在天空下\n- 需午夜时间",
     "comment.lychee.canseeskynoon": "§7- 需暴露在天空下\n- 需正午时间",
     "comment.lychee.soul_farmland": "§v需要激活炽热模式",
+    "comment.lychee.antimatter_ball": "需要循环100次,炼药锅内的液体为研究流体",
 
     "config.jade.plugin_createsifter.sifter_data": "动力筛子数据（Create附属）",
 
@@ -198,6 +200,9 @@
     "gui.star.gas_dump": "§e清空§f气体槽",
     "gui.star.temperaturemode.item": "放置§c加热单元§r或§b冷却单元§r可以开关§c升温§b冷却§r,作为一种自动化方式,§e只有当机器UI开关都关闭时生效",
 
+    "entity.darkdoppelganger.dark_doppelganger": "千早爱音",
+    "entity.darkdoppelganger.dark_doppelganger_minion": "千早爱音分身",
+
     "infuse_type.mekanism.allthemodium": "ATM",
     "infuse_type.mekanism.latex": "灌注胶乳",
 
@@ -226,7 +231,7 @@
     "item.materialfactory.anon_chihaya_hand": "千早手部",
     "item.materialfactory.anon_chihaya_head": "千早头部",
     "item.materialfactory.anon_chihaya_leg": "千早腿部",
-    "item.materialfactory.antimatter_ball": "反物质球",
+    "item.materialfactory.antimatter_ball": "反物质丸",
     "item.materialfactory.charge_spool": "电荷线圈",
     "item.materialfactory.crushed_capacitor": "故障电容",
     "item.materialfactory.electric_fluid_bucket": "带电流体桶",
@@ -269,6 +274,9 @@
     "item.materialfactory.source_catalyst": "魔源催化剂",
     "item.materialfactory.incomplete_source_catalyst": "未完成的魔源催化剂",
     "item.materialfactory.molten_steel_osmium_alloy_bucket": "熔融钢锇合金桶",
+    "item.materialfactory.unfilled_antimatter_ball": "反物质球(未充满)",
+    "item.materialfactory.filled_antimatter_ball": "反物质球(已充满)",
+    "item.materialfactory.full_matter_cluster_shard": "满载物质团碎块",
 
     "itemGroup.ad_astra_rocketed.main": "Ad Astra Rocketed",
     "item_group.materialfactory.items": "Material Factory",
@@ -285,6 +293,10 @@
     "jei.star.heat.import": "§b放热",
     "jei.star.heat.export": "§c产热",
     "jei.star.star_redstone": "§e恒星温度§3及对应§c红石信号强度",
+    "jei.source_fluid_tank.tip1": "§d丢到奥术基座上方,并在其位置召唤闪电以增加激活进度",
+    "jei.source_fluid_tank.tip2": "§a当激活进度达到9后,奥术基座会转化成液态魔源储罐",
+    "jei.multiblock.source_fluid.formtip": "空手右键检测多方块结构是否完整",
+    "jei.multiblock.source_fluid.itemtip": "§a将物品放置在奥术平台/基座上时预览多方块结构",
 
     "key.back": "返回死亡点",
     "key.skyguis": "打开SkyGUI",
@@ -296,12 +308,14 @@
     "materialfactory.starter": "起动机",
     "materialfactory.brass_multifunction": "黄铜多功能制作",
     "materialfactory.bond_machine_frame_pity": "粘合机器框架",
+    "materialfactory.entropy_matrix": "未来熵变球形矩阵",
     "materialfactory.liquid_source": "制取液态魔源",
     "materialfactory.liquid_mana": "制取液态魔力",
     "materialfactory.huge_enchanting_apparatus": "巨型附魔装置",
     "materialfactory.star": "人造恒星",
     "materialfactory.extinguished_star": "复苏恒星",
     "materialfactory.star_redstone": "恒星温度与红石信号强度",
+    "materialfactory.source_fluid_tank": "制作液态魔源储罐",
 
     "message.advancement.enter.gensokyo": "§d欢迎 §e %s §d进入幻想乡!",
     "message.avaritia.fake_bedrock.break": "§c由于受到不可抗因素,你无法破坏基岩！",
@@ -311,6 +325,15 @@
     "message.artificial_star.not_enough_heat": "§c恒星温度不足: %s,§c恒星即将熄灭！",
     "message.artificial_star.too_much_heat": "§c恒星温度过高: %s,§c恒星即将坍缩！",
     "message.materialfactory.extinguished_star": "§6已注入§a能量: %s §a/ %s§6, §dUU物质: %s §d/ %s",
+    "message.antimatter_block.arrow": "§d已注入满载物质团块数: %s §d/ 54",
+    "message.multiblock.source_fluid.form": "§a多方块结构完整",
+    "message.multiblock.source_fluid_tank.unform": "§c多方块结构不完整",
+    "message.multiblock.source_fluid_tank.activate": "§d激活进度: %s§d/9",
+    "message.multiblock.source_fluid.candle_fired": "§a✓ 所有蜡烛都已点燃",
+    "message.multiblock.source_fluid.candle_unfired": "§c✗ 有蜡烛未点燃",
+    "message.multiblock.source_fluid.ritual_valid": "§a所有祭坛仪式正确!",
+    "message.multiblock.source_fluid.ritual_mismatch1": "§c——————————————————\n仪式火盆存在错误:\n §a期望: %s之板§c,\n §e实际: §e无§c,\n§d木种: %s§c,\n§3坐标: %s\n§c——————————————————",
+    "message.multiblock.source_fluid.ritual_mismatch2": "§c——————————————————\n仪式火盆存在错误:\n §a期望: %s之板§c,\n §e实际: %s之板§c,\n§d木种: %s§c,\n§3坐标: %s\n§c——————————————————",
 
     "mbd2.ash_furnace": "熔化",
     "mbd2.melting": "制水",
@@ -369,9 +392,9 @@
     "tooltip.materialfactory.source_fluid_extractor_3": "§63.§b提取器§6会从半径3格内的魔源罐中汲取魔源,合成需要§c消耗§b3x3x3空间§6内的§e德格米§6和§e星宝石兽",
     "tooltip.materialfactory.source_fluid_extractor_4": "§64.当§5魔源§6不够时§b提取器§6会§c暂停工作§6,此时需要§b玩家§a空手§6右键激活检测",
     "tooltip.materialfactory.source_fluid_extractor_5": "§65.当机器§c暂停工作§6时,会输出§c1格红石信号§6;当机器§a完成配方§6时,会输出§c15格红石信号§6",
-    "tooltip.compactcrafting.field_projector_1": "§6没错，将老版本的压缩空间投影仪搬到了§a1.20.1§6,用法也是一样的",
-    "tooltip.compactcrafting.field_projector_2": "§6右键放置投影仪§b朝向面朝方向§6，蹲下放置投影仪§b朝向自己",
-    "tooltip.compactcrafting.field_projector_3": "§6放置完成后右键投影仪§b会告诉下一个投影仪的放置位置,§6分别对应四种大小的合成§b3x3x3,5x5x5,7x7x7,9x9x9",
+    "tooltip.materialfactory.field_projector_1": "§6没错，将老版本的压缩空间投影仪搬到了§a1.20.1§6,用法也是一样的",
+    "tooltip.materialfactory.field_projector_2": "§6右键放置投影仪§b朝向面朝方向§6，蹲下放置投影仪§b朝向自己",
+    "tooltip.materialfactory.field_projector_3": "§6放置完成后右键投影仪§b会告诉下一个投影仪的放置位置,§6分别对应四种大小的合成§b3x3x3,5x5x5,7x7x7,9x9x9",
     "tooltip.materialfactory.source_catalyst": "§b巨型附魔装置的催化剂",
     "tooltip.materialfactory.artificial_star_1": "§61.用于制造§e人造恒星§6的多方块结构核心方块",
     "tooltip.materialfactory.artificial_star_2": "§62.人造恒星§6需要§c恒星温度§6来维持运转",
@@ -387,5 +410,10 @@
     "tooltip.materialfactory.extinguished_star_2": "§62.可以通过将§a能量§6和§dUU物质§6注入使其恢复为活跃状态",
     "tooltip.materialfactory.extinguished_star_3": "§63.右键方块查看已注入的§aFE能量§6和§dUU物质",
     "tooltip.materialfactory.ultimate_laser": "§d由xanyuovo博士倾心制作§r,§e用于激活人造恒星",
-    "tooltip.thermal.device_fisher": "需要至少一定大小的水域才能工作,不消耗能量"
+    "tooltip.thermal.device_fisher": "需要至少一定大小的水域才能工作,不消耗能量",
+    "tooltip.materialfactory.unfilled_antimatter_ball": "放进装有研究流体的炼药锅100次来充满",
+    "tooltip.materialfactory.full_matter_cluster_shard": "由满载物质团分裂而成,质量极高!用于注入反物质块(投掷以注入)",
+    "tooltip.materialfactory.antimatter_block": "注入满载物质团碎块可以转变成人造恒星(投掷以注入),空手右键查看注入量",
+    "tooltip.chisel.pink_wool": "用chisel模组的凿子雕刻粉红色羊毛获得",
+    "tooltip.chisel.magenta_wool": "用chisel模组的凿子雕刻品红色羊毛获得"
 }

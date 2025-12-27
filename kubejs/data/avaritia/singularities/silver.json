@@ -1,8 +1,4 @@
 {
-  "colors": [
-    "c0cdd2",
-    "5f6e7c"
-  ],
   "conditions": [
     {
       "type": "forge:not",
@@ -12,12 +8,15 @@
       }
     }
   ],
+  "count": 10000,
+  "displayName": "singularity.avaritia.silver",
   "enabled": true,
   "ingredient": {
     "tag": "forge:ingots/silver"
   },
-  "name": "singularity.avaritia.silver",
+  "name": "avaritia:silver",
+  "overlayColor": "c0cdd2",
   "recipeDisabled": false,
-  "materialCount": 10000,
-  "timeRequired": 240
+  "timeCost": 240,
+  "underlayColor": "5f6e7c"
 }

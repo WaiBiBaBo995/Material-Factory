@@ -430,4 +430,55 @@ ServerEvents.recipes(event => {
             "hide": true
         }]
     })
+
+    event.custom({
+        type: 'lychee:item_inside',
+        ghost: false,
+        hide_in_viewer: true,
+        contextual: [
+            {
+                type: 'custom',
+                id: 'is_cauldron',
+            }
+        ],
+        post: [
+            {
+                type: 'prevent_default',
+            },
+            {
+                type: 'custom',
+                id: 'add_antimatter',
+            },
+            {
+                type: 'custom',
+                id: 'consume_cauldron',
+            }
+        ],
+        item_in: [
+            {
+                item: "materialfactory:unfilled_antimatter_ball",
+            },
+        ],
+        block_in: '*',
+    });
+    event.custom({
+        type: 'lychee:item_inside',
+        ghost: true,
+        comment: 'comment.lychee.antimatter_ball',
+        post: [
+            {
+                type: 'drop_item',
+                item: "materialfactory:filled_antimatter_ball",
+            },
+        ],
+        item_in: [
+            {
+                item: "materialfactory:unfilled_antimatter_ball",
+            },
+        ],
+        block_in: {
+            blocks: ["amendments:liquid_cauldron"],
+            nbt: '{BlockEntityTag:{FluidHolder:{count:4b,id:"crazyae2addons:research_fluid"}}}'
+        }
+    });
 })

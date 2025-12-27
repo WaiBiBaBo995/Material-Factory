@@ -1,8 +1,4 @@
 {
-  "colors": [
-    "6feaef",
-    "57b8bc"
-  ],
   "conditions": [
     {
       "type": "forge:not",
@@ -12,12 +8,15 @@
       }
     }
   ],
+  "count": 10000,
+  "displayName": "singularity.avaritia.platinum",
   "enabled": true,
   "ingredient": {
     "tag": "forge:ingots/platinum"
   },
-  "name": "singularity.avaritia.platinum",
+  "name": "avaritia:platinum",
+  "overlayColor": "6feaef",
   "recipeDisabled": false,
-  "materialCount": 10000,
-  "timeRequired": 240
+  "timeCost": 240,
+  "underlayColor": "57b8bc"
 }

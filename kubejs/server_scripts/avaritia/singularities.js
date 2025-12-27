@@ -7,7 +7,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("allthemodium:allthemodium_ingot"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // unobtainium 奇点
@@ -18,7 +18,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("allthemodium:unobtainium_ingot"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // vibranium 奇点
@@ -29,7 +29,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("allthemodium:vibranium_ingot"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
     
     // calorite 奇点
@@ -38,9 +38,9 @@ AvaritiaEvents.singularity(event => {
          .setColors(0x8D203A, 0xB63044) // [覆盖色, 底层色]
          .setCount(10000)
          .setTimeCost(240)
-         .setTag('forge:ingots/calorite')
+         .setIngredient(Ingredient.of('#forge:ingots/calorite'))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // cheese 奇点
@@ -51,7 +51,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("ad_astra:cheese"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // crystal_spirited 奇点
@@ -62,7 +62,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("powah:crystal_spirited"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // crystal_blazing 奇点
@@ -73,7 +73,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("powah:crystal_blazing"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // crystal_niotic 奇点
@@ -84,7 +84,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("powah:crystal_niotic"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // crystal_nitro 奇点
@@ -95,7 +95,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("powah:crystal_nitro"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // desh 奇点
@@ -104,9 +104,9 @@ AvaritiaEvents.singularity(event => {
          .setColors(0x913C3F, 0xC57041) // [覆盖色, 底层色]
          .setCount(10000)
          .setTimeCost(240)
-         .setTag('forge:ingots/desh')
+         .setIngredient('#forge:ingots/desh')
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // iceshard 奇点
@@ -117,7 +117,7 @@ AvaritiaEvents.singularity(event => {
          .setTimeCost(240)
          .setIngredient(Ingredient.of("ad_astra:ice_shard"))
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 
     // ostrum 奇点
@@ -126,8 +126,8 @@ AvaritiaEvents.singularity(event => {
          .setColors(0x74545C, 0xA66B72) // [覆盖色, 底层色]
          .setCount(10000)
          .setTimeCost(240)
-         .setTag('forge:ingots/ostrum')
+         .setIngredient('#forge:ingots/ostrum')
          .setEnabled(true)
-         .setRecipeDisabled(false)
+         .setRecipeEnabled(true)
     })
 })

@@ -22,6 +22,21 @@ ItemEvents.tooltip(event =>{
     event.addAdvanced("thermal:device_fisher",(item,advanced,text) =>{
         text.add(1,Text.translate("tooltip.thermal.device_fisher").blue())
     })
+    event.addAdvanced("materialfactory:unfilled_antimatter_ball",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.materialfactory.unfilled_antimatter_ball").lightPurple())
+    })
+    event.addAdvanced("materialfactory:full_matter_cluster_shard",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.materialfactory.full_matter_cluster_shard").lightPurple())
+    })
+    event.addAdvanced("materialfactory:antimatter_block",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.materialfactory.antimatter_block").lightPurple())
+    })
+    event.addAdvanced("chisel:legacy/pink_wool",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.chisel.pink_wool").gray())
+    })
+    event.addAdvanced("chisel:llama/magenta_wool",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.chisel.magenta_wool").gray())
+    })
 
     let shiftTooltipItems = [
         { item: 'materialfactory:charge_spool', lines: 2 },
