@@ -147,7 +147,7 @@
 			rewards: [{
 				count: 16
 				id: "5759302B25D5A178"
-				item: "thermal:steel_ingot"
+				item: "alltheores:steel_ingot"
 				type: "item"
 			}]
 			tasks: [{
@@ -254,6 +254,7 @@
 			}]
 			tasks: [{
 				amount: 6000L
+				consume_fluid: "DEFAULT"
 				fluid: "ad_astra:fuel"
 				id: "6F8D93574FD40FFB"
 				type: "fluid"

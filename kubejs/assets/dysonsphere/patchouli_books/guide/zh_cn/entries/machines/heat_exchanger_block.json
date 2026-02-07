@@ -1,0 +1,15 @@
+{
+    "name": "热交换器",
+    "icon": "dysonsphere:heat_exchanger_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "利用$(thing)热量$()将$(item)水$()转化为$(item)蒸汽$()。至少需要450°K才能开始工作，此后每高出50°K都会增加工作速度。基础转化率为5mB/t的水生成50mB/t的蒸汽。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:heat_exchanger_block"
+        }
+    ]
+}

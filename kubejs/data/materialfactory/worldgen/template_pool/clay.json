@@ -1,0 +1,24 @@
+{
+    "name": "clay",
+    "fallback": "empty",
+    "elements": [
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "materialfactory:clay1",
+                "processors": "materialfactory:clay",
+                "projection": "terrain_matching"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "materialfactory:clay2",
+                "processors": "materialfactory:clay",
+                "projection": "terrain_matching"
+            }
+        }
+    ]
+}

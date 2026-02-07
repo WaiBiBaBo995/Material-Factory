@@ -1,0 +1,16 @@
+{
+    "name": "戴森球计划",
+    "icon": "dysonsphere:ingot_smart_alloy",
+    "category": "dysonsphere:concepts",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "戴森球计划旨在利用恒星100%的能量输出。$(br)这是一项艰巨的任务，没有合适的工具和自动化系统似乎不可能完成。$(br)但我们来此，正是为了在他人踌躇时开拓，在他人止步时前进。$(br2)我们将实现我们的梦想！"
+        },
+        {
+            "type": "patchouli:quest",
+            "trigger": "dysonsphere:ds_completed",
+            "text": "你能完成戴森球吗？"
+        }
+    ]
+}

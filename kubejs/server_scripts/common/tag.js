@@ -41,7 +41,7 @@ ServerEvents.tags('block', event => {
         'materialfactory:infinity_fluid_input','materialfactory:infinity_gas_output'  
     ])
     event.add("materialfactory:entropy_matrix_block",
-        ['materialfactory:entropy_matrix_glass','materialfactory:entropy_matrix_energy_port','materialfactory:entropy_matrix_item_input','materialfactory:entropy_matrix_item_output'])
+        ['materialfactory:entropy_matrix_glass','materialfactory:entropy_matrix_energy_port','materialfactory:entropy_matrix_item_input','materialfactory:entropy_matrix_item_output', "materialfactory:entropy_matrix_chemical_port"])
     //空手破坏
     event.add('notreepunching:always_drops',
         ['createsifter:dust','createsifter:crushed_end_stone','createsifter:crushed_netherrack','createsifter:crushed_deepslate','createsifter:crushed_blackstone','minecraft:farmland'])
@@ -143,6 +143,8 @@ ServerEvents.tags('item', event => {
     event.add("forge:leathers",'minecraft:leather')
     //发射器放置
     event.add("lychee:dispenser_placement", ["materialfactory:unbonded_machine_frame_pity"])
+
+    event.add('materialfactory:fire_caused', ["notreepunching:fire_starter", "minecraft:flint_and_steel","minecraft:fire_charge", "tconstruct:flint_and_brick", "enderio:cold_fire_igniter"])
 
     event.remove('tombstone:seeds', '#mysticalagriculture:seeds')
 });

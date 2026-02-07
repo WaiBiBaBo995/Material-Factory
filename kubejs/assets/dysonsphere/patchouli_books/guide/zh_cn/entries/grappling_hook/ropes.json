@@ -1,0 +1,26 @@
+{
+    "name": "抓钩：绳索",
+    "icon": "dysonsphere:grappling_hook_rope_ender",
+    "category": "dysonsphere:grappling_hook",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可用于$(thing)抓钩$()的不同$(item)绳索$()。$(br)绳索拥有多项属性：$(li)最大距离：钩子可以距离多远（以方块计）$(li)钩子重力系数：绳索对钩子重力的影响程度。$(li)发射力系数：绳索对发射力的影响程度。$(li)绞盘力系数：绳索对可能绞盘力的影响程度$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:string",
+            "text": "$(o)基础、简单、轻盈且相当脆弱$()$(br)最大距离：16$(br)钩子重力系数：1.0x$(br)发射力系数：1.0x$(br)绞盘力系数：0.8x"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "minecraft:chain",
+            "text": "$(o)坚固且沉重$()$(br)最大距离：32$(br)钩子重力系数：1.2x$(br)发射力系数：0.6x$(br)绞盘力系数：1.2x"
+        },
+        {
+            "type": "dysonsphere:laser_recipe",
+            "recipe": "dysonsphere:laser_crafting/grappling_hook_rope_ender",
+            "text": "$(item)末影绳索$()可以延伸得非常远，并能瞬间附着到目标方块。如果没有瞄准方块，发射钩子将会失败。惯性依然适用。$(br)最大距离：256$(br)钩子重力系数：0.2x$(br)发射力系数：0.1x$(br)绞盘力系数：1.0x"
+        }
+    ]
+}

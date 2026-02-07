@@ -1,15 +1,3 @@
-ServerEvents.recipes(event => {
-    event.shaped("materialfactory:oak_crucible", [
-		'B B',
-		'BCB',
-		'A A'
-	], {
-		A: 'minecraft:stick',
-		B: 'minecraft:stripped_oak_log',
-		C: 'minecraft:oak_slab'
-    });
-});
-
 //巨型熔炉
 /**const $ForgeHooks = Java.loadClass('net.minecraftforge.common.ForgeHooks');
 ServerEvents.recipes((event) => {
@@ -38,6 +26,39 @@ ServerEvents.recipes((event) => {
     });
 });
 */
+MBDMachineEvents.onBeforeRecipeModify("materialfactory:ash_furnace", (event) => {
+    const mbdEvent = event.getEvent();
+    const { machine, recipe } = mbdEvent;
+    const heatSource = machine.level.getBlock(machine.pos.below());
+    const copyRecipe = recipe.copy();
+    let finallyupgrade
+    switch (heatSource.id) {
+        case 'minecraft:fire':
+            finallyupgrade = 1.1;
+            break;
+        case 'minecraft:campfire':
+            finallyupgrade = 1.4;
+            break;
+        case 'minecraft:lava':
+            finallyupgrade = 2;
+            break;
+        case 'botania:blaze_block':
+            finallyupgrade = 3;
+            break;
+        case 'minecraft:magma_block':
+            finallyupgrade = 1.8;
+            break;
+        case 'powah:blazing_crystal_block':
+            finallyupgrade = 5;
+            break;
+        default:
+            finallyupgrade = 1;
+            break;
+    }
+    copyRecipe.duration = Math.max(1, Math.ceil(recipe.duration / finallyupgrade));
+    mbdEvent.setRecipe(copyRecipe);
+});
+
 MBDMachineEvents.onBeforeRecipeModify('materialfactory:huge_furnace', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;

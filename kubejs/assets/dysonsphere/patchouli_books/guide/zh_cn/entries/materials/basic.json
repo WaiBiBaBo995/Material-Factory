@@ -1,0 +1,34 @@
+{
+    "name": "基础材料",
+    "icon": "dysonsphere:coil_copper",
+    "category": "dysonsphere:materials",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于不同合成配方的各种材料。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:coil_copper",
+            "recipe2": "dysonsphere:coil_iron"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:thermopile",
+            "recipe2": "dysonsphere:solar_foil"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:heat_shielding",
+            "recipe2": "dysonsphere:railgun"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:ingot_smart_alloy"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:construct_ender"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+ServerEvents.recipes(event => {                                                   
+event.custom({
+        "type": "useless_mod:advanced_alloy_furnace",
+        "ingredients": [{
+            "ingredient":{
+                "item":"thermalendergy:resonant_catalyst_augment"
+                },
+                "count":64
+            },{
+            "ingredient":{
+                "item":"thermal_extra:abyssal_area_radius_augment"
+                },
+                "count":64
+            },{
+            "ingredient":{
+                "item":"thermal_extra:abyssal_machine_speed_augment"
+                },
+                "count":64
+            },{
+                "ingredient":{
+                    "item":"thermalendergy:endergy_upgrade_3"
+                },
+                "count":32
+            },{
+                "ingredient":{
+                    "item":"thermal_parallel:argument_parallel_3"
+                },
+                "count":32
+            },{
+                "ingredient":{
+                    "item":"useless_mod:augment_parallel_3"
+                },
+                "count":16
+            },{
+                "ingredient":{
+                    "item":"useless_mod:useless_integral_component_tier_9"
+                },
+                "count":1
+            }],
+            "catalyst":{
+                "item":'useless_mod:useful_ingot',
+                "count":1
+            },
+            "input_fluid":{
+                "fluid":"minecraft:lava",
+                "amount":64000
+            },
+            "results":[{
+                "item":"fumo:patchouli_item",
+                "count":1
+            }],
+            "energy":10000,
+            "process_time":40
+    })
+})

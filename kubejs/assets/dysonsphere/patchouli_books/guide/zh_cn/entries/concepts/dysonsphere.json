@@ -1,0 +1,24 @@
+{
+    "name": "关于戴森球",
+    "icon": "dysonsphere:capsule_solar",
+    "category": "dysonsphere:concepts",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "戴森球是围绕恒星建造以收集其能量的巨型结构。添加到戴森球的每个组件都会增加其能量容量。请注意，戴森球没有能量缓冲，只有能量生成速率。这意味着所有未使用的能量都会浪费掉，而试图使用超过生成量的能量则无法工作。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "每个组件也都会增加戴森球的完成度。一旦结构完成，就无法再添加更多组件。$(br)这个世界中只有一个太阳，且为所有人共享。戴森球同样如此。（至少在我们能将触角延伸到其他恒星之前）"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:machines/dysonsphere_energy_receiver_block",
+                "dysonsphere:machines/railgun_block",
+                "dysonsphere:machines/dysonsphere_monitor_block"
+            ],
+            "text": "一些与戴森球交互的机器。"
+        }
+    ]
+}

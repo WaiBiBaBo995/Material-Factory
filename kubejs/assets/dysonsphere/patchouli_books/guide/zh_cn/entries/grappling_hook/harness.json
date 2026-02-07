@@ -1,0 +1,25 @@
+{
+    "name": "抓钩吊带",
+    "icon": "dysonsphere:grappling_hook_harness",
+    "category": "dysonsphere:grappling_hook",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)抓钩吊带$()是$(thing)抓钩$()的核心部分。$(br)吊带内必须装有$(thing)钩子$()、$(thing)绳索$()和$(thing)引擎$()这些关键组件才能工作。$(br)$(item)吊带$()可以穿戴在腿部装备栏、作为饰品佩戴或简单地放在物品栏中。一次只能使用/携带一个$(item)吊带$()！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_harness",
+            "text": "$(o)可能导致晕动症$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:grappling_hook/grappling_hook_controller",
+                "dysonsphere:grappling_hook/engines",
+                "dysonsphere:grappling_hook/ropes",
+                "dysonsphere:grappling_hook/hooks"
+            ]
+        }
+    ]
+}

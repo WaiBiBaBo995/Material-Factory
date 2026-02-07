@@ -53,7 +53,6 @@ BlockEvents.rightClicked((event) => {
     handleCrucibleInteraction(event, 'materialfactory:oak_crucible', 'materialfactory:melting_item', 'water');
 });
 
-
 BlockEvents.rightClicked('materialfactory:unbonded_machine_frame_pity', event => {
     const { hand, block, item, player } = event;
     if (hand !== 'MAIN_HAND') return;
@@ -90,6 +89,12 @@ BlockEvents.rightClicked('materialfactory:unbonded_machine_frame_pity', event =>
         break; // 处理完毕后退出循环
     }
 });
+MBDMachineEvents.onConsumeInputsAfterWorking('materialfactory:unbonded_machine_frame_pity', e => {
+    let { machine } = e.getEvent()
+    let { level } = machine
+    level.playSound(null, machine.pos.x, machine.pos.y, machine.pos.z, "minecraft:block.wood.place", "blocks", 2, 1)
+    level.getBlock(machine.pos).set("industrialforegoing:machine_frame_pity")
+})
 
 //液态魔源提取器
 const $SourceUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SourceUtil');
@@ -978,4 +983,33 @@ MBDMachineEvents.onRecipeFinish('materialfactory:extinguished_star', e=>{
     let { machine } = e.getEvent();
     let { level } = machine;
     level.playSound(null, machine.getPos().getX(), machine.getPos().getY(), machine.getPos().getZ(), "minecraft:entity.experience_orb.pickup", "blocks", 20, 0.1);
+})
+
+//熵变球形矩阵化学品端口化学品清空
+MBDMachineEvents.onUI('materialfactory:entropy_matrix_chemical_port', e => {
+    let { machine, root } = e.getEvent();
+    let GasDumpButton = root.getFirstWidgetById('gas_dump')
+    let SlurryDumpButton = root.getFirstWidgetById('slurry_dump')
+    let InfuseDumpButton = root.getFirstWidgetById('infuse_dump')
+    let PigmentDumpButton = root.getFirstWidgetById('pigment_dump')
+    GasDumpButton.setOnPressCallback(clickData => {
+        if (!clickData.isRemote) {
+            machine.getTraitByName("mek_gas_container").storages[0].getStack().setAmount(0);
+        }
+    });
+    SlurryDumpButton.setOnPressCallback(clickData => {
+        if (!clickData.isRemote) {
+            machine.getTraitByName("mek_slurry_container").storages[0].getStack().setAmount(0);
+        }
+    });
+    InfuseDumpButton.setOnPressCallback(clickData => {
+        if (!clickData.isRemote) {
+            machine.getTraitByName("mek_infuse_container").storages[0].getStack().setAmount(0);
+        }
+    });
+    PigmentDumpButton.setOnPressCallback(clickData => {
+        if (!clickData.isRemote) {
+            machine.getTraitByName("mek_pigment_container").storages[0].getStack().setAmount(0);
+        }
+    });
 })

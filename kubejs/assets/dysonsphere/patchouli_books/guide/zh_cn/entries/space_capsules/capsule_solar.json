@@ -1,0 +1,16 @@
+{
+    "name": "太阳能卫星",
+    "icon": "dysonsphere:capsule_solar",
+    "category": "dysonsphere:space_capsules",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)太阳能卫星太空舱$()在发射后提供能量，并推进$(thing)戴森球$()的建设进度。$(br)单个舱体在$(thing)戴森球$()内提供10RF/t，并为完成度贡献0.00001%。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:capsule_solar",
+            "title" : "太阳能卫星"
+        }
+    ]
+}

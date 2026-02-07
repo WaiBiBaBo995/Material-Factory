@@ -1,0 +1,36 @@
+{
+    "name": "抓钩：钩子",
+    "icon": "dysonsphere:grappling_hook_hook_slime",
+    "category": "dysonsphere:grappling_hook",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可用于$(thing)抓钩$()的不同$(item)钩子$()。$(br)钩子拥有多项属性：$(li)最大钩子数：可以同时部署多少个钩子。$(li)钩子重力：钩子下落的速度。$()"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "minecraft:tripwire_hook",
+            "text": "$(o)并非为此而生，但堪当此任$()$(br)最大钩子数：2$(br)钩子重力：0.04"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_hook_wood",
+            "text": "$(o)简约最大化$()$(br)只能附着在木制工具可以开采的方块上！$(br)在下界相当不实用。$(br)最大钩子数：1$(br)钩子重力：0.05"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_hook_slime",
+            "text": "$(o)相当粘$()$(br)只能附着在粘液可以粘附的方块上！$(br)最大钩子数：2$(br)钩子重力：0.05"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_hook_blaze",
+            "text": "$(o)在下界表现出色！$()$(br)在水中无效，并会使可燃方块着火而非附着！$(br)基础最大钩子数：2$(br)基础钩子重力：0.01"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_hook_smart_alloy",
+            "text": "$(o)为此而生，堪当此任$()$(br)最大钩子数：3$(br)钩子重力：0.02"
+        }
+    ]
+}

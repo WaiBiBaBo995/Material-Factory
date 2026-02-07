@@ -1,0 +1,138 @@
+[
+  {
+    "name": "darkdoppelganger-9.7.1-1.20.1.jar",
+    "desc": "VP模块文件生成器【by 柠娜】 - 用于硬编码汉化翻译",
+    "mods": "darkdoppelganger-9.7.1-1.20.1.jar",
+    "authors": "meynzed",
+    "dynamic": false,
+    "i18n": true
+  },
+  {
+    "target_class": {
+      "name": "net/bandit/darkdoppelganger/entity/DarkDoppelgangerEntity",
+      "method": ""
+    },
+    "pairs": [
+      {
+        "key": "Dark Doppelganger",
+        "value": "Dark Doppelganger"
+      },
+      {
+        "key": "Dark Doppelganger",
+        "value": "Dark Doppelganger"
+      },
+      {
+        "key": "The Dark Doppelganger has returned from the void...",
+        "value": "The Dark Doppelganger has returned from the void..."
+      },
+      {
+        "key": "The Dark Doppelganger has entered its Second Phase!",
+        "value": "The Dark Doppelganger has entered its Second Phase!"
+      },
+      {
+        "key": "Dark Doppelganger - Final Phase",
+        "value": "Dark Doppelganger - Final Phase"
+      },
+      {
+        "key": "Final Form! Prepare yourself!",
+        "value": "Final Form! Prepare yourself!"
+      },
+      {
+        "key": "You have slain the Dark Doppelganger!",
+        "value": "You have slain the Dark Doppelganger!"
+      }
+    ]
+  },
+  {
+    "target_class": {
+      "name": "net/bandit/darkdoppelganger/entity/DarkDoppelgangerMinionEntity",
+      "method": ""
+    },
+    "pairs": [
+      {
+        "key": "Dark Doppelganger Minion",
+        "value": "Dark Doppelganger Minion"
+      }
+    ]
+  },
+  {
+    "target_class": {
+      "name": "net/bandit/darkdoppelganger/event/ClientEvents",
+      "method": ""
+    },
+    "pairs": [
+      {
+        "key": "Dark Doppelganger",
+        "value": "Dark Doppelganger"
+      }
+    ]
+  },
+  {
+    "target_class": {
+      "name": "net/bandit/darkdoppelganger/event/SummonDoppelganger",
+      "method": ""
+    },
+    "pairs": [
+      {
+        "key": "No players nearby to copy.",
+        "value": "No players nearby to copy."
+      },
+      {
+        "key": "Dark Doppelganger will spawn in 5 seconds, copying ",
+        "value": "Dark Doppelganger will spawn in 5 seconds, copying "
+      },
+      {
+        "key": "Target player is no longer valid.",
+        "value": "Target player is no longer valid."
+      },
+      {
+        "key": "An error occurred while executing the command.",
+        "value": "An error occurred while executing the command."
+      }
+    ]
+  },
+  {
+    "target_class": {
+      "name": "net/bandit/darkdoppelganger/item/DoppelgangerRingItem",
+      "method": ""
+    },
+    "pairs": [
+      {
+        "key": "Ring health boost",
+        "value": "Ring health boost"
+      },
+      {
+        "key": "Ring mana boost",
+        "value": "Ring mana boost"
+      }
+    ]
+  },
+  {
+    "target_class": {
+      "name": "net/bandit/darkdoppelganger/item/SummonScrollItem",
+      "method": ""
+    },
+    "pairs": [
+      {
+        "key": "Item is depreciated.",
+        "value": "Item is depreciated."
+      }
+    ]
+  },
+  {
+    "target_class": {
+      "name": "net/bandit/darkdoppelganger/spells/SummonDoppelMinionSpell",
+      "method": ""
+    },
+    "pairs": [
+      {
+        "key": "You already have a minion summoned.",
+        "value": "You already have a minion summoned."
+      },
+      {
+        "key": "'s Minion",
+        "value": "'s Minion"
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+    "name": "激光控制站",
+    "icon": "dysonsphere:laser_controller_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)激光控制站$()用于以静态方式发射$(item)轨道激光模式$()。$(br)它需要能量和同一维度内的目标坐标。$(br)将使用拥有者的激光来执行轨道打击。除了按下发射按钮，也可提供红石信号来触发。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:laser_controller_block"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:tools/laser_pattern"
+            ]
+        }
+    ]
+}

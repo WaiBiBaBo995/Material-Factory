@@ -906,4 +906,39 @@ ServerEvents.recipes(event => {
         },
         "processingTime": 20*30
     }).id('ifeu:dissolution_chamber/processing_addon_6')
+    event.custom({
+        "type": "industrialforegoing:dissolution_chamber",
+        "input": [
+            {
+            "item": 'industrialforegoing:hydroponic_bed'
+            },
+            {
+            "item": 'industrialforegoing:mob_duplicator'
+            },
+            {
+            "item": 'industrialforegoing:wither_builder'
+            },
+            {
+            "item": 'ifeu:time_controller'
+            },
+            {
+            "item": 'ifeu:weather_controller'
+            },
+            {
+            "item": 'industrialforegoing:supreme_black_hole_tank'
+            },
+            {
+            "item": 'ifsoulsdisks:souls_storage_cell_256k'
+            },
+            {
+            "item": 'industrialforegoing:infinity_nuke'
+            }
+        ],
+        "inputFluid": "{Amount:10000,FluidName:\"ifeu:dragon_star_essence\"}",
+        "output": {
+            "count": 1,
+            "item": 'fumo:flandre_item'
+        },
+        "processingTime": 10000
+    })
 })

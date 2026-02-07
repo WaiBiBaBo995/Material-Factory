@@ -1,0 +1,15 @@
+{
+    "name": "gravel",
+    "fallback": "empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "materialfactory:gravel",
+                "processors": "materialfactory:gravel",
+                "projection": "terrain_matching"
+            }
+        }
+    ]
+}

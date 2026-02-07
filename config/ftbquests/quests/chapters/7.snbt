@@ -139,6 +139,59 @@
 			x: 0.0d
 			y: 7.5d
 		}
+		{
+			id: "3C2FB3F9B193A120"
+			tasks: [
+				{
+					id: "1580C919C3CA2F36"
+					item: "fumo:youmu_item"
+					type: "item"
+				}
+				{
+					id: "495776994DF9606D"
+					item: "fumo:yuyuko_item"
+					type: "item"
+				}
+				{
+					id: "12C17D901516CBBC"
+					item: "fumo:cirno_item"
+					type: "item"
+				}
+				{
+					id: "10BA93F926EDC081"
+					item: "fumo:marisa_hat_item"
+					type: "item"
+				}
+				{
+					id: "5BAE7C75334111FC"
+					item: "fumo:koishi_item"
+					type: "item"
+				}
+				{
+					id: "72F8A6AD1D53E7F2"
+					item: "fumo:flandre_item"
+					type: "item"
+				}
+				{
+					id: "0F62BD62900A47E9"
+					item: "fumo:patchouli_item"
+					type: "item"
+				}
+				{
+					id: "6466142C01A81660"
+					item: "fumo:new_reimu_item"
+					type: "item"
+				}
+				{
+					id: "4F9EBCC3EB3FF30A"
+					item: "fumo:eiki_item"
+					type: "item"
+				}
+			]
+			title: "Fumo!"
+			x: 0.0d
+			y: -6.5d
+		}
 	]
 	title: "&d千早爱音！"
 }

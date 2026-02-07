@@ -70,4 +70,44 @@ ServerEvents.recipes(event => {
             "item": "ars_nouveau:arcane_platform"
         }]
     }).id("ars_nouveau:arcane_platform")
+    event.custom({
+        "type": "lychee:block_crushing",
+        "item_in": [{
+            "item": 'tconstruct:queens_slime_block',
+        },{
+            "item":"tconstruct:cinderslime_block"
+        },{
+            "item":'tconstruct:necrotic_bone'
+        },{
+            "item":'tconstruct:dragon_scale'
+        },{
+            "type": "forge:nbt",
+            "item":'tconstruct:repair_kit',
+            "nbt": {"Material":"tconstruct:hepatizon"}
+        },{
+            "type": "forge:nbt",
+            "item":'tconstruct:large_plate',
+            "nbt":{"Material":"tconstruct:queens_slime"}
+        },{
+            "type": "forge:nbt",
+            "item":'tconstruct:pick_head',
+            "nbt":{"Material":"allthemodium:vibranium"}
+        },{
+            "type": "forge:nbt",
+            "item":'tconstruct:broad_blade',
+            "nbt":{"Material":"allthemodium:unobtainium"}
+        },{
+            "type": "forge:nbt",
+            "item":'tconstruct:tough_handle',
+            "nbt":{"Material":"mysticalagradditions:supremium"}
+        },{
+            "item":'tconstruct:pig_iron_block'
+        }
+
+        ],
+        "post": [{
+            "type": "drop_item",
+            "item": 'fumo:eiki_item'
+        }]
+    })
 })

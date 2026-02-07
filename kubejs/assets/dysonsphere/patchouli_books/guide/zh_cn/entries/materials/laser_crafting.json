@@ -1,0 +1,16 @@
+{
+    "name": "激光合成材料",
+    "icon": "dysonsphere:component_smart_alloy",
+    "category": "dysonsphere:materials",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在精密激光工作台中制造的各种材料。"
+        },
+        {
+            "type": "dysonsphere:laser_recipe",
+            "recipe": "dysonsphere:laser_crafting/component_smart_alloy",
+            "recipe2": "dysonsphere:laser_crafting/universe_whisper"
+        }
+    ]
+}

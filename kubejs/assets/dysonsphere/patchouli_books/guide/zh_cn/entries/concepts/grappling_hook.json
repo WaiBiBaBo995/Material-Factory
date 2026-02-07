@@ -1,0 +1,30 @@
+{
+    "name": "关于抓钩",
+    "icon": "dysonsphere:grappling_hook_hook_smart_alloy",
+    "category": "dysonsphere:concepts",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "厌倦了收集土柱或铲水？使用$(thing)抓钩$()，你可以利落地、有型地攀爬树木与高山或降入峡谷！$(br)$(thing)抓钩$()可以通过快捷键和指定的控制器进行控制。它由一个装有独立组件的$(item)抓钩吊带$()构成。使用$(thing)抓钩$()时请注意惯性。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "大多数$(thing)抓钩$()区分三种操作模式：$(li)牵引$(li)停止$(li)放绳$(br)牵引模式会根据绞盘力量，将你朝着已部署的钩子$(o)加速$()。如果你部署了多个钩子，你最终会位于它们之间的某个位置。在停止模式下，你将根据重力达到平衡状态。如果已经处于抓钩下方，你将完全停止。放绳模式的行为与停止模式类似，区别在于你会缓慢下沉，直到达到绳索的长度极限。在绳索末端不要摆动得太厉害。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "各组件的属性与修饰词不同，这些决定了$(item)抓钩$()的整体属性。此外，大多数组件还有一些独特的行为。"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:grappling_hook/harness",
+                "dysonsphere:grappling_hook/grappling_hook_controller",
+                "dysonsphere:grappling_hook/hooks",
+                "dysonsphere:grappling_hook/ropes",
+                "dysonsphere:grappling_hook/engines"
+            ],
+            "text": "$(thing)抓钩$()的组件与工具"
+        }
+    ]
+}

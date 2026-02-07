@@ -90,4 +90,4 @@ mythicbotany:alfheim_lakes
 mythicbotany:alfheim_plains
 mythicbotany:dreamwood_forest
 mythicbotany:golden_fields
-nuclearcraft:wasteland
+useless_mod:useless_biome

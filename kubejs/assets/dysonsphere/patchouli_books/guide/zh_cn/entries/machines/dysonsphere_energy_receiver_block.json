@@ -1,0 +1,16 @@
+{
+    "name": "戴森球能量接收器",
+    "icon": "dysonsphere:dysonsphere_energy_receiver_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于利用$(thing)戴森球$()的能量来产生$(thing)热量$()。需要晴朗的天空才能工作，并且随着热量升高，工作效率会减慢。$(br)每tick接收的能量需要在GUI中进行配置。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:dysonsphere_energy_receiver_block",
+            "title": "戴森球能量接收器"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "太空舱（空）",
+    "icon": "dysonsphere:capsule_empty",
+    "category": "dysonsphere:materials",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)太空传输舱（空）$()是一个空外壳，用于制造可以发射至$(thing)戴森球$()的舱体。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:capsule_empty",
+            "title": "太空舱（空）"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "name": "抓钩：引擎",
+    "icon": "dysonsphere:grappling_hook_engine_electric2",
+    "category": "dysonsphere:grappling_hook",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可用于$(thing)抓钩$()的不同$(item)引擎$()。$(br)引擎有独特的要求和通用属性：$(li)发射力：发射钩子时的初始速度。$(li)绞盘力：牵引模式下的加速度和最大拉力。$()"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_engine_manual",
+            "text": "$(o)经典手动劳力$()$(br)不使用外部能源。相当耗费体力。$(br)发射力：2.0$(br)绞盘力：2.4"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_engine_steam",
+            "text": "$(o)全速前进！$()$(br)使用蒸汽$(br)发射力：2.0$(br)绞盘力：3.5"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_engine_electric",
+            "text": "$(o)有人听到线圈的嗡嗡声吗？$()$(br)使用RF（红石通量），速降时可充电$(br)发射力：2.5$(br)绞盘力：3.2"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_engine_electric2",
+            "text": "$(o)多普勒效应的受害者$()$(br)使用RF。相比简单版是明显的升级$(br)发射力：5.0$(br)绞盘力：4.4"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_engine_pressure",
+            "text": "$(o)气动之伟大$()$(br)属性会根据内部与大气压力（即y轴高度）提升$(br)基础发射力：2.5$(br)基础绞盘力：3.8"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(item)机械引擎$()允许在已部署的钩子与重力之间进行类似自由飞行的3D移动。最佳效果是在想要移动位置的上方，部署3个以上且间隔较远的钩子。在钩子定义的操作区域之外，你会像石头一样坠落。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:grappling_hook_engine_mechanical",
+            "text": "$(o)自由的代价是什么？$()$(br)发射力：2.8$(br)绞盘力：3.0"
+        }
+    ]
+}

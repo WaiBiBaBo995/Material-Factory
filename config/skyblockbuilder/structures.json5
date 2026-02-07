@@ -95,12 +95,7 @@
       "xycraft_world:ore_xy_dark",
       "xycraft_world:ore_xy_green",
       "xycraft_world:ore_xy_light",
-      "xycraft_world:ore_xy_red",
-      "nuclearcraft:boron_ore",
-      "nuclearcraft:cobalt_ore",
-      "nuclearcraft:lithium_ore",
-      "nuclearcraft:magnesium_ore",
-      "nuclearcraft:thorium_ore"
+      "xycraft_world:ore_xy_red"
     ]
   },
   
@@ -121,7 +116,13 @@
     "irons_spellbooks:catacombs",
     "irons_spellbooks:impaled_icebreaker",
     "minecraft:end_city",
-    "ad_astra:oil_well"
+    "ad_astra:oil_well",
+    "materialfactory:ruin_cities",
+    "materialfactory:ruin_bridge1",
+    "materialfactory:ruin_bridge2",
+    "materialfactory:oil",
+    "materialfactory:gravel",
+    "materialfactory:clay"
     ]
   }
 }

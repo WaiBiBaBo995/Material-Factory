@@ -1,0 +1,16 @@
+{
+    "name": "激光卫星",
+    "icon": "dysonsphere:capsule_laser",
+    "category": "dysonsphere:space_capsules",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)激光卫星太空舱$()在发射后会消耗能量，并提供一门$(thing)轨道激光$()。$(br)单个舱体在$(thing)戴森球$()内消耗50RF/t，并为完成度贡献0.00001%。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:capsule_laser",
+            "title" : "激光卫星"
+        }
+    ]
+}

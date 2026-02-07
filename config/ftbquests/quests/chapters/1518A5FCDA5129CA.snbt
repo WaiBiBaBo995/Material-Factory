@@ -509,7 +509,6 @@
 						}
 					}
 					match_nbt: false
-					optional_task: true
 					title: "劈刀"
 					type: "item"
 				}
@@ -545,7 +544,6 @@
 						}
 					}
 					match_nbt: false
-					optional_task: true
 					title: "斧头"
 					type: "item"
 				}
@@ -581,7 +579,6 @@
 						}
 					}
 					match_nbt: false
-					optional_task: true
 					title: "镐子"
 					type: "item"
 				}

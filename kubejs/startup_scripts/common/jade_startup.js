@@ -54,8 +54,8 @@ StartupEvents.postInit(event => {
     //魔源显示
     $WailaClientRegistration.INSTANCE.addTooltipCollectedCallback(0, (tooltip, accessor) => {
         if (!(accessor instanceof $WailaBlockAccessor)) return;
+        if (!accessor.block.id.startsWith("ars_nouveau:")) return;
         if (accessor.getBlockEntity() == null) return;
-        
         const blockEntity = accessor.getBlockEntity();
         
         // 检查是否有 source 属性

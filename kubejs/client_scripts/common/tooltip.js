@@ -37,6 +37,18 @@ ItemEvents.tooltip(event =>{
     event.addAdvanced("chisel:llama/magenta_wool",(item,advanced,text) =>{
         text.add(1,Text.translate("tooltip.chisel.magenta_wool").gray())
     })
+    event.addAdvanced("thermal_extra:device_lava_gen",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.thermal_extra.device_lava_gen").green())
+    })
+    event.addAdvanced("mythicbotany:fimbultyr_tablet",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.mythicbotany.fimbultyr_tablet").green())
+    })
+    event.addAdvanced('extendedae_plus:infinity_biginteger_cell',(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.extendedae_plus.infinity_biginteger_cell").red())
+    })
+    event.addAdvanced('fumo:flandre_item',(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.fumo.flandre_item").yellow())
+    })
 
     let shiftTooltipItems = [
         { item: 'materialfactory:charge_spool', lines: 2 },
@@ -51,7 +63,8 @@ ItemEvents.tooltip(event =>{
         { item: 'materialfactory:source_fluid_extractor', lines: 5 },
         { item: 'compactcrafting:field_projector', lines: 3 },
         { item: 'materialfactory:artificial_star', lines: 10 },
-        { item: 'materialfactory:extinguished_star', lines: 3 }
+        { item: 'materialfactory:extinguished_star', lines: 3 },
+        { item: 'materialfactory:ash_furnace', lines: 2 }
     ]
     shiftTooltipItems.forEach((shiftTooltipItem) => {
         const { item, lines } = shiftTooltipItem;

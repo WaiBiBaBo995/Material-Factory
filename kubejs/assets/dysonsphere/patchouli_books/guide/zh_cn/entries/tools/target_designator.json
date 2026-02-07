@@ -1,0 +1,24 @@
+{
+    "name": "目标指示器",
+    "icon": "dysonsphere:target_designator",
+    "category": "dysonsphere:tools",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "通过使用已配置好$(item)轨道激光模式$()的$(item)轨道上行链路手环$()来创建。$(br)创建时会放置在你的主手，并储存你当前手中持有的物品。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "dysonsphere:target_designator",
+            "link_recipe": true,
+            "text": "可以丢弃以在不使用的情况下变回原物品，也可以投掷以呼叫激光打击并返回原物品。如果可用的$(thing)轨道激光$()数量不足，目标指示器将无法工作。"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:tools/laser_pattern",
+                "dysonsphere:machines/laser_pattern_controller_block"
+            ]
+        }
+    ]
+}

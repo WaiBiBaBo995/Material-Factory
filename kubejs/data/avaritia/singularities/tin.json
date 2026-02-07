@@ -16,7 +16,7 @@
   },
   "name": "avaritia:tin",
   "overlayColor": "a0bebd",
-  "recipeDisabled": false,
+  "recipeDisabled": true,
   "timeCost": 240,
   "underlayColor": "527889"
 }

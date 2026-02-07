@@ -239,6 +239,310 @@
 			x: 4.028571428571368d
 			y: 2.8896258503401455d
 		}
+		{
+			height: 1.0d
+			image: "thermal:block/devices/device_tree_extractor_active"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_log"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_log"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_log"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_log"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_log"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_log"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			height: 1.5d
+			image: "thermal:block/fluids/latex_flow"
+			rotation: 90.0d
+			width: 0.5d
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			height: 1.5d
+			image: "mekanism:block/models/multipart/elite_mechanical_pipe_vertical"
+			rotation: 90.0d
+			width: 0.5d
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "resources:block/pity/side"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/rubberwood_leaves"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -6.5d
+		}
 	]
 	order_index: 1
 	progression_mode: "flexible"
@@ -262,7 +566,11 @@
 			y: 0.0034013605442169137d
 		}
 		{
-			description: ["欢迎来到&a&d工业先锋&f&f的领域!"]
+			dependencies: [
+				"13115078644FFFF7"
+				"244EDB2685062E9D"
+			]
+			description: ["做出简陋机器框架后，你才真正的进入了&d工业先锋&r时代"]
 			id: "6E616DB197387C86"
 			rewards: [
 				{
@@ -1491,6 +1799,138 @@
 			title: "更好的水培床"
 			x: 7.5d
 			y: 4.0d
+		}
+		{
+			id: "13115078644FFFF7"
+			tasks: [{
+				id: "0427CAF1615F962C"
+				item: "materialfactory:unbonded_machine_frame_pity"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			description: ["将树汁提取器贴着丛林或橡胶树干便可，当正面亮起时说明正在提取，可用肥料加速。注意贴着的必须是&e自然树&r才能提取。"]
+			id: "649ED9A9360B196A"
+			rewards: [{
+				id: "3952D8C5C66C71E5"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "2F4CC5D2F916AF4A"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["649ED9A9360B196A"]
+			id: "244EDB2685062E9D"
+			rewards: [{
+				id: "6EA79629514FC432"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "380BD0C4E9BFB0CB"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+							Fluid: {
+								Amount: 1000
+								FluidName: "thermal:latex"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "6D8A641105416D08"
+					item: "thermal:latex_bucket"
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "植物胶乳桶"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["418E57E34FFC19E1"]
+			description: ["通过镭射钻我们可以获得一些“币”，有了这些币我们就可以制作热力的”机器框架“"]
+			id: "6222659D5A844FA0"
+			rewards: [{
+				id: "5D2DB50F16001052"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "4B0DFBFA6ADF1262"
+					item: { Count: 2, id: "thermal:tin_coin" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "214140FA333BDA91"
+					item: { Count: 2, id: "thermal:silver_coin" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4A306A49A9B8F0FA"
+					item: { Count: 2, id: "thermal:iron_coin" }
+					type: "item"
+				}
+			]
+			title: "\"获\"币"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2C50B0E024C3D92E"
+				"6222659D5A844FA0"
+			]
+			description: [
+				"制作&d热力系列&f中各类机器都需要&a机器框架&f."
+				""
+				"&c温馨提醒：&r精密工作台合成机器框架的成功概率是80%，这意味着你必须加概率升级插件才能百分百合成成功。"
+			]
+			hide_dependency_lines: false
+			id: "6390F13D661D7C84"
+			rewards: [
+				{
+					id: "399D02FEEFA668C8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "348539AFF250083B"
+					item: "thermal:tin_gear"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "机器的基础框架"
+			tasks: [{
+				id: "1D4E2FCE4A1547D6"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
 		}
 	]
 	title: "工业先锋"

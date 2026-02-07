@@ -15,11 +15,19 @@ ars_nouveau:hunter_wilden_den
 ars_nouveau:stalker_wilden_den
 irons_spellbooks:ancient_battleground
 irons_spellbooks:catacombs
+irons_spellbooks:citadel
 irons_spellbooks:evoker_fort
+irons_spellbooks:ice_spider_den
 irons_spellbooks:impaled_icebreaker
 irons_spellbooks:mangrove_hut
 irons_spellbooks:mountain_tower
 irons_spellbooks:pyromancer_tower
+materialfactory:clay
+materialfactory:gravel
+materialfactory:oil
+materialfactory:ruin_bridge1
+materialfactory:ruin_bridge2
+materialfactory:ruin_cities
 minecraft:ancient_city
 minecraft:bastion_remnant
 minecraft:buried_treasure
@@ -60,6 +68,7 @@ tconstruct:blood_island
 tconstruct:clay_island
 tconstruct:earth_slime_island
 tconstruct:end_slime_island
+tconstruct:ocean_skyslime_island
 tconstruct:sky_slime_island
 tombstone:abandoned_grave_land
 tombstone:abandoned_grave_ocean

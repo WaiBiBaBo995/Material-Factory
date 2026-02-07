@@ -384,6 +384,37 @@ ServerEvents.recipes(event => {
             "show_notification": true,
             "tier": 4
     })
+    event.custom({
+            "type": "avaritia:shaped_table",
+            "category": "equipment",
+            "key": {
+                "A": { "item": 'advanced_ae:quantum_alloy_plate' },
+                "E": { "item": 'mekanism:hdpe_stick' },
+                "G": { "item": 'avaritia:infinity' },
+                "H": { "item": 'ae2:creative_energy_cell' },
+                "B": { "item": 'mekanism_extras:infinite_induction_cell' },
+                "D": { "item": 'mekanism_extras:infinite_induction_provider' },
+                'I': { "item": 'mekanism_extras:infinite_control_circuit' },
+                'C': { "item": 'crazyae2addons:super_singularity' },
+                "K": { "item": 'mekanism:supercharged_coil'}
+            },
+            "pattern": [
+            "AAAAAAAAA", 
+            "AAAAEAAAA",
+            "    E    ",
+            "GGGGGGGGG",
+            "GHBICIDHG",
+            "GHBICIDHG",
+            "GHBICIDHG",
+            "GGGGGGGGG",  
+            "    K    " 
+            ],
+            "result": {
+                "item": 'materialfactory:ultimate_laser'
+            },
+            "show_notification": true,
+            "tier": 4
+    })
 
     event.custom({
         "type": "avaritia:no_consume_catalyst_shaped",

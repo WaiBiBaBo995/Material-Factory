@@ -185,6 +185,7 @@ brassMesh([
 			Item.of('minecraft:bamboo').withChance(0.05),
 			Item.of('thermal:frost_melon_seeds').withChance(0.03),
 			Item.of('minecraft:golden_carrot').withChance(0.02),
+			Item.of('cold_sweat:soul_sprout').withChance(0.01)
 		], 'minecraft:dirt')
 diamondMesh([
 			Item.of('minecraft:flint',3).withChance(0.3),
@@ -193,6 +194,7 @@ diamondMesh([
 			Item.of('minecraft:wheat_seeds').withChance(0.15),
 			Item.of('minecraft:poisonous_potato').withChance(0.1),
 			Item.of('minecraft:bamboo').withChance(0.06),
+			Item.of('cold_sweat:soul_sprout').withChance(0.05),
 			Item.of('thermal:frost_melon_seeds').withChance(0.04),
 			Item.of('minecraft:golden_carrot').withChance(0.02),
 		], 'minecraft:dirt',4)
@@ -202,6 +204,7 @@ netheriteMesh([
 			Item.of('minecraft:potato').withChance(0.3),
 			Item.of('minecraft:wheat_seeds').withChance(0.2),
 			Item.of('minecraft:poisonous_potato').withChance(0.2),
+			Item.of('cold_sweat:soul_sprout').withChance(0.1),
 			Item.of('minecraft:bamboo').withChance(0.06),
 			Item.of('thermal:frost_melon_seeds').withChance(0.05),
 			Item.of('create:experience_nugget').withChance(0.05),
@@ -219,6 +222,7 @@ advancedBrassMesh([
 			Item.of('minecraft:bamboo',7).withChance(0.05),
 			Item.of('thermal:frost_melon_seeds',7).withChance(0.03),
 			Item.of('minecraft:golden_carrot',7).withChance(0.02),
+			Item.of('cold_sweat:soul_sprout',7).withChance(0.01)
 		], 'allthecompressed:dirt_1x',3)
 advancedDiamondMesh([
 			Item.of('minecraft:flint',21).withChance(0.3),
@@ -227,6 +231,7 @@ advancedDiamondMesh([
 			Item.of('minecraft:wheat_seeds',7).withChance(0.15),
 			Item.of('minecraft:poisonous_potato',7).withChance(0.1),
 			Item.of('minecraft:bamboo',7).withChance(0.06),
+			Item.of('cold_sweat:soul_sprout',7).withChance(0.05),
 			Item.of('thermal:frost_melon_seeds',7).withChance(0.04),
 			Item.of('minecraft:golden_carrot',7).withChance(0.02),
 		], 'allthecompressed:dirt_1x',2)
@@ -236,6 +241,7 @@ advancedNetheriteMesh([
 			Item.of('minecraft:potato',8).withChance(0.3),
 			Item.of('minecraft:wheat_seeds',8).withChance(0.2),
 			Item.of('minecraft:poisonous_potato',8).withChance(0.2),
+			Item.of('cold_sweat:soul_sprout',8).withChance(0.1),
 			Item.of('minecraft:bamboo',8).withChance(0.06),
 			Item.of('thermal:frost_melon_seeds',8).withChance(0.05),
 			Item.of('create:experience_nugget',8).withChance(0.05),
@@ -1579,31 +1585,31 @@ advancedNetheriteMesh([
 		], 'materialfactory:light_gray_crystal_cluster', 2, true)
 //紫色晶簇
 stringMesh([
-			Item.of('nuclearcraft:boron_chunk').withChance(0.25),
+			//Item.of('nuclearcraft:boron_chunk').withChance(0.25),
 			Item.of('thoriumreactors:chromite_ore').withChance(0.2),
 		], 'materialfactory:purple_crystal_cluster', 10, true)
 andesiteMesh([
-			Item.of('nuclearcraft:boron_chunk',2).withChance(0.3),
+			//Item.of('nuclearcraft:boron_chunk',2).withChance(0.3),
 			Item.of('thoriumreactors:chromite_ore',2).withChance(0.22),
 		], 'materialfactory:purple_crystal_cluster', 9, true)
 zincMesh([
-			Item.of('nuclearcraft:boron_chunk',3).withChance(0.35),
+			//Item.of('nuclearcraft:boron_chunk',3).withChance(0.35),
 			Item.of('thoriumreactors:chromite_ore',3).withChance(0.25),
 		], 'materialfactory:purple_crystal_cluster', 8, true)
 brassMesh([
-			Item.of('nuclearcraft:boron_chunk',4).withChance(0.4),
+			//Item.of('nuclearcraft:boron_chunk',4).withChance(0.4),
 			Item.of('thoriumreactors:chromite_ore',4).withChance(0.28),
 		], 'materialfactory:purple_crystal_cluster', 6, true)
 diamondMesh([
-			Item.of('nuclearcraft:boron_chunk',5).withChance(0.45),
+			//Item.of('nuclearcraft:boron_chunk',5).withChance(0.45),
 			Item.of('thoriumreactors:chromite_ore',5).withChance(0.3),
 		], 'materialfactory:purple_crystal_cluster', 4, true)
 netheriteMesh([
-			Item.of('nuclearcraft:boron_chunk',6).withChance(0.5),
+			//Item.of('nuclearcraft:boron_chunk',6).withChance(0.5),
 			Item.of('thoriumreactors:chromite_ore',6).withChance(0.32),
 		], 'materialfactory:purple_crystal_cluster', 2, true)
 advancedBrassMesh([
-			Item.of('nuclearcraft:boron_ore',4).withChance(0.4),
+			//Item.of('nuclearcraft:boron_ore',4).withChance(0.4),
 			Item.of('thoriumreactors:chromium_ingot',4).withChance(0.28),
 		], 'materialfactory:purple_crystal_cluster', 6, true)
 advancedDiamondMesh([
@@ -1767,7 +1773,7 @@ stringMesh([
 			Item.of('minecraft:redstone').withChance(0.2),
 			Item.of('alltheores:ruby').withChance(0.15),
 			Item.of('thermal:cinnabar').withChance(0.1),
-			Item.of('nuclearcraft:magnesium_chunk').withChance(0.1),
+			//Item.of('nuclearcraft:magnesium_chunk').withChance(0.1),
 			Item.of('thoriumreactors:molybdenum_ore').withChance(0.1),
 		], 'actuallyadditions:restonia_crystal_cluster', 10, true)
 andesiteMesh([
@@ -1775,7 +1781,7 @@ andesiteMesh([
 			Item.of('minecraft:redstone',2).withChance(0.22),
 			Item.of('alltheores:ruby',2).withChance(0.18),
 			Item.of('thermal:cinnabar',2).withChance(0.12),
-			Item.of('nuclearcraft:magnesium_chunk',2).withChance(0.12),
+			//Item.of('nuclearcraft:magnesium_chunk',2).withChance(0.12),
 			Item.of('thoriumreactors:molybdenum_ore',2).withChance(0.12),
 		], 'actuallyadditions:restonia_crystal_cluster', 9, true)
 zincMesh([
@@ -1783,7 +1789,7 @@ zincMesh([
 			Item.of('minecraft:redstone',3).withChance(0.25),
 			Item.of('alltheores:ruby',3).withChance(0.2),
 			Item.of('thermal:cinnabar',3).withChance(0.14),
-			Item.of('nuclearcraft:magnesium_chunk',3).withChance(0.14),
+			//Item.of('nuclearcraft:magnesium_chunk',3).withChance(0.14),
 			Item.of('thoriumreactors:molybdenum_ore',3).withChance(0.14),
 		], 'actuallyadditions:restonia_crystal_cluster', 8, true)
 brassMesh([
@@ -1791,7 +1797,7 @@ brassMesh([
 			Item.of('minecraft:redstone',4).withChance(0.28),
 			Item.of('alltheores:ruby',4).withChance(0.24),
 			Item.of('thermal:cinnabar',4).withChance(0.16),
-			Item.of('nuclearcraft:magnesium_chunk',4).withChance(0.16),
+			//Item.of('nuclearcraft:magnesium_chunk',4).withChance(0.16),
 			Item.of('thoriumreactors:molybdenum_ore',4).withChance(0.16),
 		], 'actuallyadditions:restonia_crystal_cluster', 6, true)
 diamondMesh([
@@ -1799,7 +1805,7 @@ diamondMesh([
 			Item.of('minecraft:redstone',5).withChance(0.3),
 			Item.of('alltheores:ruby',5).withChance(0.26),
 			Item.of('thermal:cinnabar',5).withChance(0.18),
-			Item.of('nuclearcraft:magnesium_chunk',5).withChance(0.18),
+			//Item.of('nuclearcraft:magnesium_chunk',5).withChance(0.18),
 			Item.of('thoriumreactors:molybdenum_ore',5).withChance(0.18),
 		], 'actuallyadditions:restonia_crystal_cluster', 4, true)
 netheriteMesh([
@@ -1807,7 +1813,7 @@ netheriteMesh([
 			Item.of('minecraft:redstone',6).withChance(0.32),
 			Item.of('alltheores:ruby',6).withChance(0.31),
 			Item.of('thermal:cinnabar',6).withChance(0.2),
-			Item.of('nuclearcraft:magnesium_chunk',6).withChance(0.2),
+			//Item.of('nuclearcraft:magnesium_chunk',6).withChance(0.2),
 			Item.of('thoriumreactors:molybdenum_ore',6).withChance(0.2),
 		], 'actuallyadditions:restonia_crystal_cluster', 2, true)
 advancedBrassMesh([
@@ -1815,7 +1821,7 @@ advancedBrassMesh([
 			Item.of('minecraft:redstone_ore',4).withChance(0.28),
 			Item.of('alltheores:ruby_ore',4).withChance(0.24),
 			Item.of('thermal:cinnabar_ore',4).withChance(0.16),
-			Item.of('nuclearcraft:magnesium_ore',4).withChance(0.16),
+			//Item.of('nuclearcraft:magnesium_ore',4).withChance(0.16),
 			Item.of('thoriumreactors:molybdenum_ingot',4).withChance(0.16),
 		], 'actuallyadditions:restonia_crystal_cluster', 6, true)
 advancedDiamondMesh([
@@ -1823,7 +1829,7 @@ advancedDiamondMesh([
 			Item.of('minecraft:redstone_ore',5).withChance(0.3),
 			Item.of('alltheores:ruby_ore',5).withChance(0.26),
 			Item.of('thermal:cinnabar_ore',5).withChance(0.18),
-			Item.of('nuclearcraft:magnesium_ore',5).withChance(0.18),
+			//Item.of('nuclearcraft:magnesium_ore',5).withChance(0.18),
 			Item.of('thoriumreactors:molybdenum_ingot',5).withChance(0.18),
 		], 'actuallyadditions:restonia_crystal_cluster', 4, true)
 advancedNetheriteMesh([
@@ -1831,7 +1837,7 @@ advancedNetheriteMesh([
 			Item.of('minecraft:redstone_ore',6).withChance(0.32),
 			Item.of('alltheores:ruby_ore',6).withChance(0.31),
 			Item.of('thermal:cinnabar_ore',6).withChance(0.2),
-			Item.of('nuclearcraft:magnesium_ore',6).withChance(0.2),
+			//Item.of('nuclearcraft:magnesium_ore',6).withChance(0.2),
 			Item.of('thoriumreactors:molybdenum_ingot',6).withChance(0.2),
 		], 'actuallyadditions:restonia_crystal_cluster', 2, true)
 //黑色晶簇
@@ -1839,53 +1845,53 @@ stringMesh([
 			Item.of('minecraft:coal').withChance(0.25),
 			Item.of('xycraft_world:xychorium_gem_dark').withChance(0.2),
 			Item.of('thoriumreactors:graphite_crystal').withChance(0.15),
-			Item.of('nuclearcraft:thorium_chunk').withChance(0.1),
+			//Item.of('nuclearcraft:thorium_chunk').withChance(0.1),
 		], 'actuallyadditions:void_crystal_cluster', 10, true)
 andesiteMesh([
 			Item.of('minecraft:coal',2).withChance(0.3),
 			Item.of('xycraft_world:xychorium_gem_dark',2).withChance(0.22),
 			Item.of('thoriumreactors:graphite_crystal',2).withChance(0.18),
-			Item.of('nuclearcraft:thorium_chunk',2).withChance(0.12),
+			//Item.of('nuclearcraft:thorium_chunk',2).withChance(0.12),
 		], 'actuallyadditions:void_crystal_cluster', 9, true)
 zincMesh([
 			Item.of('minecraft:coal',3).withChance(0.35),
 			Item.of('xycraft_world:xychorium_gem_dark',3).withChance(0.25),
 			Item.of('thoriumreactors:graphite_crystal',3).withChance(0.2),
-			Item.of('nuclearcraft:thorium_chunk',3).withChance(0.14),
+			//Item.of('nuclearcraft:thorium_chunk',3).withChance(0.14),
 		], 'actuallyadditions:void_crystal_cluster', 8, true)
 brassMesh([
 			Item.of('minecraft:coal',4).withChance(0.4),
 			Item.of('xycraft_world:xychorium_gem_dark',4).withChance(0.28),
 			Item.of('thoriumreactors:graphite_crystal',4).withChance(0.24),
-			Item.of('nuclearcraft:thorium_chunk',4).withChance(0.16),
+			//Item.of('nuclearcraft:thorium_chunk',4).withChance(0.16),
 		], 'actuallyadditions:void_crystal_cluster', 6, true)
 diamondMesh([
 			Item.of('minecraft:coal',5).withChance(0.45),
 			Item.of('xycraft_world:xychorium_gem_dark',5).withChance(0.3),
 			Item.of('thoriumreactors:graphite_crystal',5).withChance(0.26),
-			Item.of('nuclearcraft:thorium_chunk',5).withChance(0.18),
+			//Item.of('nuclearcraft:thorium_chunk',5).withChance(0.18),
 		], 'actuallyadditions:void_crystal_cluster', 4, true)
 netheriteMesh([
 			Item.of('minecraft:coal',6).withChance(0.5),
 			Item.of('xycraft_world:xychorium_gem_dark',6).withChance(0.32),
 			Item.of('thoriumreactors:graphite_crystal',6).withChance(0.31),
-			Item.of('nuclearcraft:thorium_chunk',6).withChance(0.2),
+			//Item.of('nuclearcraft:thorium_chunk',6).withChance(0.2),
 		], 'actuallyadditions:void_crystal_cluster', 2, true)
 advancedBrassMesh([
 			Item.of('minecraft:coal_ore',4).withChance(0.4),
 			Item.of('xycraft_world:xychorium_ore_stone_dark',4).withChance(0.28),
 			Item.of('thoriumreactors:graphite_ore',4).withChance(0.24),
-			Item.of('nuclearcraft:thorium_ore',4).withChance(0.16),
+			//Item.of('nuclearcraft:thorium_ore',4).withChance(0.16),
 		], 'actuallyadditions:void_crystal_cluster', 6, true)
 advancedDiamondMesh([
 			Item.of('minecraft:coal_ore',5).withChance(0.45),
 			Item.of('xycraft_world:xychorium_ore_stone_dark',5).withChance(0.3),
 			Item.of('thoriumreactors:graphite_ore',5).withChance(0.26),
-			Item.of('nuclearcraft:thorium_ore',5).withChance(0.18),
+			//Item.of('nuclearcraft:thorium_ore',5).withChance(0.18),
 		], 'actuallyadditions:void_crystal_cluster', 4, true)
 advancedNetheriteMesh([
 			Item.of('minecraft:coal_ore',6).withChance(0.5),
 			Item.of('xycraft_world:xychorium_ore_stone_dark',6).withChance(0.32),
 			Item.of('thoriumreactors:graphite_ore',6).withChance(0.31),
-			Item.of('nuclearcraft:thorium_ore',6).withChance(0.2),
+			//Item.of('nuclearcraft:thorium_ore',6).withChance(0.2),
 		], 'actuallyadditions:void_crystal_cluster', 2, true)

@@ -178,13 +178,13 @@
     "id": "key_19a050072ef",
     "title": {
       "bold": true,
-      "color": "#FF8D3C",
-      "translate": "keybind.sophisticatedbackpacks.open_backpack"
+      "color": "#D4A82E",
+      "translate": "key.sophisticatedbackpacks.open_backpack"
     },
     "icon": "sophisticatedbackpacks:backpack",
     "action": {
       "type": "KEY",
-      "name": "keybind.sophisticatedbackpacks.o",
+      "name": "key.sophisticatedbackpacks.open_backpack",
       "toggle": false,
       "mode": "AUTO"
     }

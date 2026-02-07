@@ -1,0 +1,24 @@
+{
+    "name": "关于轨道激光",
+    "icon": "dysonsphere:target_designator",
+    "category": "dysonsphere:concepts",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "轨道激光是高功率激光，集成在戴森球中。每次使用后，激光会根据所使用的$(item)轨道激光模式$()进入冷却时间。虽然戴森球及其组件是共享的，但激光的冷却时间对每个用户是独立的。"
+        },{
+            "type": "patchouli:text",
+            "text": "许多$(item)轨道激光模式$()需要多道激光同时工作才能生效。$(br)虽然轨道激光作为能量输送手段、地形改造工具或防御系统很有用，但在地下或遥远的维度中，其可用性会显著下降。"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:tools/laser_pattern",
+                "dysonsphere:tools/laser_controller",
+                "dysonsphere:machines/laser_controller_block",
+                "dysonsphere:machines/laser_crafter_block"
+            ],
+            "text": "一些与轨道激光协同工作的机器和工具。"
+        }
+    ]
+}

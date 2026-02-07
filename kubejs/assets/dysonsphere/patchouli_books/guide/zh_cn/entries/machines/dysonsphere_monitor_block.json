@@ -1,0 +1,15 @@
+{
+    "name": "戴森球观测器",
+    "icon": "dysonsphere:dysonsphere_monitor_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于显示$(thing)戴森球$()的当前状态。监控完成度、能量容量及各个部件。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:dysonsphere_monitor_block"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "block": "minecraft:red_sandstone",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.33
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:brown_crate"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:red_sandstone",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.33
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:metal_crate"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:red_sandstone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:metal_barrel"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:bone_block",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.33
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:blue_crate"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:bone_block",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.33
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:black_crate"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:bone_block",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        }
+      ]
+    },
+    {
+      "integrity": 0.95,
+      "processor_type": "minecraft:block_rot"
+    },
+    {
+      "processor_type": "minecraft:protected_blocks",
+      "value": "#minecraft:features_cannot_replace"
+    }
+  ]
+}

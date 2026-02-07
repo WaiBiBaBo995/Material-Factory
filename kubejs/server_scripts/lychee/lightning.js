@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'lychee:lightning_channeling',
         ghost: false,
-        hide_in_viewer: false,
+        hide_in_viewer: true,
         contextual: [
             {
                 type: 'custom',

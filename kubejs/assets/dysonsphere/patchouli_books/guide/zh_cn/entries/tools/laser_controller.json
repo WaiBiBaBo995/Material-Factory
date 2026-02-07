@@ -1,0 +1,28 @@
+{
+    "name": "轨道上行链路手环",
+    "icon": "dysonsphere:laser_controller",
+    "category": "dysonsphere:tools",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)轨道上行链路手环$()用于控制$(thing)轨道激光$()。$(br)它需要充入$(thing)RF$()，并配置$(item)轨道激光模式$()。模式需要在$(item)激光模式控制终端$()中配置后才能使用。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:laser_controller",
+            "text": "$(o)不要与水肺装备混淆$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "轨道上行链路手环配有多项控制功能。主控键打开模式选择界面。在模式选择界面内，可以使用其他四个方向键输入指令序列。当输入的序列与已装备的某个$(item)轨道激光模式$()的呼叫输入序列匹配时，一个$(item)目标指示器$()将被放置在用户手中。"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:tools/laser_pattern",
+                "dysonsphere:machines/laser_pattern_controller_block",
+                "dysonsphere:tools/target_designator"
+            ]
+        }
+    ]
+}

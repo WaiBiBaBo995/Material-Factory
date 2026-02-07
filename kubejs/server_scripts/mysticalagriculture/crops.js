@@ -66,7 +66,7 @@ if (Platform.isLoaded('thermal')) {
             locked: true
           }
         ]
-      }).id(`kubejs:thermal/machines/insolator/mysticalagriculture/${cropName}`)
+      }).id(`materialfactory:thermal/machines/insolator/mysticalagriculture/${cropName}`)
     })
   }
 })

@@ -1,26 +1,26 @@
 BlockEvents.rightClicked("minecraft:dirt", event => {
-  if(event.item === 'minecraft:wheat_seeds') {
+  if (event.item === 'minecraft:wheat_seeds') {
     event.server.runCommandSilent(`particle dust 0 0.65 0 1 ${event.getBlock().getX()} ${event.getBlock().getY() + 1.2} ${event.getBlock().getZ()} 0.25 0.2 0.25 1 100 force`)
-    event.level.playSound( null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(),"minecraft:block.grass.place","blocks", 1, 1);
+    event.level.playSound(null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(), "minecraft:block.grass.place", "blocks", 1, 1);
   }
-  if(event.item === 'minecraft:poisonous_potato') {
+  if (event.item === 'minecraft:poisonous_potato') {
     event.server.runCommandSilent(`particle dust 1.02 0 1.02 1 ${event.getBlock().getX()} ${event.getBlock().getY() + 1.2} ${event.getBlock().getZ()} 0.25 0.2 0.25 1 100 force`)
-    event.level.playSound( null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(),"minecraft:block.grass.place","blocks", 1, 1);
+    event.level.playSound(null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(), "minecraft:block.grass.place", "blocks", 1, 1);
   }
 })
 
 BlockEvents.rightClicked('minecraft:netherrack', event => {
-  if(event.item === 'minecraft:crimson_fungus') {
+  if (event.item === 'minecraft:crimson_fungus') {
     event.server.runCommandSilent(`particle dust 1.02 0 0 1 ${event.getBlock().getX()} ${event.getBlock().getY() + 1.2} ${event.getBlock().getZ()} 0.25 0.2 0.25 1 100 force`)
-    event.level.playSound( null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(),"minecraft:block.grass.place","blocks", 1, 1);
+    event.level.playSound(null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(), "minecraft:block.grass.place", "blocks", 1, 1);
   }
-  if(event.item === 'minecraft:warped_fungus') {
+  if (event.item === 'minecraft:warped_fungus') {
     event.server.runCommandSilent(`particle dust 0 1.02 1.02 1 ${event.getBlock().getX()} ${event.getBlock().getY() + 1.2} ${event.getBlock().getZ()} 0.25 0.2 0.25 1 100 force`)
-    event.level.playSound( null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(),"minecraft:block.grass.place","blocks", 1, 1);
+    event.level.playSound(null, event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ(), "minecraft:block.grass.place", "blocks", 1, 1);
   }
 })
 
-BlockEvents.rightClicked("materialfactory:antimatter_block", event=>{
+BlockEvents.rightClicked("materialfactory:antimatter_block", event => {
   if (event.hand != 'MAIN_HAND') return;
   if (!event.item.isEmpty()) return;
   event.player.setStatusMessage(Text.translatable("message.antimatter_block.arrow", event.block.entity.persistentData.getInt("arrow").toFixed()))
@@ -48,7 +48,7 @@ BlockEvents.placed(event => {
 });
 */
 let megablocks = ["megablock", "white_megablock", "orange_megablock", "magenta_megablock", "light_blue_megablock", "yellow_megablock", "lime_megablock", "pink_megablock", "gray_megablock", "light_gray_megablock", "cyan_megablock", "purple_megablock", "blue_megablock", "brown_megablock", "green_megablock", "red_megablock", "black_megablock"]
-megablocks.forEach(blockName=>{
+megablocks.forEach(blockName => {
   BlockEvents.placed(`materialfactory:${blockName}`, (event) => {
     const { block } = event
     let itemDisplay = block.createEntity("item_display")

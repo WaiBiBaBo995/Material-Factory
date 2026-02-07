@@ -1,0 +1,42 @@
+{
+    "name": "ruin_cities",
+    "fallback": "empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "materialfactory:ruin_city1",
+                "processors": "minecraft:fossil_rot",
+                "projection": "terrain_matching"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "materialfactory:ruin_city2",
+                "processors": "materialfactory:ruin_cities",
+                "projection": "terrain_matching"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "materialfactory:ruin_city3",
+                "processors": "materialfactory:ruin_cities",
+                "projection": "terrain_matching"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "materialfactory:ruin_factory",
+                "processors": "materialfactory:ruin_factory",
+                "projection": "terrain_matching"
+            }
+        }
+    ]
+}

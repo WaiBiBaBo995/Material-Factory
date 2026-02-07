@@ -1,0 +1,5 @@
+{
+    "name": "太空舱",
+    "description": "可使用$(item)电磁轨道发射器$()发射并添加到$(thing)戴森球$()中的太空舱列表",
+    "icon": "dysonsphere:capsule_solar"
+}

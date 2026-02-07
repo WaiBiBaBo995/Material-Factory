@@ -4,7 +4,11 @@
 	disable_toast: true
 	filename: "440160C4EAE18FF2"
 	group: "64D78D420DEC7AB2"
-	icon: "mm:blueprint"
+	icon: {
+		Count: 1
+		id: "mbtool:mbtool"
+		tag: { }
+	}
 	id: "440160C4EAE18FF2"
 	images: [{
 		height: 2.0d
@@ -46,174 +50,29 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["4DE46A62B2BA6937"]
-			icon: "mm:umfe_controller"
-			id: "3F097C15A8E42E8C"
-			rewards: [{
-				id: "0F8032D4B2000497"
-				item: {
-					Count: 1
-					id: "capsule:capsule"
-					tag: {
-						author: "MC仙明"
-						canRotate: 0b
-						color: 16777215
-						display: {
-							color: 11228698
-						}
-						isReward: 1b
-						label: "通用生物流体提取机"
-						oneUse: 1b
-						size: 7
-						state: 5
-						structureName: "config/capsule/rewards/umfe"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					consume_items: true
-					id: "2B26B57561B9962B"
-					item: "mm:umfe_controller"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "3B49A609960647FA"
-					item: "mm:umfe_energyports_input"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "7127199A3FA9E043"
-					item: "mm:umfe_itemports_input"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "655B39CB47FC11BE"
-					item: "mm:umfe_fluidports_output"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "0EC03D494600CF40"
-					item: "industrialforegoing:fluid_laser_base"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 3L
-					id: "6BA8AD479EC53D00"
-					item: { Count: 3, id: "xycraft_world:aluminum_pillar_blue" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 3L
-					id: "7E04D1A5FCE289F2"
-					item: { Count: 3, id: "xycraft_world:aluminum_pillar_dark" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 3L
-					id: "3BD437EB6C392E10"
-					item: { Count: 3, id: "xycraft_world:aluminum_pillar_green" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 3L
-					id: "3F715F607E55E076"
-					item: "xycraft_world:aluminum_pillar_red"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "2A63DDE116A82377"
-					item: "minecraft:beacon"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 25L
-					id: "7681BE5F6B889E9A"
-					item: "mysticalagriculture:soulstone"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 8L
-					id: "407A80E5B7A7E33F"
-					item: { Count: 8, id: "mysticalagriculture:soulstone_slab" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 37L
-					id: "496F325AFA0A2CD4"
-					item: { Count: 37, id: "mysticalagriculture:soulstone_stairs" }
-					type: "item"
-				}
-			]
-			title: "通用生物流体提取机"
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			can_repeat: true
 			description: ["彭罗斯框架需要在熵演摇篮里合成"]
 			icon: "crazyae2addons:penrose_frame"
 			id: "19D1360B07FB7FC5"
-			rewards: [{
-				id: "2457639EA7523F8E"
-				item: {
-					Count: 1
-					id: "capsule:capsule"
-					tag: {
-						author: "MC仙明"
-						canRotate: 0b
-						color: 9819623
-						display: {
-							Name: "{\"text\":\"一次性 «彭罗斯框架» 胶囊\"}"
-							color: 8072841
-						}
-						isReward: 1b
-						label: "Penrose Frame.nbt"
-						oneUse: 1b
-						size: 5
-						state: 5
-						structureName: "config/capsule/rewards/penrose_frame.nbt"
-					}
-				}
-				type: "item"
-			}]
 			tasks: [
 				{
-					consume_items: true
 					count: 44L
 					id: "2D8214448D9A0229"
-					item: { Count: 44, id: "ae2:fluix_block" }
+					item: "ae2:fluix_block"
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 26L
 					id: "39314D1F9A7C847F"
-					item: { Count: 26, id: "minecraft:iron_block" }
+					item: "minecraft:iron_block"
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 54L
 					id: "2F306480F2739942"
-					item: { Count: 54, id: "minecraft:obsidian" }
+					item: "minecraft:obsidian"
 					type: "item"
 				}
 				{
-					consume_items: true
 					id: "524833BB6F485230"
 					item: "crazyae2addons:super_singularity_block"
 					type: "item"
@@ -239,47 +98,22 @@
 			]
 			icon: "crazyae2addons:entropy_cradle_controller"
 			id: "691B6581550138A8"
-			rewards: [{
-				id: "4F52391798142338"
-				item: {
-					Count: 1
-					id: "capsule:capsule"
-					tag: {
-						author: "MC仙明"
-						canRotate: 0b
-						color: 4869306
-						display: {
-							color: 7105644
-						}
-						isReward: 1b
-						label: "熵演摇篮"
-						oneUse: 1b
-						size: 11
-						state: 5
-						structureName: "config/capsule/rewards/entropy_cradle"
-					}
-				}
-				type: "item"
-			}]
 			tasks: [
 				{
-					consume_items: true
 					id: "10B4F0BE9D832D81"
 					item: "crazyae2addons:entropy_cradle_controller"
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 24L
 					id: "4F56280CCD1C607A"
-					item: { Count: 24, id: "crazyae2addons:entropy_cradle_capacitor" }
+					item: "crazyae2addons:entropy_cradle_capacitor"
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 236L
 					id: "71ED66E6B87FF926"
-					item: { Count: 236, id: "crazyae2addons:entropy_cradle" }
+					item: "crazyae2addons:entropy_cradle"
 					type: "item"
 				}
 			]
@@ -297,14 +131,8 @@
 			]
 			icon: {
 				Count: 1
-				id: "capsule:capsule"
-				tag: {
-					isReward: 1b
-					oneUse: 1b
-					size: 3
-					state: 5
-					structureName: "config/capsule/rewards/example"
-				}
+				id: "mbtool:mbtool"
+				tag: { }
 			}
 			id: "4DE46A62B2BA6937"
 			rewards: [{
@@ -318,7 +146,6 @@
 				id: "0F8BF1DDFD6B9D5D"
 				type: "checkmark"
 			}]
-			title: "胶囊"
 			x: 0.0d
 			y: 0.0d
 		}

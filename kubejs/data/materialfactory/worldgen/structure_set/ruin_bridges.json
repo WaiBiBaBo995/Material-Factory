@@ -1,0 +1,25 @@
+{
+  "structures": [
+    {
+      "structure": "materialfactory:ruin_bridge1",
+      "weight": 1
+    },
+    {
+      "structure": "materialfactory:ruin_bridge2",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 16,
+    "separation": 6,
+    "salt": 19195140,
+    "frequency_reduction_method": "default",
+    "frequency": 0.5,
+    "locate_offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

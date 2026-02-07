@@ -22,3 +22,7 @@ profile Saved activate HOT4
 	HOT6
 		"minecraft:grass_block"
 
+profile Saved activate HOT5
+	HOT1
+		"avaritia:extreme_crafting_table"
+

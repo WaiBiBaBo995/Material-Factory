@@ -9,7 +9,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["你收到霍格沃茨录取通知书了吗？"]
+			description: [
+				"你收到霍格沃茨录取通知书了吗？"
+				""
+				"(注：主世界存在死者之王的结构)"
+			]
 			id: "6A1553B2835A5311"
 			shape: "rsquare"
 			size: 2.0d

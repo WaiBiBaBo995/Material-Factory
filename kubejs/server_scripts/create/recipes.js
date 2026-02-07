@@ -180,6 +180,23 @@ ServerEvents.recipes((event) => {
         H: "createaddition:portable_energy_interface",
         I: "powah:energy_hopper_nitro"
     })
+    create.mechanical_crafting('materialfactory:brass_multifunctional_device', [
+        "AABAA",
+        "ACDCA",
+        "AEFGA",
+        "ACHCA",
+        "AAIAA"
+    ], {
+        A: "alltheores:brass_plate",
+        B: "ae2:calculation_processor",
+        C: "create:precision_mechanism",
+        D: "ae2:logic_processor",
+        E: "createaddition:capacitor",
+        F: "advanced_ae:quantum_processor",
+        G: "create:electron_tube",
+        H: "ae2:engineering_processor",
+        I: "appflux:energy_processor"
+    })
     create.mechanical_crafting('materialfactory:anon_chihaya_hand', [
         "     ABBB",
         "    ABCCB",

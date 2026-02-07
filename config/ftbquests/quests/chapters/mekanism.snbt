@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mekanism"
-	group: "33C6A3929088455B"
+	group: "3FF2BD320FD2AFC7"
 	icon: "mekanism:steel_casing"
 	id: "23983F4DC524B14B"
 	images: [{
@@ -13,7 +13,7 @@
 		x: 9.0d
 		y: -5.5d
 	}]
-	order_index: 1
+	order_index: 0
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -524,12 +524,7 @@
 		}
 		{
 			dependencies: ["162CE44400A63575"]
-			description: [
-				"在&a冶金灌注机&f中用红石灌注铁可获得此合金."
-				""
-				""
-				"&7[Infusing Iron with Redstone in a Metallurgic Infuser will get you one of these.]&f"
-			]
+			description: ["在&a冶金灌注机&f中用红石灌注铁可获得此合金."]
 			hide_dependency_lines: true
 			id: "166971866A9234C7"
 			rewards: [
@@ -545,7 +540,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "合成物品的基础合金&7[The Basic Alloy for Crafting Items]&f"
+			subtitle: "合成物品的基础合金"
 			tasks: [{
 				id: "72CE838EFDDE6479"
 				item: "mekanism:alloy_infused"
@@ -1430,7 +1425,7 @@
 				"该发电机可通过燃烧氢气或乙烯来发电."
 				""
 				"注意:燃烧氢气所产生的电力将不足以维持一台&a电解分离器&f的运行成本.请改用乙烯作为燃料."
-				"&7（瓜聚变，启动！）&r"
+				"&7（瓜聚变，启动?否！已经削弱了！）&r"
 			]
 			id: "3EC9D0DA61B45328"
 			rewards: [
@@ -2365,12 +2360,15 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["0CEE85BACCA7CBED"]
 			description: [
 				"&d通用机械&f是能改变游戏体验的科技模组."
 				""
 				"&a化工强化&f系统可将材料分解至分子层面,充分提取资源价值."
 				""
 				"模组包含氢动力喷气背包、采矿机器人、反应堆、自动化采集的&a数字型采矿机&f等诸多内容."
+				""
+				"&4注意：&e几乎所有机器的工厂升级都只能靠工厂安装器升级"
 			]
 			icon: {
 				Count: 1
@@ -2873,7 +2871,7 @@
 		}
 		{
 			dependencies: ["162CE44400A63575"]
-			description: ["喵！怎么钢制外壳还要胶乳？！"]
+			description: ["有了冶金灌注器，能更快的制作钢质机壳了"]
 			id: "1CBD80E53377A3DC"
 			rewards: [{
 				count: 4
@@ -2888,6 +2886,18 @@
 			}]
 			x: -5.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["162CE44400A63575"]
+			description: ["简陋机器框架现在可以通过冶金灌注机快速合成了"]
+			id: "6C5EE68316E5CFA8"
+			tasks: [{
+				id: "7D90B90259D74639"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.5d
 		}
 	]
 	title: "通用机械"

@@ -1,0 +1,21 @@
+{
+    "name": "关于热量",
+    "icon": "dysonsphere:heat_shielding",
+    "category": "dysonsphere:concepts",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "许多机器与$(thing)热量$()有关。热量以°K为单位测量，起始温度为300°K。$(br)热量会传导至所有相邻的机器，直到所有机器温度相同。热量会缓慢消散到周围的空气中。"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:machines/heat_pipe_block",
+                "dysonsphere:machines/dysonsphere_energy_receiver_block",
+                "dysonsphere:machines/heat_exchanger_block",
+                "dysonsphere:machines/heat_generator_block"
+            ],
+            "text": "一些利用或产生热量的机器。"
+        }
+    ]
+}

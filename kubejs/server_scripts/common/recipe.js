@@ -28,6 +28,18 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('createsifter:crushed_end_stone', 9),Item.of('createsifter:crushed_end_stone_1x'));
     event.shapeless(Item.of('createsifter:dust', 9),Item.of('createsifter:dust_1x'));
 
+    //橡木坩埚
+    event.shaped("materialfactory:oak_crucible", [
+		'B B',
+		'BCB',
+		'A A'
+	], {
+		A: 'minecraft:stick',
+		B: 'minecraft:stripped_oak_log',
+		C: 'minecraft:oak_slab'
+    });
+    
+    //灰烬炉
     event.shaped(Item.of('materialfactory:ash_furnace', 1),
         [
         'AAA',
@@ -37,6 +49,15 @@ ServerEvents.recipes(event => {
         {
         A:'supplementaries:ash_bricks',
         B:'minecraft:furnace',
+    });
+    event.shaped(Item.of('mekanism:creative_fluid_tank', '{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:2147483647,FluidName:"minecraft:water"}}]}}'),
+        [
+        'AAA',
+        'AAA',
+        'AAA'
+        ],
+        {
+        A:Item.of('mekanism:ultimate_fluid_tank', '{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:256000,FluidName:"minecraft:water"}}]}}').weakNBT(),
     });
 
     //木板
@@ -798,18 +819,6 @@ ServerEvents.recipes(event => {
             A:'#forge:seeds',
     });
 
-    //灵魂沙
-    event.shaped(Item.of('minecraft:soul_sand', 8),
-            [
-            'AAA',
-            'ABA',
-            'AAA'
-            ],
-            {
-            A:'#forge:sand',
-            B:'mysticalagriculture:nether_essence'
-    });
-
     //木剪刀
     event.shaped(Item.of('materialfactory:wooden_shears', 1),
             [
@@ -925,6 +934,14 @@ ServerEvents.recipes(event => {
             D: "minecraft:bucket",
             E: "thermal:redstone_servo"
     }).id('thermal_extra:crafting/device_lava_gen')
+
+    //泥巴
+     event.recipes.kubejs.shaped('8x minecraft:mud',[
+        ['minecraft:dirt','minecraft:dirt','minecraft:dirt'],
+        ['minecraft:dirt',Item.of('minecraft:potion', '{Potion:"minecraft:water"}').weakNBT(),'minecraft:dirt'],
+        ['minecraft:dirt','minecraft:dirt','minecraft:dirt']
+    ]).replaceIngredient({ item: Item.of('minecraft:potion', '{Potion:"minecraft:water"}') }, Item.of('minecraft:glass_bottle'))
+
     event.shaped("minecraft:nether_star",
             [
             'A A',
@@ -934,6 +951,139 @@ ServerEvents.recipes(event => {
             {
             A: Item.of('minecraft:player_head', '{SkullOwner:"MC_IS"}').weakNBT()
     })
+
+    //热力并行单元
+    event.shaped("thermal_parallel:argument_parallel_2",
+            [
+            ' B ',
+            'CAC',
+            ' B '
+            ],
+            {
+            A: "thermal_parallel:argument_parallel",
+            B: "thermalendergy:stellarium_gear",
+            C: "allthemodium:allthemodium_plate"
+    })
+    event.shaped("thermal_parallel:argument_parallel_3",
+            [
+            ' B ',
+            'CAC',
+            ' B '
+            ],
+            {
+            A: "thermal_parallel:argument_parallel_2",
+            B: "thermal_extra:abyssal_gear",
+            C: "allthemodium:unobtainium_plate"
+    })
+    event.shaped('materialfactory:entropy_matrix_casing',
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A: 'mekanism:pellet_antimatter',
+            B: 'mekanism:pellet_plutonium',
+            C: 'mekanism:sps_casing'
+    })
+    event.shaped('materialfactory:future_entropy_globular_matrix',
+            [
+            ' B ',
+            'BCB',
+            ' B '
+            ],
+            {
+            B: 'materialfactory:entropy_matrix_casing',
+            C: 'mekanismgenerators:fusion_reactor_controller'
+    })
+    event.shaped('materialfactory:entropy_matrix_glass',
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A: 'mekanism:pellet_antimatter',
+            B: 'mekanism:pellet_plutonium',
+            C: "mekanism_extras:lead_coated_glass"
+    })
+    event.shaped('materialfactory:entropy_matrix_energy_port',
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A: 'materialfactory:entropy_matrix_glass',
+            B: 'mekanismgenerators:laser_focus_matrix',
+            C: 'mekanism:laser_amplifier'
+    })
+    event.shaped('materialfactory:entropy_matrix_item_input',
+            [
+            ' B ',
+            'BCB',
+            ' B '
+            ],
+            {
+            B: 'materialfactory:entropy_matrix_casing',
+            C: 'expatternprovider:ex_import_bus_part'
+    })
+    event.shaped('materialfactory:entropy_matrix_item_output',
+            [
+            ' B ',
+            'BCB',
+            ' B '
+            ],
+            {
+            B: 'materialfactory:entropy_matrix_casing',
+            C: 'expatternprovider:ex_export_bus_part'
+    })
+    event.shaped('materialfactory:entropy_matrix_chemical_port',
+            [
+            ' B ',
+            'BCB',
+            ' B '
+            ],
+            {
+            B: 'materialfactory:entropy_matrix_casing',
+            C: 'mekanism:ultimate_chemical_tank'
+    })
+    event.shaped('materialfactory:brass_speed_cardx4',
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A: 'advanced_ae:quantum_processor',
+            B: 'materialfactory:brass_speed_cardx2',
+            C: 'megacells:accumulation_processor'
+    })
+    event.shaped('materialfactory:brass_speed_cardx8',
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A: 'ae2omnicells:multidimensional_expansion_processor',
+            B: 'materialfactory:brass_speed_cardx4',
+            C: 'crazyae2addons:super_singularity'
+    })
+
+    //工厂方块
+    event.shaped('factory_blocks:rusty_scaffold',
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A: 'minecraft:iron_ingot',
+            B: '#minecraft:planks',
+            C: 'minecraft:polished_deepslate'
+    })
+
 
     //M魔力存储元件
     event.shapeless(Item.of('megacells:mana_storage_cell_1m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_1m']).id("megacells:cells/standard/mana_storage_cell_1m_with_housing");
@@ -1029,4 +1179,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/thermal_extra:crafting\/.*_rod/});
     event.remove({id:'alltheores:steel_dust_from_alloy_blending'});
     event.remove({id:"allthecompatibility:create/pressing/netherite"});
+    event.remove({id:"useless_mod:teleport_block"});
+    event.remove({id:"useless_mod:teleport_block_2"})
+    event.remove({id:"useless_mod:teleport_block_3"})
 })

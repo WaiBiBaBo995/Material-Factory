@@ -1,0 +1,15 @@
+{
+    "name": "热电发电机",
+    "icon": "dysonsphere:heat_generator_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于将$(thing)热量$()转化为$(thing)RF$()。$(item)热电发电机$()必须放置在一个高温和一个相对低温的热容器之间。每25°K的温差可产生1RF/t的能量。请注意，热电发电机本身也导热，尽管导热性很差。热侧需要持续加热，冷侧则需要持续冷却。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:heat_generator_block"
+        }
+    ]
+}

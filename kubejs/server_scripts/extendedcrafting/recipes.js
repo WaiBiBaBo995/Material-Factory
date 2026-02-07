@@ -1,4 +1,105 @@
 ServerEvents.recipes(event =>{
+    event.custom({
+            "type": "extendedcrafting:shaped_table",
+            "pattern": [
+                "AAAACAAAA",
+                "ABBBBBBBA",
+                "ABBBBBBBA",
+                "ABBDEDBBA",
+                "CBBFGFBBC",
+                "ABBDEDBBA",
+                "ABBBBBBBA",
+                "ABBBBBBBA",
+                "AAAACAAAA"
+            ],
+            "key": {
+                "A": {
+                "item": 'materialfactory:entropy_matrix_glass'
+                },
+                "B": {
+                "item": 'materialfactory:entropy_matrix_casing'
+                },
+                "C": {
+                "item": 'materialfactory:entropy_matrix_energy_port'
+                },
+                "D": {
+                "item": 'mekanism:induction_casing'
+                },
+                "E": {
+                "item": 'mekanism:ultimate_induction_provider'
+                },
+                "F": {
+                "item": 'mekanism:ultimate_induction_cell'
+                },
+                "G": {
+                "item": 'crazyae2addons:super_singularity_block'
+                }
+            },
+            "result": {
+                "item": 'materialfactory:entropy_matrix_core'
+            }
+    })
+        event.custom({
+            "type": "extendedcrafting:shaped_table",
+            "pattern": [
+                "ABCCDCCBA",
+                "BAEFGFEAB",
+                "CEHIJIHEC",
+                "CKILHLIKC",
+                "DGJHMHJGD",
+                "CKILHLIKC",
+                "CEHIJIHEC",
+                "BAEFGFEAB",
+                "ABCCDCCBA"
+            ],
+            "key": {
+                "A": {
+                "item": "irons_spellbooks:lightning_rune"
+                },
+                "B": {
+                "item": "irons_spellbooks:evocation_rune"
+                },
+                "C": {
+                "item": "irons_spellbooks:magic_cloth"
+                },
+                "D": {
+                "type": "forge:nbt",
+                "item": "irons_spellbooks:wayward_compass",
+                "count": 1,
+                "nbt": "{isInInventory:1b}"
+                },
+                "E": {
+                "item": "irons_spellbooks:ender_rune"
+                },
+                "F": {
+                "item": "irons_spellbooks:arcane_rune"
+                },
+                "G": {
+                "item": "irons_spellbooks:blood_rune"
+                },
+                "H": {
+                "item": "irons_spellbooks:nature_rune"
+                },
+                "I": {
+                "item": "irons_spellbooks:holy_rune"
+                },
+                "J": {
+                "item": "irons_spellbooks:fire_rune"
+                },
+                "K": {
+                "item": "irons_spellbooks:cooldown_rune"
+                },
+                "L": {
+                "item": "irons_spellbooks:ice_rune"
+                },
+                "M": {
+                "item": "irons_spellbooks:cinderous_soulcaller"
+                }
+            },
+            "result": {
+                "item": 'fumo:new_reimu_item'
+            }
+    })
 /*  废案
     event.custom({
             "type": "extendedcrafting:shaped_table",

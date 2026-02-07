@@ -1,0 +1,142 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "block": "minecraft:polished_deepslate",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.4
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "factory_blocks:rusty_scaffold"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:white_concrete",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.4
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:sandstone"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:gray_concrete",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.4
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:sandstone"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:cyan_terracotta",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.4
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:sandstone"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:smooth_quartz_stairs",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.4
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:sandstone_stairs"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:mangrove_log",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.05
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:black_crate"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:mangrove_log",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.05
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:blue_crate"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:mangrove_log",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:brown_crate"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:mangrove_log",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.3
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:metal_crate"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:mangrove_log",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "materialfactory:copper_crate"
+          }
+        }
+      ]
+    },
+    {
+      "integrity": 0.8,
+      "processor_type": "minecraft:block_rot"
+    }
+  ]
+}

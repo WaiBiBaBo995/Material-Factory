@@ -28,11 +28,6 @@
         "result":"deny"
     },
     {
-        "dimension": "minecraft:overworld",
-        "mob": ["minecraft:phantom"],
-        "result":"deny"
-    },
-    {
         "when": "position",
         "dimension": "minecraft:nether",
         "mob": ["slimeoverhaul:flame_slime"],
@@ -84,6 +79,21 @@
         "mincount": {
             "amount": 15,
             "mob": "slimeoverhaul:earth_slime",
+            "perplayer": true
+        },
+        "damageset": 1.0,
+        "result":"deny"
+    },
+    {
+        "mob": ["tconstruct:terracube"],
+        "biome": [
+            "minecraft:badlands",
+            "minecraft:desert",
+            "minecraft:eroded_badlands"
+        ],
+        "mincount": {
+            "amount": 10,
+            "mob": "tconstruct:terracube",
             "perplayer": true
         },
         "damageset": 1.0,

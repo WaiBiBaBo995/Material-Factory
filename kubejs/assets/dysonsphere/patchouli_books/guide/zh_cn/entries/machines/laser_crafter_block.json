@@ -1,0 +1,20 @@
+{
+    "name": "激光工作台",
+    "icon": "dysonsphere:laser_crafter_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)精密激光工作台$()通过使用$(thing)轨道激光$()轰击物品来合成各种物品。$(br)不同的激光设置提供不同量的能量。激光的能量主要随其造成的伤害和方块伤害值缩放。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:laser_crafter_block",
+            "title": "激光工作台"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "聚焦在狭小空间内的大量能量几乎难以容纳。工作台会不断损失能量并将其转化为热量。工作台温度越高，就越难注入更多能量。需要主动冷却。"
+        }
+    ]
+}

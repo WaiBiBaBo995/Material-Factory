@@ -1,0 +1,5 @@
+{
+    "name": "机器",
+    "description": "用于建造、监控和利用$(thing)戴森球$()能量的各种机器",
+    "icon": "dysonsphere:dysonsphere_energy_receiver_block"
+}

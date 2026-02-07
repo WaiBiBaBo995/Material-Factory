@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "thermal_expansion"
-	group: "3FF2BD320FD2AFC7"
+	group: "33C6A3929088455B"
 	icon: "thermal:machine_frame"
 	id: "658721DF03EC997D"
 	order_index: 1
@@ -109,8 +109,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2C50B0E024C3D92E"]
-			description: ["制作&d热力系列&f中各类机器都需要&a机器框架&f."]
+			dependencies: [
+				"2C50B0E024C3D92E"
+				"6390F13D661D7C84"
+			]
+			description: ["&e注意:&r热力所有的机器升级槽位都得到了增加，你可以加入更多插件来提升机器性能！（例如并行升级！）"]
 			id: "5F385CBA98795C62"
 			rewards: [
 				{
@@ -127,10 +130,10 @@
 			shape: "hexagon"
 			subtitle: "机器的基础框架"
 			tasks: [{
-				id: "3EC446E752907C94"
-				item: "thermal:machine_frame"
-				type: "item"
+				id: "31ACAFDA45F95DDA"
+				type: "checkmark"
 			}]
+			title: "热力机器"
 			x: -0.5d
 			y: 0.0d
 		}
@@ -1518,6 +1521,7 @@
 		{
 			dependencies: ["5F385CBA98795C62"]
 			description: ["将液态物质转化为固态物品(部分需要模具)"]
+			hide_dependency_lines: true
 			id: "469443A3BA0C3BEE"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1531,13 +1535,12 @@
 				item: "thermal:machine_chiller"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5F385CBA98795C62"]
 			description: ["可将液体转化为物品或其他有用液体"]
-			hide_dependency_lines: true
 			id: "627D6FDC3D8C42F6"
 			rewards: [
 				{
@@ -1558,8 +1561,8 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5F385CBA98795C62"]
@@ -1796,6 +1799,128 @@
 			}]
 			x: 3.5d
 			y: 3.0d
+		}
+		{
+			description: [
+				"为热力的机器提供并行升级，即让机器可以在一次处理中进行多次配方合成。"
+				""
+				"&e注意:&r并行升级可以与其他升级&a叠加！"
+			]
+			id: "191C140364A1FE9B"
+			shape: "rsquare"
+			tasks: [{
+				id: "7B3422BCE1D0CD80"
+				item: "thermal_parallel:argument_parallel"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["191C140364A1FE9B"]
+			hide_dependency_lines: true
+			id: "379800F05B90E8EC"
+			shape: "rsquare"
+			tasks: [{
+				id: "0014DE70E264CE27"
+				item: "thermal_parallel:argument_parallel_2"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["379800F05B90E8EC"]
+			hide_dependency_lines: true
+			id: "502D422D60BDE1F4"
+			shape: "rsquare"
+			tasks: [{
+				id: "7B24359C3841C3E4"
+				item: "thermal_parallel:argument_parallel_3"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2C50B0E024C3D92E"]
+			description: [
+				"相当于其他科技mod的配置复制器。"
+				""
+				"右键机器复制配置，此后右键同类的其他机器可以粘贴配置，不能粘贴升级"
+				""
+				"shift+右键清空"
+			]
+			id: "19903891E429DEC1"
+			rewards: [{
+				id: "7ABF0153E1ABFDF8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3360D4D2D72FF03D"
+				item: "thermal:redprint"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["469443A3BA0C3BEE"]
+			icon: "thermal:machine_frame"
+			id: "55F7A7E728C9A24A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0E022C761911C6C1"
+				table_id: 7377440633892994587L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 0.5d
+			tasks: [{
+				id: "59A753CD2C371D73"
+				type: "checkmark"
+			}]
+			title: "更快的制作"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["452F51995AD0461C"]
+			description: ["可以用来制作各种mek机器，是通向mek模组的必经之路"]
+			id: "6881249E85D96C15"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2BF9BE7B0DCDDFB1"
+				table_id: 7377440633892994587L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4FDD51E3DDF60026"
+				item: "thermal_extra:component_assembly"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6881249E85D96C15"]
+			description: ["是时候进入mek时代了！"]
+			id: "0CEE85BACCA7CBED"
+			rewards: [{
+				id: "1AAA48B2037A5641"
+				type: "xp_levels"
+				xp_levels: 100
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "066004D3433E79F6"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
 		}
 	]
 	title: "热力膨胀"

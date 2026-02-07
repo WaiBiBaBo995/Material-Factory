@@ -80,6 +80,7 @@
     "block.materialfactory.entropy_matrix_energy_port": "熵变框架能量接口",
     "block.materialfactory.entropy_matrix_item_input": "熵变框架物品输入口",
     "block.materialfactory.entropy_matrix_item_output": "熵变框架物品输出口",
+    "block.materialfactory.entropy_matrix_chemical_port": "熵变框架化学品端口",
     "block.materialfactory.entropy_matrix_core": "熵变框架核心",
     "block.materialfactory.entropy_matrix_casing": "熵变框架外壳",
     "block.materialfactory.future_entropy_globular_matrix": "未来熵变球形矩阵",
@@ -199,6 +200,7 @@
     "gui.star.fluid_dump": "§e清空§b流体槽",
     "gui.star.gas_dump": "§e清空§f气体槽",
     "gui.star.temperaturemode.item": "放置§c加热单元§r或§b冷却单元§r可以开关§c升温§b冷却§r,作为一种自动化方式,§e只有当机器UI开关都关闭时生效",
+    "gui.chemical.dump": "§b清空",
 
     "entity.darkdoppelganger.dark_doppelganger": "千早爱音",
     "entity.darkdoppelganger.dark_doppelganger_minion": "千早爱音分身",
@@ -293,10 +295,12 @@
     "jei.star.heat.import": "§b放热",
     "jei.star.heat.export": "§c产热",
     "jei.star.star_redstone": "§e恒星温度§3及对应§c红石信号强度",
+    "jei.source_fluid_extractor.tip1": "§d丢到奥术基座上方,并在其位置召唤闪电以激活",
     "jei.source_fluid_tank.tip1": "§d丢到奥术基座上方,并在其位置召唤闪电以增加激活进度",
     "jei.source_fluid_tank.tip2": "§a当激活进度达到9后,奥术基座会转化成液态魔源储罐",
     "jei.multiblock.source_fluid.formtip": "空手右键检测多方块结构是否完整",
     "jei.multiblock.source_fluid.itemtip": "§a将物品放置在奥术平台/基座上时预览多方块结构",
+    "jei.recipe.ash_furnace": "加速倍率 x",
 
     "key.back": "返回死亡点",
     "key.skyguis": "打开SkyGUI",
@@ -316,6 +320,8 @@
     "materialfactory.extinguished_star": "复苏恒星",
     "materialfactory.star_redstone": "恒星温度与红石信号强度",
     "materialfactory.source_fluid_tank": "制作液态魔源储罐",
+    "materialfactory.source_fluid_extractor": "制作液态魔源提取器",
+    "materialfactory.ash_furnace_heat_source": "灰烬炉加速",
 
     "message.advancement.enter.gensokyo": "§d欢迎 §e %s §d进入幻想乡!",
     "message.avaritia.fake_bedrock.break": "§c由于受到不可抗因素,你无法破坏基岩！",
@@ -415,5 +421,11 @@
     "tooltip.materialfactory.full_matter_cluster_shard": "由满载物质团分裂而成,质量极高!用于注入反物质块(投掷以注入)",
     "tooltip.materialfactory.antimatter_block": "注入满载物质团碎块可以转变成人造恒星(投掷以注入),空手右键查看注入量",
     "tooltip.chisel.pink_wool": "用chisel模组的凿子雕刻粉红色羊毛获得",
-    "tooltip.chisel.magenta_wool": "用chisel模组的凿子雕刻品红色羊毛获得"
+    "tooltip.chisel.magenta_wool": "用chisel模组的凿子雕刻品红色羊毛获得",
+    "tooltip.thermal_extra.device_lava_gen": "其实在非下界维度也可以工作",
+    "tooltip.mythicbotany.fimbultyr_tablet": "饮用密米尔之泉的泉水的玩家击杀盖亚守护者Ⅱ掉落",
+    "tooltip.materialfactory.ash_furnace_1": "§6前期用来制作§c熔岩§6的简易机器,需要§b材料§6和§e燃料§6才能工作",
+    "tooltip.materialfactory.ash_furnace_2": "§6可以在其正下方放置热源加速,热源列表可以查看jei",
+    "tooltip.extendedae_plus.infinity_biginteger_cell": "该物品因为bug问题已被禁用,请用AE Omni Cells模组",
+    "tooltip.fumo.flandre_item": "注意使用大型溶解成型机多方块合成"
 }

@@ -1,0 +1,16 @@
+{
+    "name": "轨道发射器",
+    "icon": "dysonsphere:railgun_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于将$(l:dysonsphere:space_capsules)$(item)太空舱$()发射至太阳轨道，以组装$(item)戴森球$()。$(br)在主世界发射一个物品需要90000RF，且一次只能发射一个物品。需要一条通向天空的清晰路径才能发射。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:railgun_block",
+            "title": "轨道发射器"
+        }
+    ]
+}

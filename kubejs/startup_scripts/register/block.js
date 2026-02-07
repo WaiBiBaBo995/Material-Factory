@@ -22,6 +22,7 @@ StartupEvents.registry("block", (event) => {
 
 	let blockRegisters = [
 		["better_soil", "grass", 3, "shovel", "wooden"],
+		["metal_barrel", "netherite_block", 1, "pickaxe", "stone"],
 		["metal_crate", "copper", 1, "pickaxe", "stone"],
 		["blue_crate", "copper", 1, "pickaxe", "stone"],
 		["black_crate", "copper", 1, "pickaxe", "stone"],
@@ -33,6 +34,7 @@ StartupEvents.registry("block", (event) => {
 		event.create(MODID + name) // 声明方块id
 			.soundType(soundType) // 声音类型
 			.hardness(hardness) // 硬度
+			.defaultCutout()
 			.resistance(hardness) // 方块的耐爆炸性
 			.tagBlock(toolType[tool]) // 工具类型
 			.tagBlock(miningLevel[level])  // 挖掘等级

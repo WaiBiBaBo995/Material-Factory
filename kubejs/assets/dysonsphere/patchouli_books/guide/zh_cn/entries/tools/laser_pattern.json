@@ -1,0 +1,35 @@
+{
+    "name": "轨道激光模式",
+    "icon": "dysonsphere:laser_pattern",
+    "category": "dysonsphere:tools",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)轨道激光模式$()用于配置$(thing)轨道激光$()的行为。$(br)它必须在$(item)激光模式控制终端$()中配置后才能使用。$(br)为$(item)轨道上行链路手环$()和$(item)激光控制站$()所需。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:laser_pattern"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "模式有几个可以配置的属性。$(br)$(li)名称：仅显示属性$(li)呼叫输入序列：呼叫激光时需要输入的指令序列。最小长度取决于模式的复杂程度。由通过相应快捷键或WASD输入的方向指令构成。$(li)数量：呼叫的激光光束数量。$(li)尺寸：激光光束的直径（以方块计）"
+        },
+        {
+            "type":"patchouli:text",
+            "text" : "$(li)持续时间：激光光束持续的时长（以刻计）$(li)瞄准区域：激光束在打击前搜索目标的半径范围（以方块计）。注意：激光只有在有时间的情况下才能进行瞄准$(li)追踪区域：激光束将搜索并追踪目标的范围（以方块计）$(li)追踪速度：激光束在其追踪区域内追踪目标的速度"
+        },
+        {
+            "type":"patchouli:text",
+            "text": "$(li)伤害：激光造成的基准伤害（以半颗心计）$(li)方块伤害：激光造成的方块伤害。根据方块的爆炸抗性计算$(li)呼叫延迟：首次激光打击前的延迟（以刻计）。自动瞄准所需$(li)波次延迟：多道激光命中之间的延迟（以刻计）。仅在数量>=2时生效$(li)误差：激光可能偏离目标的最大半径（以方块计）"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:tools/laser_controller",
+                "dysonsphere:machines/laser_controller_block",
+                "dysonsphere:machines/laser_pattern_controller_block"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "激光模式终端",
+    "icon": "dysonsphere:laser_pattern_controller_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)激光模式控制终端$()用于配置$(item)轨道激光模式$()。$(br)此过程需要消耗能量。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:laser_pattern_controller_block",
+            "title": "激光模式终端"
+        },
+        {
+            "type": "patchouli:relations",
+            "entries": [
+                "dysonsphere:tools/laser_pattern"
+            ]
+        }
+    ]
+}

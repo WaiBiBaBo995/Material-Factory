@@ -25,6 +25,15 @@
 	banned_armor = ["cataclysm:cursium_helmet", "cataclysm:cursium_chestplate", "cataclysm:cursium_leggings", "cataclysm:cursium_boots", "mycoolmod:*"]
 	#List of all spells the Dark Doppelganger can use in the final phase (Hard mode must be enabled)
 	final_phase_spells = ["irons_spellbooks:eldritch_blast", "irons_spellbooks:ray_of_frost", "traveloptics:tidal_grasp", "irons_spellbooks:abyssal_shroud", "traveloptics:shadowed_miasma", "irons_spellbooks:black_hole"]
+	#Maximum damage the Dark Doppelganger can take from a single hit.
+	#Set to 0 to disable the cap.
+	#Range: 0.0 ~ 100000.0
+	damage_cap_per_hit = 150.0
+	#Multiplier applied to all of the Dark Doppelganger's spell power attributes
+	#after copying them from the summoner.
+	#1.0 = same as player, 1.5 = +50%, 2.0 = double, etc.
+	#Range: 0.0 ~ 10.0
+	spell_power_multiplier = 1.25
 
 #Minion Configuration
 [minion]
@@ -36,4 +45,9 @@
 	movement_speed = 0.28
 	#Range: 0.0 ~ 100.0
 	armor = 20.0
+	#Spell used for the minion's SpellBarrageGoal (string id)
+	barrage_spell = "irons_spellbooks:devour"
+	#List of spells the minion can use (string ids).
+	#These will be shuffled and split into groups for the Warlock attack goal.
+	spells = ["irons_spellbooks:guiding_bolt", "irons_spellbooks:blood_needles", "irons_spellbooks:blood_slash", "irons_spellbooks:fang_ward", "irons_spellbooks:gust", "irons_spellbooks:burning_dash", "irons_spellbooks:blight", "irons_spellbooks:invisibility"]
 

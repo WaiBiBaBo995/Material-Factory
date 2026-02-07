@@ -1,0 +1,15 @@
+{
+    "name": "热耦合器",
+    "icon": "dysonsphere:heat_pipe_block",
+    "category": "dysonsphere:machines",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于连接多台机器以共享$(thing)热量$()。热量通过$(item)热耦合器$()的传播方式与其他机器类似，因此不建议铺设长距离管线。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "dysonsphere:heat_pipe_block"
+        }
+    ]
+}
