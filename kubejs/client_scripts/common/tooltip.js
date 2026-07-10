@@ -1,6 +1,11 @@
 ItemEvents.tooltip(event =>{
     event.add('materialfactory:anon_chihaya', Text.translate("item.materialfactory.anon_chihaya.tooltip").gray())
 
+    event.add('materialfactory:arrow_up', Text.translate("tooltip.materialfactory.arrow").aqua())
+    event.add('materialfactory:arrow_left', Text.translate("tooltip.materialfactory.arrow").aqua())
+    event.add('materialfactory:arrow_down', Text.translate("tooltip.materialfactory.arrow").aqua())
+    event.add('materialfactory:arrow_right', Text.translate("tooltip.materialfactory.arrow").aqua())
+
     event.addAdvanced('mysticalagriculture:infinity_seeds',(item,advanced,text) =>{
         text.add(1,Text.translate("item.mysticalagriculture.infinity_seeds.tooltip").darkGray().italic())
     })
@@ -49,6 +54,18 @@ ItemEvents.tooltip(event =>{
     event.addAdvanced('fumo:flandre_item',(item,advanced,text) =>{
         text.add(1,Text.translate("tooltip.fumo.flandre_item").yellow())
     })
+    event.addAdvanced("minecraft:sculk_sensor",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.minecraft.sculk_sensor"))
+    })
+    event.addAdvanced("thermal_extra:component_assembly",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.thermal_extra.component_assembly").gold())
+    })
+    event.addAdvanced("ad_astra_rocketed:tier_7_rocket",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.ad_astra_rocketed.tier_7_rocket"))
+    })
+    event.addAdvanced("bigreactors:magentite_ingot",(item,advanced,text) =>{
+        text.add(1,Text.translate("tooltip.bigreactors.magentite_ingot").yellow())
+    })
 
     let shiftTooltipItems = [
         { item: 'materialfactory:charge_spool', lines: 2 },
@@ -64,7 +81,8 @@ ItemEvents.tooltip(event =>{
         { item: 'compactcrafting:field_projector', lines: 3 },
         { item: 'materialfactory:artificial_star', lines: 10 },
         { item: 'materialfactory:extinguished_star', lines: 3 },
-        { item: 'materialfactory:ash_furnace', lines: 2 }
+        { item: 'materialfactory:ash_furnace', lines: 2 },
+        { item: 'materialfactory:annulus', lines: 7 }
     ]
     shiftTooltipItems.forEach((shiftTooltipItem) => {
         const { item, lines } = shiftTooltipItem;

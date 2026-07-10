@@ -920,4 +920,27 @@ ServerEvents.recipes(event => {
       }
     ]
   });
+
+  //石油
+  event.custom({
+    "type":"industrialforegoing:laser_drill_fluid",
+    "catalyst":{
+      "item":"thermal:flux_drill"
+    },
+    "entity":"minecraft:empty",
+    "output":"{Amount:10,FluidName:\"thermal:crude_oil\"}",
+    "pointer":0,
+    "rarity":[{
+      "blacklist":{},
+      "depth_max":20,
+      "depth_min":5,
+      "weight":1,
+      "whitelist":{
+        "type":"minecraft:worldgen/biome",
+        "values":[
+          "minecraft:desert"
+        ]
+      }
+    }]
+  });
 })

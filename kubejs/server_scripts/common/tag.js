@@ -42,6 +42,20 @@ ServerEvents.tags('block', event => {
     ])
     event.add("materialfactory:entropy_matrix_block",
         ['materialfactory:entropy_matrix_glass','materialfactory:entropy_matrix_energy_port','materialfactory:entropy_matrix_item_input','materialfactory:entropy_matrix_item_output', "materialfactory:entropy_matrix_chemical_port"])
+    
+    event.add('materialfactory:anti_install', [
+        "mekmm:planting_station",
+        "mekmm:basic_planting_factory",
+        "mekmm:advanced_planting_factory",
+        "mekmm:elite_planting_factory",
+        "mekmm:ultimate_planting_factory",
+        "mekanism:isotopic_centrifuge",
+        "mekmm:basic_centrifuging_factory",
+        "mekmm:advanced_centrifuging_factory",
+        "mekmm:elite_centrifuging_factory",
+        "mekmm:ultimate_centrifuging_factory"
+    ])
+
     //空手破坏
     event.add('notreepunching:always_drops',
         ['createsifter:dust','createsifter:crushed_end_stone','createsifter:crushed_netherrack','createsifter:crushed_deepslate','createsifter:crushed_blackstone','minecraft:farmland'])
@@ -50,7 +64,13 @@ ServerEvents.tags('block', event => {
 });
 
 ServerEvents.tags('item', event => {
-    event.add('minecraft:arrows', ["materialfactory:full_matter_cluster_arrow"])
+    event.add('mekanism:installers', [
+        "mekanism:basic_tier_installer",
+        "mekanism:advanced_tier_installer",
+        "mekanism:elite_tier_installer",
+        "mekanism:ultimate_tier_installer"
+    ])
+
     event.add('avaritia:endless',[
         'mysticalagriculture:infinity_seeds'
     ]);

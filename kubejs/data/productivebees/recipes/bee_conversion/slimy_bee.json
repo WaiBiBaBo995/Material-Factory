@@ -1,0 +1,9 @@
+{
+  "type": "productivebees:bee_conversion",
+  "source": "productivebees:creeper_bee",
+  "result": "productivebees:slimy",
+  "item": {
+    "item": "minecraft:slime_block"
+  },
+  "chance": 50
+}

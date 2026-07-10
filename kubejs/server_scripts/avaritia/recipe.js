@@ -59,6 +59,19 @@ ServerEvents.recipes(event => {
     "tier": 1
     });
 
+    //创造笼升级
+    event.custom({
+        "type":"avaritia:extreme_smithing",
+        "addition":[
+            {"item":"cagedmobs:star_infused_netherite_block"},
+            {"item":"cagedmobs:dragon_scale"},
+            {"item":"cagedmobs:crystallized_experience_block"}
+        ],
+        "base":{"item":"cagedmobs:speed_iii_upgrade"},
+        "result":{"item":"cagedmobs:creative_upgrade"},
+        "template":{"item":"avaritia:upgrade_smithing_template"}
+    })
+
     //创造化学品罐
     event.remove({id: 'avaritia:mek_creative_chemical_tank'});
     event.custom({

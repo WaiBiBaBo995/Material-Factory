@@ -1,6 +1,8 @@
 JEIEvents.information(event =>{
-    event.addFluid('materialfactory:electric_fluid',Text.translate('jei.electric_fluid.information'))
     event.addItem('#materialfactory:crystal_cluster',Text.translate('jei.crystal_cluster.information'))
+    event.addItem('minecraft:stray_spawn_egg',Text.translate('jei.stray_spawn_egg.information'))
+
+    event.addFluid('materialfactory:electric_fluid',Text.translate('jei.electric_fluid.information'))
     event.addFluid('materialfactory:white_paint_fluid',Text.translate('jei.paint_fluid.information'))
     event.addFluid('materialfactory:orange_paint_fluid',Text.translate('jei.paint_fluid.information'))
     event.addFluid('materialfactory:magenta_paint_fluid',Text.translate('jei.paint_fluid.information'))

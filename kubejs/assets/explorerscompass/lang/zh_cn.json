@@ -67,5 +67,8 @@
   "structure.minecraft.village_taiga": "针叶林村庄",
   "structure.materialfactory.ruin_bridge1": "废弃大桥1",
   "structure.materialfactory.ruin_bridge2": "废弃大桥2",
-  "structure.materialfactory.ruin_cities": "废弃城"
+  "structure.materialfactory.ruin_cities": "废弃城",
+  "structure.materialfactory.gravel": "沙砾堆",
+  "structure.materialfactory.clay": "黏土堆",
+  "structure.materialfactory.oil": "石油田"
 }

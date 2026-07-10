@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "thermal:chiller",
         "input": [
-            { "fluid": "thermal_extra:raw_silver", "amount": 1000 },
+            { "fluid": "tconstruct:molten_silver", "amount": 1000 },
             { "item": "industrialforegoing:machine_frame_simple" }
         ], "result":
         {

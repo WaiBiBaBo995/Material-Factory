@@ -6,8 +6,6 @@ AvaritiaEvents.singularity(event => {
          .setCount(10000)
          .setTimeCost(240)
          .setIngredient(Ingredient.of("allthemodium:allthemodium_ingot"))
-         
-         
     })
 
     // unobtainium 奇点
@@ -17,8 +15,6 @@ AvaritiaEvents.singularity(event => {
          .setCount(10000)
          .setTimeCost(240)
          .setIngredient(Ingredient.of("allthemodium:unobtainium_ingot"))
-         
-         
     })
 
     // vibranium 奇点

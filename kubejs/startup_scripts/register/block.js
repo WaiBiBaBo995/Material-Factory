@@ -29,6 +29,8 @@ StartupEvents.registry("block", (event) => {
 		["brown_crate", "copper", 1, "pickaxe", "stone"],
 		["copper_crate", "copper", 1, "pickaxe", "stone"],
 		["airdrop_chest", "stone", 6, "pickaxe", "iron"],
+		["blender_frame", "copper", 4, "pickaxe", "stone"],
+		["blender_coverplate", "netherite_block", 6, "pickaxe", "stone"],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level]) => {
 		event.create(MODID + name) // 声明方块id
@@ -45,6 +47,12 @@ StartupEvents.registry("block", (event) => {
 })
 
 StartupEvents.registry("block", (event) => {
+	event.create("materialfactory:blender_glass", "basic")
+		.soundType("glass")
+		.hardness(0.4)
+		.defaultTranslucent()
+		.resistance(0.2)
+
 	event.create("createsifter:crushed_netherrack", "falling")
 		.soundType("sand")
 		.hardness(0.4)
@@ -97,7 +105,7 @@ StartupEvents.registry("block", (event) => {
 		.soundType('stone')
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tag('materialfactory:megablock')
-		.lightLevel(4)
+		.lightLevel(4/15)
 	let megablock = ["white_megablock","orange_megablock","magenta_megablock","light_blue_megablock","yellow_megablock","lime_megablock","pink_megablock","gray_megablock","light_gray_megablock","cyan_megablock","purple_megablock","blue_megablock","brown_megablock","green_megablock","red_megablock","black_megablock"]
 	for (const blockName of megablock) {
 	event.create(`materialfactory:${blockName}`, "basic")
@@ -105,7 +113,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tag('materialfactory:megablock')
 		.tag(`materialfactory:megablock/${blockName}`)
-		.lightLevel(4)
+		.lightLevel(4/15)
 	}
 
 	event.create('materialfactory:simple_machine_chassis', "basic")
@@ -137,7 +145,7 @@ StartupEvents.registry("block", (event) => {
         .box(2, 0, 2, 8, 6, 8)
         .box(8, 2, 8, 12, 8, 12)
         .box(8, 0, 2, 12, 4, 6)
-		.lightLevel(9)
+		.lightLevel(9/15)
 	let dye_crystal = ["orange", "magenta", "yellow", "pink", "gray", "light_gray", "cyan", "purple", "brown", "green"];
 	for (const dyes of dye_crystal) {
 	event.create(`materialfactory:${dyes}_crystal_cluster`, "basic")
@@ -149,6 +157,27 @@ StartupEvents.registry("block", (event) => {
         .box(2, 0, 2, 8, 6, 8)
         .box(8, 2, 8, 12, 8, 12)
         .box(8, 0, 2, 12, 4, 6)
-		.lightLevel(9)
+		.lightLevel(9/15)
 	}
+
+	event.create('materialfactory:coal_provider', 'basic')
+		.defaultCutout()
+		.unbreakable()
+		.hardness(114514)
+		.resistance(1919810)
+		.noDrops()
+		.blockEntity(info => {
+			info.serverTick(20, 0, be=>{
+				let { block, level } = be
+				if (block.up.id == "cold_sweat:hearth_bottom") {
+					let hearthBE = block.up.entity
+					if (hearthBE != null && hearthBE.getCapability(ForgeCapabilities.ITEM_HANDLER).isPresent()) {
+						let hearthCap = hearthBE.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get()
+						if (hearthCap.getStackInSlot(0).isEmpty()) {
+							hearthCap.insertItem(0, "coal", false)
+						}
+					}
+				}
+			})
+		})
 })

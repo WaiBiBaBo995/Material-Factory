@@ -94,7 +94,7 @@
   "message.mbtool.hold_f_to_dismantle": "按住 F 键拆除",
   "message.mbtool.insufficient_inventory_space": "多方块建造工具物品栏空间不足，无法容纳结构物品",
   "mbtool.structure.artificial_star": "人造恒星",
-  "mbtool.structure.brass_multifunctional_device": "黄铜多功能装置",
+  "mbtool.structure.brass_multifunctional_device": "黄铜多功能装置(需手动安装传送带)",
   "mbtool.structure.future_entropy_globular_matrix": "未来熵变球形矩阵",
   "mbtool.structure.huge_enchanting_apparatus": "巨型附魔装置",
   "mbtool.structure.source_fluid_extractor": "液态魔源提取器制作祭坛",

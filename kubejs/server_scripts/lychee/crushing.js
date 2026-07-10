@@ -55,7 +55,8 @@ ServerEvents.recipes(event => {
         }],
         "post": [{
             "type": "drop_item",
-            "item": 'fluxnetworks:flux_dust'
+            "item": 'fluxnetworks:flux_dust',
+            "count": 9
         }]
     })
 
@@ -70,6 +71,8 @@ ServerEvents.recipes(event => {
             "item": "ars_nouveau:arcane_platform"
         }]
     }).id("ars_nouveau:arcane_platform")
+
+    //四季映姬fumo
     event.custom({
         "type": "lychee:block_crushing",
         "item_in": [{
@@ -100,11 +103,7 @@ ServerEvents.recipes(event => {
             "type": "forge:nbt",
             "item":'tconstruct:tough_handle',
             "nbt":{"Material":"mysticalagradditions:supremium"}
-        },{
-            "item":'tconstruct:pig_iron_block'
-        }
-
-        ],
+        }],
         "post": [{
             "type": "drop_item",
             "item": 'fumo:eiki_item'

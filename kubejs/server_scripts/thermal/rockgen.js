@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
 			result: {item: out}})
 		}
 	
-	rockgen('exdeorum:witch_water', 'minecraft:netherrack', 'minecraft:netherrack')
+	rockgen('minecraft:water', 'minecraft:netherrack', 'minecraft:netherrack')
 	rockgen('minecraft:water', 'mysticalagriculture:soulium_block', 'mysticalagriculture:soulstone')
 	rockgen('minecraft:water', 'minecraft:obsidian', 'xycraft_world:kivi')
 	})

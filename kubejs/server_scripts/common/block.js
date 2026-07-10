@@ -26,6 +26,15 @@ BlockEvents.rightClicked("materialfactory:antimatter_block", event => {
   event.player.setStatusMessage(Text.translatable("message.antimatter_block.arrow", event.block.entity.persistentData.getInt("arrow").toFixed()))
   event.player.swing()
 })
+
+BlockEvents.leftClicked("minecraft:bedrock", event => {
+  if (event.getItem().id == "avaritia:crystal_pickaxe") {
+    if (event.player != null) {
+      event.player.setStatusMessage(Text.translatable("message.avaritia.fake_bedrock.break"))
+    }
+    event.cancel()
+  }
+})
 /*
 BlockEvents.placed(event => {
     let body = "minecraft:cobblestone";

@@ -63,10 +63,7 @@ ServerEvents.recipes(event =>{
                 "item": "irons_spellbooks:magic_cloth"
                 },
                 "D": {
-                "type": "forge:nbt",
                 "item": "irons_spellbooks:wayward_compass",
-                "count": 1,
-                "nbt": "{isInInventory:1b}"
                 },
                 "E": {
                 "item": "irons_spellbooks:ender_rune"
@@ -493,6 +490,141 @@ ServerEvents.recipes(event =>{
         ],
         "result": {
             "item": "materialfactory:anon_chihaya"
+        }
+    })
+
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            "ABCBA",
+            "BDEDB",
+            "CEFEC",
+            "BDEDB",
+            "ABCBA"
+        ],
+        "key": {
+            "A": {
+            "item": "mekanism:ultimate_control_circuit"
+            },
+            "B": {
+            "item": "ae2:quartz_vibrant_glass"
+            },
+            "C": {
+            "item": "thoriumreactors:redstone_processor"
+            },
+            "D": {
+            "item": "ae2cs:resonating_processor"
+            },
+            "E": {
+            "item": "bigreactors:blutonium_ingot"
+            },
+            "F": {
+            "item": "thermal_parallel:argument_parallel_3"
+            }
+        },
+        "result": {
+            "item": "thermal_parallel:argument_parallel_4"
+        }
+    })
+
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            " AAAAA ",
+            "ABCDCBA",
+            "ACEFECA",
+            "ADFGFDA",
+            "ACEFECA",
+            "ABCDCBA",
+            " AAAAA "
+        ],
+        "key": {
+            "A": {
+            "item": "thermalendergy:melodium_plate"
+            },
+            "B": {
+            "item": "bigreactors:ludicrite_ingot"
+            },
+            "C": {
+            "item": "thermal_extra:abyssal_glass"
+            },
+            "D": {
+            "item": "bigreactors:ridiculite_ingot"
+            },
+            "E": {
+            "item": "megacells:accumulation_processor"
+            },
+            "F": {
+            "item": "ae2omnicells:multidimensional_expansion_processor"
+            },
+            "G": {
+            "item": "thermal_parallel:argument_parallel_4"
+            }
+        },
+        "result": {
+            "item": "thermal_parallel:argument_parallel_5"
+        }
+    })
+
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            " AAAAAAA ",
+            "ABCDEDCFA",
+            "ACDGHIDCA",
+            "ADGJKJIDA",
+            "AELKMKLEA",
+            "ADIJKJGDA",
+            "ACDIHGDCA",
+            "AFCDEDCBA",
+            " AAAAAAA "
+        ],
+        "key": {
+            "A": {
+            "item": "thermalendergy:stellarium_plate"
+            },
+            "B": {
+            "item": "bigreactors:insanite_block"
+            },
+            "C": {
+            "item": "thermal_extra:twinite_glass"
+            },
+            "D": {
+            "item": "avaritia:diamond_lattice"
+            },
+            "E": {
+            "type": "forge:nbt",
+            "item": "avaritia:singularity",
+            "count": 1,
+            "nbt": "{Id:\"avaritia:redstone\"}"
+            },
+            "F": {
+            "item": "bigreactors:inanite_block"
+            },
+            "G": {
+            "item": "ae2omnicells:complex_link_processor"
+            },
+            "H": {
+            "item": "crazyae2addons:super_singularity"
+            },
+            "I": {
+            "item": "ae2omnicells:omni_link_processor"
+            },
+            "J": {
+            "item": "mekanism:pellet_antimatter"
+            },
+            "K": {
+            "item": "avaritia:full_matter_cluster"
+            },
+            "L": {
+            "item": "extendedae_plus:oblivion_singularity"
+            },
+            "M": {
+            "item": "thermal_parallel:argument_parallel_5"
+            }
+        },
+        "result": {
+            "item": "thermal_parallel:argument_parallel_6"
         }
     })
 })

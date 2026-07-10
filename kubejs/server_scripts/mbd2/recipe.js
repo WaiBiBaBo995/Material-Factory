@@ -165,12 +165,13 @@ MBDRecipeTypeEvents.onTransferProxyRecipe("materialfactory:brass_multifunction",
         let output = proxyRecipe.getResultItem(null);
         let recipe = recipeType.recipeBuilder()
             .id(proxyRecipeId + "_brass_multifunction")
-            .duration(5 * 20)
+            .duration(1 * 20)
             .inputItems(baseItem, appliedItem)
             .inputStress(4)
             .inputFE(4000)
             .inputRPM(16)
             .outputItems(output)
+            .machineData(NBT.toTag({"catalystSwitch": true}), true)
             .chance(1)
             .buildMBDRecipe();
         e.event.mbdRecipe = recipe;
@@ -180,12 +181,13 @@ MBDRecipeTypeEvents.onTransferProxyRecipe("materialfactory:brass_multifunction",
         let output = proxyRecipe.getResultItem(null);
         let recipe = recipeType.recipeBuilder()
             .id(proxyRecipeId + "_brass_multifunction")
-            .duration(10 * 20)
+            .duration(5 * 20)
             .inputItems(input)
             .inputStress(4)
             .inputFE(10000)
             .inputRPM(16)
             .outputItems(output)
+            .machineData(NBT.toTag({"catalystSwitch": true}), true)
             .chance(1)
             .buildMBDRecipe();
         e.event.mbdRecipe = recipe;
@@ -195,12 +197,13 @@ MBDRecipeTypeEvents.onTransferProxyRecipe("materialfactory:brass_multifunction",
         let output = proxyRecipe.getResultItem(null);
         let recipe = recipeType.recipeBuilder()
             .id(proxyRecipeId + "_brass_multifunction")
-            .duration(10 * 20)
+            .duration(5 * 20)
             .inputItems(input)
             .inputStress(4)
             .inputFE(8000)
             .inputRPM(16)
             .outputItems(output)
+            .machineData(NBT.toTag({"catalystSwitch": true}), true)
             .chance(1)
             .buildMBDRecipe();
         e.event.mbdRecipe = recipe;
@@ -210,12 +213,13 @@ MBDRecipeTypeEvents.onTransferProxyRecipe("materialfactory:brass_multifunction",
         let output = proxyRecipe.getResultItem(null);
         let recipe = recipeType.recipeBuilder()
             .id(proxyRecipeId + "_brass_multifunction")
-            .duration(15 * 20)
+            .duration(10 * 20)
             .inputItems(input)
             .inputStress(8)
             .inputFE(12000)
             .inputRPM(16)
             .outputItems(output)
+            .machineData(NBT.toTag({"catalystSwitch": true}), true)
             .chance(1)
             .buildMBDRecipe();
         e.event.mbdRecipe = recipe;
@@ -225,12 +229,13 @@ MBDRecipeTypeEvents.onTransferProxyRecipe("materialfactory:brass_multifunction",
         let output = proxyRecipe.getResultItem(null);
         let recipe = recipeType.recipeBuilder()
             .id(proxyRecipeId + "_brass_multifunction")
-            .duration(5 * 20)
+            .duration(2 * 20)
             .inputItems(input)
             .inputStress(4)
             .inputFE(2000)
             .inputRPM(4)
             .outputItems(output)
+            .machineData("catalystwitch", true)
             .chance(1)
             .buildMBDRecipe();
         e.event.mbdRecipe = recipe;

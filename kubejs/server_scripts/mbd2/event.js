@@ -96,6 +96,22 @@ MBDMachineEvents.onConsumeInputsAfterWorking('materialfactory:unbonded_machine_f
     level.getBlock(machine.pos).set("industrialforegoing:machine_frame_pity")
 })
 
+//黄铜多功能装置
+MBDMachineEvents.onUI('materialfactory:brass_multifunctional_device', e =>{
+    let { machine, root } = e.getEvent();
+    let catalystSwitch = root.getFirstWidgetById("catalyst_switch")
+    if (machine.customData.getBoolean('catalystSwitch')) {
+        catalystSwitch.setPressed(true)
+    }
+    catalystSwitch.setOnPressCallback((clickData, state) => {
+        if (state == true) {
+            machine.customData.putBoolean('catalystSwitch', true);
+        } else {
+            machine.customData.putBoolean('catalystSwitch', false);
+        }
+    })
+})
+
 //液态魔源提取器
 const $SourceUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SourceUtil');
 const Direction = Java.loadClass('net.minecraft.core.Direction');
@@ -425,6 +441,13 @@ MBDMachineEvents.onRecipeWorking('materialfactory:huge_enchanting_apparatus', e 
         }
     }
 });
+
+
+//终极激光
+MBDMachineEvents.onPlaced("materialfactory:ultimate_laser", e => {
+    let { machine } = e.getEvent()
+    machine.triggerGeckolibAnim("unformed", 1)
+})
 
 //人造恒星
 MBDMachineEvents.onUseCatalyst('materialfactory:artificial_star', e => {

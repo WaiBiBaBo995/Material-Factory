@@ -17,14 +17,13 @@ ColdSweatEvents.registries(event =>
 })
 
 //电荷线圈
-let Minecraft = Java.loadClass('net.minecraft.client.Minecraft')
 ItemEvents.rightClicked('materialfactory:charge_spool', event =>{
     let itemStack = event.getItem()
     let player = event.player
     if (!player) return;
     if (itemStack.damageValue >= 128) {
             player.cooldowns.addCooldown(itemStack.item, 40)
-            Minecraft.getInstance().gameRenderer.displayItemActivation(itemStack)
+            player.sendData("item_render", {item: itemStack.id})
             event.level.playSound(null,event.player.x,event.player.y,event.player.z,"minecraft:item.totem.use","players",1.0,1.0)
         if (!player.isCreative()) {
             event.server.scheduleInTicks(40, () => {
@@ -43,7 +42,7 @@ ItemEvents.rightClicked('materialfactory:anon', event =>{
     let itemStack = event.getItem()
     let player = event.player
     if (!player) return;
-    Minecraft.getInstance().gameRenderer.displayItemActivation(itemStack)
+    player.sendData("item_render", {item: itemStack.id})
     event.server.scheduleInTicks(12, () => {
     event.level.playSound(null,event.player.x,event.player.y,event.player.z,"darkdoppelganger:boss_stun","players",1,1)
     })

@@ -264,7 +264,7 @@ MekanismAssemble(50000, [{ "amount": 2, "item": "mekanism:ultimate_control_circu
 
 //基础机器
 basicMekanism({ "amount": 2, "item": "minecraft:iron_ingot" }, "mekanism:enrichment_chamber")
-basicMekanism({ "amount": 2, "item": "minecraft:lava_bucket" }, "mekanism:crusher")
+basicMekanism({ "amount": 1, "item": "minecraft:magma_block" }, "mekanism:crusher")
 basicMekanism({ "amount": 2, "item": "minecraft:bowl" }, "mekanism:nutritional_liquifier")
 basicMekanism({ "amount": 4, "tag": 'forge:glass/silica' }, "mekanism:energized_smelter")
 

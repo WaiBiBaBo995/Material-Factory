@@ -34,9 +34,21 @@ ServerEvents.recipes(event => {
 
     const molteningots = [
         "steel",
-        "osmium"
+        "osmium",
+        "silver"
     ]
     molteningots.forEach((ingot)=>{
+        event.custom({
+            "type": "thermal:crucible",
+            "energy": 1400,
+            "ingredients":
+                [{
+                    "tag": `forge:nuggets/${ingot}`
+                }],
+            "result": [{
+                "amount": 10, "fluid": `tconstruct:molten_${ingot}`
+            }]
+        })
         event.custom({
             "type": "thermal:crucible",
             "energy": 10000,

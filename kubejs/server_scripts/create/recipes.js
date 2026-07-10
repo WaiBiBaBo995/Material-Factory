@@ -26,6 +26,7 @@ ServerEvents.recipes((event) => {
     create.sandpaper_polishing('mekanism:fluorite_gem', ['mekanism:dust_fluorite'])
     create.sandpaper_polishing('mysticalagriculture:dirt_essence','slimeoverhaul:earth_slime_ball')
     create.sandpaper_polishing('mysticalagriculture:fire_essence','slimeoverhaul:flame_slime_ball')
+    create.sandpaper_polishing('enderio:plant_matter_green','#createaddition:plants')
 
     //机械手
     create.item_application('minecraft:snow_block',['minecraft:moss_block','thermal:frost_melon_slice'])
@@ -40,9 +41,9 @@ ServerEvents.recipes((event) => {
     create.pressing('#forge:gems/emerald', '#forge:dusts/emerald')
 
     //混合搅拌
-    create.mixing(Item.of('materialfactory:base_crystal_cluster', 4), [Fluid.of("industrialforegoing:latex", 1000),'16x allthecompressed:cobblestone_1x'])
-    create.mixing(Item.of('materialfactory:base_crystal_cluster', 8), [Fluid.of("industrialforegoing:latex", 1500),'32x allthecompressed:cobblestone_1x']).heated()
-    create.mixing(Item.of('materialfactory:base_crystal_cluster', 16), [Fluid.of("industrialforegoing:latex", 2000),'64x allthecompressed:cobblestone_1x']).superheated()
+    create.mixing(Item.of('materialfactory:base_crystal_cluster', 4), [Fluid.of("industrialforegoing:latex", 500),'16x allthecompressed:cobblestone_1x'])
+    create.mixing(Item.of('materialfactory:base_crystal_cluster', 8), [Fluid.of("industrialforegoing:latex", 800),'32x allthecompressed:cobblestone_1x']).heated()
+    create.mixing(Item.of('materialfactory:base_crystal_cluster', 16), [Fluid.of("industrialforegoing:latex", 1000),'64x allthecompressed:cobblestone_1x']).superheated()
     create.mixing(['enderio:powdered_cobalt'], [Fluid.of("minecraft:water", 250),'minecraft:flint','minecraft:moss_block'])
     create.mixing(['enderio:powdered_cobalt',Item.of('enderio:powdered_cobalt').withChance(0.2)], [Fluid.of("minecraft:water", 250),'#mekanism:dirty_dusts/cobalt'])
     create.mixing(['alltheores:silver_dust',Item.of('alltheores:silver_dust').withChance(0.2)], [Fluid.of("minecraft:water", 250),'#mekanism:dirty_dusts/silver'])

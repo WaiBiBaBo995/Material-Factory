@@ -1,3 +1,4 @@
+/*
 StartupEvents.modifyCreativeTab('ironfurnaces:ironfurnaces_tab', event => {
 	event.add('ironfurnaces:allthemodium_furnace')
 	event.add('ironfurnaces:vibranium_furnace')
@@ -6,3 +7,4 @@ StartupEvents.modifyCreativeTab('ironfurnaces:ironfurnaces_tab', event => {
 	event.add('ironfurnaces:upgrade_vibranium')
 	event.add('ironfurnaces:upgrade_unobtainium')
 })
+*/

@@ -50,15 +50,6 @@ ServerEvents.recipes(event => {
         A:'supplementaries:ash_bricks',
         B:'minecraft:furnace',
     });
-    event.shaped(Item.of('mekanism:creative_fluid_tank', '{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:2147483647,FluidName:"minecraft:water"}}]}}'),
-        [
-        'AAA',
-        'AAA',
-        'AAA'
-        ],
-        {
-        A:Item.of('mekanism:ultimate_fluid_tank', '{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:256000,FluidName:"minecraft:water"}}]}}').weakNBT(),
-    });
 
     //木板
     event.shaped(Item.of('minecraft:oak_planks', 1),
@@ -1084,6 +1075,67 @@ ServerEvents.recipes(event => {
             C: 'minecraft:polished_deepslate'
     })
 
+    event.shaped('angelring:diamond_ring',
+            [
+            'ABA',
+            'BCB',
+            'ABA'
+            ],
+            {
+            A: 'minecraft:ghast_tear',
+            B: 'minecraft:diamond_block',
+            C: 'ars_nouveau:ring_of_potential'
+    }).id('angelring:diamond_ring')
+
+    event.shaped("cobblefordays:tier_2",
+            [
+            'AAA',
+            'BCD',
+            'AAA'
+            ],
+            {
+            A: '#forge:cobblestone',
+            B: "minecraft:water_bucket",
+            C: "cobblefordays:tier_1",
+            D: "minecraft:lava_bucket",
+    }).id('cobblefordays:tier_2')
+    event.shaped("cobblefordays:tier_3",
+            [
+            'AAA',
+            'BCD',
+            'AAA'
+            ],
+            {
+            A: "minecraft:iron_ingot",
+            B: "minecraft:water_bucket",
+            C: "cobblefordays:tier_2",
+            D: "minecraft:lava_bucket",
+    }).id('cobblefordays:tier_3')
+    event.shaped("cobblefordays:tier_4",
+            [
+            'AAA',
+            'BCD',
+            'AAA'
+            ],
+            {
+            A: "minecraft:gold_ingot",
+            B: "minecraft:water_bucket",
+            C: "cobblefordays:tier_3",
+            D: "minecraft:lava_bucket",
+    }).id('cobblefordays:tier_4')
+    event.shaped("cobblefordays:tier_5",
+            [
+            'AAA',
+            'BCD',
+            'AAA'
+            ],
+            {
+            A: "minecraft:diamond",
+            B: "minecraft:water_bucket",
+            C: "cobblefordays:tier_4",
+            D: "minecraft:lava_bucket",
+    }).id('cobblefordays:tier_5')
+
 
     //M魔力存储元件
     event.shapeless(Item.of('megacells:mana_storage_cell_1m', 1), ['megacells:mega_mana_cell_housing', 'botanicalextramachinery:cell_component_1m']).id("megacells:cells/standard/mana_storage_cell_1m_with_housing");
@@ -1172,7 +1224,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'extendedae_plus:infinity_biginteger_cell'});
     event.remove({id:/mekanism:factory\/.*/});
     event.remove({id:/mekanism_extras:factory\/.*/});
-    event.remove({id:/mekmm:factory\/(?!.*basic).*$/});
+    event.remove({id:/mekmm:factory\/(?!.*(planting|centrifuging)).*$/});
     event.remove({id:'tconstruct:smeltery/casts/gold/coins'});
     event.remove({id:'tconstruct:smeltery/casts/sand/molding/coins'});
     event.remove({id:'tconstruct:smeltery/casts/red_sand/molding/coins'});
@@ -1182,4 +1234,8 @@ ServerEvents.recipes(event => {
     event.remove({id:"useless_mod:teleport_block"});
     event.remove({id:"useless_mod:teleport_block_2"})
     event.remove({id:"useless_mod:teleport_block_3"})
+    event.remove({id:'tconstruct:smeltery/casts/sand/builder_block/coins'})
+    event.remove({id:'tconstruct:smeltery/casts/sand/builder_cast/coins'})
+    event.remove({id:'tconstruct:smeltery/casts/red_sand/builder_block/coins'})
+    event.remove({id:'tconstruct:smeltery/casts/red_sand/builder_cast/coins'})
 })

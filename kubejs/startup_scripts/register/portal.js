@@ -8,6 +8,6 @@ StartupEvents.postInit(event=>{
         .forcedSize(2,3)
         .destDimID($BuiltinDimensionTypes.NETHER_EFFECTS)
         .tintColor(0x87CEFA)
-        .lightWithFluid("industrialforegoing:ether_gas")
+        .lightWithFluid("minecraft:water")
         .registerPortal();
 })

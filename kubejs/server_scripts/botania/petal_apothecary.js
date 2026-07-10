@@ -1,0 +1,30 @@
+ServerEvents.recipes(event => {
+    //火把花种子
+    event.custom({
+        "type":"botania:petal_apothecary",
+        "ingredients":[
+            {"item":"minecraft:torch"},
+            {"item":"minecraft:soul_torch"},
+            {"item":"actuallyadditions:tiny_torch"},
+            {"item":"integrateddynamics:menril_torch"},
+            {"item":"torchmaster:megatorch"}
+        ],
+        "output":{"item":"minecraft:torchflower_seeds"},
+        "reagent":{"tag":"botania:seed_apothecary_reagent"}
+    })
+
+    //瓶子草
+    event.custom({
+        "type":"botania:petal_apothecary",
+        "ingredients":[
+            {"item":"minecraft:glass_bottle"},
+            {"item":"botania:brown_petal"},
+            {"item":"botania:brown_petal"},
+            {"item":"botania:cyan_petal"},
+            {"item":"botania:brown_petal"},
+            {"item":"botania:brown_petal"}
+        ],
+        "output":{"item":"minecraft:pitcher_pod"},
+        "reagent":{"tag":"botania:seed_apothecary_reagent"}
+    })
+})
