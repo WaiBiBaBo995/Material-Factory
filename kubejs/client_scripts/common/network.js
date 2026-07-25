@@ -28,3 +28,8 @@ NetworkEvents.dataReceived("show_multiblock", event=>{
     const rotation = event.data.getString("Rotation")
     $PatchouliAPI.get().showMultiblock($PatchouliAPI.get().getMultiblock(multiblockName), null, new BlockPos(blockPosX, blockPosY, blockPosZ), rotation)
 })
+
+NetworkEvents.dataReceived('camera_shake', event => {
+    const shakenumber = event.data.getInt('number')
+    global.addShake(shakenumber)
+})

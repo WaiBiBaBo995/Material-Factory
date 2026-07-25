@@ -115,6 +115,7 @@ ServerEvents.tags('item', event => {
     
     event.add('curios:charm',['tiab:time_in_a_bottle', 'cold_sweat:soulspring_lamp', 'artifacts:digging_claws'])
 
+// ========================= 矿辞统一 ===============================
     event.add('forge:raw_materials/elementium', 'mythicbotany:raw_elementium')
     event.add('forge:storage_blocks/raw_elementium', 'mythicbotany:raw_elementium_block')
 
@@ -135,6 +136,16 @@ ServerEvents.tags('item', event => {
     event.add('mekanism:clumps/osmium', 'alltheores:osmium_clump')
     event.add('mekanism:clumps/uranium', 'alltheores:uranium_clump')
 
+    event.add('forge:ingots/yellorium', ['alltheores:uranium_ingot'])
+    event.add('forge:ingots/stellarium', ['enderio_evolution:stellar_alloy_ingot'])
+    event.add('forge:ingots/melodium', ['enderio_evolution:melodic_alloy_ingot'])
+
+    event.add('forge:nuggets/stellarium', ['enderio_evolution:stellar_alloy_nugget'])
+    event.add('forge:nuggets/melodium', ['enderio_evolution:melodic_alloy_nugget'])
+
+    event.add('forge:storage_blocks/stellarium', ['enderio_evolution:stellar_alloy_block'])
+    event.add('forge:storage_blocks/melodium', ['enderio_evolution:melodic_alloy_block'])
+// ==================================================================
     event.add('mysticalagriculture:essences', [
     'mysticalagriculture:allthemodium_essence',
     'mysticalagriculture:unobtainium_essence',
@@ -146,9 +157,6 @@ ServerEvents.tags('item', event => {
     'mysticalagriculture:vibranium_seeds',
   ])
 
-    event.add('forge:ingots/yellorium', [
-    'alltheores:uranium_ingot'
-  ])
     event.add("materialfactory:melting_item",['slimeoverhaul:water_slime_ball','minecraft:cactus','#minecraft:leaves','#forge:seeds','#minecraft:saplings'])
 
     event.add("materialfactory:entropy_matrix_block",['materialfactory:entropy_matrix_glass','materialfactory:entropy_matrix_energy_port','materialfactory:entropy_matrix_item_input','materialfactory:entropy_matrix_item_output'])
@@ -167,6 +175,10 @@ ServerEvents.tags('item', event => {
     event.add('materialfactory:fire_caused', ["notreepunching:fire_starter", "minecraft:flint_and_steel","minecraft:fire_charge", "tconstruct:flint_and_brick", "enderio:cold_fire_igniter"])
 
     event.remove('tombstone:seeds', '#mysticalagriculture:seeds')
+
+    event.add('materialfactory:arrow', ['materialfactory:arrow_up', 'materialfactory:arrow_left', 'materialfactory:arrow_right', 'materialfactory:arrow_down'])
+
+    event.add('materialfactory:fumo_icon', [/fumo:\w+_icon/])
 });
 
 ServerEvents.tags('fluid' ,e=>{

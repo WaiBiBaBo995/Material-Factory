@@ -116,6 +116,11 @@
     "block.materialfactory.blender_coverplate": "搅拌机盖板",
     "block.materialfactory.unactivated_blender_controller": "未激活的搅拌机控制器",
     "block.materialfactory.blender_controller": "搅拌机控制器",
+    "block.materialfactory.blender_input_port": "搅拌机输入端口",
+    "block.materialfactory.blender_output_port": "搅拌机输出端口",
+    "block.materialfactory.blender_energy_port": "搅拌机能量端口",
+    "block.materialfactory.blender_fluid_port": "搅拌机流体端口",
+    "block.materialfactory.blender_shaft": "搅拌机传动杆",
 
     "block.thermal.crude_oil_fluid": "石油",
     "block.materialfactory.liquid_source": "液态魔源",
@@ -207,6 +212,10 @@
     "gui.star.gas_dump": "§e清空§f气体槽",
     "gui.star.temperaturemode.item": "放置§c加热单元§r或§b冷却单元§r可以开关§c升温§b冷却§r,作为一种自动化方式,§e只有当机器UI开关都关闭时生效",
     "gui.chemical.dump": "§b清空",
+    "gui.blender.message1": "点击按钮抽取目标",
+    "gui.blender.message2": "放入物品后点击按钮检测物品要求",
+    "gui.blender.message3": "点击按钮进行搭建多方块结构",
+    "gui.blender.message4": "⚠机器身后7x7x7区域存在其他方块或没有地板,请清理后重试⚠",
 
     "entity.darkdoppelganger.dark_doppelganger": "千早爱音",
     "entity.darkdoppelganger.dark_doppelganger_minion": "千早爱音分身",
@@ -336,6 +345,8 @@
     "materialfactory.source_fluid_extractor": "制作液态魔源提取器",
     "materialfactory.ash_furnace_heat_source": "灰烬炉加速",
     "materialfactory.antimatter_to_star": "制作人造恒星",
+    "materialfactory.activate_blender": "部署搅拌机",
+    "materialfactory.blender": "搅拌",
 
     "message.advancement.enter.gensokyo": "§d欢迎 §e %s §d进入幻想乡!",
     "message.avaritia.fake_bedrock.break": "§c由于受到不可抗因素,你无法破坏基岩！",
@@ -446,7 +457,7 @@
     "tooltip.extendedae_plus.infinity_biginteger_cell": "该物品因为bug问题已被禁用,请用AE Omni Cells模组",
     "tooltip.fumo.flandre_item": "注意请使用大型溶解成型机多方块合成",
     "tooltip.minecraft.sculk_sensor": "§b当该方块或毗邻方块是幽匿块、远离幽匿催发体超过4格且上方为空气或水，其上方有9%%的概率生成§3幽匿感测体",
-    "tooltip.thermal_extra.component_assembly": "用ae进行自动化时,请注意调整处理样板的输入顺序,部件装配机是有序配方",
+    "tooltip.thermal_extra.component_assembly": "本包中的部件装配机支持无序",
     "tooltip.ad_astra_rocketed.tier_7_rocket": "§b七阶火箭需要§d液态氘氚燃料§b作为燃料",
     "tooltip.bigreactors.magentite_ingot": "在反应堆中,由钚锭衰变得来",
     "tooltip.materialfactory.arrow": "用于未激活的搅拌器控制器,由环转换而来,详情请看环的物品说明",
@@ -456,5 +467,14 @@
     "tooltip.materialfactory.annulus_4": "§c↑:鞘翅飞行动作",
     "tooltip.materialfactory.annulus_5": "§b↓:爬行动作",
     "tooltip.materialfactory.annulus_6": "§a←:望远镜观察动作",
-    "tooltip.materialfactory.annulus_7": "§e→:游泳动作"
+    "tooltip.materialfactory.annulus_7": "§e→:游泳动作",
+    "tooltip.materialfactory.blenderUnrecipable": "无法合成,请转至查看搅拌机控制器物品信息,破坏不掉落任何物品",
+    "tooltip.materialfactory.blender_controller_1": "无法合成,由未激活的搅拌机控制器“召唤”而来",
+    "tooltip.materialfactory.blender_controller_2": "通过破译未激活的搅拌机控制器使其激活部署多方块",
+    "tooltip.materialfactory.blender_controller_3": "正前方有物品输入和输出口,正后方有能量、流体端口,顶上有动力传动杆",
+    "tooltip.materialfactory.blender_controller_4": "转速会影响配方时间",
+    "tooltip.materialfactory.blender_controller_5": "§c⚠注意破坏多方块结构会全部崩塌,并且只会掉落未激活的搅拌机控制器⚠",
+    "tooltip.materialfactory.unactivated_blender_controller_1": "用于部署搅拌机多方块",
+    "tooltip.materialfactory.unactivated_blender_controller_2": "请准备相对足量§b↑↓←→§e(由“环”转换而来)§r来破译,只有破译成功才会消耗",
+    "tooltip.materialfactory.unactivated_blender_controller_3": "部署前请准备7x7x7大小的空间且铺有7x7的地板,否则无法部署搅拌机多方块"
 }

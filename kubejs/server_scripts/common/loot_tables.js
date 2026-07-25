@@ -370,4 +370,25 @@ ServerEvents.blockLootTables(event =>{
             p.rolls = ([1,2])
         })
     })
+
+    event.addBlock('materialfactory:blender_frame', Loot => {
+        Loot.addPool(p => {
+            p.addEmpty(1)
+        })
+    })
+    event.addBlock('materialfactory:blender_glass', Loot => {
+        Loot.addPool(p => {
+            p.addEmpty(1)
+        })
+    })
+    event.addBlock('materialfactory:blender_coverplate', Loot => {
+        Loot.addPool(p => {
+            p.addEmpty(1)
+        })
+    })
+    event.addBlock('materialfactory:blender_controller', Loot => {
+        Loot.addPool(p => {
+            p.addItem('materialfactory:unactivated_blender_controller').weight(1)
+        })
+    })
 })

@@ -1,464 +1,464 @@
-ServerEvents.recipes(event =>{
+ServerEvents.recipes(event => {
     event.custom({
-            "type": "extendedcrafting:shaped_table",
-            "pattern": [
-                "AAAACAAAA",
-                "ABBBBBBBA",
-                "ABBBBBBBA",
-                "ABBDEDBBA",
-                "CBBFGFBBC",
-                "ABBDEDBBA",
-                "ABBBBBBBA",
-                "ABBBBBBBA",
-                "AAAACAAAA"
-            ],
-            "key": {
-                "A": {
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            "AAAACAAAA",
+            "ABBBBBBBA",
+            "ABBBBBBBA",
+            "ABBDEDBBA",
+            "CBBFGFBBC",
+            "ABBDEDBBA",
+            "ABBBBBBBA",
+            "ABBBBBBBA",
+            "AAAACAAAA"
+        ],
+        "key": {
+            "A": {
                 "item": 'materialfactory:entropy_matrix_glass'
-                },
-                "B": {
-                "item": 'materialfactory:entropy_matrix_casing'
-                },
-                "C": {
-                "item": 'materialfactory:entropy_matrix_energy_port'
-                },
-                "D": {
-                "item": 'mekanism:induction_casing'
-                },
-                "E": {
-                "item": 'mekanism:ultimate_induction_provider'
-                },
-                "F": {
-                "item": 'mekanism:ultimate_induction_cell'
-                },
-                "G": {
-                "item": 'crazyae2addons:super_singularity_block'
-                }
             },
-            "result": {
-                "item": 'materialfactory:entropy_matrix_core'
+            "B": {
+                "item": 'materialfactory:entropy_matrix_casing'
+            },
+            "C": {
+                "item": 'materialfactory:entropy_matrix_energy_port'
+            },
+            "D": {
+                "item": 'mekanism:induction_casing'
+            },
+            "E": {
+                "item": 'mekanism:ultimate_induction_provider'
+            },
+            "F": {
+                "item": 'mekanism:ultimate_induction_cell'
+            },
+            "G": {
+                "item": 'crazyae2addons:super_singularity_block'
             }
+        },
+        "result": {
+            "item": 'materialfactory:entropy_matrix_core'
+        }
     })
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            "ABCCDCCBA",
+            "BAEFGFEAB",
+            "CEHIJIHEC",
+            "CKILHLIKC",
+            "DGJHMHJGD",
+            "CKILHLIKC",
+            "CEHIJIHEC",
+            "BAEFGFEAB",
+            "ABCCDCCBA"
+        ],
+        "key": {
+            "A": {
+                "item": "irons_spellbooks:lightning_rune"
+            },
+            "B": {
+                "item": "irons_spellbooks:evocation_rune"
+            },
+            "C": {
+                "item": "irons_spellbooks:magic_cloth"
+            },
+            "D": {
+                "item": "irons_spellbooks:wayward_compass",
+            },
+            "E": {
+                "item": "irons_spellbooks:ender_rune"
+            },
+            "F": {
+                "item": "irons_spellbooks:arcane_rune"
+            },
+            "G": {
+                "item": "irons_spellbooks:blood_rune"
+            },
+            "H": {
+                "item": "irons_spellbooks:nature_rune"
+            },
+            "I": {
+                "item": "irons_spellbooks:holy_rune"
+            },
+            "J": {
+                "item": "irons_spellbooks:fire_rune"
+            },
+            "K": {
+                "item": "irons_spellbooks:cooldown_rune"
+            },
+            "L": {
+                "item": "irons_spellbooks:ice_rune"
+            },
+            "M": {
+                "item": "irons_spellbooks:cinderous_soulcaller"
+            }
+        },
+        "result": {
+            "item": 'fumo:new_reimu_item'
+        }
+    })
+    /*  废案
+        event.custom({
+                "type": "extendedcrafting:shaped_table",
+                "pattern": [
+                    "AAAAAAAAA",
+                    "ABBBBBBBA",
+                    "ABBBCBBBA",
+                    "ABBDEDBBA",
+                    "ABBFGFBBA",
+                    "ABBHIHBBA",
+                    "ABBBBBBBA",
+                    "AJJJJJJJA",
+                    "KKKKKKKKK"
+                ],
+                "key": {
+                    "A": {
+                    "item": "avaritia:infinity_ingot"
+                    },
+                    "B": {
+                    "item": "minecraft:sugar"
+                    },
+                    "C": {
+                    "item": "avaritia:infinity_catalyst"
+                    },
+                    "D": {
+                    "item": "avaritia:endest_pearl"
+                    },
+                    "E": {
+                    "item": "materialfactory:anon_chihaya_head"
+                    },
+                    "F": {
+                    "item": "materialfactory:anon_chihaya_hand"
+                    },
+                    "G": {
+                    "item": "materialfactory:anon_chihaya_body"
+                    },
+                    "H": {
+                    "item": "materialfactory:anon_chihaya_leg"
+                    },
+                    "I": {
+                    "item": "avaritia:infinity_elytra"
+                    },
+                    "J": {
+                    "item": "avaritia:endless_cake"
+                    },
+                    "K": {
+                    "item": "allthecompressed:obsidian_6x"
+                    }
+                },
+                "result": {
+                    "item": "materialfactory:anon_chihaya"
+                }
+        })
+    
         event.custom({
             "type": "extendedcrafting:shaped_table",
             "pattern": [
-                "ABCCDCCBA",
-                "BAEFGFEAB",
-                "CEHIJIHEC",
-                "CKILHLIKC",
-                "DGJHMHJGD",
-                "CKILHLIKC",
-                "CEHIJIHEC",
-                "BAEFGFEAB",
-                "ABCCDCCBA"
+                "     AAAA",
+                "     BCDA",
+                "    EFGHA",
+                "   EIJFBA",
+                "  EIKIE  ",
+                " EILIE   ",
+                "EMMIE    ",
+                " EME     ",
+                "  E      "
             ],
             "key": {
                 "A": {
-                "item": "irons_spellbooks:lightning_rune"
+                "item": "minecraft:gray_concrete"
                 },
                 "B": {
-                "item": "irons_spellbooks:evocation_rune"
+                "item": "minecraft:light_gray_concrete"
                 },
                 "C": {
-                "item": "irons_spellbooks:magic_cloth"
+                "item": "extrabotany:the_origin"
                 },
                 "D": {
-                "item": "irons_spellbooks:wayward_compass",
+                "item": "extrabotany:the_end"
                 },
                 "E": {
-                "item": "irons_spellbooks:ender_rune"
+                "item": "bigreactors:ridiculite_block"
                 },
                 "F": {
-                "item": "irons_spellbooks:arcane_rune"
+                "item": "mythicbotany:alfsteel_block"
                 },
                 "G": {
-                "item": "irons_spellbooks:blood_rune"
+                "item": "extrabotany:pleiades_combat_maid_headgear"
                 },
                 "H": {
-                "item": "irons_spellbooks:nature_rune"
+                "item": "extrabotany:the_chaos"
                 },
                 "I": {
-                "item": "irons_spellbooks:holy_rune"
+                "item": "botania:terrasteel_block"
                 },
                 "J": {
-                "item": "irons_spellbooks:fire_rune"
+                "item": "extrabotany:pleiades_combat_maid_suit"
                 },
                 "K": {
-                "item": "irons_spellbooks:cooldown_rune"
+                "item": "extrabotany:pleiades_combat_maid_skirt"
                 },
                 "L": {
-                "item": "irons_spellbooks:ice_rune"
+                "item": "extrabotany:pleiades_combat_maid_boots"
                 },
                 "M": {
-                "item": "irons_spellbooks:cinderous_soulcaller"
+                "item": "extrabotany:orichalcos_block"
                 }
             },
             "result": {
-                "item": 'fumo:new_reimu_item'
+                "item": "materialfactory:anon_chihaya_hand"
             }
-    })
-/*  废案
-    event.custom({
+        })
+    
+        event.custom({
             "type": "extendedcrafting:shaped_table",
             "pattern": [
-                "AAAAAAAAA",
-                "ABBBBBBBA",
-                "ABBBCBBBA",
-                "ABBDEDBBA",
-                "ABBFGFBBA",
-                "ABBHIHBBA",
-                "ABBBBBBBA",
-                "AJJJJJJJA",
-                "KKKKKKKKK"
+                "  A      ",
+                " ABA     ",
+                "ABCDA    ",
+                " AEFGA   ",
+                "  AHIJA  ",
+                "   AJKLM ",
+                "    ALNOM",
+                "     MOM ",
+                "      M  "
             ],
             "key": {
                 "A": {
-                "item": "avaritia:infinity_ingot"
+                "item": "bigreactors:ridiculite_block"
                 },
                 "B": {
-                "item": "minecraft:sugar"
+                "item": "irons_spellbooks:legendary_ink"
                 },
                 "C": {
-                "item": "avaritia:infinity_catalyst"
+                "item": "allthewizardgear:unobtainium_mage_helmet"
                 },
                 "D": {
-                "item": "avaritia:endest_pearl"
+                "item": "allthewizardgear:unobtainium_spell_book"
                 },
                 "E": {
-                "item": "materialfactory:anon_chihaya_head"
+                "item": "ars_nouveau:archmage_spell_book"
                 },
                 "F": {
-                "item": "materialfactory:anon_chihaya_hand"
+                "item": "allthewizardgear:unobtainium_mage_chestplate"
                 },
                 "G": {
-                "item": "materialfactory:anon_chihaya_body"
+                "item": "ars_nouveau:glyph_lightning"
                 },
                 "H": {
-                "item": "materialfactory:anon_chihaya_leg"
+                "item": "ars_nouveau:glyph_wither"
                 },
                 "I": {
-                "item": "avaritia:infinity_elytra"
+                "item": "allthewizardgear:unobtainium_mage_leggings"
                 },
                 "J": {
-                "item": "avaritia:endless_cake"
+                "type": "forge:nbt",
+                "item": "irons_spellbooks:scroll",
+                "count": 1,
+                "nbt": "{ISB_Spells:{data:[{id:\"irons_spellbooks:sunbeam\",index:0,level:10,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}"
                 },
                 "K": {
-                "item": "allthecompressed:obsidian_6x"
+                "item": "allthewizardgear:unobtainium_mage_boots"
+                },
+                "L": {
+                "item": "ars_nouveau:source_berry_pie"
+                },
+                "M": {
+                "item": "ars_nouveau:sourcestone"
+                },
+                "N": {
+                "item": "megacells:portable_source_cell_256m"
+                },
+                "O": {
+                "item": "ars_nouveau:source_gem_block"
                 }
             },
             "result": {
-                "item": "materialfactory:anon_chihaya"
+                "item": "materialfactory:anon_chihaya_leg"
             }
-    })
-
-    event.custom({
-        "type": "extendedcrafting:shaped_table",
-        "pattern": [
-            "     AAAA",
-            "     BCDA",
-            "    EFGHA",
-            "   EIJFBA",
-            "  EIKIE  ",
-            " EILIE   ",
-            "EMMIE    ",
-            " EME     ",
-            "  E      "
-        ],
-        "key": {
-            "A": {
-            "item": "minecraft:gray_concrete"
+        })
+    
+        event.custom({
+            "type": "extendedcrafting:shaped_table",
+            "pattern": [
+                "         ",
+                "   AAA   ",
+                "  BCDEB  ",
+                "  BFGFB  ",
+                " BHIJIHB ",
+                " BKLMLKB ",
+                " BNOPONB ",
+                "BQAAAAAQB",
+                "         "
+            ],
+            "key": {
+                "A": {
+                "item": "bigreactors:ridiculite_block"
+                },
+                "B": {
+                "item": "ars_nouveau:sourcestone"
+                },
+                "C": {
+                "type": "forge:nbt",
+                "item": "thoriumreactors:progressive_fluid_tank",
+                "count": 1,
+                "nbt": "{BlockEntityTag:{Fluid:{Amount:128000,FluidName:\"ad_astra:cryo_fuel\"},Items:[],id:\"thoriumreactors:progressive_fluid_tank\"}}"
+                },
+                "D": {
+                "item": "ad_astra:tier_4_rocket"
+                },
+                "E": {
+                "item": "ad_astra:tier_1_rover"
+                },
+                "F": {
+                "item": "avaritia:enhancement_core"
+                },
+                "G": {
+                "item": "ad_astra:jet_suit_helmet"
+                },
+                "H": {
+                "item": "avaritia:endest_pearl"
+                },
+                "I": {
+                "item": "avaritia:eternal_singularity"
+                },
+                "J": {
+                "item": "ad_astra:jet_suit"
+                },
+                "K": {
+                "item": "avaritia:ultimate_stew"
+                },
+                "L": {
+                "item": "ad_astra:desh_plating"
+                },
+                "M": {
+                "item": "ad_astra:jet_suit_pants"
+                },
+                "N": {
+                "item": "avaritia:star_fuel"
+                },
+                "O": {
+                "item": "ad_astra:calorite_block"
+                },
+                "P": {
+                "item": "ad_astra:jet_suit_boots"
+                },
+                "Q": {
+                "item": "ad_astra:cheese_block"
+                }
             },
-            "B": {
-            "item": "minecraft:light_gray_concrete"
-            },
-            "C": {
-            "item": "extrabotany:the_origin"
-            },
-            "D": {
-            "item": "extrabotany:the_end"
-            },
-            "E": {
-            "item": "bigreactors:ridiculite_block"
-            },
-            "F": {
-            "item": "mythicbotany:alfsteel_block"
-            },
-            "G": {
-            "item": "extrabotany:pleiades_combat_maid_headgear"
-            },
-            "H": {
-            "item": "extrabotany:the_chaos"
-            },
-            "I": {
-            "item": "botania:terrasteel_block"
-            },
-            "J": {
-            "item": "extrabotany:pleiades_combat_maid_suit"
-            },
-            "K": {
-            "item": "extrabotany:pleiades_combat_maid_skirt"
-            },
-            "L": {
-            "item": "extrabotany:pleiades_combat_maid_boots"
-            },
-            "M": {
-            "item": "extrabotany:orichalcos_block"
+            "result": {
+                "item": "materialfactory:anon_chihaya_body"
             }
-        },
-        "result": {
-            "item": "materialfactory:anon_chihaya_hand"
-        }
-    })
-
-    event.custom({
-        "type": "extendedcrafting:shaped_table",
-        "pattern": [
-            "  A      ",
-            " ABA     ",
-            "ABCDA    ",
-            " AEFGA   ",
-            "  AHIJA  ",
-            "   AJKLM ",
-            "    ALNOM",
-            "     MOM ",
-            "      M  "
-        ],
-        "key": {
-            "A": {
-            "item": "bigreactors:ridiculite_block"
+        })
+    
+        event.custom({
+            "type": "extendedcrafting:shaped_table",
+            "pattern": [
+                " ABABABA ",
+                "BCDEFGHIB",
+                "AJJJKJJJA",
+                "BJLJMJLJB",
+                "AJJJNJJJA",
+                "BOPQRSTUB",
+                "AVWXYXZVA",
+                "B VVVVV B",
+                "A       A"
+            ],
+            "key": {
+                "A": {
+                "item": "bigreactors:inanite_ingot"
+                },
+                "B": {
+                "item": "bigreactors:ludicrite_ingot"
+                },
+                "C": {
+                "item": "enderio:frank_n_zombie"
+                },
+                "D": {
+                "type": "forge:nbt",
+                "item": "tconstruct:cleaver",
+                "count": 1,
+                "nbt": "{Damage:0,tic_broken:0b,tic_materials:[\"allthemodium:unobtainium\",\"allthemodium:unobtainium\",\"allthemodium:unobtainium\",\"allthemodium:unobtainium\"],tic_modifiers:[{level:20,name:\"tconstruct:lightweight\"},{level:12,name:\"tconstruct:insatiable\"},{level:2,name:\"tconstruct:severing\"},{level:24,name:\"tconstruct:momentum\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":1.5f,\"tconstruct:durability\":3.5f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":432.0f,\"tconstruct:attack_speed\":55.2f,\"tconstruct:draw_speed\":1.5999999f,\"tconstruct:durability\":182875.0f,\"tconstruct:harvest_tier\":\"allthemodium:unobtainium\",\"tconstruct:mining_speed\":303.6f,\"tconstruct:velocity\":1.5999999f},tic_volatile_data:{abilities:1,upgrades:2}}"
+                },
+                "E": {
+                "item": "enderio:animal_token"
+                },
+                "F": {
+                "item": "enderio:monster_token"
+                },
+                "G": {
+                "item": "enderio:player_token"
+                },
+                "H": {
+                "item": "allthemodium:unobtainium_sword"
+                },
+                "I": {
+                "item": "enderio:sentient_ender"
+                },
+                "J": {
+                "item": "mekanism_extras:alloy_spectrum"
+                },
+                "K": {
+                "item": "allthecompressed:nitro_crystal_block_6x"
+                },
+                "L": {
+                "item": "mekanism:pellet_antimatter"
+                },
+                "M": {
+                "item": "mekanism_extras:qio_drive_singularity"
+                },
+                "N": {
+                "item": "industrialforegoing:supreme_black_hole_unit"
+                },
+                "O": {
+                "item": "thermal_extra:abyssal_machine_output_augment"
+                },
+                "P": {
+                "item": "thermalendergy:endergy_upgrade_3"
+                },
+                "Q": {
+                "item": "thermalendergy:efficiency_nullifier_augment"
+                },
+                "R": {
+                "type": "forge:nbt",
+                "item": "mekanismgenerators:hohlraum",
+                "count": 1,
+                "nbt": "{mekData:{GasTanks:[{Tank:0b,stored:{amount:10L,gasName:\"mekanismgenerators:fusion_fuel\"}}]}}"
+                },
+                "S": {
+                "item": "ifeu:weather_controller"
+                },
+                "T": {
+                "item": "ifeu:time_controller"
+                },
+                "U": {
+                "type": "forge:nbt",
+                "item": "thoriumreactors:progressive_fluid_tank",
+                "count": 1,
+                "nbt": "{BlockEntityTag:{Fluid:{Amount:128000,FluidName:\"tinkerscalibration:dragonbreath\"},Items:[],id:\"thoriumreactors:progressive_fluid_tank\"}}"
+                },
+                "V": {
+                "item": "bigreactors:ridiculite_ingot"
+                },
+                "W": {
+                "item": "thermal_extra:abyssal_machine_speed_augment"
+                },
+                "X": {
+                "item": "mekanism_lasers:ultimate_toggleable_laser"
+                },
+                "Y": {
+                "item": "mekanism_lasers:ore_generator"
+                },
+                "Z": {
+                "item": "ifeu:dragon_star_essence_bucket"
+                }
             },
-            "B": {
-            "item": "irons_spellbooks:legendary_ink"
-            },
-            "C": {
-            "item": "allthewizardgear:unobtainium_mage_helmet"
-            },
-            "D": {
-            "item": "allthewizardgear:unobtainium_spell_book"
-            },
-            "E": {
-            "item": "ars_nouveau:archmage_spell_book"
-            },
-            "F": {
-            "item": "allthewizardgear:unobtainium_mage_chestplate"
-            },
-            "G": {
-            "item": "ars_nouveau:glyph_lightning"
-            },
-            "H": {
-            "item": "ars_nouveau:glyph_wither"
-            },
-            "I": {
-            "item": "allthewizardgear:unobtainium_mage_leggings"
-            },
-            "J": {
-            "type": "forge:nbt",
-            "item": "irons_spellbooks:scroll",
-            "count": 1,
-            "nbt": "{ISB_Spells:{data:[{id:\"irons_spellbooks:sunbeam\",index:0,level:10,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}"
-            },
-            "K": {
-            "item": "allthewizardgear:unobtainium_mage_boots"
-            },
-            "L": {
-            "item": "ars_nouveau:source_berry_pie"
-            },
-            "M": {
-            "item": "ars_nouveau:sourcestone"
-            },
-            "N": {
-            "item": "megacells:portable_source_cell_256m"
-            },
-            "O": {
-            "item": "ars_nouveau:source_gem_block"
+            "result": {
+                "item": "materialfactory:anon_chihaya_head"
             }
-        },
-        "result": {
-            "item": "materialfactory:anon_chihaya_leg"
-        }
-    })
-
-    event.custom({
-        "type": "extendedcrafting:shaped_table",
-        "pattern": [
-            "         ",
-            "   AAA   ",
-            "  BCDEB  ",
-            "  BFGFB  ",
-            " BHIJIHB ",
-            " BKLMLKB ",
-            " BNOPONB ",
-            "BQAAAAAQB",
-            "         "
-        ],
-        "key": {
-            "A": {
-            "item": "bigreactors:ridiculite_block"
-            },
-            "B": {
-            "item": "ars_nouveau:sourcestone"
-            },
-            "C": {
-            "type": "forge:nbt",
-            "item": "thoriumreactors:progressive_fluid_tank",
-            "count": 1,
-            "nbt": "{BlockEntityTag:{Fluid:{Amount:128000,FluidName:\"ad_astra:cryo_fuel\"},Items:[],id:\"thoriumreactors:progressive_fluid_tank\"}}"
-            },
-            "D": {
-            "item": "ad_astra:tier_4_rocket"
-            },
-            "E": {
-            "item": "ad_astra:tier_1_rover"
-            },
-            "F": {
-            "item": "avaritia:enhancement_core"
-            },
-            "G": {
-            "item": "ad_astra:jet_suit_helmet"
-            },
-            "H": {
-            "item": "avaritia:endest_pearl"
-            },
-            "I": {
-            "item": "avaritia:eternal_singularity"
-            },
-            "J": {
-            "item": "ad_astra:jet_suit"
-            },
-            "K": {
-            "item": "avaritia:ultimate_stew"
-            },
-            "L": {
-            "item": "ad_astra:desh_plating"
-            },
-            "M": {
-            "item": "ad_astra:jet_suit_pants"
-            },
-            "N": {
-            "item": "avaritia:star_fuel"
-            },
-            "O": {
-            "item": "ad_astra:calorite_block"
-            },
-            "P": {
-            "item": "ad_astra:jet_suit_boots"
-            },
-            "Q": {
-            "item": "ad_astra:cheese_block"
-            }
-        },
-        "result": {
-            "item": "materialfactory:anon_chihaya_body"
-        }
-    })
-
-    event.custom({
-        "type": "extendedcrafting:shaped_table",
-        "pattern": [
-            " ABABABA ",
-            "BCDEFGHIB",
-            "AJJJKJJJA",
-            "BJLJMJLJB",
-            "AJJJNJJJA",
-            "BOPQRSTUB",
-            "AVWXYXZVA",
-            "B VVVVV B",
-            "A       A"
-        ],
-        "key": {
-            "A": {
-            "item": "bigreactors:inanite_ingot"
-            },
-            "B": {
-            "item": "bigreactors:ludicrite_ingot"
-            },
-            "C": {
-            "item": "enderio:frank_n_zombie"
-            },
-            "D": {
-            "type": "forge:nbt",
-            "item": "tconstruct:cleaver",
-            "count": 1,
-            "nbt": "{Damage:0,tic_broken:0b,tic_materials:[\"allthemodium:unobtainium\",\"allthemodium:unobtainium\",\"allthemodium:unobtainium\",\"allthemodium:unobtainium\"],tic_modifiers:[{level:20,name:\"tconstruct:lightweight\"},{level:12,name:\"tconstruct:insatiable\"},{level:2,name:\"tconstruct:severing\"},{level:24,name:\"tconstruct:momentum\"},{level:1,name:\"tconstruct:silky_aoe_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":1.5f,\"tconstruct:durability\":3.5f,\"tconstruct:mining_speed\":0.25f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":432.0f,\"tconstruct:attack_speed\":55.2f,\"tconstruct:draw_speed\":1.5999999f,\"tconstruct:durability\":182875.0f,\"tconstruct:harvest_tier\":\"allthemodium:unobtainium\",\"tconstruct:mining_speed\":303.6f,\"tconstruct:velocity\":1.5999999f},tic_volatile_data:{abilities:1,upgrades:2}}"
-            },
-            "E": {
-            "item": "enderio:animal_token"
-            },
-            "F": {
-            "item": "enderio:monster_token"
-            },
-            "G": {
-            "item": "enderio:player_token"
-            },
-            "H": {
-            "item": "allthemodium:unobtainium_sword"
-            },
-            "I": {
-            "item": "enderio:sentient_ender"
-            },
-            "J": {
-            "item": "mekanism_extras:alloy_spectrum"
-            },
-            "K": {
-            "item": "allthecompressed:nitro_crystal_block_6x"
-            },
-            "L": {
-            "item": "mekanism:pellet_antimatter"
-            },
-            "M": {
-            "item": "mekanism_extras:qio_drive_singularity"
-            },
-            "N": {
-            "item": "industrialforegoing:supreme_black_hole_unit"
-            },
-            "O": {
-            "item": "thermal_extra:abyssal_machine_output_augment"
-            },
-            "P": {
-            "item": "thermalendergy:endergy_upgrade_3"
-            },
-            "Q": {
-            "item": "thermalendergy:efficiency_nullifier_augment"
-            },
-            "R": {
-            "type": "forge:nbt",
-            "item": "mekanismgenerators:hohlraum",
-            "count": 1,
-            "nbt": "{mekData:{GasTanks:[{Tank:0b,stored:{amount:10L,gasName:\"mekanismgenerators:fusion_fuel\"}}]}}"
-            },
-            "S": {
-            "item": "ifeu:weather_controller"
-            },
-            "T": {
-            "item": "ifeu:time_controller"
-            },
-            "U": {
-            "type": "forge:nbt",
-            "item": "thoriumreactors:progressive_fluid_tank",
-            "count": 1,
-            "nbt": "{BlockEntityTag:{Fluid:{Amount:128000,FluidName:\"tinkerscalibration:dragonbreath\"},Items:[],id:\"thoriumreactors:progressive_fluid_tank\"}}"
-            },
-            "V": {
-            "item": "bigreactors:ridiculite_ingot"
-            },
-            "W": {
-            "item": "thermal_extra:abyssal_machine_speed_augment"
-            },
-            "X": {
-            "item": "mekanism_lasers:ultimate_toggleable_laser"
-            },
-            "Y": {
-            "item": "mekanism_lasers:ore_generator"
-            },
-            "Z": {
-            "item": "ifeu:dragon_star_essence_bucket"
-            }
-        },
-        "result": {
-            "item": "materialfactory:anon_chihaya_head"
-        }
-    })
-*/
+        })
+    */
     event.custom({
         "type": "extendedcrafting:combination",
         "powerCost": 4000000000,
@@ -467,25 +467,25 @@ ServerEvents.recipes(event =>{
         },
         "ingredients": [
             {
-            "item": "materialfactory:anon_chihaya_hand"
+                "item": "materialfactory:anon_chihaya_hand"
             },
             {
-            "item": "materialfactory:anon_chihaya_head"
+                "item": "materialfactory:anon_chihaya_head"
             },
             {
-            "item": "materialfactory:anon_chihaya_leg"
+                "item": "materialfactory:anon_chihaya_leg"
             },
             {
-            "item": "materialfactory:anon_chihaya_body"
+                "item": "materialfactory:anon_chihaya_body"
             },
             {
-            "item": "materialfactory:anon_chihaya_hand"
+                "item": "materialfactory:anon_chihaya_hand"
             },
             {
-            "item": "materialfactory:anon_chihaya_leg"
+                "item": "materialfactory:anon_chihaya_leg"
             },
             {
-            "item": "allthecompressed:obsidian_7x"
+                "item": "allthecompressed:obsidian_7x"
             }
         ],
         "result": {
@@ -504,22 +504,22 @@ ServerEvents.recipes(event =>{
         ],
         "key": {
             "A": {
-            "item": "mekanism:ultimate_control_circuit"
+                "item": "mekanism:ultimate_control_circuit"
             },
             "B": {
-            "item": "ae2:quartz_vibrant_glass"
+                "item": "ae2:quartz_vibrant_glass"
             },
             "C": {
-            "item": "thoriumreactors:redstone_processor"
+                "item": "thoriumreactors:redstone_processor"
             },
             "D": {
-            "item": "ae2cs:resonating_processor"
+                "item": "ae2cs:resonating_processor"
             },
             "E": {
-            "item": "bigreactors:blutonium_ingot"
+                "item": "bigreactors:blutonium_ingot"
             },
             "F": {
-            "item": "thermal_parallel:argument_parallel_3"
+                "item": "thermal_parallel:argument_parallel_3"
             }
         },
         "result": {
@@ -540,25 +540,25 @@ ServerEvents.recipes(event =>{
         ],
         "key": {
             "A": {
-            "item": "thermalendergy:melodium_plate"
+                "item": "thermalendergy:melodium_plate"
             },
             "B": {
-            "item": "bigreactors:ludicrite_ingot"
+                "item": "bigreactors:ludicrite_ingot"
             },
             "C": {
-            "item": "thermal_extra:abyssal_glass"
+                "item": "thermal_extra:abyssal_glass"
             },
             "D": {
-            "item": "bigreactors:ridiculite_ingot"
+                "item": "bigreactors:ridiculite_ingot"
             },
             "E": {
-            "item": "megacells:accumulation_processor"
+                "item": "megacells:accumulation_processor"
             },
             "F": {
-            "item": "ae2omnicells:multidimensional_expansion_processor"
+                "item": "ae2omnicells:multidimensional_expansion_processor"
             },
             "G": {
-            "item": "thermal_parallel:argument_parallel_4"
+                "item": "thermal_parallel:argument_parallel_4"
             }
         },
         "result": {
@@ -581,50 +581,112 @@ ServerEvents.recipes(event =>{
         ],
         "key": {
             "A": {
-            "item": "thermalendergy:stellarium_plate"
+                "item": "thermalendergy:stellarium_plate"
             },
             "B": {
-            "item": "bigreactors:insanite_block"
+                "item": "bigreactors:insanite_block"
             },
             "C": {
-            "item": "thermal_extra:twinite_glass"
+                "item": "thermal_extra:twinite_glass"
             },
             "D": {
-            "item": "avaritia:diamond_lattice"
+                "item": "avaritia:diamond_lattice"
             },
             "E": {
-            "type": "forge:nbt",
-            "item": "avaritia:singularity",
-            "count": 1,
-            "nbt": "{Id:\"avaritia:redstone\"}"
+                "type": "forge:nbt",
+                "item": "avaritia:singularity",
+                "count": 1,
+                "nbt": "{Id:\"avaritia:redstone\"}"
             },
             "F": {
-            "item": "bigreactors:inanite_block"
+                "item": "bigreactors:inanite_block"
             },
             "G": {
-            "item": "ae2omnicells:complex_link_processor"
+                "item": "ae2omnicells:complex_link_processor"
             },
             "H": {
-            "item": "crazyae2addons:super_singularity"
+                "item": "crazyae2addons:super_singularity"
             },
             "I": {
-            "item": "ae2omnicells:omni_link_processor"
+                "item": "ae2omnicells:omni_link_processor"
             },
             "J": {
-            "item": "mekanism:pellet_antimatter"
+                "item": "mekanism:pellet_antimatter"
             },
             "K": {
-            "item": "avaritia:full_matter_cluster"
+                "item": "avaritia:full_matter_cluster"
             },
             "L": {
-            "item": "extendedae_plus:oblivion_singularity"
+                "item": "extendedae_plus:oblivion_singularity"
             },
             "M": {
-            "item": "thermal_parallel:argument_parallel_5"
+                "item": "thermal_parallel:argument_parallel_5"
             }
         },
         "result": {
             "item": "thermal_parallel:argument_parallel_6"
+        }
+    })
+
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            "AAAABAAAA",
+            "A CCDCC A",
+            "E  CDC  E",
+            "E  FDF  E",
+            "E  GHG  E",
+            "E IFGFI E",
+            "EI JKJ IE",
+            "ELLLLLLLE",
+            "AAMNNNMAA"
+        ],
+        "key": {
+            "A": {
+                "item": "mekanism:steel_casing"
+            },
+            "B": {
+                "item": "mekanismgenerators:rotational_complex"
+            },
+            "C": {
+                "item": "bigreactors:reinforced_turbinerotorblade"
+            },
+            "D": {
+                "item": "bigreactors:reinforced_turbinerotorshaft"
+            },
+            "E": {
+                "item": "mekanismgenerators:reactor_glass"
+            },
+            "F": {
+                "item": "mekanism_extras:infinite_fluid_tank"
+            },
+            "G": {
+                "item": "enderio_evolution:stellar_fluid_conduit"
+            },
+            "H": {
+                "item": "logisticsnetworks:computer"
+            },
+            "I": {
+                "item": "mekanism_extras:cosmic_universal_cable"
+            },
+            "J": {
+                "item": "mekanism_extras:reinforced_induction_port"
+            },
+            "K": {
+                "item": "mekanism:induction_port"
+            },
+            "L": {
+                "item": "mekanism:hdpe_stick"
+            },
+            "M": {
+                "item": "enderio_evolution:capacitor_unobtainium"
+            },
+            "N": {
+                "item": "mekanism_extras:infinite_induction_cell"
+            }
+        },
+        "result": {
+            "item": "materialfactory:unactivated_blender_controller"
         }
     })
 })

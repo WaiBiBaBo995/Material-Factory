@@ -28,9 +28,7 @@ StartupEvents.registry("block", (event) => {
 		["black_crate", "copper", 1, "pickaxe", "stone"],
 		["brown_crate", "copper", 1, "pickaxe", "stone"],
 		["copper_crate", "copper", 1, "pickaxe", "stone"],
-		["airdrop_chest", "stone", 6, "pickaxe", "iron"],
-		["blender_frame", "copper", 4, "pickaxe", "stone"],
-		["blender_coverplate", "netherite_block", 6, "pickaxe", "stone"],
+		["airdrop_chest", "stone", 6, "pickaxe", "iron"]
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level]) => {
 		event.create(MODID + name) // 声明方块id
@@ -47,12 +45,6 @@ StartupEvents.registry("block", (event) => {
 })
 
 StartupEvents.registry("block", (event) => {
-	event.create("materialfactory:blender_glass", "basic")
-		.soundType("glass")
-		.hardness(0.4)
-		.defaultTranslucent()
-		.resistance(0.2)
-
 	event.create("createsifter:crushed_netherrack", "falling")
 		.soundType("sand")
 		.hardness(0.4)
@@ -166,6 +158,7 @@ StartupEvents.registry("block", (event) => {
 		.hardness(114514)
 		.resistance(1919810)
 		.noDrops()
+		.model('minecraft:block/air')
 		.blockEntity(info => {
 			info.serverTick(20, 0, be=>{
 				let { block, level } = be

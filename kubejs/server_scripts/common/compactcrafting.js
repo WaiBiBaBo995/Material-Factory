@@ -977,4 +977,29 @@ ServerEvents.recipes(event => {
       .add("C", 'ifeu:dragon_star_block')
       .build()
     ).id('materialfactory:huge_enchanting_apparatus')
+
+    //环
+    event.recipes.compactcrafting
+    .miniaturization(
+      Item.of("materialfactory:annulus", 1),
+      Item.of("reliquary:hero_medallion", 1),
+      200,
+      9
+    ).setLayers([
+      CCLayerType.MIXED.withPattern([
+        ["_", "_", "A", "A", "A", "A", "A", "_", "_"],
+        ["_", "A", "B", "B", "B", "B", "B", "A", "_"],
+        ["A", "B", "B", "B", "A", "B", "B", "B", "A"],
+        ["A", "B", "B", "A", "_", "A", "B", "B", "A"],
+        ["A", "B", "A", "_", "_", "_", "A", "B", "A"],
+        ["A", "B", "B", "A", "_", "A", "B", "B", "A"],
+        ["A", "B", "B", "B", "A", "B", "B", "B", "A"],
+        ["_", "A", "B", "B", "B", "B", "B", "A", "_"],
+        ["_", "_", "A", "A", "A", "A", "A", "_", "_"]
+      ])
+    ]).setComponents(new CCBlockComponent()
+      .add("A", "productivebees:light_gray_petrified_honey")
+      .add("B", "productivebees:white_petrified_honey")
+      .build()
+    ).id("materialfactory:annulus")
 })

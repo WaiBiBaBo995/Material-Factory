@@ -90,10 +90,10 @@ StartupEvents.registry("item", event => {
 
     event.create('materialfactory:filled_antimatter_ball').unstackable().glow(true).rarity('rosarium').fireResistant(true);
 
-    event.create("materialfactory:arrow_up", "basic").unstackable().glow(true).rarity("rare")
-    event.create("materialfactory:arrow_left", "basic").unstackable().glow(true).rarity("rare")
-    event.create("materialfactory:arrow_right", "basic").unstackable().glow(true).rarity("rare")
-    event.create("materialfactory:arrow_down", "basic").unstackable().glow(true).rarity("rare")
+    event.create("materialfactory:arrow_up", "basic").glow(true).rarity("rare")
+    event.create("materialfactory:arrow_left", "basic").glow(true).rarity("rare")
+    event.create("materialfactory:arrow_right", "basic").glow(true).rarity("rare")
+    event.create("materialfactory:arrow_down", "basic").glow(true).rarity("rare")
 
     event
         .create('materialfactory:unfilled_antimatter_ball')

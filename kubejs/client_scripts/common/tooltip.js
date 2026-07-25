@@ -6,6 +6,20 @@ ItemEvents.tooltip(event =>{
     event.add('materialfactory:arrow_down', Text.translate("tooltip.materialfactory.arrow").aqua())
     event.add('materialfactory:arrow_right', Text.translate("tooltip.materialfactory.arrow").aqua())
 
+    let blenderItemList = [
+        "materialfactory:blender_shaft",
+        "materialfactory:blender_coverplate",
+        "materialfactory:blender_frame",
+        "materialfactory:blender_glass",
+        "materialfactory:blender_energy_port",
+        "materialfactory:blender_fluid_port",
+        "materialfactory:blender_input_port",
+        "materialfactory:blender_output_port"
+    ]
+    blenderItemList.forEach(item => {
+        event.add(item, Text.translate('tooltip.materialfactory.blenderUnrecipable').gray())
+    })
+
     event.addAdvanced('mysticalagriculture:infinity_seeds',(item,advanced,text) =>{
         text.add(1,Text.translate("item.mysticalagriculture.infinity_seeds.tooltip").darkGray().italic())
     })
@@ -82,7 +96,9 @@ ItemEvents.tooltip(event =>{
         { item: 'materialfactory:artificial_star', lines: 10 },
         { item: 'materialfactory:extinguished_star', lines: 3 },
         { item: 'materialfactory:ash_furnace', lines: 2 },
-        { item: 'materialfactory:annulus', lines: 7 }
+        { item: 'materialfactory:annulus', lines: 7 },
+        { item: 'materialfactory:blender_controller', lines: 5 },
+        { item: 'materialfactory:unactivated_blender_controller', lines: 3 }
     ]
     shiftTooltipItems.forEach((shiftTooltipItem) => {
         const { item, lines } = shiftTooltipItem;
